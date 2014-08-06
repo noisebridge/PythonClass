@@ -1,5 +1,5 @@
 
-
+Python 2.7 only for now
 
 Two branches of courses:
 ======
@@ -9,6 +9,8 @@ http://pymotw.com/2
 
 Possible Modules:
 =====
+Control Structures, itertools - Teddy
+
 requests
 urllib/urllib2
 
@@ -29,7 +31,7 @@ logging
 decorators
 Profile
 
-(Exceptions)
+    
 subprocess (catchall replacement for system call libraries)
 pdb
 unittest
