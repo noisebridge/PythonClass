@@ -15,13 +15,10 @@ Course 1 - An introduction to the JSON Module in Python
 
 2. Explain Python Data Types & Containers' relationship to JSON library 
 
-  a. Python Interpreter - 
-  b. Duck Typed - http://en.wikipedia.org/wiki/Duck_typing
+  a. Python Interpreter - Fire it up and set (cat = 5) - 15 minutes
+  b. Duck Typing - http://en.wikipedia.org/wiki/Duck_typing
   (don't explicly use types in your functions/checks)
-  a. Dict ~~ Object
-  b. List ~~ Array
-  c. string ~~ String
-  d. number ~~ Number
+c. Json to Python Standard Translation: https://docs.python.org/2/library/json.html#encoders-and-decoders
 
 
 
@@ -30,12 +27,14 @@ Course 1 - An introduction to the JSON Module in Python
   a. What is requests? http://docs.python-requests.org/en/latest/
   b. Use request to get a json encoded object.
   c. Start manipulating it with relevant json library functions.
+  d. encoded_object_dict = json.load(r.json()) will provide a dictionary of the encoded data.
 
 
 
+(might not include this detour)
 4. Quick Detour: Opening and Closing files:
     
-  a. The 'with' keyword - specifically for files.
+  a. The 'with' keyword - specifically for (io/files/something).
   b. with open('filename.ext', 'r') as f:
       json_object = json.load(f)
 
@@ -43,13 +42,8 @@ Course 1 - An introduction to the JSON Module in Python
 5. Using json library functions: https://docs.python.org/2/library/json.html
 
 a. Functions: load, dump, loads, dumps
-b. 
-c. 
+b. Json load and loads will provide UTF-8 data, u'data', which is OK! Just treat it like a string without the u''
+c. Command line: $ python -m json.tool file.ext
+d. Here's an example of json.loads() on a string variable: https://docs.python.org/2/library/json.html#repeated-names-within-an-object
 
-
-
-
-
-
-dict = { key : "value", key2 : "value2" }
 
