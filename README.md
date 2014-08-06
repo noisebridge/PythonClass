@@ -9,38 +9,38 @@ http://pymotw.com/2
 
 Possible Modules:
 =====
-Control Structures, itertools - Teddy
-
-requests
-urllib/urllib2
-
-math
-
-ConfigParser
-argparse
-
-json
-csv
-
-time, datetime
-os
-sys
-io
-
-logging
-decorators
-Profile
-
+Control Structures, itertools - Teddy    
     
-subprocess (catchall replacement for system call libraries)
-pdb
-unittest
-py.test
-
-virtualenv
-pip
-packaging?
-versions
+requests    
+urllib/urllib2    
+    
+math    
+    
+ConfigParser    
+argparse    
+    
+json    
+csv    
+    
+time, datetime    
+os    
+sys    
+io    
+    
+logging    
+decorators    
+Profile    
+    
+        
+subprocess (catchall replacement for system call libraries)    
+pdb    
+unittest    
+py.test    
+    
+virtualenv    
+pip    
+packaging?    
+versions    
 
 
 2. Applications Course
