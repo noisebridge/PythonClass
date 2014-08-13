@@ -25,7 +25,7 @@ c. Json to Python Standard Translation: https://docs.python.org/2/library/json.h
 3. Sample JSON Request - Pull some data off a remote server using requests
 
   a. What is requests? http://docs.python-requests.org/en/latest/    
-  b. Use request to get a json encoded object.    
+  b. Use request to get a json encoded object. https://raw.githubusercontent.com/robbintt/PyClassModules/master/abcde.json    
   c. Start manipulating it with relevant json library functions.    
   d. encoded_object_dict = json.load(r.json()) will provide a dictionary of the encoded data.    
 
