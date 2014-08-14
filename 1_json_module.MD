@@ -26,24 +26,25 @@ c. Json to Python Standard Translation: https://docs.python.org/2/library/json.h
 
   a. What is requests? http://docs.python-requests.org/en/latest/    
   b. Use request to get a json encoded object. https://raw.githubusercontent.com/robbintt/PyClassModules/master/abcde.json    
-  c. Start manipulating it with relevant json library functions.    
-  d. encoded_object_dict = json.load(r.json()) will provide a dictionary of the encoded data.    
+  c. Run through basic abilities of requests quickly - r.status, r.string, etc.    
+  d. r.json() converts the data at the URL to python data types. Requests governs how this is done (probably uses json module).
+  e. encoded_object_string = json.dumps(r.json()) will provide a string of the data.    
 
 
-
-(might not include this detour)
-4. Quick Detour: Opening and Closing files:
+4. Using json library functions: https://docs.python.org/2/library/json.html
     
-  a. The 'with' keyword - specifically for (io/files/something).    
-  b. with open('filename.ext', 'r') as f:    
-      json_object = json.load(f)    
+  a. Functions: load, dump, loads, dumps    
+  b. loads and dumps are 'load string' and 'dump string'
+  b. Quick Detour - The 'with' keyword - specifically for file objects.    
+  ```python
+    with open('stored_data.json', 'w') as fx: (make sure the file exists!)    
+      json.dump(fx)    
+  ```
+  d. Json load and loads will provide UTF-8 data, u'data', which is OK! Just treat it like a string without the u''    
 
 
-5. Using json library functions: https://docs.python.org/2/library/json.html
+5. Additional Resources
 
-a. Functions: load, dump, loads, dumps    
-b. Json load and loads will provide UTF-8 data, u'data', which is OK! Just treat it like a string without the u''    
-c. Command line: $ python -m json.tool file.ext    
-d. Here's an example of json.loads() on a string variable: https://docs.python.org/2/library/json.html#repeated-names-within-an-object    
-
+  a. Command line: $ python -m json.tool file.ext    
+  b. Here's an example of json.loads() on a string variable: https://docs.python.org/2/library/json.html#repeated-names-within-an-object    
 
