@@ -59,7 +59,7 @@ Please email PyClass@googlegroups.com if you want to know what courses are comin
 
 This section is under development.
 
-We accept refugees using all operating systems. You will be politely prodded in the direction of solutions that are closer to posix standards: [http://en.wikipedia.org/wiki/POSIX#Mostly_POSIX-compliant](http://en.wikipedia.org/wiki/POSIX#Mostly_POSIX-compliant)
+**We accept refugees using all operating systems. You will be politely prodded in the direction of solutions that are closer to posix standards: [http://en.wikipedia.org/wiki/POSIX#Mostly_POSIX-compliant](http://en.wikipedia.org/wiki/POSIX#Mostly_POSIX-compliant)**
 
 Emergency Python Command Line: [http://repl.it/languages/Python](http://repl.it/languages/Python)
 
@@ -76,9 +76,9 @@ Another critical tool is git:
 
 
 
+###For Lesson Planners:
 
-Some Modules to include:
-=====
+####Some Modules to include
 
 * Control Structures, itertools - Teddy    
 * requests    
@@ -106,7 +106,7 @@ Some Modules to include:
 
 
 
-Two approaches for course material building that should be blended:
+####Two approaches for course material building that should be blended
 
 1. Modules Course - http://pymotw.com/2
 2. Applications Course - http://newcoder.io/dataviz/part-0/
