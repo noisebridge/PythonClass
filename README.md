@@ -55,9 +55,11 @@ Please email PyClass@googlegroups.com if you want to know what courses are comin
 11. (potential for a unittest course)    
 
 
-###  Code Environment
+###  OS / Environment / Versions
 
 This section is under development.
+
+For the sake of our sanity we use Python 2.7.1+ for this course.
 
 **We accept refugees using all operating systems. You will be politely prodded in the direction of solutions that are closer to posix standards: [http://en.wikipedia.org/wiki/POSIX#Mostly_POSIX-compliant](http://en.wikipedia.org/wiki/POSIX#Mostly_POSIX-compliant)**
 
