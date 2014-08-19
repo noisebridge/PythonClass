@@ -1,15 +1,42 @@
 
-Python 2.7 only for now
+### PSAs and Events
 
-Two branches of courses:
-======
-1. Modules Course
-http://pymotw.com/2
+**PSA 8-16-14:** The new curriculum for the Noisebridge PyClass is a crash course in the Python standard library, also touching on modules that are popular but not quite part of the standard modules. Scroll down to see the course list.
+
+### Scheduled Weekly Meeting Times
+
+* Tuesday 7:00 - 9:00 PM PST - 'Turing' Classroom
+* Wednesday 7:00 - 9:00 PM PST - 'Church' Classroom
+
+### Mailing List
+
+Sign up for this to hear updates and conversations regarding the course!
+
+[PyClass-Discussion](http://groups.google.com/group/pyclass)
 
 
+### Class Description, Goals, and Ideal Student
 
+The pace of the courses will be fast, and the materials will be available online 24/7 and we plan to frequently repeat modules that are in high demand with new twists as we iterate over the course materials.
 
-== Course List ==
+A primary goal of the course is to break down the materials into independent units. In other words, if you miss a week then you won't fall behind. Sounds good, right?
+
+To best experience the course, spend a short time studying the course materials before you come in. If you wish to know this week's courses, please send an email out to PyClass@googlegroups.com
+
+The ideal student for this course can understand the following code (it's fine to use Google to look up the built in functions, and we use tons of web resources throughout the course materials):
+
+```python
+word_frequency_dict = {}
+word = "noisebridge"
+ 
+for letter in word:
+    times = word_frequency_dict.get(letter, 0)
+    times += 1
+    word_frequency_dict.update( {letter : times} )
+```
+
+### Course List
+
 
 The order of the following courses has not yet been determined.  
 
@@ -30,18 +57,8 @@ Please email PyClass@googlegroups.com if you want to know what courses are comin
 
 
 
-Possible Modules:
+Some Modules to include:
 =====
-
-Without further ado:
- JSON format, Python Types, and the JSON Module 
- Control Flow, itertools, and Functional Programming
-# Numeric and Mathematical Modules - https://docs.python.org/2/library/numeric.html
-# Logging your applications: logging, logging.config, logging.handlers
-# Exceptions and Debugging: Exception behavior, custom exceptions, pdb, cProfile, timeit, time, trace.
-# os, sys, and io (Caution, here be Python 3, inside the io module)
-#
-
 
 * Control Structures, itertools - Teddy    
 * requests    
@@ -68,5 +85,8 @@ Without further ado:
 * versions    
 
 
-2. Applications Course
-http://newcoder.io/dataviz/part-0/
+
+Two approaches for course material building that should be blended:
+
+1. Modules Course - http://pymotw.com/2
+2. Applications Course - http://newcoder.io/dataviz/part-0/
