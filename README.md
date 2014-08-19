@@ -55,6 +55,26 @@ Please email PyClass@googlegroups.com if you want to know what courses are comin
 11. (potential for a unittest course)    
 
 
+###  Code Environment
+
+This section is under development.
+
+We accept refugees using all operating systems. You will be politely prodded in the direction of solutions that are closer to posix standards: [http://en.wikipedia.org/wiki/POSIX#Mostly_POSIX-compliant](http://en.wikipedia.org/wiki/POSIX#Mostly_POSIX-compliant)
+
+Emergency Python Command Line: [http://repl.it/languages/Python](http://repl.it/languages/Python)
+
+Some paths:    
+1. Install a linux virtual machine on another computer using virtualbox.    
+2. Use the command line in your apple machine.    
+3. Explore POSIX for windows: http://en.wikipedia.org/wiki/POSIX#POSIX_for_Windows    
+    
+    
+Another critical tool is git:    
+*Windows: http://git-scm.com/download/win    
+*Mac: http://git-scm.com/download/mac    
+*Linux: (use your package manager)    
+
+
 
 
 Some Modules to include:
