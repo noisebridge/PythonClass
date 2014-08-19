@@ -8,6 +8,14 @@ https://docs.python.org/2/howto/functional.html
 -easier to debug
 etc.
 
+
+The principle of referential transparency (RT) is this:
+An expression e is referentially transparent if for all programs p every occurrence of e in p can be replaced with the result of evaluating e, without affecting the observable result of p
+
+We'll use this statement to test whether our following code is functional or imperative.
+
+Note about "true" functional languages and their use of strong typing and recursion.
+
 quickly compare to imperative programming paradigm (r object in requests library example) and how this relates to OOP.
 what does a purely functional language look like?
 
@@ -29,7 +37,8 @@ Subroutines are entered at one point and exited at another point (the top of the
 
 #neato tidbit
 The dict() constructor can accept an iterator that returns a finite stream of (key, value) tuples: 
->>> L = [('Italy', 'Rome'), ('France', 'Paris'), ('US', 'Washington DC')]>>> dict(iter(L)){'Italy': 'Rome', 'US': 'Washington DC', 'France': 'Paris'} 
+>>> L = [('Italy', 'Rome'), ('France', 'Paris'), ('US', 'Washington DC')]
+>>> dict(iter(L)){'Italy': 'Rome', 'US': 'Washington DC', 'France': 'Paris'} 
 
 list comps and gen expressions borrowed directly from Haskell
 
