@@ -43,38 +43,29 @@ Without further ado:
 #
 
 
-Control Structures, itertools - Teddy    
-    
-requests    
-urllib/urllib2    
-    
-math    
-    
-ConfigParser    
-argparse    
-    
-json    
-csv    
-    
-time, datetime    
-os    
-sys    
-io    
-    
-logging    
-decorators    
-Profile    
-    
-        
-subprocess (catchall replacement for system call libraries)    
-pdb    
-unittest    
-py.test    
-    
-virtualenv    
-pip    
-packaging?    
-versions    
+* Control Structures, itertools - Teddy    
+* requests    
+* urllib/urllib2    
+* math    
+* ConfigParser    
+* argparse    
+* json    
+* csv    
+* time, datetime    
+* os    
+* sys    
+* io    
+* logging    
+* decorators    
+* Profile    
+* subprocess (catchall replacement for system call libraries)    
+* pdb    
+* unittest    
+* py.test    
+* virtualenv    
+* pip    
+* packaging?    
+* versions    
 
 
 2. Applications Course
