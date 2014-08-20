@@ -42,7 +42,7 @@ The order of the following courses has not yet been determined.
 
 Please email PyClass@googlegroups.com if you want to know what courses are coming this week!
 
-1. JSON format, Python Types, and the JSON Module    
+1. [JSON format, Python Types, and the JSON Module](https://github.com/PyClass/PyClass-lesson-plans/blob/master/1_json_module.md)    
 2. Control Flow, itertools, and Functional Programming    
 3. Built-in Functions    
 4. Built-in Types and String Services    
@@ -61,16 +61,20 @@ This section is under development.
 
 For the sake of our sanity we use Python 2.7.1+ for this course.
 
-**We accept refugees using all operating systems. You will be politely prodded in the direction of solutions that are closer to posix standards: [http://en.wikipedia.org/wiki/POSIX#Mostly_POSIX-compliant](http://en.wikipedia.org/wiki/POSIX#Mostly_POSIX-compliant)**
+Installing Python with [The Hitchhiker’s Guide to Python!](http://docs.python-guide.org/en/latest/)
 
 Emergency Python Command Line: [http://repl.it/languages/Python](http://repl.it/languages/Python)
 
-Some paths:    
+
+**We accept refugees using all operating systems. You will be politely prodded in the direction of solutions that are closer to posix standards: [http://en.wikipedia.org/wiki/POSIX#Mostly_POSIX-compliant](http://en.wikipedia.org/wiki/POSIX#Mostly_POSIX-compliant)**
+
+
+Some routes:    
 1. Install a linux virtual machine on another computer using virtualbox.    
 2. Use the command line in your apple machine.    
 3. Explore POSIX for windows: http://en.wikipedia.org/wiki/POSIX#POSIX_for_Windows    
     
-    
+
 Another critical tool is git:    
 *Windows: http://git-scm.com/download/win    
 *Mac: http://git-scm.com/download/mac    

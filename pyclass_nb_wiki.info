@@ -1,0 +1,122 @@
+== PSAs and Events ==
+
+''' PSA 8-16-14: '''  The new curriculum for the Noisebridge PyClass is a crash course in the Python standard library, also touching on modules that are popular but not quite part of the standard modules.   Scroll down to see the course list.
+
+== Scheduled Weekly Meeting Times ==
+* Tuesday 7:00 - 9:00 PM PST - 'Turing' Classroom
+* Wednesday 7:00 - 9:00 PM PST - 'Church' Classroom
+
+== Mailing List ==
+Sign up for this to hear updates and conversations regarding the course!
+* [http://groups.google.com/group/pyclass Pyclass-Discussion]
+
+== Class Description, Goals, and Ideal Student ==
+
+The pace of the courses will be fast, and the materials will be available online 24/7 and we plan to frequently repeat modules that are in high demand with new twists as we iterate over the course materials.
+
+A primary goal of the course is to break down the materials into independent units. In other words, if you miss a week then you won't fall behind. Sounds good, right?
+
+To best experience the course, spend a short time studying the course materials before you come in. If you wish to know this week's courses, please send an email out to PyClass@googlegroups.com
+
+The ideal student for this course can understand the following code (it's fine to use Google to look up the built in functions, and we use tons of web resources throughout the course materials):
+
+<source lang="python">
+
+word_frequency_dict = {}
+word = "noisebridge"
+
+for letter in word:
+    times = word_frequency_dict.get(letter, 0)
+    times += 1
+    word_frequency_dict.update( {letter : times} )
+    
+</source>
+
+== Course List ==
+
+The order of the following courses has not yet been determined.  
+
+Please [http://groups.google.com/group/pyclass ask on the mailing list] if you want to know what courses are coming this week!
+
+# JSON format, Python Types, and the JSON Module
+# Control Flow, itertools, and Functional Programming
+# Built-in Functions
+# Built-in Types and String Services
+# Numeric and Mathematical Modules, and Operators
+# argparse, ConfigParser, and more - configuring your applications
+# pip, virtualenv, packaging, versions, and inspect.
+# Logging your applications: logging, logging.config, logging.handlers
+# Exceptions and Debugging: Exception behavior, custom exceptions, pdb, cProfile, timeit, time, trace.
+# os, sys, and io (Caution, here be Python 3, inside the io module)
+# (potential for a unittest course)
+
+
+
+== OS / Environment / Versions ==
+
+This section is under development.
+
+For the sake of our sanity we use Python 2.7.1+ for this course.
+
+Emergency Python Command Line: http://repl.it/languages/Python
+
+Installing Python with [http://docs.python-guide.org/en/latest/ The Hitchhiker’s Guide to Python!]
+
+We accept refugees using all operating systems. You will be politely prodded in the direction of solutions that are closer to posix standards: http://en.wikipedia.org/wiki/POSIX#Mostly_POSIX-compliant
+
+Emergency Python Command Line: http://repl.it/languages/Python
+
+Some routes:
+# Install a linux virtual machine on another computer using virtualbox.
+# Use the command line in your apple machine.
+# Explore POSIX for windows: http://en.wikipedia.org/wiki/POSIX#POSIX_for_Windows
+
+Another critical tool is git:
+* Windows: http://git-scm.com/download/win
+* Mac: http://git-scm.com/download/mac
+* Linux: (use your package manager)
+
+== Legacy Materials 2011-2014 (Liz & Kellan's Class) ==
+
+''' The following material is old material from Kellan and Liz's long-running PyClass: '''
+
+
+'''Come learn [http://www.python.org/ Python]'''!!<br>
+See our awesome website for both PyClasses at [http://pycourse.com/ Noisebridge Learning Python]
+
+
+After 9pm Tuesdays, we'll have open hacking time and time for questions for those that are kicking so much ass they just can't go home yet, or even for those that may have gone to Mondays' Front-end Web Development class and want to come back for more. If you have problems from work or home, feel free to bring them after 9 and everyone can help each other.
+
+
+''' Semi-Official Intro to Python Class Texts '''
+* [http://www.greenteapress.com/thinkpython/ Think Python: How to Think Like a Computer Scientist]
+* [http://learnpythonthehardway.org/ Learn Python The Hard Way] - A good introductory text with lots of exercises written by prolific programmer [http://zedshaw.com/ Zed Shaw]
+* [http://www.python.org/dev/peps/pep-0008/ PEP 8 -- The '''highly''' recommended Style Guide for Python Code]
+
+''' Other Intro to Python Texts '''
+* [http://www.swaroopch.com/notes/python A Byte of Python]
+* [http://www.learnpython.org/ Learn Python - Free Interactive Python Tutorial]
+* [http://www.openbookproject.net/thinkcs/python/english2e/ How to Think Like a Computer Scientist: Learning with Python 2nd Edition]
+* [https://docs.python.org/2/tutorial/ The Python Tutorial] - written by Guido van Rossum, creator of the Python programming language 
+** [https://docs.python.org/2/download.html Python 2.x.x Documentation download] - Contains Python Tutorial & other docs in various readable formats
+
+''' PyClass Githubs '''
+* [https://github.com/PythonNinjas PyClass Organization]
+* [https://github.com/PythonNinjas/InventWithPython  Invent with Python Textbook Code] <404 Error>
+* https://github.com/noisebridge/Intro-Python   / Kellan Jacobs Notes
+* https://github.com/noisebridge/web2py-noiselist
+* https://github.com/noisebridge/flask-noiselist   / E Leddy
+* https://github.com/tachang/django_noiselist
+
+'''  [Old] Class Slides '''
+* [http://egonschiele.github.com/pyclass Slides on Github]
+
+''' Other Helpful PyClass links '''
+* [https://www.python.org/ Main Python.org site]
+* [http://oreilly.com/catalog/9780596100469/ Python in a Nutshell] - an older but handy reference
+* [http://www.pygame.org Pygame]
+* [http://inventwithpython.com Invent Your Own Computer Games with Python] - written by Noisebridger [[User:AlSweigart|Al Sweigart]], free to download [http://inventwithpython.com/IYOCGwP_book1.pdf here] or [https://dl.dropbox.com/u/11076239/IYOCGwP_book1.pdf here]
+
+[[Category:Python]]
+[[Category:Pages with a Noisebridge Tiny URL]]
+
