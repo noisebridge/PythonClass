@@ -1,6 +1,8 @@
 
 ### PSAs and Events
 
+**PSA 8-19-14:** The [noisebridge wiki](https://noisebridge.net/wiki/PyClass) and [github readme](https://github.com/PyClass/PyClass-lesson-plans) files now have parity to each other.
+
 **PSA 8-16-14:** The new curriculum for the Noisebridge PyClass is a crash course in the Python standard library, also touching on modules that are popular but not quite part of the standard modules. Scroll down to see the course list.
 
 ### Scheduled Weekly Meeting Times
