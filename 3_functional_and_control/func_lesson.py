@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 #direct from iPython Notebook
 
 #1 If you’ve done excel then you have done functional programming
