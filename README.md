@@ -42,7 +42,7 @@ The order of the following courses has not yet been determined.
 
 Please email PyClass@googlegroups.com if you want to know what courses are coming this week!
 
-1. JSON format, Python Types, and the JSON Module    
+1. [JSON format, Python Types, and the JSON Module](https://github.com/PyClass/PyClass-lesson-plans/blob/master/1_json_module.md)    
 2. Control Flow, itertools, and Functional Programming    
 3. Built-in Functions    
 4. Built-in Types and String Services    
