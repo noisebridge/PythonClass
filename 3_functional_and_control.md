@@ -1,3 +1,6 @@
+ipython notebook gist url: http://nbviewer.ipython.org/gist/teddymcw/000dcebdb4f44c7283ef
+
+
 Objectives:
 -Formally introduce functional programming paradigm in python, compare to imperative, and make it easy
 -Execute some "valuable" text processing
