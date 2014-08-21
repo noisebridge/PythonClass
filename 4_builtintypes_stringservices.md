@@ -16,10 +16,17 @@ Resources:
   e.     
 
 
-2. Lets dig into some practical types - Numeric, Mapping, Iterator, Sequence, Set, File Objects
+2. Lets dig into some practical types - Numeric, Mapping, Iterator, Sequence, Set, File Objects    
   a. Numeric - int, float, long, complex.    
   b. Also check out [Python Standard Library Chapter 9](https://docs.python.org/2/library/numeric.html)    
-  c. Mapping - Only built-in mapping is the dictionary.    
-
-
-3. 
+  c. Mapping (container) - Only built-in mapping is the dictionary.    
+  d. set/frozenset (container) - Mutable and immutable respectively. Unordered, hashable. Has some nice built-ins.    
+  e. Iterator - Containers have this. __iter__() object supports the 'for' and 'in' statements. next() returns the next item from the container and raises StopIteration forever if all items are exhausted.    
+  f. Note that generators are a possible implementation of iterators but not the only one.     
+  g. Sequence - Also supports iteration methods. Str, unicode, list, tuple, butearray, buffer, xrange. This list is HUGE!    
+    g1. [String Methods](https://docs.python.org/2/library/stdtypes.html#string-methods)    
+    g2. [String Formatting Operations](https://docs.python.org/2/library/stdtypes.html#string-methods)    
+    g3. [Helpful Table of Mutable Sequence Type Operations](https://docs.python.org/2/library/stdtypes.html#mutable-sequence-types)    
+    g4. [Unicode object](https://docs.python.org/2/library/functions.html#unicode)    
+  h. File Objects - [Files have a lot of methods available](https://docs.python.org/2/library/stdtypes.html#file-objects)     
+  i. [Almost everything else you can imagine](https://docs.python.org/2/library/stdtypes.html#other-built-in-types)    
