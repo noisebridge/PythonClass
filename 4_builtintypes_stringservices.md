@@ -17,9 +17,9 @@ Resources:
 
 
 2. Lets dig into some practical types - Numeric, Mapping, Iterator, Sequence, Set, File Objects
-  a. Numeric - int, float, long, complex.
-  b. Also check out [Python Standard Library Chapter 9](https://docs.python.org/2/library/numeric.html)
-  c. Mapping - Only built-in mapping is the dictionary.
+  a. Numeric - int, float, long, complex.    
+  b. Also check out [Python Standard Library Chapter 9](https://docs.python.org/2/library/numeric.html)    
+  c. Mapping - Only built-in mapping is the dictionary.    
 
 
 3. 
