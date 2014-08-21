@@ -24,9 +24,9 @@ Resources:
   e. Iterator - Containers have this. __iter__() object supports the 'for' and 'in' statements. next() returns the next item from the container and raises StopIteration forever if all items are exhausted.    
   f. Note that generators are a possible implementation of iterators but not the only one.     
   g. Sequence - Also supports iteration methods. Str, unicode, list, tuple, butearray, buffer, xrange. This list is HUGE!    
-    g1. [String Methods](https://docs.python.org/2/library/stdtypes.html#string-methods)    
-    g2. [String Formatting Operations](https://docs.python.org/2/library/stdtypes.html#string-methods)    
-    g3. [Helpful Table of Mutable Sequence Type Operations](https://docs.python.org/2/library/stdtypes.html#mutable-sequence-types)    
-    g4. [Unicode object](https://docs.python.org/2/library/functions.html#unicode)    
+    1. [String Methods](https://docs.python.org/2/library/stdtypes.html#string-methods)    
+    2. [String Formatting Operations](https://docs.python.org/2/library/stdtypes.html#string-methods)    
+    3. [Helpful Table of Mutable Sequence Type Operations](https://docs.python.org/2/library/stdtypes.html#mutable-sequence-types)    
+    4. [Unicode object](https://docs.python.org/2/library/functions.html#unicode)    
   h. File Objects - [Files have a lot of methods available](https://docs.python.org/2/library/stdtypes.html#file-objects)     
   i. [Almost everything else you can imagine](https://docs.python.org/2/library/stdtypes.html#other-built-in-types)    
