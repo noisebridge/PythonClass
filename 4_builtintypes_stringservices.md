@@ -28,5 +28,6 @@ Resources:
     2. [String Formatting Operations](https://docs.python.org/2/library/stdtypes.html#string-methods)    
     3. [Helpful Table of Mutable Sequence Type Operations](https://docs.python.org/2/library/stdtypes.html#mutable-sequence-types)    
     4. [Unicode object](https://docs.python.org/2/library/functions.html#unicode)    
+  
   h. File Objects - [Files have a lot of methods available](https://docs.python.org/2/library/stdtypes.html#file-objects)     
   i. [Almost everything else you can imagine](https://docs.python.org/2/library/stdtypes.html#other-built-in-types)    
