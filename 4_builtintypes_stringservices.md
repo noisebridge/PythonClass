@@ -6,7 +6,6 @@ Course 4 - Built-in Types and String Services
 Resources:
 
 
-[Python Standard Library Chapter 7 - String Services](https://docs.python.org/2/library/strings.html)
 
 1. Built-in types - [Python Standard Library Chapter 5 - Built-in Types](https://docs.python.org/2/library/stdtypes.html)    
   a. What is a type? A container for information in Python. Lets avoid a more strict definition [because the topic is very detailed](http://en.wikipedia.org/wiki/Type_system).    
@@ -31,3 +30,15 @@ Resources:
   
   h. File Objects - [Files have a lot of methods available](https://docs.python.org/2/library/stdtypes.html#file-objects)     
   i. [Almost everything else you can imagine](https://docs.python.org/2/library/stdtypes.html#other-built-in-types)    
+
+
+3. String Services - [Python Standard Library Chapter 7 - String Services](https://docs.python.org/2/library/strings.html)    
+  a. string    
+  b. re    
+  c. struct    
+  d. difflib    
+  e. StringIO/cStringIO - Allows you to see    
+  f. textwrap - text wrapping for the terminal, cool    
+  g. [codecs](https://docs.python.org/2/library/codecs.html)    
+  h. unicodedata - Utility functions for observing and retrieving characters from UnicodeData File Format 5.2.0.     
+  i. stringprep - [RFC 3454](http://tools.ietf.org/html/rfc3454.html) defines a procedure for “preparing” Unicode strings in internet protocols. Before passing strings onto the wire, they are processed with the preparation procedure, after which they have a certain normalized form. The RFC defines a set of tables, which can be combined into profiles.     
