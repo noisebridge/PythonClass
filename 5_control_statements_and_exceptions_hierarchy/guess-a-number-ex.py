@@ -8,20 +8,17 @@ if __name__ == "__main__":
     result = ""
     our_number = 21
 
+    while result != "got it right":
 
-    def test_number(answer):
-
+        answer = raw_input("Choose a number:")
         answer = int(answer)
 
         if answer == our_number:
-            return "got it right"
+            result= "got it right"
         elif answer > our_number:
-            return "nope, lower"
+            result= "nope, lower"
         else:
-            return "nope, higher"
-
-
-    while result != "got it right":
-        result = test_number(raw_input("Choose a number:"))
+            result= "nope, higher"
+        
         print result
 
