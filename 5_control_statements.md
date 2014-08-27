@@ -1,12 +1,12 @@
 Course 5 - Control Statements and Exception Hierarchy
 
-    Resources for Sections:
-    - The excellent python tutorial in the docs! Section 4 - https://docs.python.org/2/tutorial/controlflow.html
-    - Byte of Python: great guide for new programmers / pythonistas alike - http://www.swaroopch.com/notes/python/#op_exp
-    - Jeff Knupp's Blog: top notch thorough explanations on subjects he writes about, wrote idiomatic python
-    - Esther Nam's PyCon 2013 talk: How to Except when you're Excepting
-    - David Beazley's Python Essential Reference: Another comprehensive and nice guide to the language
-    - SO, of course!
+Resources for Sections:    
+- The excellent python tutorial in the docs! Section 4 - https://docs.python.org/2/tutorial/controlflow.html    
+- Byte of Python: great guide for new programmers / pythonistas alike - http://www.swaroopch.com/notes/python/#op_exp    
+- Jeff Knupp's Blog: top notch thorough explanations on subjects he writes about, wrote idiomatic python    
+- Esther Nam's PyCon 2013 talk: How to Except when you're Excepting    
+- David Beazley's Python Essential Reference: Another comprehensive and nice guide to the language    
+- SO, of course!    
 
 Sections:
 
