@@ -191,7 +191,7 @@ print "do we get here?"
 
 
 #Exception hierarchy
-#https://docs.python.org/2/library/exceptions.html
+#https://docs.python.org/2/library/exceptions.html#exception-hierarchy
 
 
 BaseException.__name__

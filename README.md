@@ -45,9 +45,9 @@ The order of the following courses has not yet been determined.
 Please email PyClass@googlegroups.com if you want to know what courses are coming this week!
 
 1. [JSON format, Python Types, and the JSON Module](https://github.com/PyClass/PyClass-lesson-plans/blob/master/1_json_module.md)    
-2. Control Flow, itertools, and Functional Programming    
-3. Built-in Functions    
-4. Built-in Types and String Services    
+2. [Control Flow](https://github.com/PyClass/PyClass-lesson-plans/blob/master/5_control_statements.md)     
+3. [itertools, and Functional Programming](https://github.com/PyClass/PyClass-lesson-plans/blob/master/3_functional_and_control.md)    
+4. [Built-in Types and String Services](https://github.com/PyClass/PyClass-lesson-plans/blob/master/4_builtintypes_stringservices.md)    
 5. Numeric and Mathematical Modules, and Operators    
 6. argparse, ConfigParser, and more - configuring your applications    
 7. pip, virtualenv, packaging, versions, and inspect.    
@@ -55,6 +55,7 @@ Please email PyClass@googlegroups.com if you want to know what courses are comin
 9. Exceptions and Debugging: Exception behavior, custom exceptions, pdb, cProfile, timeit, time, trace.    
 10. os, sys, and io (Caution, here be Python 3, inside the io module)    
 11. (potential for a unittest course)    
+12. Built-in Functions    
 
 
 ###  OS / Environment / Versions
