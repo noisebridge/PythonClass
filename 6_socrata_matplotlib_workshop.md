@@ -1,5 +1,5 @@
 
-matplotlib workshop - retrieving and formatting data for matplotlib and rendering it using some standard plot types
+### matplotlib workshop - retrieving and formatting data for matplotlib and rendering it using some standard plot types
 
 
 1. Socrata, SoQL, and JSON
