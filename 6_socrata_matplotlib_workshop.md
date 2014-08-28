@@ -10,8 +10,8 @@
        - [It could be something else! (shapefile)](https://data.sfgov.org/Economy-and-Community/Percent-of-Population-with-College-Education-or-Mo/4qbm-vfqg)    
 
     b. SODA API(SOcrata Open Data API) JSON and [SoQL queries](http://dev.socrata.com/docs/queries.html)    
-    c. [Requests](): JSON to python data container objects using [python equivalent container and value types]().
-    d. [getsocrata project]()    
+    c. [Requests](): JSON to python data container objects using [python equivalent container and value types]().    
+    d. [getsocrata project](https://github.com/robbintt/getsocrata)    
 
 
 2. matplotlib examples:    
