@@ -1,5 +1,5 @@
 
-
+matplotlib workshop - retrieving and formatting data for matplotlib and rendering it using some standard plot types
 
 
 1. Socrata, SoQL, and JSON
@@ -20,18 +20,17 @@
     b. [Histogram](http://matplotlib.org/users/screenshots.html#histograms)    
     c. [Interfaces - Slider, Button, and Radio Button](http://matplotlib.org/users/screenshots.html#slider-demo)    
     d. [Financial Charts](http://matplotlib.org/users/screenshots.html#financial-charts)    
-    
     e. [Tons of screenshots with source code](http://matplotlib.org/users/screenshots.html)    
     f. [More examples than you can shake a stick at.](http://matplotlib.org/examples/index.html)    
     g. [A gallery of thumbnails to select from.](http://matplotlib.org/gallery.html)    
 
 
 
-3. Building a pipeline: Socrata -> getsocrata -> matplotlib    
-
-    a.
-    b.
-    c.
+3. Building a pipeline: Socrata -> getsocrata -> matplotlib (Workshop Format)    
+    
+    a. Install matplotlib and getsocrata    
+    b. Write a function to get the socrata data into the desired matplotlib format    
+    c. Choose a format for displaying the data and export the results.    
 
 
 
