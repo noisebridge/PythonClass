@@ -45,7 +45,7 @@ The order of the following courses has not yet been determined.
 Please email PyClass@googlegroups.com if you want to know what courses are coming this week!
 
 1. [JSON format, Python Types, and the JSON Module](https://github.com/PyClass/PyClass-lesson-plans/blob/master/1_json_module.md)    
-2. [Control Flow](https://github.com/PyClass/PyClass-lesson-plans/blob/master/5_control_statements.md)     
+2. [Control Flow and Exceptions](https://github.com/PyClass/PyClass-lesson-plans/blob/master/5_control_statements.md)     
 3. [itertools, and Functional Programming](https://github.com/PyClass/PyClass-lesson-plans/blob/master/3_functional_and_control.md)    
 4. [Built-in Types and String Services](https://github.com/PyClass/PyClass-lesson-plans/blob/master/4_builtintypes_stringservices.md)    
 5. Numeric and Mathematical Modules, and Operators    
