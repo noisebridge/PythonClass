@@ -2,7 +2,7 @@ Course 7 - Built-In functions, keywords and idioms
     
     Resources for Sections:     
     -[The Docs!] (https://docs.python.org/2/library/functions.html)    
-    -[Raymond Hettinger]: Anything he talks about but (https://speakerdeck.com/pyconslides/transforming-code-into-beautiful-idiomatic-python-by-raymond-hettinger-1)    
+    -[Raymond Hettinger]: Anything he talks about but [this document](https://speakerdeck.com/pyconslides/transforming-code-into-beautiful-idiomatic-python-by-raymond-hettinger-1)    
     -Jeff Knupp: Writing Idiomatic Python - its a book    
     
     
