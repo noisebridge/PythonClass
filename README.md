@@ -1,7 +1,7 @@
 
 ### PSAs and Events
 
-**PSA 8-19-14:** The [noisebridge wiki](https://noisebridge.net/wiki/PyClass) and [github readme](https://github.com/PyClass/PyClass-lesson-plans) files now have parity to each other.
+**PSA 8-19-14:** The [noisebridge wiki](https://noisebridge.net/wiki/PyClass) and [github readme](https://github.com/PyClass/PyClass-lesson-plans) files have the same information and updates.
 
 **PSA 8-16-14:** The new curriculum for the Noisebridge PyClass is a crash course in the Python standard library, also touching on modules that are popular but not quite part of the standard modules. Scroll down to see the course list.
 
@@ -19,13 +19,13 @@ Sign up for this to hear updates and conversations regarding the course!
 
 ### Class Description, Goals, and Ideal Student
 
-The pace of the courses will be fast, and the materials will be available online 24/7 and we plan to frequently repeat modules that are in high demand with new twists as we iterate over the course materials.
+The pace of the courses will be fast, and the materials will be available online 24/7. We plan to frequently repeat modules with new twists as we iterate over course materials.
 
-A primary goal of the course is to break down the materials into independent units. In other words, if you miss a week then you won't fall behind. Sounds good, right?
+A major PyClass is to break down the courses into independent units. In other words, you won't fall behind if you miss a week. Sounds good, right?
 
-To best experience the course, spend a short time studying the course materials before you come in. If you wish to know this week's courses, please send an email out to PyClass@googlegroups.com
+To best experience the course, spend a short time reviewing the course materials before you come in. If you wish to know this week's courses, please join the mailing list and send an email out to PyClass@googlegroups.com
 
-The ideal student for this course can understand the following code (it's fine to use Google to look up the built in functions, and we use tons of web resources throughout the course materials):
+The ideal student for this course can grasp the following code (feel free to use web resources to look up anything you don't understand):
 
 ```python
 word_frequency_dict = {}
@@ -34,7 +34,7 @@ word = "noisebridge"
 for letter in word:
     times = word_frequency_dict.get(letter, 0)
     times += 1
-    word_frequency_dict.update( {letter : times} )
+    word_frequency_dict[letter] = times
 ```
 
 ### Course List
