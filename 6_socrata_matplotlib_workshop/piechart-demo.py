@@ -30,5 +30,6 @@ plt.pie(sizes, explode=explode, labels=labels, colors=colors,
 # Set aspect ratio to be equal so that pie is drawn as a circle.
 plt.axis('equal')
 
+plt.savefig('image.png')
 plt.show()
 
