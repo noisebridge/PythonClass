@@ -8,3 +8,4 @@ def get_clean_word_ls(text, stop_words=[sw, support_words]):
 
 def get_sortedls_of_wordlengths(text):
     return sorted([len(w) for w in get_clean_word_ls(text)])
+
