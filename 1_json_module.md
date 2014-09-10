@@ -38,7 +38,7 @@ c. Json to Python Standard Translation: https://docs.python.org/2/library/json.h
   b. Quick Detour - The 'with' keyword - specifically for file objects.    
   ```python
     with open('stored_data.json', 'w') as fx: (make sure the file exists!)    
-      json.dump(fx)    
+      json.dump(r.json(), fx)    
   ```
   d. Json load and loads will provide UTF-8 data, u'data', which is OK! Just treat it like a string without the u''    
 
