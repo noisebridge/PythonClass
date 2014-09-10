@@ -21,7 +21,7 @@ Sign up for this to hear updates and conversations regarding the course!
 
 The pace of the courses will be fast, and the materials will be available online 24/7. We plan to frequently repeat modules with new twists as we iterate over course materials.
 
-A major PyClass is to break down the courses into independent units. In other words, you won't fall behind if you miss a week. Sounds good, right?
+A major PyClass goal is to break down the courses into independent units. In other words, you won't fall behind if you miss a week. Sounds good, right?
 
 To best experience the course, spend a short time reviewing the course materials before you come in. If you wish to know this week's courses, please join the mailing list and send an email out to PyClass@googlegroups.com
 
