@@ -1,5 +1,5 @@
     
-[Python Regular Expressions - The 're' module](https://docs.python.org/2/library/re.html)    
+Python Regular Expressions - [The 're' module](https://docs.python.org/2/library/re.html)    
     
     
     
