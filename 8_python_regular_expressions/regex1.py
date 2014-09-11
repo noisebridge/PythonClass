@@ -20,10 +20,12 @@ print
 ###
 
 p = re.compile(regex_example_string)
-p
+print p
 
 pi = re.compile(regex_example_string, re.IGNORECASE)
-pi
+print pi
+
+print
 
 ###
 ### Test Cases
