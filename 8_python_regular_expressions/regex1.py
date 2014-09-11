@@ -78,5 +78,9 @@ print matched.start()
 print matched.end()
 print matched.span()
 
+len(matched.group())
+
 print "The Whole Match:", test_string_1[matched.start():matched.end()]
+print "The Whole Match len:", len(test_string_1[matched.start():matched.end()])
 print
+print pg.groups()
