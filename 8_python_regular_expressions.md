@@ -16,7 +16,7 @@
 
 
 3. Lets do some regular expressions!
-  a. Compiling a string to a regex object using match/search/find/find (regex1.py). [Match vs. Search](https://docs.python.org/2/howto/regex.html#match-versus-search)
+  a. Compiling a string to a regex object using match/search/find/find (regex1.py). [Match vs. Search](https://docs.python.org/2/howto/regex.html#match-versus-search) As a general rule, if you can use search you should. This is for efficiency, so if you don't need efficency, do what you want. According to the docs, the re module is highly optimized.
   b. Viewing the results stored in a match object (regex1.py
   c. [Grouping](https://docs.python.org/2/howto/regex.html#grouping) - Extracting substring matches.
   d. [Module level functions](https://docs.python.org/2/howto/regex.html#module-level-functions) - compilation is not always necessary, some general cases are precompiled.
