@@ -21,7 +21,7 @@ Python Regular Expressions - [The 're' module](https://docs.python.org/2/library
   c. [Grouping](https://docs.python.org/2/howto/regex.html#grouping) - Extracting substring matches.    
   d. [Module level functions](https://docs.python.org/2/howto/regex.html#module-level-functions) - compilation is not always necessary, some general cases are precompiled.    
     
-4. Things you should check out:    
+4. Things you should check out from the 're' module standard library documentation:    
   a. [Simple Patterns](https://docs.python.org/2/howto/regex.html#simple-patterns)    
   b. [Repeating Things](https://docs.python.org/2/howto/regex.html#repeating-things)    
   c. [Compilation Flags](https://docs.python.org/2/howto/regex.html#compilation-flags)    
