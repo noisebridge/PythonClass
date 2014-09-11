@@ -8,7 +8,7 @@ Goal:
 """
 import re
 
-test_set_of_filenames = ['the beatles', 'The Beatles', 'Beatles, The', 'Da Beatels']
+test_set_of_filenames = ['the beatles', 'The Beatles', 'Beatles, The',"Tje Beatjes", 'Da Beatels']
 
 regex_search_str = r'beatles'
 
@@ -42,8 +42,5 @@ for test_filename in test_set_of_filenames:
             break
         
 for res in match_obj_results:
-    print res
-    """
     if res.group != False:
-        print( "Result: %s" % res.group )
-    """
+        print( "Result: %s" % res.string )
