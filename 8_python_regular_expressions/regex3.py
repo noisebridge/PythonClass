@@ -33,5 +33,6 @@ print "And our first group: %s" % matched_group.group(1)
 
 # side note: strings can be nested
 
-
-print matched_group.group(0,1,2,3,4,5,6,7,8,9)
+#https://docs.python.org/2/tutorial/controlflow.html#unpacking-argument-lists
+range_of_group = (0,1,2,3,4,5,6,7,8,9)
+print matched_group.group(*range_of_group)
