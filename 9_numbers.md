@@ -21,3 +21,9 @@
   c. [SciPy API Reference](http://docs.scipy.org/doc/scipy/reference/)    
   d. [NumPy Data Types - dtype](http://docs.scipy.org/doc/numpy/reference/arrays.dtypes.html#data-type-objects-dtype)    
   e. [pandas docs](http://pandas.pydata.org/pandas-docs/stable/)    
+
+
+4. [ndarray - Let's talk business!](http://docs.scipy.org/doc/numpy/reference/arrays.html)    
+  a. From doc: NumPy provides an N-dimensional array type, the ndarray, which describes a collection of “items” of the same type. The items can be indexed using for example N integers.    
+  b. 
+
