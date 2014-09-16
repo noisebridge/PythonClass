@@ -14,8 +14,8 @@
   e. Simple is nice, but to do real math we're going to need some stricter tools from SciPy.    
     
     
-Here are some resources for scientific computing:    
-    
+  Here are some resources for scientific computing:    
+  
 3. [NumPy](http://docs.scipy.org/doc/numpy/reference/arrays.scalars.html) - Part of the [SciPy Stack](http://www.scipy.org/about.html) along with SciPy Library, Matplotlib, pandas, Sympy, ipython console.    
   a. [NumPy Scalars](http://docs.scipy.org/doc/numpy/reference/arrays.scalars.html) - '24 new fundamental Python types to describe different types of scalars'    
   b. [NumPy Reference](http://docs.scipy.org/doc/numpy/reference/)    
