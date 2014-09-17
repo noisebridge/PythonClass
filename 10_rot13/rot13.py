@@ -9,7 +9,7 @@ A sample encryption library using rot13.
 import re
 
 def assign_and_return_positions(alphabet, rotation):
-    """ This is an arbitrary rotation on a 26 character alphabet.
+    """ Build and return a dictionary for substitution. 
 
     """ 
     i = 0
@@ -17,6 +17,8 @@ def assign_and_return_positions(alphabet, rotation):
 
     while i < len(alphabet):
         
+        # The modulus function allows an arbitrary wrap on values
+        # greater than len(alphabet).
         i_plus_rotation = (i + rotation) % len(alphabet)
 
         rotation_dict[alphabet[i]] = alphabet[i_plus_rotation]
@@ -41,7 +43,7 @@ def apply_substitution(subst_dict, cleaned_string):
 
 
 def clean_string(input_string):
-    """ Reduce the input string to a-z.
+    """ Reduce the input string to lowercase letters some punctuation.
     
     This is text munging. See the wikipedia article and python re docs.
     """
