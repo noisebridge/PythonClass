@@ -59,7 +59,7 @@ if __name__ == '__main__':
     
     """
     
-    alphabet = r'abcdefghijklmnopqrstuvwxyz'
+    alphabet = 'abcdefghijklmnopqrstuvwxyz'
     rotation = 13
 
     rotation_dict = assign_and_return_positions(alphabet, rotation)
