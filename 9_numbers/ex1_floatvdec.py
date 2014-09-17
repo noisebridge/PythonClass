@@ -3,8 +3,8 @@
 x = 1.1
 y = 2.2
 
-print("x, %s, %17f") % (type(x), x)
-print("y, %s, %17f") % (type(y), y)
+print("x, %s, %.17f") % (type(x), x)
+print("y, %s, %.17f") % (type(y), y)
 
 #Ok, everything looks good... now add them together to get 3.3
 z = x + y

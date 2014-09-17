@@ -27,3 +27,5 @@
   a. From doc: NumPy provides an N-dimensional array type, the ndarray, which describes a collection of “items” of the same type. The items can be indexed using for example N integers.    
   b. 
 
+
+
