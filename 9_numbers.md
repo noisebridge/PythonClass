@@ -25,7 +25,7 @@
 
 4. A really powerful array in NumPy: [ndarray](http://docs.scipy.org/doc/numpy/reference/arrays.html)    
   a. From doc: NumPy provides an N-dimensional array type, the ndarray, which describes a collection of “items” of the same type. The items can be indexed using for example N integers.    
-  b. 
-
+  b. [Mapping of Array scalars to Python types](http://docs.scipy.org/doc/numpy/reference/arrays.scalars.html#arrays-scalars-built-in) 
+  c. [ndarray reference](http://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray)
 
 
