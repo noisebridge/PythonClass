@@ -1,11 +1,15 @@
+"""
+A sample encryption library using rot13.
 
+"""
 
+# File encoding PEP, see: http://legacy.python.org/dev/peps/pep-0263/
+# -*- coding: utf-8 -*-
 
 import re
 
-
 def assign_and_return_positions(alphabet, rotation):
-    """
+    """ This is an arbitrary rotation on a 26 character alphabet.
 
     """ 
     i = 0
@@ -20,6 +24,7 @@ def assign_and_return_positions(alphabet, rotation):
     
 
     return rotation_dict
+
 
 def apply_substitution(subst_dict, cleaned_string):
     """ Apply a substitution dictionary to a string.
@@ -39,7 +44,6 @@ def clean_string(input_string):
     """ Reduce the input string to a-z.
     
     This is text munging. See the wikipedia article and python re docs.
-
     """
     allowed_chars = r'[^a-z .,;:\-_]'
 
