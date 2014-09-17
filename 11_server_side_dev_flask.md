@@ -7,8 +7,8 @@
 
 
 1. InstallFest!
-    a. fire up a virtualenv and pip install flask
-    b. pointing at git if wanted
+    - fire up a virtualenv and pip install flask
+    - pointing at git if wanted
 
 2. The Bare Minimum of HTTP Request Cycle
      
