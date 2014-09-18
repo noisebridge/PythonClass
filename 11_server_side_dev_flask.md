@@ -7,6 +7,7 @@
 
 
 1. InstallFest!
+
     - fire up a virtualenv and pip install flask
     - pointing at git if wanted
     - flask-wtf, flask-sqlalchemy
@@ -22,6 +23,7 @@
     - quick overview of python web frameworks, WTF?
 
 3. Where do we go to continue learning?
+
     - standards are always changing a bit
     - [Flask Mega-Tutorial: Miguel Grinberg](http://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world)
     - brief overview of moderate flask app
@@ -29,7 +31,9 @@
     - setup proper directory folder
     - __init__.py and run.py getting back to hello.py
     - setup environment ie: two shells
+
 4. Modifications
+
     - no elaborate templates necessary for our purposes
     - where and why to use config.py file
     - how to keep key secret, at least from github
@@ -41,7 +45,6 @@
 - [Flask Mega-Tutorial and O'Reilly Book: Miguel Grinberg](http://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world)
 - [Who uses Flask:  why is that important?](http://flask.pocoo.org/community/poweredby/)
 - Who uses Flask:  additionally - for different reasons: balanced, pinterest, uber, rapid prototyping
-
 - [Important Docs: WTForms](http://wtforms.readthedocs.org/en/latest/index.html)
 - [Important Docs: SQLAlchemy](http://www.sqlalchemy.org/)
 - [All Flask Extensions on PyPI](https://pypi.python.org/pypi?%3Aaction=search&term=wtforms&submit=search)
