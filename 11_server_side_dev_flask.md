@@ -7,14 +7,12 @@
 
 
 1. InstallFest!
-
     - fire up a virtualenv and pip install flask
     - pointing at git if wanted
     - flask-wtf, flask-sqlalchemy
     - pip freeze > requirements.txt 
 
-2. The Bare Minimum of HTTP Request Cycle
-     
+2. The Bare Minimum of HTTP Request Cycle   
     - [Flask home site](http://flask.pocoo.org/)   
     - follow example get it up and running on locals
     - add additional route and custom pycode    
@@ -23,7 +21,6 @@
     - quick overview of python web frameworks, WTF?
 
 3. Where do we go to continue learning?
-
     - standards are always changing a bit
     - [Flask Mega-Tutorial: Miguel Grinberg](http://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world)
     - brief overview of moderate flask app
@@ -33,7 +30,6 @@
     - setup environment ie: two shells
 
 4. Modifications
-
     - no elaborate templates necessary for our purposes
     - where and why to use config.py file
     - how to keep key secret, at least from github
