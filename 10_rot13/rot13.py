@@ -47,7 +47,7 @@ def clean_string(input_string):
     
     This is text munging. See the wikipedia article and python re docs.
     """
-    allowed_chars = r'[^a-z .,;:\-_]'
+    allowed_chars = r'[^a-z .,;:\-_0-9]'
 
     repl_char = '' # delete... will this work with None?
 
@@ -64,7 +64,7 @@ if __name__ == '__main__':
 
     rotation_dict = assign_and_return_positions(alphabet, rotation)
 
-    input_string = "Alphabet Soup; Acceptable Inputs: a-z, comma, period, colon, space, hyphen, underscore, and semicolon. Uppercase letters will be converted to lowercase."
+    input_string = "12345 - Alphabet Soup; Acceptable Inputs: a-z, comma, period, colon, space, hyphen, underscore, and semicolon. Uppercase letters will be converted to lowercase."
 
     cleaned_input = clean_string(input_string.lower())
     
