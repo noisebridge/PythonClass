@@ -9,6 +9,8 @@
 1. InstallFest!
     - fire up a virtualenv and pip install flask
     - pointing at git if wanted
+    - flask-wtf, flask-sqlalchemy
+    - pip freeze > requirements.txt 
 
 2. The Bare Minimum of HTTP Request Cycle
      
@@ -16,7 +18,8 @@
     - follow example get it up and running on locals
     - add additional route and custom pycode    
     - what else might we need?
-    - quick overview of python web frameworks
+    - what is whisky?
+    - quick overview of python web frameworks, WTF?
 
 3. Where do we go to continue learning?
     - standards are always changing a bit
@@ -26,10 +29,24 @@
     - setup proper directory folder
     - __init__.py and run.py getting back to hello.py
     - setup environment ie: two shells
-
+4. Modifications
+    - no elaborate templates necessary for our purposes
+    - where and why to use config.py file
+    - how to keep key secret, at least from github
        
 
 ###Further Resources: 
 - [What is a web framework: Jeff Knupp](http://www.jeffknupp.com/blog/2014/03/03/what-is-a-web-framework/)
 - [What exactly is a web framework: SO](http://stackoverflow.com/questions/3345512/what-exactly-is-a-web-framework#3345751)
 - [Flask Mega-Tutorial and O'Reilly Book: Miguel Grinberg](http://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world)
+- [Who uses Flask:  why is that important?](http://flask.pocoo.org/community/poweredby/)
+- Who uses Flask:  additionally - for different reasons: balanced, pinterest, uber, rapid prototyping
+
+- [Important Docs: WTForms](http://wtforms.readthedocs.org/en/latest/index.html)
+- [Important Docs: SQLAlchemy](http://www.sqlalchemy.org/)
+- [All Flask Extensions on PyPI](https://pypi.python.org/pypi?%3Aaction=search&term=wtforms&submit=search)
+
+
+
+
+
