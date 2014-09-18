@@ -8,9 +8,11 @@
 
 1. InstallFest!
     - fire up a virtualenv and pip install flask
-    - pointing at git if wanted
-    - flask-wtf, flask-sqlalchemy
-    - pip freeze > requirements.txt 
+    - use git if along with this lesson for each step if wanted
+    - in advance: pip install flask-wtf, pip install flask-sqlalchemy
+    - create an easy install helper: pip freeze > requirements.txt 
+    - import flask in the interpreter to make doubly sure everything is correct
+    - installfest Over!!!
 
 2. The Bare Minimum of HTTP Request Cycle   
     - [Flask home site](http://flask.pocoo.org/)   
