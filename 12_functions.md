@@ -2,15 +2,21 @@
 
 1. What exactly is a function?
   a. Options for what a function returns, what is that return statement doing?
-  b. Print, return, or in absence, when do we get the None value. 
+  b. Exercise: demystify the print and return statements when do we get the None value. 
   c. Everyone should write functions that return different possible values
+  d. Functions as first class-citizens?
+    ie: Functions are just like the object type in that they can be assigned to variables, stored in collections or passed as arguments. Yes js, no c++ and java.
+  e. Functions as methods
+  f. Pass-by-value where all the values are references. Some languages pass copies of the objects to functions. Mutable v. immutable
+     - [Knupp says it best](http://www.jeffknupp.com/blog/2012/11/13/is-python-callbyvalue-or-callbyreference-neither/)
+
 
 2. How functions function in your broader programs
   a. Connecting that function with other results
   b. The scope of the variable within that function, using globals and locals or dir() to freeze-frame our environment, contrast with a slightly more functional style
   c. Scoping might include garbage collecting as well
   d. exercise to pass some variables along from func to func
-  e. As an aside may briefly mention lambdas. 
+  e. As an aside may briefly mention lambdas anonymous functions, still syntactic sugar
   f. Could mention how to override functions as well
 
 3. OPF - Other People's Functions: Documentation and Testing
