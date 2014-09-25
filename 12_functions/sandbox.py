@@ -95,3 +95,39 @@ class InanimateCarbonRod(object):
 rod = InanimateCarbonRod("green")
 print rod.get_color()
 
+
+def take_and_add_hella_args(simple_arg, *args):
+    mult_args = args 
+    print(mult_args)
+    #for i in args:
+    #    simple_arg += i
+    #all_args_added = simple_arg + args
+    return mult_args
+
+print take_and_add_hella_args(10, (1,2,3,4,5))
+
+def fprintf(file, fmt, *args): 
+    with open(file, 'w') as fp:
+        fp.write(fmt % args)
+# Use fprintf. args gets (42,"hello world", 3.45) 
+fprintf("out.txt","%d %s %f", 42, "hello world", 3.45)
+
+
+
+def gen_tokens(text):
+    """ str -> gen
+    call split on our text when its a string
+    """
+    with open(text) as fp:
+        fp = fp.read()
+    for word in fp.split():
+        yield word
+    #or (word for word in fp.split() )
+    
+def gen_cleaner_words(text):
+    """ str -> str
+    removes commonly 'attached' punctuation marks such as ',''.''*word*' etc.
+    note that this function does not remove any words from iterable
+    """
+    for i in gen_tokens(text):
+        yield i.translate(None, "!@#$%^&*().,[]+=-_`~<>?:;")
