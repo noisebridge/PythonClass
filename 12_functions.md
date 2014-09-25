@@ -9,29 +9,35 @@
   e. Functions as methods
   f. Pass-by-value where all the values are references. Some languages pass copies of the objects to functions. Mutable v. immutable
      -[Knupp says it best](http://www.jeffknupp.com/blog/2012/11/13/is-python-callbyvalue-or-callbyreference-neither/)
-  g. How to avoid "side-effects"
+  g. How to avoid "side-effects," by simply copying first or are there alternative ways?
 
 
 2. How functions function in your broader programs (20 min)
   a. Connecting that function with other results
   b. The scope of the variable within that function, using globals and locals or dir() to freeze-frame our environment, contrast with a slightly more functional style
   c. Scoping might include garbage collecting as well
-  d. Exercise to pass some variables along from func to func
+  d. Exercise to look at script and see what is in scope, get
   e. As an aside may briefly mention lambdas anonymous functions, still syntactic sugar
   f. Could mention how to override functions as well
 
 
-
-3. OPF - Other People's Functions: Documentation and Testing
+3. OPF - Other People's Functions: Documentation and Testing (20 min)
   a. [Reading the Docs using learned conventions](https://docs.python.org/2/library/string.html#string-formatting) - search for nesting arguments and more complex examples after reading format API
   b. Why and how to document and ingenius function
   c. Most basic ways of testing your functions
   d. Ways of writing your functions accordingly
 
 
-4. More advanced stuff worth digging into or dataset?
+4. More advanced stuff worth digging into or dataset? (?)
   a. Functions as objects and closures
   b. Peer into functools library
   c. Brief decorator and use case
   d. Generators and yield
   e. Didn't know about concept of function attributes and that they are stored in the __dict__ attribute
+
+
+5. Dojo - (~)
+  a. Use Cases that come to mind
+  b. Project Euler's Fib - using recursion
+    -[proj eu](https://projecteuler.net/problem=1) 
+  c. Refactor Rot13 function
