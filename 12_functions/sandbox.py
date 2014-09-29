@@ -10,22 +10,7 @@ print(type(func))
 type(func)
 
 
-"""
-#function attributes, really not necessary until advanced and highly specialized use case arises
-def foo():
-    pass
 
-foo.attr1 = 1
-foo.attr2 = 2
-
-print(globals())
-print(locals())
-
-print(dir())
-print(dir(foo))
-#If a function does not have a return keyword, it will send a None value.
-#know what functionality the interactive interpreter is giving you here 
-"""
 def outer():
     def inner1():
         return 1
@@ -112,6 +97,12 @@ def fprintf(file, fmt, *args):
 # Use fprintf. args gets (42,"hello world", 3.45) 
 fprintf("out.txt","%d %s %f", 42, "hello world", 3.45)
 
+def fprintf(file, fmt, **kwargs): 
+    with open(file, 'w') as fp:
+        fp.write(fmt % args)
+# Use fprintf. args gets (42,"hello world", 3.45) 
+fprintf("out.txt","%d %s %f", num=42, greeting="hello world", almost_pi=3.45)
+
 
 
 def gen_tokens(text):
@@ -131,3 +122,33 @@ def gen_cleaner_words(text):
     """
     for i in gen_tokens(text):
         yield i.translate(None, "!@#$%^&*().,[]+=-_`~<>?:;")
+
+#unittest syntax
+
+import unittest
+
+class SimplisticTest(unittest.TestCase):
+
+    def test(self):
+        self.failUnless(True)
+
+if __name__ == '__main__':
+    unittest.main()
+
+
+"""
+#function attributes, really not necessary until advanced and highly specialized use case arises
+def foo():
+    pass
+
+foo.attr1 = 1
+foo.attr2 = 2
+
+print(globals())
+print(locals())
+
+print(dir())
+print(dir(foo))
+#If a function does not have a return keyword, it will send a None value.
+#know what functionality the interactive interpreter is giving you here 
+"""
