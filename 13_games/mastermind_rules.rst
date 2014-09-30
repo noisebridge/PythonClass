@@ -33,3 +33,6 @@ Guess #5 -- enter your guess: ropy
 Guess #6 -- enter your guess: ropg
 2 black 2 white
 Guess #7 -- enter your guess: rogp
+
+
+https://www.youtube.com/watch?v=PeAO2jnegBc - 1 min video explanation
