@@ -41,5 +41,5 @@ def play_mm():
         if blackPegs == 4: #we need to take care of the win condition and check it on each turn if the player wins!
             return 'You cracked the code!' #exit from out for loop
 
-        return "You didn't guess my code in ten turns. Sorry--YOU LOST! \nThe code was: {}".format(colorCode)
+    return "You didn't guess my code in ten turns. Sorry--YOU LOST! \nThe code was: {}".format(colorCode)
 play_mm()
