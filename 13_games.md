@@ -8,7 +8,8 @@
 2. How to model this game in python code using stdout: create outline (15 min)    
     a. Discussion of data structures, built-in functions and tricky parts of algorithm           
     b. How explicit or graphical do we need to be, can we be?    
-    c. Division of code blocks    
+    c. Division of code blocks   
+    d. Global variables, classes, various design desicions and/or revisions     
 
 3. Get bildin' (80 min)    
     a. In teams or in groups  
@@ -18,3 +19,7 @@
     b. Manually testing by playing, can we write unit tests or mock to cover edge cases though?    
     c. Converting stdout based game into browser based game    
     d. Designing counter algorithm to beat generated code every time    
+
+5. Alt Exercises    
+    a. Add win function to tic_tac_toe.py      
+    b. Recreate tic_tac_toe.py    
