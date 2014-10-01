@@ -35,9 +35,9 @@ def play_mm():
     #with a return statement that prints a winning remark
         #below we give the user a thorough explanation of the rules to make an 
         #accurate guess on each turn
-        guess = raw_input("I've got a code of length 4 \n \
-                            Each color is represented by a letter r-y-b-g-o-p \n \
-                            Guess #{} -- enter four of these letters as your guess: " \
+        guess = raw_input("""I've got a code of length 4 \n \
+Each color is represented by a letter r-y-b-g-o-p \n \
+Guess #{} -- enter four of these letters as your guess: """ \
                             .format(currentGuessNumber)) 
         listCode = list(colorCode) 
         #we will use a list data structure to compare our guesses and code
@@ -64,6 +64,7 @@ def play_mm():
         #the user can make an educated guess of what the next guess should be
         print('\nAlright! You got {0} black pegs {1} white pegs on guess #{2}\n' \
             .format(blackPegs, whitePegs, currentGuessNumber))
+        print "================="
 
         if blackPegs == 4: 
         #we need to take care of the win condition and check it 
