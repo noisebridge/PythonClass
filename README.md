@@ -37,16 +37,16 @@ for letter in word:
     word_frequency_dict[letter] = times
 ```
 
-Also, if you are learning very basic python and want to get a tour of the language here are some excellent resources:
-[Learn Python the Hardway](http://learnpythonthehardway.org/) - great guide for total beginner
-[Byte of Python](http://www.swaroopch.com/notes/python/) - nice guide for total beginner and new to python
-[Excellent Official Python Tutorial - 2.7.8](https://docs.python.org/2/tutorial/) - great for new to python
-[Learning Python 5th edition (also at sf lib)](http://shop.oreilly.com/product/0636920028154.do) - A comprehensive guide to the language and its uses
-[Python Module of the Week](http://pymotw.com/2/) - Learning the standard library by example
-[The docs themselves! 2.x for this class](https://www.python.org/doc/) - Of course! Learn to reference what is in the standard library and how to use it
+Also, if you are learning very basic python and want to get a tour of the language here are some excellent resources:    
+-[Learn Python the Hardway](http://learnpythonthehardway.org/) - great guide for total beginner    
+-[Byte of Python](http://www.swaroopch.com/notes/python/) - nice guide for total beginner and new to python    
+-[Excellent Official Python Tutorial - 2.7.8](https://docs.python.org/2/tutorial/) - great for new to python    
+-[Learning Python 5th edition (also at sf lib)](http://shop.oreilly.com/product/0636920028154.do) - A comprehensive guide to the language and its uses    
+-[Python Module of the Week](http://pymotw.com/2/) - Learning the standard library by example    
+-[The docs themselves! 2.x for this class](https://www.python.org/doc/) - Of course! Learn to reference what is in the standard library and how to use it    
 
 There are many, many good resources for learning the language of Python and how to do awesome things with it.
-These are just a few
+Those listed above are just a few    
 
 ### Course List
 
