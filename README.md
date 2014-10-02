@@ -68,7 +68,7 @@ Please email PyClass@googlegroups.com if you want to know what courses are comin
 11.
 12.
 13.
-14. Unit Testing - Exploring assert and python's builtin unittest module.
+14. [Unit Testing](https://github.com/PyClass/PyClass-lesson-plans/blob/master/14_unittest.md) - Exploring assert and python's builtin unittest module.
 
 
 
