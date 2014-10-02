@@ -59,6 +59,23 @@ Please email PyClass@googlegroups.com if you want to know what courses are comin
 2. [Control Flow and Exceptions](https://github.com/PyClass/PyClass-lesson-plans/blob/master/5_control_statements.md)     
 3. [itertools, and Functional Programming](https://github.com/PyClass/PyClass-lesson-plans/blob/master/3_functional_and_control.md)    
 4. [Built-in Types and String Services](https://github.com/PyClass/PyClass-lesson-plans/blob/master/4_builtintypes_stringservices.md)    
+5. 
+6. 
+7. 
+8. 
+9. 
+10.
+11.
+12.
+13.
+14. Unit Testing - Exploring assert and python's builtin unittest module.
+
+
+
+
+
+
+
 5. Numeric and Mathematical Modules, and Operators    
 6. argparse, ConfigParser, and more - configuring your applications    
 7. pip, virtualenv, packaging, versions, and inspect.    
