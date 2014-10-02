@@ -1,10 +1,24 @@
+
+
 import random
 import unittest
 
+
+# This is a child (inheritance) of the TestCase class in unittest module.
 class TestSequenceFunctions(unittest.TestCase):
 
     def setUp(self):
+        # seq = (0..9)
         self.seq = range(10)
+        self.cat = 4
+        self.mouse = 2
+        
+        self.cats = []
+        for factor in range(10):
+            self.cats.append(factor*self.mouse)
+
+    def robots_are_awesome(self):
+        self.assertEqual("robots", "robots")
 
     def test_shuffle(self):
         # make sure the shuffled sequence does not lose any elements
@@ -25,5 +39,15 @@ class TestSequenceFunctions(unittest.TestCase):
         for element in random.sample(self.seq, 5):
             self.assertTrue(element in self.seq)
 
-if __name__ == '__main__':
-    unittest.main()
+    def test_cat_eq_mouseplusmouse(self):
+        self.assertEqual(self.cat, self.mouse+self.mouse)
+
+    def test_cats_factorof_mouse(self):
+        for poss_cat in self.cats:
+            self.assertEqual(poss_cat % self.mouse, 0)
+
+if __name__ == "__main__":
+    suite = unittest.TestLoader().loadTestsFromTestCase(TestSequenceFunctions)
+    unittest.TextTestRunner(verbosity=2).run(suite)
+
+
