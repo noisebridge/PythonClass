@@ -28,13 +28,13 @@ To best experience the course, spend a short time reviewing the course materials
 The ideal student for this course can grasp the following code (feel free to use web resources to look up anything you don't understand):
 
 ```python
-word_frequency_dict = {}
+letter_frequency_dict = {}
 word = "noisebridge"
  
 for letter in word:
-    times = word_frequency_dict.get(letter, 0)
+    times = letter_frequency_dict.get(letter, 0)
     times += 1
-    word_frequency_dict[letter] = times
+    letter_frequency_dict[letter] = times
 ```
 
 If you are new to python or programming in general here are some excellent resources:    
