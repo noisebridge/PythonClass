@@ -1,13 +1,14 @@
     
     
 1. Unit Testing - What is it?    
+
     a. Wikipedia - [Unit Testing](http://en.wikipedia.org/wiki/Unit_testing)    
     b. Python unittest builtin module - no setup required, just 'import unittest'    
     c. The paradigm: red, green, refactor.    
         i.   red - make a test, but don't write the code. The test obviously fails.    
         ii.  green - write the minimum code to pass the test. Verify the test passes.    
-        iii. refactor - clean up the code. Follow: [PEP8](http://legacy.python.org/dev/peps/pep-0008/#maximum-line-length), [DRY](http://en.wikipedia.org/wiki/Don't_repeat_yourself), rule of three][http://en.wikipedia.org/wiki/Rule_of_three_[computer_programming]), etc.    
-    d. How do we build a good test? That isn't a topic for today, but here are some ideas:    
+        iii. refactor - clean up the code. Follow: [PEP8](http://legacy.python.org/dev/peps/pep-0008/#maximum-line-length), [DRY](http://en.wikipedia.org/wiki/Don't_repeat_yourself), [rule of three](http://en.wikipedia.org/wiki/Rule_of_three_(computer_programming)), etc.    
+    d. How do we build a good test? That is too large a topic for today, but here are some ideas:    
         i.   break your code into testable subproblems.    
         ii.  too simple is bad, avoid testing builtins and standard library functions.    
         iii. build the test before any code is written, this is "Test DRIVEN Development"    
