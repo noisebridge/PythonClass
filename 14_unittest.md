@@ -34,12 +34,12 @@
     
     
 3. Now that we understand the parts we need, let's use a more robust and WELL TESTED framework.    
-    1. Python 'unittest' builtin module.    
+    1. Python [unittest](https://docs.python.org/2/library/unittest.html) builtin module.    
         -  This framework uses classes.    
         -  Don't get lost in the weeds on the classes.
         -  The module provides a special suite of [Asserts](https://docs.python.org/2.7/library/unittest.html#assert-methods). They are very readable.    
     2. unittest howto - the example 1 from the python documentation is copied into this repository:    
-        -  unittest.TestCase is the parent class for our class. Inherit from this.    
+        -  [unittest.TestCase](https://docs.python.org/2.7/library/unittest.html#unittest.TestCase) is the parent class for our class. Inherit from this.    
         -  setUp() function contains the components your unit test needs to access.    
         -  tearDown() takes anything down like tcp connections, database connections, etc.    
         -  Individual tests are methods of unittest.TestCase. Begin with test_ and name them well.    
