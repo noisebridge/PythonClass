@@ -1,11 +1,15 @@
 
 ### PSAs and Events
 
+**PSA 10-1-14:** Classes start at 7 sharp. It's alright to be late, but we want to make sure to finish up by nine so people can hack or catch their preferred train home.
+
 **PSA 8-19-14:** The [noisebridge wiki](https://noisebridge.net/wiki/PyClass) and [github readme](https://github.com/PyClass/PyClass-lesson-plans) files have the same information and updates.
 
 **PSA 8-16-14:** The new curriculum for the Noisebridge PyClass is a crash course in the Python standard library, also touching on modules that are popular but not quite part of the standard modules. Scroll down to see the course list.
 
 ### Scheduled Weekly Meeting Times
+
+We set up the space at 6:45 PM - try to arrive early to help if you are able to.
 
 * Tuesday 7:00 - 9:00 PM PST - 'Turing' Classroom
 * Wednesday 7:00 - 9:00 PM PST - 'Church' Classroom
