@@ -1,7 +1,7 @@
 
 ### PSAs and Events
 
-**PSA 10-1-14:** Classes start at 7 sharp. It's alright to be late, but we want to make sure to finish up by nine so people can hack or catch their preferred train home.
+**PSA 10-1-14:** Classes start at 7 sharp. We want to finish up by nine so people can hack or catch their preferred train home.
 
 **PSA 8-19-14:** The [noisebridge wiki](https://noisebridge.net/wiki/PyClass) and [github readme](https://github.com/PyClass/PyClass-lesson-plans) files have the same information and updates.
 
