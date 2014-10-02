@@ -23,7 +23,7 @@
         -  Simple math is best, we just want to get enough tests to see implementation patterns.    
     3. Now lets generalize. 4 things change in each test.    
         -  test name - although you could have different text for fail/success    
-        -  type of assert - we use only == to keep things simple    
+        -  assert statement simply takes True/False (or a list of True/False) - we use only == to keep things simple    
         -  left side of assert statement    
         -  right side of assert statement    
     4. Parts of our testing framework:    
@@ -36,7 +36,8 @@
 3. Now that we understand the parts we need, let's use a more robust and WELL TESTED framework.    
     1. Python 'unittest' builtin module.    
         -  This framework uses classes.    
-        -  Don't get lost in the weeds on the classes.    
+        -  Don't get lost in the weeds on the classes.
+        -  The module provides a special suite of [Asserts](https://docs.python.org/2.7/library/unittest.html#assert-methods). They are very readable.    
     2. unittest howto - the example 1 from the python documentation is copied into this repository:    
         -  unittest.TestCase is the parent class for our class. Inherit from this.    
         -  setUp() function contains the components your unit test needs to access.    
