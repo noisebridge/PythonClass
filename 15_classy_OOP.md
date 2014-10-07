@@ -28,14 +28,11 @@
 
  
 
-####Additional Resources: yes, these are free as in beer as well 
+Additional Resources: yes, these are free as in beer as well 
 
 
-
-[Python Standard Library Chapter 3 - Data Model](https://docs.python.org/2/reference/datamodel.html)     
-    
+[Python Standard Library Chapter 3 - Data Model](https://docs.python.org/2/reference/datamodel.html)        
 [Allen Downey: Think Python](http://www.greenteapress.com/thinkpython/thinkpython.html)    
-
-[Zed Shaw: LPTHW](http://learnpythonthehardway.org/book/)    
-    -Zed says: classes are much like modules     
+[Zed Shaw: LPTHW](http://learnpythonthehardway.org/book/)  
+    -classes are much like modules     
     -self is so the interpreter distinguish a class attribute from a local namespace
