@@ -24,6 +24,32 @@ class Pillow(object):
 
 
     def __str__(self):
+        #the str method is what is called when the print()
+        #function is invoked on an object
         #note that reversing two methods would recurse
         return "this is an override: {}".format(self.__repr__())
+
+    def __eq__(self, other):
+        return self.stuffing_capacity == other
+
+    def __le__(self, other):
+        return self.stuffing_capacity <= other
+
+    def __ge__(self, other):
+        return self.stuffing_capacity >= other
+
+    def __gt__(self, other):
+        return self.stuffing_capacity > other
+
+    def __lt__(self, other):
+        return self.stuffing_capacity < other
+
+    def __ne__(self, other):
+        return self.stuffing_capacity != other
+
+a = Pillow()
+print a >= 5
+
+
+print(a)
 
