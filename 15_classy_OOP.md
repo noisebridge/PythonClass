@@ -7,12 +7,12 @@
     b. Classes we've already been using    
     c. Quick peak into object hierarchy, inspect object    
     d. Redefining or re-implementing int class    
-    e. '__init__' constructor / factory, the pesky 'self'
-    f. Could we re-implement a container class such as a list? 
-    g. [What are these '__dunder__' or magic methods?](http://www.rafekettler.com/magicmethods.html) 
-    h. Operator overloading when defining classes      
-    i. Is-a / Has-a verbage to describe object hierarchy
-    j. Disambiguation of terms: attributes, properties, methods, etc.    
+    e. '__init__' constructor / factory, the pesky 'self'    
+    f. Could we re-implement a container class such as a list?     
+    g. [What are these '__dunder__' or magic methods?](http://www.rafekettler.com/magicmethods.html)     
+    h. Operator overloading when defining classes          
+    i. Is-a / Has-a verbage to describe object hierarchy    
+    j. Disambiguation of terms: attributes, properties, methods, etc.        
 
 2. Modeling the real world - what can we code up into our digital picnic basket? (45 min)    
     a. Why define a new class as opposed to assigning to a name of existing class?    
