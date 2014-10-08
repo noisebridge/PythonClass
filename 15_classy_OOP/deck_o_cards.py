@@ -44,7 +44,7 @@ class Card(object):
     def __ne__(self, other):
         return self.cmp(other) != 0
 
-class Deck:
+class Deck(object):
 
     def __init__(self):
         self.cards = []
