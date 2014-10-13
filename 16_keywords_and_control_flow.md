@@ -6,15 +6,8 @@ An Introduction to Keywords and Control Flow
 1. What are keywords?
 
     1. [Keywords](http://en.wikipedia.org/wiki/Reserved_word) are "reserved" by Python for a special use.
-        - I have separated Python keywords into three major categories: Control Flow, Comparison, and Specialized.
-        - Specialized is further broken down into Classes, Functions, Modules, User Feedback, and Global Effects.
-        - Please take these with a grain of salt! This is purely my method of reasoning.
-        - Find the code I 
-
-
-
-
-
+        - Python keywords are found in the keyword module (>>>print keyword.kwlist):
+        - How important is control flow to Python? Pretty important! My breakdown (take w/ grain of salt):
 ```Python
 $ python kw-control.py
 There are three categories of keywords:
@@ -29,3 +22,7 @@ Classes: ['class']
 Functions ['def', 'return', 'yield', 'lambda']
 Module level: ['import', 'from', 'exec']
 ```
+        - The code for this is in the folder for this lesson. Source is keyword module.
+
+
+
