@@ -1,13 +1,25 @@
 
-An Introduction to Keywords and Control Flow
+Keywords, Structured Programming, and Control Flow
+
+
+1. [Structured Programming](http://en.wikipedia.org/wiki/Structured_programming)
+    
+    1. Two base paradigms for programming - [non-structured programming](http://en.wikipedia.org/wiki/Non-structured_programming) and [structured programming](http://en.wikipedia.org/wiki/Structured_programming).
+        - Most modern languages are structured.
+        - Some non-structured examples I googled: COBOL, Assembly, MUMPS, Basic.
+        - Wikipedia claim: Biggest difference is that structured languages disallow the 'goto' statement, which 'jumps' to another place in the code.
+        - Structured language introduces keywords like if/then/else(conditional branch) or for/while/with(also conditional branch!).
+        - We can see then that Python is a 'structured language'.
+        - [Control flow](http://en.wikipedia.org/wiki/Control_flow#Control_structures_in_practice) governs how a language flows through its individual structures.
 
 
 
-1. What are keywords?
+2. So what are keywords?
 
     1. [Keywords](http://en.wikipedia.org/wiki/Reserved_word) are "reserved" by Python for a special use.
         - Python keywords are found in the keyword module (>>>print keyword.kwlist):
         - How important is control flow to Python? Pretty important! My breakdown (take w/ grain of salt):
+        - (The code for this is in the folder for this lesson. Source is keyword module.)
 ```Python
 $ python kw-control.py
 There are three categories of keywords:
@@ -22,7 +34,11 @@ Classes: ['class']
 Functions ['def', 'return', 'yield', 'lambda']
 Module level: ['import', 'from', 'exec']
 ```
-        - The code for this is in the folder for this lesson. Source is keyword module.
 
+# THIS NEEDS TO BE DONE
+3. So now we know all the keywords, lets do some examples.
 
+    1. if/then/else
+    2. for
+    3. 
 
