@@ -21,13 +21,16 @@ Keywords, Structured Programming, and Control Flow
         - How important is control flow to Python? Pretty important! My breakdown (take w/ grain of salt):
         - (The code for this is in the folder for this lesson. Source is keyword module.)
 ```Python
-$ python kw-control.py 
+$ python kw-control.py
 There are 31 keywords: ['and', 'as', 'assert', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'exec', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'not', 'or', 'pass', 'print', 'raise', 'return', 'try', 'while', 'with', 'yield']
 
 Lets break them into 3 categories:
-Control Flow keywords: ['if', 'elif', 'else', 'while', 'for', 'pass', 'break', 'continue', 'raise', 'try', 'except', 'finally', 'with', 'as']
-Comparison Keywords ['and', 'in', 'is', 'not', 'or']
-Specialized Keywords: ['del', 'assert', 'class', 'def', 'return', 'yield', 'lambda', 'exec', 'import', 'from', 'global', 'print']
+
+14 Control Flow keywords: ['if', 'elif', 'else', 'while', 'for', 'pass', 'break', 'continue', 'raise', 'try', 'except', 'finally', 'with', 'as']
+
+5 Comparison Keywords: ['and', 'in', 'is', 'not', 'or']
+
+12 Specialized Keywords: ['del', 'assert', 'class', 'def', 'return', 'yield', 'lambda', 'exec', 'import', 'from', 'global', 'print']
 
 Inside Specialized Keywords:
 Namespace: ['del', 'global', 'exec']
@@ -37,13 +40,8 @@ Classes: ['class']
 Functions ['def', 'return', 'yield', 'lambda']
 ```
 
-3. So now we know all the keywords, lets make up some examples for the future. Here are some idefor our examples:
-
-    (lets use our alphabet list from the README.md example along with some list methods)
-
-    1. if/elif/else (pass)
-    2. for / (continue) / (break)
-    3. while / (break) / (finally)
-    4. try / except (raise) / (finally)
-    5. with / as
-
+3. This gives us a really top-down view of keywords in Python.
+    1. One really obvious result: control flow + comparison = 19/31 keywords.
+    2. In other words, over half the keywords are dedicated to control flow, and the other half are very sparse and independent of each other.
+    3. Control flow must be REALLY SUPER IMPORTANT to have this large a share of the parser.        4. FYI: Python Environment ~= dir(__builtins__) + [tokens](https://docs.python.org/2/reference/lexical_analysis.html#)
+    5. Lets go through the examples in the folder for control (while/for/if etc.)

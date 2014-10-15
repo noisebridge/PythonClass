@@ -20,12 +20,13 @@ for word in not_control_flow_keywords:
 print "There are %s keywords: %s" % (len(keywords), keywords)
 print
 print "Lets break them into 3 categories:"
+print
 
-print "Control Flow keywords:", control_flow_keywords
-
-print "Comparison Keywords", comparison_keywords
-
-print "Specialized Keywords:", special_keywords
+print "%s Control Flow keywords: %s" % (len(control_flow_keywords), control_flow_keywords)
+print
+print "%s Comparison Keywords: %s" % (len(comparison_keywords), comparison_keywords)
+print
+print "%s Specialized Keywords: %s" % (len(special_keywords), special_keywords)
 
 print
 print "Inside Specialized Keywords:"
