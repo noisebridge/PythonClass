@@ -2,7 +2,7 @@ import keyword
 
 keywords = keyword.kwlist
 
-control_flow_keywords = ['while', 'if', 'elif', 'raise', 'for', 'break', 'continue', 'else', 'pass', 'try', 'except', 'finally', 'with', 'as']
+control_flow_keywords = ['if', 'elif', 'else', 'while', 'for', 'pass', 'break', 'continue', 'raise', 'try', 'except', 'finally', 'with', 'as']
 
 special_keywords = ['del', 'assert', 'class', 'def', 'return', 'yield', 'lambda', 'exec', 'import', 'from', 'global', 'print']
 
@@ -14,12 +14,12 @@ for word in keywords:
 comparison_keywords = []
 for word in not_control_flow_keywords:
     if word not in special_keywords:
+        # Truly the remainder after removing control flow and 'special'
         comparison_keywords.append(word)
 
-print "All the keywords:", keywords
-print "There are %s total keywords." % len(keywords)
-
-print "There are three categories of keywords:"
+print "There are %s keywords: %s" % (len(keywords), keywords)
+print
+print "Lets break them into 3 categories:"
 
 print "Control Flow keywords:", control_flow_keywords
 
@@ -29,9 +29,9 @@ print "Specialized Keywords:", special_keywords
 
 print
 print "Inside Specialized Keywords:"
-print "Global level:", ['del', 'global']
+print "Namespace:", ['del', 'global', 'exec']
+print "Import:", ['import', 'from']
 print "User Feedback:", ['assert','print']
 print "Classes:", ['class']
 print "Functions", ['def', 'return', 'yield', 'lambda']
-print "Module level:", ['import', 'from', 'exec']
 print 

@@ -21,18 +21,20 @@ Keywords, Structured Programming, and Control Flow
         - How important is control flow to Python? Pretty important! My breakdown (take w/ grain of salt):
         - (The code for this is in the folder for this lesson. Source is keyword module.)
 ```Python
-$ python kw-control.py
-There are three categories of keywords:
-Control Flow keywords: ['while', 'if', 'elif', 'raise', 'for', 'break', 'continue', 'else', 'pass', 'try', 'except', 'finally', 'with', 'as']
+$ python kw-control.py 
+There are 31 keywords: ['and', 'as', 'assert', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'exec', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'not', 'or', 'pass', 'print', 'raise', 'return', 'try', 'while', 'with', 'yield']
+
+Lets break them into 3 categories:
+Control Flow keywords: ['if', 'elif', 'else', 'while', 'for', 'pass', 'break', 'continue', 'raise', 'try', 'except', 'finally', 'with', 'as']
 Comparison Keywords ['and', 'in', 'is', 'not', 'or']
 Specialized Keywords: ['del', 'assert', 'class', 'def', 'return', 'yield', 'lambda', 'exec', 'import', 'from', 'global', 'print']
 
 Inside Specialized Keywords:
-Global level: ['del', 'global']
+Namespace: ['del', 'global', 'exec']
+Import: ['import', 'from']
 User Feedback: ['assert', 'print']
 Classes: ['class']
 Functions ['def', 'return', 'yield', 'lambda']
-Module level: ['import', 'from', 'exec']
 ```
 
 3. So now we know all the keywords, lets make up some examples for the future. Here are some idefor our examples:
