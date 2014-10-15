@@ -35,10 +35,13 @@ Functions ['def', 'return', 'yield', 'lambda']
 Module level: ['import', 'from', 'exec']
 ```
 
-# THIS NEEDS TO BE DONE
-3. So now we know all the keywords, lets do some examples.
+3. So now we know all the keywords, lets make up some examples for the future. Here are some idefor our examples:
 
-    1. if/then/else
-    2. for
-    3. 
+    (lets use our alphabet list from the README.md example along with some list methods)
+
+    1. if/elif/else (pass)
+    2. for / (continue) / (break)
+    3. while / (break) / (finally)
+    4. try / except (raise) / (finally)
+    5. with / as
 
