@@ -16,6 +16,8 @@ for word in not_control_flow_keywords:
     if word not in special_keywords:
         comparison_keywords.append(word)
 
+print "All the keywords:", keywords
+print "There are %s total keywords." % len(keywords)
 
 print "There are three categories of keywords:"
 
