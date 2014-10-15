@@ -20,6 +20,7 @@ Keywords, Structured Programming, and Control Flow
         - Python keywords are found in the keyword module (>>>print keyword.kwlist):
         - How important is control flow to Python? Pretty important! My breakdown (take w/ grain of salt):
         - (The code for this is in the folder for this lesson. Source is keyword module.)
+
 ```Python
 $ python kw-control.py
 There are 31 keywords: ['and', 'as', 'assert', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'exec', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'not', 'or', 'pass', 'print', 'raise', 'return', 'try', 'while', 'with', 'yield']
