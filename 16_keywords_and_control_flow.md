@@ -44,5 +44,5 @@ Functions ['def', 'return', 'yield', 'lambda']
     1. One really obvious result: control flow + comparison = 19/31 keywords.
     2. In other words, over half the keywords are dedicated to control flow, and the other half are very sparse and independent of each other.
     3. Control flow must be REALLY SUPER IMPORTANT to have this large a share of the parser.    
-    4. FYI: Python Builtin Environment ~~ dir(__builtins__) + [tokens](https://docs.python.org/2/reference/lexical_analysis.html#)
+    4. FYI: Python Builtin Environment ~~ dir(__builtins__) + [tokens](https://docs.python.org/2/reference/lexical_analysis.html#other-tokens)
     5. Lets go through the examples in the folder for control (while/for/if etc.)
