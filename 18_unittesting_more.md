@@ -32,7 +32,10 @@
     b. what is nose and how to use     
         -Nose’s tagline is "nose extends unittest to make testing easier"    
         -what is the nose api?    
-    c. py.test    
+    c. py.test 
+
+Additional Resources:    
+[good free blogs and short book for cheap](http://pythontesting.net/)  
 
 (unnecessary stuff to del)
 -package level fixtures
