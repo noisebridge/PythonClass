@@ -1,7 +1,4 @@
 
-Hanlon's Razor - Noisebridge Discussion Boards
-
-
 
 Course 1 - An introduction to the JSON Module in Python
 
