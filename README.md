@@ -82,17 +82,6 @@ Please email PyClass@googlegroups.com if you want to know what courses are comin
 
 
 
-
-5. Numeric and Mathematical Modules, and Operators    
-6. argparse, ConfigParser, and more - configuring your applications    
-7. pip, virtualenv, packaging, versions, and inspect.    
-8. Logging your applications: logging, logging.config, logging.handlers    
-9. Exceptions and Debugging: Exception behavior, custom exceptions, pdb, cProfile, timeit, time, trace.    
-10. os, sys, and io (Caution, here be Python 3, inside the io module)    
-11. (potential for a unittest course)    
-12. Built-in Functions    
-
-
 ###  OS / Environment / Versions
 
 This section is under development.
@@ -123,6 +112,17 @@ Another critical tool is git:
 ###For Lesson Planners:
 
 ####Some Modules to include
+
+
+5. Numeric and Mathematical Modules, and Operators    
+6. argparse, ConfigParser, and more - configuring your applications    
+7. pip, virtualenv, packaging, versions, and inspect.    
+8. Logging your applications: logging, logging.config, logging.handlers    
+9. Exceptions and Debugging: Exception behavior, custom exceptions, pdb, cProfile, timeit, time, trace.    
+10. os, sys, and io (Caution, here be Python 3, inside the io module)    
+11. (potential for a unittest course)    
+12. Built-in Functions    
+
 
 * Control Structures, itertools - Teddy    
 * requests    
