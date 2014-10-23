@@ -1,10 +1,11 @@
 ####Meaningful Unittesting and TDD
 
-1. Why Even Write Tests (My code works fine)  
+1. Why Even Write Tests (My code works fine)    
+    [docs!](https://docs.python.org/2.7/library/unittest.html)    
 
 
 2. Review of how to use assert and unittest framework    
-    a. example (polygons, angles, words)   
+    a. boilerplate examples, [pymotw](http://pymotw.com/2/unittest/)      
     b. checking in on terminology: test fixture, test case, test runner, test suite    
     c. special methods that we get 'for free'    -from nose.tools import assert_equals
     d. should we test individual classes and methods?             
