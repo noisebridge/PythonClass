@@ -1,6 +1,8 @@
 """
 DRY - "Don't Repeat Yourself"
 
+Lets implement the polygon algorithms here: http://www.mathsisfun.com/geometry/interior-angles-polygons.html
+
 1+1=2
 1+2=3
 1+3=4
