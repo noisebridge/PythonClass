@@ -3,30 +3,32 @@
 1. Why Even Write Tests (My code works fine)    
 
 2. Review of how to use assert and unittest framework    
-    a. example (polygons, angles, words)
-    b. what is nose and how to use    
-        -Nose’s tagline is "nose extends unittest to make testing easier"
-        -what is the nose api?  
+    a. example (polygons, angles, words)   
+    b. checking in on terminology: test fixture, test case, test runner, test suite    
     c. special methods that we get 'for free'    -from nose.tools import assert_equals
-    d. should we test individual classes and methods?      
-
-3. Checking in on terminology
-    a. test fixture, test case, test runner, test suite     
-    b.  
+    d. should we test individual classes and methods?             
 
 3. Writing Meaningful Tests    
     a. edge cases    
+    b. what a unit test really means    
+    c. bit of philosophy / story of objects    
 
-4. TDD: getting started with tdd using doctest and unittest
-    a. 
+4. TDD: getting started with tdd using unittest    
+    - what can we write?     
 
-5. why to make setUp and tearDowns
-   -temp file
-   -temp directory
-   -database connection
-   -db transaction
-   -open socket connection
-   -a signal generator putting out a test signal
+5. why would one make setUp and tearDowns    
+   -temp file    
+   -temp directory    
+   -database connection    
+   -db transaction    
+   -open socket connection    
+   -a signal generator putting out a test signal    
+
+6. other frameworks for TiP
+    a. what is nose and how to use    
+        -Nose’s tagline is "nose extends unittest to make testing easier"
+        -what is the nose api?
+    b. py.test
 
 -package level fixtures
 -module level fixtures
