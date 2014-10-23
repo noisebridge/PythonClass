@@ -63,17 +63,20 @@ Please email PyClass@googlegroups.com if you want to know what courses are comin
 2. [Control Flow and Exceptions](https://github.com/PyClass/PyClass-lesson-plans/blob/master/5_control_statements.md)     
 3. [itertools, and Functional Programming](https://github.com/PyClass/PyClass-lesson-plans/blob/master/3_functional_and_control.md)    
 4. [Built-in Types and String Services](https://github.com/PyClass/PyClass-lesson-plans/blob/master/4_builtintypes_stringservices.md)    
-5. 
-6. 
-7. 
-8. 
-9. 
-10.
-11.
-12.
-13.
-14. [Unit Testing](https://github.com/PyClass/PyClass-lesson-plans/blob/master/14_unittest.md) - Exploring assert and python's builtin unittest module.
-
+5. [Coding a module: rot13](https://github.com/PyClass/PyClass-lesson-plans/blob/master/10_rot13.md) 
+6. [Matplotlib Workshop (using Socrata API](https://github.com/PyClass/PyClass-lesson-plans/blob/master/6_socrata_matplotlib_workshop.md)
+7. [Flask - Installfest & Basics](https://github.com/PyClass/PyClass-lesson-plans/blob/master/11_server_side_dev_flask.md)
+8. [Working with numbers in Python](https://github.com/PyClass/PyClass-lesson-plans/blob/master/9_numbers.md) 
+9. [Programming Mastermind (the game)](https://github.com/PyClass/PyClass-lesson-plans/blob/master/13_games.md)
+10. [Unit Testing and Python's unittest Module](https://github.com/PyClass/PyClass-lesson-plans/blob/master/14_unittest.md)
+11. [OOP in Python](https://github.com/PyClass/PyClass-lesson-plans/blob/master/15_classy_OOP.md)
+12. [Keywords & Control Flow](https://github.com/PyClass/PyClass-lesson-plans/blob/master/16_keywords_and_control_flow.md)
+13. [Project: Calculate Angles of a Polygon](https://github.com/PyClass/PyClass-lesson-plans/blob/master/17_polygon_abstraction.md)
+14. [Project: Unit testing our projects](https://github.com/PyClass/PyClass-lesson-plans/blob/master/18_unittesting_more.md)
+15. [Functions](https://github.com/PyClass/PyClass-lesson-plans/blob/master/12_functions.md)
+16. [Git](https://github.com/PyClass/PyClass-lesson-plans/blob/master/2_git_module.md) - incomplete
+17. [Functional Programming in Python](https://github.com/PyClass/PyClass-lesson-plans/blob/master/3_functional_and_control.md)
+18. [Some Idioms for Python Builtins](https://github.com/PyClass/PyClass-lesson-plans/blob/master/7_built-ins_and_idioms.md)
 
 
 
