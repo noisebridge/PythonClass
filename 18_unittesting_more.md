@@ -26,21 +26,17 @@
    -open socket connection    
    -a signal generator putting out a test signal    
 
-6. other frameworks for TiP
-    a. [great write up from HHG to Python](http://docs.python-guide.org/en/latest/writing/tests/)
-    b. what is nose and how to use    
-        -Nose’s tagline is "nose extends unittest to make testing easier"
-        -what is the nose api?
-    c. py.test
+6. other frameworks for TiP    
+    a. [great write up from HHG to Python](http://docs.python-guide.org/en/latest/writing/tests/)    
+    b. what is nose and how to use     
+        -Nose’s tagline is "nose extends unittest to make testing easier"    
+        -what is the nose api?    
+    c. py.test    
 
-(to del)
+(unnecessary stuff to del)
 -package level fixtures
 -module level fixtures
 -class level fixtures
 -class method level fixtures
 -function level fixtures: 'oddball of the bunch' in nose done with the @with_setup decorator, which is included from nose.tools
-
-
-
-
 production, refactoring, documentation, reassurance, psych help, rolling on considering edge cases.
