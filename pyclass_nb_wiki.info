@@ -1,5 +1,7 @@
 == PSAs and Events ==
 
+''' PSA 8-19-14: ''' The [https://noisebridge.net/wiki/PyClass noisebridge wiki] and [https://github.com/PyClass/PyClass-lesson-plans github readme] files now have parity to each other.
+
 ''' PSA 8-16-14: '''  The new curriculum for the Noisebridge PyClass is a crash course in the Python standard library, also touching on modules that are popular but not quite part of the standard modules.   Scroll down to see the course list.
 
 == Scheduled Weekly Meeting Times ==
@@ -12,13 +14,13 @@ Sign up for this to hear updates and conversations regarding the course!
 
 == Class Description, Goals, and Ideal Student ==
 
-The pace of the courses will be fast, and the materials will be available online 24/7 and we plan to frequently repeat modules that are in high demand with new twists as we iterate over the course materials.
+The pace of the courses will be fast, and the materials will be available online 24/7. We plan to frequently repeat modules with new twists as we iterate over course materials.
 
-A primary goal of the course is to break down the materials into independent units. In other words, if you miss a week then you won't fall behind. Sounds good, right?
+A major PyClass is to break down the courses into independent units. In other words, you won't fall behind if you miss a week. Sounds good, right?
 
-To best experience the course, spend a short time studying the course materials before you come in. If you wish to know this week's courses, please send an email out to PyClass@googlegroups.com
+To best experience the course, spend a short time reviewing the course materials before you come in. If you wish to know this week's courses, please join the mailing list and send an email out to PyClass@googlegroups.com
 
-The ideal student for this course can understand the following code (it's fine to use Google to look up the built in functions, and we use tons of web resources throughout the course materials):
+The ideal student for this course can grasp the following code (feel free to use web resources to look up anything you don't understand):
 
 <source lang="python">
 
@@ -28,7 +30,7 @@ word = "noisebridge"
 for letter in word:
     times = word_frequency_dict.get(letter, 0)
     times += 1
-    word_frequency_dict.update( {letter : times} )
+    word_frequency_dict[letter] = times
     
 </source>
 
@@ -38,19 +40,24 @@ The order of the following courses has not yet been determined.
 
 Please [http://groups.google.com/group/pyclass ask on the mailing list] if you want to know what courses are coming this week!
 
-# JSON format, Python Types, and the JSON Module
-# Control Flow, itertools, and Functional Programming
-# Built-in Functions
-# Built-in Types and String Services
-# Numeric and Mathematical Modules, and Operators
-# argparse, ConfigParser, and more - configuring your applications
-# pip, virtualenv, packaging, versions, and inspect.
-# Logging your applications: logging, logging.config, logging.handlers
-# Exceptions and Debugging: Exception behavior, custom exceptions, pdb, cProfile, timeit, time, trace.
-# os, sys, and io (Caution, here be Python 3, inside the io module)
-# (potential for a unittest course)
-
-
+# [https://github.com/PyClass/PyClass-lesson-plans/blob/master/1_json_module.md JSON format, Python Types, and the JSON Module]
+# [https://github.com/PyClass/PyClass-lesson-plans/blob/master/5_control_statements.md Control Flow and Exceptions]
+# [https://github.com/PyClass/PyClass-lesson-plans/blob/master/3_functional_and_control.md itertools, and Functional Programming]
+# [https://github.com/PyClass/PyClass-lesson-plans/blob/master/4_builtintypes_stringservices.md Built-in Types and String Services]
+# [https://github.com/PyClass/PyClass-lesson-plans/blob/master/10_rot13.md Coding a module: rot13) ]
+# [https://github.com/PyClass/PyClass-lesson-plans/blob/master/6_socrata_matplotlib_workshop.md Matplotlib Workshop (using Socrata API ]
+# [https://github.com/PyClass/PyClass-lesson-plans/blob/master/11_server_side_dev_flask.md Flask - Installfest & Basics]
+# [https://github.com/PyClass/PyClass-lesson-plans/blob/master/9_numbers.md Working with numbers in Python) ]
+# [https://github.com/PyClass/PyClass-lesson-plans/blob/master/13_games.md Programming Mastermind (the game]
+# [https://github.com/PyClass/PyClass-lesson-plans/blob/master/14_unittest.md Unit Testing and Python's unittest Module]
+# [https://github.com/PyClass/PyClass-lesson-plans/blob/master/15_classy_OOP.md OOP in Python]
+# [https://github.com/PyClass/PyClass-lesson-plans/blob/master/16_keywords_and_control_flow.md Keywords & Control Flow]
+# [https://github.com/PyClass/PyClass-lesson-plans/blob/master/17_polygon_abstraction.md Project: Calculate Angles of a Polygon]
+# [https://github.com/PyClass/PyClass-lesson-plans/blob/master/18_unittesting_more.md Project: Unit testing our projects ]
+# [https://github.com/PyClass/PyClass-lesson-plans/blob/master/12_functions.md Functions]
+# [https://github.com/PyClass/PyClass-lesson-plans/blob/master/2_git_module.md Git  - incomplete]
+# [https://github.com/PyClass/PyClass-lesson-plans/blob/master/3_functional_and_control.md) Functional Programming in Python]
+# [https://github.com/PyClass/PyClass-lesson-plans/blob/master/7_built-ins_and_idioms.md Some Idioms for Python Builtins]
 
 == OS / Environment / Versions ==
 
