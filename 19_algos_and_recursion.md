@@ -15,5 +15,14 @@
 2. Recursion: three rules    
     a. must establish a base case    
     b. must change state, moving towards the base case    
-    c. must call itself recursively    
+    c. must call itself recursively 
+    d. implementing cleanest solution    
+    e. sum of all preceding numbers problem    
+    f. [fibonacci problem](http://www.math.fau.edu/MathCircle_at_FAU/MC130713Problems.pdf)       
     
+
+3. Binary search, Algo speak, and Timeit (30 min)    
+    a. [big-O complexity chart](http://bigocheatsheet.com/)(scroll to just above comment section)     
+    b. 
+####Resources:
+ [Great course in interactive python style](http://interactivepython.org/courselib/static/pythonds/index.html)
