@@ -39,7 +39,10 @@
 
 
 4. Merge Sort (20 min)    
-    a. understand with print statements (sorting.py)        
+    a. understand with print statements (sorting.py)    
+        -[videos!](https://www.youtube.com/watch?v=GCae1WNvnZM)   
+    b. understanding and comparing to quick sort    
+        -[more vids](https://www.youtube.com/watch?v=y_G9BkAm6B8)        
 
 ####Resources:
  [Great course in algos and data structures, interactive python style](http://interactivepython.org/courselib/static/pythonds/index.html)    
