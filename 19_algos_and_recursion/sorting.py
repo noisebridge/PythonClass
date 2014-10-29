@@ -1,23 +1,49 @@
 def binary_search(alist, item):
+    first = 0 
+    last = len(alist) - 1
+    found = False
+
+    while first<=last and not found:
+        midpoint = (first + last) // 2
+        if alist[midpoint] == item:
+            found = True 
+        else:
+            if item < alist[midpoint]:
+                last = midpoint-1
+            else:
+                first = midpoint+1 
+    return found
+
+
+
+def binary_search2(alist, item):
         if len(alist) == 0:
             return False
         else:
-            midpoint = len(alist)//2
+            midpoint = len(alist) // 2
             if alist[midpoint]==item:
               return True
             else:
               if item<alist[midpoint]:
-                return binary_search(alist[:midpoint],item)
+                return binary_search(alist[:midpoint], item)
               else:
-                return binary_search(alist[midpoint+1:],item)
-    
+                return binary_search(alist[midpoint+1:], item)
+
+#print section
 testlist = [0, 1, 2, 8, 13, 17, 19, 32, 42,]
 print("binary search for 1")
-print(binary_search(testlist, 3))
+print(binary_search(testlist, 8))
 print("binary search for 2")
-print(binary_search(testlist, 2))
+print(binary_search2(testlist, 8))
 
 
+
+
+
+
+
+###
+print "merge sort"
 def merge_sort(alist):
     print("Splitting ", alist)
     if len(alist)>1:
@@ -49,7 +75,10 @@ def merge_sort(alist):
             alist[k]=righthalf[j]
             j=j+1
             k=k+1
-    print("Merging ",alist)
+        #helper print statement
+        print("Merging ", alist)
+
+    return alist
 
 alist = [54,26,93,17,77,31,44,55,20]
 merge_sort(alist)
