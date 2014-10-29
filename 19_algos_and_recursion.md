@@ -7,7 +7,7 @@
 -provide additional tools and foundation for future complexities    
 
 1. World of Data Structures and Algos: justification of lesson (30 min)    
-    a. already using them all the time: implemented by language designers        
+    a. already using them all the time: implemented by language designers [doc](https://docs.python.org/2/tutorial/datastructures.html)       
     b. common / Uncommon use cases    
     c. CS education / how to best learn this stuff [great official resource](http://interactivepython.org/courselib/static/pythonds/index.html)    
     d. interview questions: how to prep on both sides, terminology, etc.    
