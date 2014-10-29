@@ -32,7 +32,7 @@
     a. algorithm: a set of instructions used to produce a definitive result     or    
         -A step-by-step problem-solving procedure, especially an established, recursive computational procedure for solving a problem in a finite number of steps.    
     b. data structure: a container for data with explicit restrictions    
-    c. [big-O complexity chart](http://bigocheatsheet.com/) (scroll to just above comment section)    
+    c. [big-O complexity chart](http://bigocheatsheet.com/) -(scroll to just above comment section)    
     d. [from book](http://interactivepython.org/courselib/static/pythonds/AlgorithmAnalysis/BigONotation.html)    
     e. design your own psuedocode algo    
     f. binary sort (sorting.py)    
@@ -42,6 +42,6 @@
     a. understand with print statements (sorting.py)        
 
 ####Resources:
- [Great course in algos and data structures, interactive python style](http://interactivepython.org/courselib/static/pythonds/index.html)
+ [Great course in algos and data structures, interactive python style](http://interactivepython.org/courselib/static/pythonds/index.html)    
  [Coursera Course - graph heavy](https://www.coursera.org/course/algorithmicthink) called algorithmic thinking - uses python    
  others use java or are language agnostic
