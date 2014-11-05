@@ -1,4 +1,9 @@
+#remember this assumes an already sorted data structure, we are merely searching!
 def binary_search(alist, item):
+    """list -> bool
+    binary search using a while loop
+    """
+
     first = 0 
     last = len(alist) - 1
     found = False
@@ -15,8 +20,11 @@ def binary_search(alist, item):
     return found
 
 
-
+#remember this assumes an already sorted data structure, we are merely searching!
 def binary_search2(alist, item):
+        """list -> bool
+        binary search using a while loop
+        """
         if len(alist) == 0:
             return False
         else:
@@ -28,6 +36,8 @@ def binary_search2(alist, item):
                 return binary_search(alist[:midpoint], item)
               else:
                 return binary_search(alist[midpoint+1:], item)
+
+
 
 #print section
 testlist = [0, 1, 2, 8, 13, 17, 19, 32, 42,]
@@ -41,10 +51,20 @@ print(binary_search2(testlist, 8))
 
 
 
+#change names to make more readable and understandable
+psuedo_code = """
+If the list is empty or has one item, it is sorted by definition. 
+This is our base case. 
+
+"""
 
 ###
 print "merge sort"
 def merge_sort(alist):
+    """list -> list 
+    sorted from least to greatest
+    """
+
     print("Splitting ", alist)
     if len(alist)>1:
         mid = len(alist)//2
