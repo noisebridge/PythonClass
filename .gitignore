@@ -1,0 +1,15 @@
+*.pyc
+*.swp
+*.db
+*.log
+*.pyo
+.Python
+.DS_Store
+var
+parts
+bin
+include
+lib
+buildout-cache
+eggs  
+man
