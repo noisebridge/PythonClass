@@ -51,6 +51,7 @@ for letter in word:
 
 To best experience the course, spend a short time reviewing the course materials before you come in. If you wish to know this week's courses, please join the mailing list and send an email out to PyClass@googlegroups.com
 
+### New Student Reading
 
 If you are new to python or programming in general here are some excellent resources:    
 -[Learn Python the Hardway](http://learnpythonthehardway.org/) - great guide for total beginner    
