@@ -25,6 +25,16 @@ Sign up for this to hear updates and conversations regarding the course!
 
 The pace of the courses will be fast, and the materials will be available online 24/7. We plan to frequently repeat modules with new twists as we iterate over course materials.
 
+[We use the Socratic Method](http://www.criticalthinking.org/pages/socratic-teaching/606):
+```
+A Socratic questioner should: 
+a) keep the discussion focused
+b) keep the discussion intellectually responsible
+c) stimulate the discussion with probing questions
+d) periodically summarize what has and what has not been dealt with and/or resolved
+e) draw as many students as possible into the discussion.
+```
+
 A major PyClass goal is to break down the courses into independent units. In other words, you won't fall behind if you miss a week. Sounds good, right?
 
 To best experience the course, spend a short time reviewing the course materials before you come in. If you wish to know this week's courses, please join the mailing list and send an email out to PyClass@googlegroups.com
