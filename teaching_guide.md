@@ -12,7 +12,7 @@ This guide should eventually evolve into a brief philosophic and practical docum
 
 This quote takes a little too much emphasis on the group of learners contradicting themselves.  The socratic method is exploratory. In performing it, both missing knowledge and faulty preconceptions are equally exposed and set aside.  Don't use the socratic method to try to prove someone wrong. Being wrong is inconsequential and should be cast aside lightly.
 
-### This text is a bit more practicable: 
+### A Practical Approach 
 
 [Source](http://www.criticalthinking.org/pages/socratic-teaching/606)
 
