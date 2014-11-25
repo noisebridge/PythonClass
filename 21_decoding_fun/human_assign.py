@@ -13,6 +13,16 @@ e.g. I give am, the values of a and m are swapped on the comparison dict.
 
 alphabet = 'abcdefghijklmnopqrstuvwxyz'
 
+encoded_source_file = 'mm.txt'
+sample_file = 'cc.txt'
+mode = 'r'
+
+with open(encoded_source_file, mode) as f:
+    encoded_source = f.read()
+
+with open(sample_file, mode) as f:
+    sample = f.read()
+
 
 def letter_freq_counter(source):
     """ Count up frequency of letters using only lower case. Count based on the alphabet set.
@@ -60,31 +70,23 @@ def frq_only_match(encoded_source, source_letter_freq_dict, sample_letter_freq_d
     return decoded_source_freq_only
 
 
-encoded_source_file = 'mm.txt'
-sample_file = 'cc.txt'
-mode = 'r'
-
-with open(encoded_source_file, mode) as f:
-    encoded_source = f.read()
-
-with open(sample_file, mode) as f:
-    sample = f.read()
 
 sample_ltr_frq = letter_freq_counter(sample)
 source_ltr_frq = letter_freq_counter(encoded_source)
 
 part_decoded_source = frq_only_match(encoded_source, source_ltr_frq, sample_ltr_frq) 
 
+
+# Give the user something to work with
+print part_decoded_source
+
+
 # Now lets use human intelligence
 while True:
-    
-    # Give the user something to work with
-    print part_decoded_source
-
     # Accept a user suggestion
     user_input = raw_input("Please type only the two characters to swap:")
 
-    if user_input == False:
+    if user_input == "":
         break
 
     # Rudimentary input validation
@@ -112,5 +114,9 @@ while True:
         return adjusted_source
 
     part_decoded_source = adjust_source(part_decoded_source, user_input)
+    
+    # Give the user something to work with
+    print part_decoded_source
+
 
 
