@@ -20,7 +20,12 @@
     c. Discussion: when to and when to not use classes    
     d. Advantages of user-defined class, advantages of digital v. real world object    
 
-3. Advanced topics    
+3. Using Multiple Classes Together    
+    a. Deck of Cards    
+    b. Graphs of Nodes    
+    c. Modifying or subclassing each example
+
+4. Advanced topics    
     a. Decorators and Desciptors    
     b. Quick terminology: instance methods v. class methods v. static methods  
 
