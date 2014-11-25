@@ -16,6 +16,14 @@ This quote takes a little too much emphasis on the group of learners contradicti
 
 [Source](http://www.criticalthinking.org/pages/socratic-teaching/606)
 
+```
+A Socratic questioner should: 
+a) keep the discussion focused
+b) keep the discussion intellectually responsible
+c) stimulate the discussion with probing questions
+d) periodically summarize what has and what has not been dealt with and/or resolved
+e) draw as many students as possible into the discussion.
+```
 
 The oldest, and still the most powerful, teaching tactic for fostering critical thinking is Socratic teaching. In Socratic teaching we focus on giving students questions, not answers. We model an inquiring, probing mind by continually probing into the subject with questions. Fortunately, the abilities we gain by focusing on the elements of reasoning in a disciplined and self-assessing way, and the logical relationships that result from such disciplined thought, prepare us for Socratic questioning.
 
@@ -33,14 +41,6 @@ Each of the elements represents a dimension into which one can delve in question
 
 As a tactic and approach, Socratic questioning is a highly disciplined process. The Socratic questioner acts as the logical equivalent of the inner critical voice which the mind develops when it develops critical thinking abilities. The contributions from the members of the class are like so many thoughts in the mind. All of the thoughts must be dealt with and they must be dealt with carefully and fairly. By following up all answers with further questions, and by selecting questions which advance the discussion, the Socratic questioner forces the class to think in a disciplined, intellectually responsible manner, while yet continually aiding the students by posing facilitating questions.
 
-```
-A Socratic questioner should: 
-a) keep the discussion focused
-b) keep the discussion intellectually responsible
-c) stimulate the discussion with probing questions
-d) periodically summarize what has and what has not been dealt with and/or resolved
-e) draw as many students as possible into the discussion.
-```
 Paul, R. and Elder, L. (April 1997). Foundation For Critical Thinking,
 Online at website: www.criticalthinking.org)
 
