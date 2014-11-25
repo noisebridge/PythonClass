@@ -8,9 +8,8 @@ This guide should eventually evolve into a brief philosophic and practical docum
 [from wikipedia](https://en.wikipedia.org/wiki/Socratic_method)
 
 
-```
-Socratic method (also known as method of elenchus, elenctic method, or Socratic debate), named after the classical Greek philosopher Socrates, is a form of inquiry and discussion between individuals, based on asking and answering questions to stimulate critical thinking and to illuminate ideas. It is a dialectical method, often involving a discussion in which the defense of one point of view is questioned; one participant may lead another to contradict himself in some way, thus strengthening the inquirer's own point.
-```
+```Socratic method (also known as method of elenchus, elenctic method, or Socratic debate), named after the classical Greek philosopher Socrates, is a form of inquiry and discussion between individuals, based on asking and answering questions to stimulate critical thinking and to illuminate ideas. It is a dialectical method, often involving a discussion in which the defense of one point of view is questioned; one participant may lead another to contradict himself in some way, thus strengthening the inquirer's own point.```
+
 
 ### This text is a bit more practicable: 
 
