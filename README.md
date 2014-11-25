@@ -27,7 +27,7 @@ The pace of the courses will be fast, and the materials will be available online
 
 A major PyClass goal is to break down the courses into independent units. In other words, you won't fall behind if you miss a week. Sounds good, right?
 
-[We use the Socratic Method](http://www.criticalthinking.org/pages/socratic-teaching/606):
+###### We use the [Socratic Method](http://www.criticalthinking.org/pages/socratic-teaching/606):
 ```
 A Socratic questioner should: 
 a) keep the discussion focused
