@@ -22,6 +22,5 @@ if __name__ == '__main__':
     encoded_source = rot13.apply_substitution(rotation_dict, source)    
 
     print encoded_source
-    print rot13.apply_substitution(rotation_dict, encoded_source)
 
 

@@ -69,8 +69,8 @@ if __name__ == '__main__':
 
     rotation_dict = assign_and_return_positions(alphabet, rotation)
 
-    input_string = "12345 - Alphabet Soup; Acceptable Inputs: a-z, comma, period, colon, space, hyphen, underscore, and semicolon. Uppercase letters will be converted to lowercase."
-
+    #    input_string = "12345 - Alphabet Soup; Acceptable Inputs: a-z, comma, period, colon, space, hyphen, underscore, and semicolon. Uppercase letters will be converted to lowercase."
+    input_string = 'abcdez'
     cleaned_input = clean_string(input_string.lower())
     
     print rotation_dict
