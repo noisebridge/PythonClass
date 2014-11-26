@@ -16,7 +16,7 @@ def letter_freq_counter(source):
     return letter_freq_dict
 
 
-source_file = 'cc.txt'
+source_file = 'mm.txt'
 mode = 'r'
 with open(source_file, mode) as f:
     source = f.read()
