@@ -13,7 +13,7 @@ e.g. I give am, the values of a and m are swapped on the comparison dict.
 
 alphabet = 'abcdefghijklmnopqrstuvwxyz'
 
-encoded_source_file = 'mm.txt'
+encoded_source_file = 'mmenc.txt'
 sample_file = 'cc.txt'
 mode = 'r'
 

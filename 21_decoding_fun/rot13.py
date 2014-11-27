@@ -39,6 +39,7 @@ def apply_substitution(subst_dict, cleaned_string):
     # Slightly confusing, the get function will get the value of the
     # key named letter or will return letter.
     for letter in cleaned_string:
+        letter = letter.lower()
         if letter in subst_dict:
             encoded_string += subst_dict.get(letter, letter)
         else:

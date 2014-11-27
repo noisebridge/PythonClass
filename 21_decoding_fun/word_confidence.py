@@ -4,11 +4,13 @@ import pickle
 
 # Two variables can be used to fine-tune the output.
 # A better solution is do weigh shorter words more lightly and longer more heavily.
-confidence_requirement = 3
+confidence_requirement = 2
 word_length_requirement = 6
 
 
 alphabet = 'abcdefghijklmnopqrstuvwxyz'
+
+partially_decoded = 'ccenc-partial.txt'
 
 pickle_filename = 'ngsl.pickle'
 mode = 'r'
@@ -16,7 +18,7 @@ mode = 'r'
 with open(pickle_filename, mode) as f:
     ngsl_words = pickle.load(f)
 
-partially_decoded = 'mmenc-partial.txt'
+partially_decoded = 'ccenc-partial.txt'
 with open(partially_decoded, mode) as f:
     contents = f.read()
 

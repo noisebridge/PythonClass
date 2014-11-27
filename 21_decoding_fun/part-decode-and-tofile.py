@@ -1,20 +1,11 @@
 """
-1. lets auto-assign based on our frequency dict.
-
-2. output the auto-assigned values
-
-Then lets accept human input on a loop.
-
-The loop will swap the two values given.
-
-e.g. I give am, the values of a and m are swapped on the comparison dict.
 
 """
 
 alphabet = 'abcdefghijklmnopqrstuvwxyz'
 
-encoded_source_file = 'mm.txt'
-sample_file = 'cc.txt'
+encoded_source_file = 'ccenc.txt'
+sample_file = 'mm.txt'
 mode = 'r'
 
 with open(encoded_source_file, mode) as f:
@@ -42,7 +33,7 @@ def frq_only_match(encoded_source, source_letter_freq_dict, sample_letter_freq_d
     """ Use only frequency to spit out an approximate match.
     """
 
-    # lets have a peek
+    # sort each frequency list for mapping
     source_freq_list = list()
     for ltr, frq in source_letter_freq_dict.iteritems():
         source_freq_list.append((frq, ltr))
@@ -52,10 +43,12 @@ def frq_only_match(encoded_source, source_letter_freq_dict, sample_letter_freq_d
         sample_freq_list.append((frq, ltr))
     sample_freq_list.sort()
 
+    # take a peek
     print "Source:", source_freq_list
     print "Sample:", sample_freq_list
 
     # The key is the source(encoded) letter, the value is the sample prediction.
+    # This simply zips the values to the keys as a map(python dict)
     frq_only_match_dict = dict(zip(*[zip(*source_freq_list)[1], zip(*sample_freq_list)[1]]))
 
     # Translate one letter at a time
