@@ -4,8 +4,8 @@ import pickle
 
 # Two variables can be used to fine-tune the output.
 # A better solution is do weigh shorter words more lightly and longer more heavily.
-confidence_requirement = 1
-word_length_requirement = 5
+confidence_requirement = 3
+word_length_requirement = 6
 
 
 alphabet = 'abcdefghijklmnopqrstuvwxyz'

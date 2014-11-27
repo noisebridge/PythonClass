@@ -69,13 +69,13 @@ if __name__ == '__main__':
 
     rotation_dict = assign_and_return_positions(alphabet, rotation)
 
-    input_string = "12345 - Alphabet Soup; Acceptable Inputs: a-z, comma, period, colon, space, hyphen, underscore, and semicolon. Uppercase letters will be converted to lowercase."
+    input_string = raw_input("Enter a phrase to encode:")
+    #input_string = "12345 - Alphabet Soup; Acceptable Inputs: a-z, comma, period, colon, space, hyphen, underscore, and semicolon. Uppercase letters will be converted to lowercase."
     cleaned_input = clean_string(input_string.lower())
     
-    print rotation_dict
-    print cleaned_input
+    print "Cleaned input:", cleaned_input
 
     encoded_input = apply_substitution(rotation_dict, cleaned_input)    
 
-    print encoded_input
+    print "Encoded version:", encoded_input
 
