@@ -5,7 +5,7 @@
 alphabet = 'abcdefghijklmnopqrstuvwxyz'
 
 encoded_source_file = 'ccenc.txt'
-sample_file = 'mm.txt'
+sample_file = 'ngsl1.01.csv'
 mode = 'r'
 
 with open(encoded_source_file, mode) as f:
@@ -73,7 +73,7 @@ part_decoded_source = frq_only_match(encoded_source, source_ltr_frq, sample_ltr_
 # Give the user something to work with
 print part_decoded_source
 
-output_file = 'mmenc-partial.txt'
+output_file = 'ccenc-partial.txt'
 mode = 'w'
 with open(output_file, mode) as f:
     f.write(part_decoded_source)
