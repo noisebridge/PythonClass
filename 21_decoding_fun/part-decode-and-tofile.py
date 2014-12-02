@@ -1,13 +1,4 @@
 """
-1. lets auto-assign based on our frequency dict.
-
-2. output the auto-assigned values
-
-Then lets accept human input on a loop.
-
-The loop will swap the two values given.
-
-e.g. I give am, the values of a and m are swapped on the comparison dict.
 
 """
 
@@ -42,7 +33,7 @@ def frq_only_match(encoded_source, source_letter_freq_dict, sample_letter_freq_d
     """ Use only frequency to spit out an approximate match.
     """
 
-    # lets have a peek
+    # sort each frequency list for mapping
     source_freq_list = list()
     for ltr, frq in source_letter_freq_dict.iteritems():
         source_freq_list.append((frq, ltr))
@@ -52,10 +43,12 @@ def frq_only_match(encoded_source, source_letter_freq_dict, sample_letter_freq_d
         sample_freq_list.append((frq, ltr))
     sample_freq_list.sort()
 
+    # take a peek
     print "Source:", source_freq_list
     print "Sample:", sample_freq_list
 
     # The key is the source(encoded) letter, the value is the sample prediction.
+    # This simply zips the values to the keys as a map(python dict)
     frq_only_match_dict = dict(zip(*[zip(*source_freq_list)[1], zip(*sample_freq_list)[1]]))
 
     # Translate one letter at a time
@@ -80,43 +73,9 @@ part_decoded_source = frq_only_match(encoded_source, source_ltr_frq, sample_ltr_
 # Give the user something to work with
 print part_decoded_source
 
-
-# Now lets use human intelligence
-while True:
-    # Accept a user suggestion
-    user_input = raw_input("Please type only the two characters to swap:")
-
-    if user_input == "":
-        break
-
-    # Rudimentary input validation
-    try:
-        assert(len(user_input) == 2)
-
-        for letter in user_input:
-            assert(letter.lower() in alphabet)
-    except:
-        print "Error, please type exactly two letters in the 26-letter alphabet."
-        continue
-
-    def adjust_source(part_decoded_source, user_input):
-        """
-        """
-        adjusted_source = ""
-        for letter in part_decoded_source:
-            if letter == user_input[0]:
-                adjusted_source += user_input[1]
-            elif letter == user_input[1]:
-                adjusted_source += user_input[0]
-            else:
-                adjusted_source += letter
-        
-        return adjusted_source
-
-    part_decoded_source = adjust_source(part_decoded_source, user_input)
+output_file = 'ccenc-partial.txt'
+mode = 'w'
+with open(output_file, mode) as f:
+    f.write(part_decoded_source)
     
-    # Give the user something to work with
-    print part_decoded_source
-
-
 
