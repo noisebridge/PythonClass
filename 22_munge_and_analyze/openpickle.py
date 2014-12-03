@@ -18,6 +18,8 @@ letter_freq_list = list()
 for key in letter_freq_dict.keys():
     letter_freq_list.append([letter_freq_dict[key], key])
 
+# The sort function works in place to sort the list.
+# In this case it sorted on the first value of the inside list.
 letter_freq_list.sort()
 
 print letter_freq_list
