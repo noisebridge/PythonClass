@@ -13,8 +13,8 @@ e.g. I give am, the values of a and m are swapped on the comparison dict.
 
 alphabet = 'abcdefghijklmnopqrstuvwxyz'
 
-encoded_source_file = 'ccenc.txt'
-sample_file = 'ngsl1.01.csv'
+encoded_source_file = 'mmenc.txt'
+sample_file = 'cc.txt'
 mode = 'r'
 
 with open(encoded_source_file, mode) as f:
