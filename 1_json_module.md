@@ -7,7 +7,7 @@ Course 1 - An introduction to the JSON Module in Python
 
   a. http://www.json.org/    
   b. Values, Strings, Numbers, Arrays, Objects    
-
+  c. Unicode characters (uXXXX): http://www.unicode.org/charts/    
 
 
 2. Explain Python Data Types & Containers' relationship to JSON library 
