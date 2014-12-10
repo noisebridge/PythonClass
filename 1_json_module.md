@@ -7,7 +7,6 @@ Course 1 - An introduction to the JSON Module in Python
 
   a. http://www.json.org/    
   b. Values, Strings, Numbers, Arrays, Objects    
-  c. Unicode characters (uXXXX): http://www.unicode.org/charts/    
 
 
 2. Explain Python Data Types & Containers' relationship to JSON library 
@@ -44,4 +43,5 @@ c. Json to Python Standard Translation: https://docs.python.org/2/library/json.h
 
   a. Command line: $ python -m json.tool file.ext    
   b. Here's an example of json.loads() on a string variable: https://docs.python.org/2/library/json.html#repeated-names-within-an-object    
+  c. Unicode characters (uXXXX): http://www.unicode.org/charts/    
 
