@@ -12,9 +12,7 @@ Course 1 - An introduction to the JSON Module in Python
 2. Explain Python Data Types & Containers' relationship to JSON library 
 
   a. Python Interpreter - Fire it up and set (cat = 5) - 15 minutes    
-  b. Duck Typing - http://en.wikipedia.org/wiki/Duck_typing    
-  (don't explicly use types in your functions/checks)    
-c. Json to Python Standard Translation: https://docs.python.org/2/library/json.html#encoders-and-decoders    
+  b. Json to Python Standard Translation: https://docs.python.org/2/library/json.html#encoders-and-decoders    
 
 
 
@@ -44,4 +42,6 @@ c. Json to Python Standard Translation: https://docs.python.org/2/library/json.h
   a. Command line: $ python -m json.tool file.ext    
   b. Here's an example of json.loads() on a string variable: https://docs.python.org/2/library/json.html#repeated-names-within-an-object    
   c. Unicode characters (uXXXX): http://www.unicode.org/charts/    
+  d. Duck Typing - http://en.wikipedia.org/wiki/Duck_typing    
+  (don't explicly use types in your functions/checks)    
 
