@@ -9,9 +9,9 @@ Course 1 - An introduction to the JSON Module in Python
   b. Values, Strings, Numbers, Arrays, Objects    
 
 
-2. Explain Python Data Types & Containers' relationship to JSON library 
+2. Explain Python Data Types & Containers' relationship to JSON library -15 minutes 
 
-  a. Python Interpreter - Fire it up and set (cat = 5) - 15 minutes    
+  a. Python Interpreter - Fire it up and set some names equal to some types (dict, list, str, number)    
   b. Json to Python Standard Translation: https://docs.python.org/2/library/json.html#encoders-and-decoders    
 
 
