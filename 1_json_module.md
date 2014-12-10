@@ -6,14 +6,14 @@ Course 1 - An introduction to the JSON Module in Python
 1. Review JSON format - 15 minutes
 
   a. http://www.json.org/    
-  b. Values, Strings, Numbers, Arrays, Objects    
+  b. Values: string, number, object, array, true, false, null
+  c. Root Object must be a container: object, array
 
 
 2. Explain Python Data Types & Containers' relationship to JSON library -15 minutes 
 
   a. Python Interpreter - Fire it up and set some names equal to some types (dict, list, str, number)    
   b. Json to Python Standard Translation: https://docs.python.org/2/library/json.html#encoders-and-decoders    
-
 
 
 3. Sample JSON Request - Pull some data off a remote server using requests
