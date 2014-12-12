@@ -10,6 +10,11 @@ The Python logging library is a replacement for the print statements frequently 
 - `logging.basicConfig(level='INFO')` - This is all we need (also you need to import logging)
 - [What's a log level? Great question!](https://docs.python.org/2/library/logging.html#logging-levels) You can also make your own custom levels, we won't do that today.
 - Now lets make a logging event: `logging.debug("let's pass the debug level a string.")`
+- This is good enough to replace print statements in any tiny scripts you do.
+- Now lets send this to a file! `logging.basicConfig(filename='example.log', level='INFO')`
+- Increase the log level to hide our statements. Change to `logging.basicConfig(filename='example.log', level='DEBUG')`
+
+That's a serious advantage, we just turned something that creates extra work (commenting, uncommenting, and removing print statements) to a valuable tool that should remain in the code forever, and we did it in 2 lines of code.
 
 ### 2. Advanced Logging - Lets build our own logger!
 - This gives us access to much more powerful options: handler, format, filter.
