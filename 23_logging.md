@@ -24,5 +24,22 @@ That's a serious advantage, we just turned something that creates extra work (co
 - Format? Examples: date, log-level, name, filename, line number, logged message.
 - Filter - We will cover how to filter by name in order to only capture one function.
 
+The advanced options are great, but I don't really want to define them every time I write a program. Also, I can't think of much I would change for general use, except possibly the filter during debugging.
+
+### 3. Saving a logging configuration
+- The solution: [logging.config](https://docs.python.org/2/library/logging.config.html#module-logging.config)
+- We will focus specifically on [logging.config.dictConfig](https://docs.python.org/2/library/logging.config.html#logging.config.dictConfig)
+- Steps: 
+    1. Write a config file as a json object.      
+    2. json.load(myconfig.json) into a name.     
+    3. Pass dict as dictConfig(myconfig).    
+
+
+### Additional Resources:
+- There are an amazing number of handlers in the [logging.handlers](https://docs.python.org/2/library/logging.handlers.html#module-logging.handlers) module.
+
+
+
+
 
 
