@@ -33,11 +33,10 @@ The advanced options are great, but I don't really want to define them every tim
     1. Write a config file as a json object.      
     2. json.load(myconfig.json) into a name.     
     3. Pass dict as dictConfig(myconfig).    
-
+- Lets review example four and its accompanying json file. Use `python -m json.tool <filename>.json` to view the json.
 
 ### Additional Resources:
 - There are an amazing number of handlers in the [logging.handlers](https://docs.python.org/2/library/logging.handlers.html#module-logging.handlers) module.
-
 
 
 
