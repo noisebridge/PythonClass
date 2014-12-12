@@ -1,7 +1,8 @@
 
 
 ### logging: A Python Standard Library Module
-The Python logging library is a complex and configurable tool for logging events in your code, it is a core Python skill.  At the most basic, is a replacement for the print statements frequently scattered through code for debugging. For short scripts where you don't want a lot of setup, use basicConfig, which only adds one line to your code.  For longer projects, you'll want to use a lot more logging infrastructure, which we will discuss in detail. Note that print statements are acceptable for standard output to the console that the user will need to use the application, and that basicConfig goes to standard error by default.
+The Python logging library is a complex and configurable tool for logging events in your code, it is a core Python skill.  At the most basic, is a replacement for the print statements frequently scattered through code for debugging. For short scripts where you don't want a lot of setup, use basicConfig, which only adds one line to your code.  For longer projects, you'll want to use a lot more logging infrastructure, which we will discuss in detail. 
+
 
 
 ### 1. Basic setup
@@ -13,6 +14,7 @@ The Python logging library is a complex and configurable tool for logging events
 - This is good enough to replace print statements in any tiny scripts you do.
 - Now lets send this to a file! `logging.basicConfig(filename='example.log', level='INFO')`
 - Increase the log level to hide our statements. Change to `logging.basicConfig(filename='example.log', level='DEBUG')`
+- Note: print statements are acceptable for standard output for application users. basicConfig goes to standard error by default.
 
 That's a serious advantage, we just turned something that creates extra work (commenting, uncommenting, and removing print statements) to a valuable tool that should remain in the code forever, and we did it in 2 lines of code.
 
