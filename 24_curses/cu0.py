@@ -4,6 +4,7 @@ def main(stdscr):
     """ Curses is controlled from here.
         This might be called 'the loop' in a game.
 
+        game loop: http://gameprogrammingpatterns.com/game-loop.html
     """
 
     curses.textpad.rectangle(stdscr,0,0,10,10)
