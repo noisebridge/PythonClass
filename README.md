@@ -98,6 +98,8 @@ Please email PyClass@googlegroups.com if you want to know what courses are comin
 
 This section is under development.
 
+[Digital Ocean $10 Credit](https://www.digitalocean.com/?refcode=1a1061eaf303)
+
 For the sake of our sanity we use Python 2 for this course.
 
 Installing Python with [The Hitchhiker’s Guide to Python!](http://docs.python-guide.org/en/latest/)
