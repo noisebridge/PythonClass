@@ -31,7 +31,7 @@ It provides a SQL interface compliant with the DB-API 2.0 specification describe
 - Dict: Everything has a unique 'hash' which can be considered metadata, but there is no inherent order.
 
 
-##### Addendum: An overview of technologies:
+#### Addendum: An overview of technologies:
 
 1. SQL Databases: Disambiguation
   - [What's SQL?](http://en.wikipedia.org/wiki/SQL) - "SQL (Structured Query Language) is a special-purpose programming language designed for managing data held in a relational database management system (RDBMS), or for stream processing in a relational data stream management system (RDSMS).
