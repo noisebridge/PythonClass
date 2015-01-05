@@ -15,7 +15,7 @@ CREATE TABLE "volScale" (
   "maxVolume" integer DEFAULT 0,
   -- Use Quantum, Newtonian, NewtonianStellar, and Universal categories for now.
   "physicsCategory" varchar(100) DEFAULT NULL,
-  "pKey" integer PRIMARY KEY,
+  "pKey" integer PRIMARY KEY
 );
 
 CREATE INDEX "volScale_minVolume" ON "volScale" ("minVolume");
