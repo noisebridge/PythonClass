@@ -14,7 +14,7 @@ It provides a SQL interface compliant with the DB-API 2.0 specification describe
 - Run [this](ADD_SQLITE_SCRIPT_WITH_SAMPLE_ENTRIES) to add some sample entries 
 
 
-### 2. Working with a database
+### 2. Working with the sample databases
 - An outline of our Python goals: make database connection, write or read entries, commit changes, close connection.
 - First lets [read it](ADD_PYTHON_SCRIPT_TO_READ_DATA).
 - Now lets [write some data](ADD_PYTHON_SCRIPT_TO_WRITE_DATA).
