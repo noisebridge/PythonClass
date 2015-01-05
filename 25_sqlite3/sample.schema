@@ -1,0 +1,33 @@
+
+
+-- Running this script: 
+-- Execute: .read myscript.sql 
+-- Output will overwrite: exampledb.sqlite
+
+
+-- This file is created if it doesn't exist.
+.open "exampledb.sqlite"
+
+ATTACH DATABASE "physics.sqlite" AS physics;
+
+CREATE TABLE volProperties AS SELECT * from physics.volProperties;
+
+CREATE TABLE "OfficeSupplies" (
+  "Name" varchar(100) DEFAULT NULL,
+  "Description" varchar(3000) DEFAULT NULL,
+  "Mass" integer DEFAULT 0,
+  "Volume" integer DEFAULT 0,
+  "timePublished" integer DEFAULT 0,
+  "pKey" integer PRIMARY KEY,
+  -- Constraints say what can't be duplicated. 
+  -- This disregards publish time, disallowing exact duplicates otherwise.
+  UNIQUE(Name, Description, Mass, Volume) ON CONFLICT REPLACE
+);
+
+CREATE INDEX "OfficeSupplies_Name" ON "OfficeSupplies" ("Name");
+CREATE INDEX "OfficeSupplies_Description" ON "OfficeSupplies" ("Description");
+CREATE INDEX "OfficeSupplies_Mass" ON "OfficeSupplies" ("Mass");
+CREATE INDEX "OfficeSupplies_Volume" ON "OfficeSupplies" ("Volume");
+CREATE INDEX "OfficeSupplies_timePublished" ON "OfficeSupplies" ("timePublished");
+
+
