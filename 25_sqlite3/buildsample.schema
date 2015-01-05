@@ -2,11 +2,11 @@
 
 -- Running this script: 
 -- Execute: .read myscript.sql 
--- Output will overwrite: exampledb.sqlite
+-- Output will overwrite: sampledb.sqlite
 
 
 -- This file is created if it doesn't exist.
-.open "exampledb.sqlite"
+.open "sampledb.sqlite"
 
 ATTACH DATABASE "physics.sqlite" AS physics;
 
@@ -19,12 +19,14 @@ CREATE TABLE "OfficeSupplies" (
   "Name" varchar(100) DEFAULT NULL,
   "Description" varchar(3000) DEFAULT NULL,
   "Mass" integer DEFAULT 0,
+  "MassUnits" varchar(100) DEFAULT 'grams',
   "Volume" integer DEFAULT 0,
+  "VolumeUnits" varchar(100) DEFAULT 'liters',
   "timePublished" integer DEFAULT 0,
   "pKey" integer PRIMARY KEY,
-  -- Constraints say what can't be duplicated. 
+  -- Constraints say what can't be duplicated. This conflict is triggered if ALL listed items are equal.
   -- This disregards publish time, disallowing exact duplicates otherwise.
-  UNIQUE(Name, Description, Mass, Volume) ON CONFLICT REPLACE
+  UNIQUE(Name, Description, Mass, MassUnits, Volume, VolumeUnits) ON CONFLICT REPLACE
 );
 
 CREATE INDEX "OfficeSupplies_Name" ON "OfficeSupplies" ("Name");

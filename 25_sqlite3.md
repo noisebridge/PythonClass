@@ -11,13 +11,14 @@ It provides a SQL interface compliant with the DB-API 2.0 specification describe
 - [Install sqlite](http://www.sqlite.org/quickstart.html)
 - [sqlite Documentation](http://www.sqlite.org/docs.html)
 - Create a database: [use these schema](https://github.com/PyClass/PyClass-lesson-plans/tree/master/25_sqlite3)
-- Run [this](ADD_SQLITE_SCRIPT_WITH_SAMPLE_ENTRIES) to add some sample entries 
+- Write to DB: Run [this](ADD_SQLITE_SCRIPT_WITH_SAMPLE_ENTRIES) to add some sample entries 
+- Read from DB: Inside the sqlite shell, execute `SELECT * FROM OfficeSupplies;` to see all entries.
 
 
 ### 2. Working with the sample databases
 - An outline of our Python goals: make database connection, write or read entries, commit changes, close connection.
-- First lets [read it](ADD_PYTHON_SCRIPT_TO_READ_DATA).
-- Now lets [write some data](ADD_PYTHON_SCRIPT_TO_WRITE_DATA).
+- First lets [read it into a dict using pkey as dict key](ADD_PYTHON_SCRIPT_TO_READ_DATA).
+- Now lets [write some data, note that we let the db assign the pkey](ADD_PYTHON_SCRIPT_TO_WRITE_DATA).
 - Everything you do will be a variation on this.
 - A word of caution: sqlite is best for single-user applications.  If you need to allow many users, like with a web app, swap over to Postgres.
 - You can convert to Postgres, and TONS of your knowledge is transferrable, so just use sqlite3 for now and that knowledge will transfer!
