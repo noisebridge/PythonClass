@@ -14,9 +14,6 @@ sql_filename = 'sampledb.sqlite'
 
 sqlite_fileandpath = dbdir + sql_filename
 
-# Not yet used
-samplerow_by_pkey = dict()
-
 if __name__ == '__main__':
 
     # DB connection per file.

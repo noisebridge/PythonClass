@@ -26,7 +26,8 @@ CREATE TABLE "OfficeSupplies" (
   "pKey" integer PRIMARY KEY,
   -- Constraints say what can't be duplicated. This conflict is triggered if ALL listed items are equal.
   -- This disregards publish time, disallowing exact duplicates otherwise.
-  UNIQUE(Name, Description, Mass, MassUnits, Volume, VolumeUnits) ON CONFLICT REPLACE
+  -- Default behavior is to keep the original entry and discard the duplicate replacement.
+  UNIQUE(Name, Description, Mass, MassUnits, Volume, VolumeUnits) ON CONFLICT IGNORE
 );
 
 CREATE INDEX "OfficeSupplies_Name" ON "OfficeSupplies" ("Name");

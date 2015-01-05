@@ -17,7 +17,7 @@ It provides a SQL interface compliant with the DB-API 2.0 specification describe
 
 ### 2. Working with the sample databases
 - An outline of our Python goals: make database connection, write or read entries, commit changes, close connection.
-- First lets [read it into a dict using pkey as dict key](ADD_PYTHON_SCRIPT_TO_READ_DATA).
+- First lets [read it](ADD_PYTHON_SCRIPT_TO_READ_DATA) into a list of tuples. This is the default data structure returned by sqlite3.
 - Now lets [write some data, note that we let the db assign the pkey](ADD_PYTHON_SCRIPT_TO_WRITE_DATA).
 - Everything you do will be a variation on this.
 - A word of caution: sqlite is best for single-user applications.  If you need to allow many users, like with a web app, swap over to Postgres.
