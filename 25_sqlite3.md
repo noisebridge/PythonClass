@@ -1,6 +1,18 @@
 
 ### [sqlite3: The Python 2 Module](https://docs.python.org/2/library/sqlite3.html)
 
+### TODO: DELETE WHEN COMPLETE
+  - Links below go to proper examples in folder.
+  - Discuss autocommmit, manual commit, buffered? commits (with example)
+  - Creating functions in queries: https://docs.python.org/2/library/sqlite3.html#sqlite3.Connection.create_function
+  - Everything after functions: aggregates, collations, row factories, text factories, row objects, and the rest of that section.
+  - Try to remove this from the code: explain why you have to specify str. That still isn't clear to me... 
+  - row.keys() <-- get keys/headers for table
+  - SQLite and Python Types: https://docs.python.org/2/library/sqlite3.html#introduction
+  - Dealing with Date: https://docs.python.org/2/library/sqlite3.html#default-adapters-and-converters
+  - 
+
+
 ##### First, an excerpt from the Python 2 docs:
 
 "SQLite is a C library that provides a lightweight disk-based database that doesn’t require a separate server process and allows accessing the database using a nonstandard variant of the SQL query language. Some applications can use SQLite for internal data storage. **It’s also possible to prototype an application using SQLite and then port the code to a larger database such as PostgreSQL or Oracle.**
