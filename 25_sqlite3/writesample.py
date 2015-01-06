@@ -3,7 +3,7 @@ Write a sample directly from a Python list of lists.
 """
 import sqlite3
 
-dbdir = "./"
+dbdir = "db/"
 
 sql_filename = 'sampledb.sqlite'
 

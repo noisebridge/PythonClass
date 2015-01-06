@@ -3,7 +3,7 @@
 """
 import sqlite3
 
-dbdir = "./"
+dbdir = "db/"
 
 sql_filename = 'sampledb.sqlite'
 
