@@ -28,4 +28,5 @@ if __name__ == '__main__':
 
     conn.close()
 
-    print result_list
+    for result in result_list:
+        print result
