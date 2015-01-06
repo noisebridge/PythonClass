@@ -20,7 +20,7 @@ if __name__ == '__main__':
 
     c = conn.cursor()
     
-    c.execute("SELECT * from OfficeSupplies;")
+    c.execute("SELECT * from OfficeSupplies where name like 'stapler';")
 
     result_list = c.fetchall()
 
