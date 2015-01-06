@@ -28,5 +28,10 @@ if __name__ == '__main__':
 
     conn.close()
 
+    # This is returned as a list of tuples, howeever SQL specifies a row as an 
+    # unordered group of values defined by their attribute name (column heading).  
+    # In this way, a SQL row is more like a set of key-value pairs. The keys are 
+    # shared by all other rows in the group/table.
+
     for result in result_list:
         print result
