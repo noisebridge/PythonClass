@@ -19,9 +19,9 @@ It provides a SQL interface compliant with the DB-API 2.0 specification describe
 
 ### 2. Working with the sample databases
 - An outline of our Python goals: make database connection, write or read entries, commit changes, close connection.
-- First lets [read it](https://github.com/PyClass/PyClass-lesson-plans/blob/master/25_sqlite3/writesample.py) into a list of tuples. This is the default data structure returned by sqlite3.
-- Now lets [write some data, note that we let the db assign the pkey](https://github.com/PyClass/PyClass-lesson-plans/blob/master/25_sqlite3/readsample.py).
-- Everything you do will be a variation on this.
+- First lets [read it](https://github.com/PyClass/PyClass-lesson-plans/blob/master/25_sqlite3/readsample.py) into a list of tuples. This is the default data structure returned by sqlite3.
+- Now lets [write some data, note that we let the db assign the pkey](https://github.com/PyClass/PyClass-lesson-plans/blob/master/25_sqlite3/writesample.py).
+- Most basic uses will be a variation on this.
 - A word of caution: sqlite is best for single-user applications.  If you need to allow many users, like with a web app, swap over to Postgres.
 - You can convert to Postgres, and TONS of your knowledge is transferrable, so just use sqlite3 for now and that knowledge will transfer!
 
