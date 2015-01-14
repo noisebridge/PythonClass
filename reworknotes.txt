@@ -1,4 +1,6 @@
 
+Move all examples into an examples folder in each lesson.
+Move the markdown files into the folder for each lesson. 
 
 
 Lesson 9 - Numbers
