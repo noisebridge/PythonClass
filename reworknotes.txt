@@ -1,0 +1,9 @@
+
+
+
+Lesson 9 - Numbers
+- Need more real world data and specific examples.
+- Need clearer objectives in numpy/scipy
+- Need less time in Python numbers since those are only for basic usage.
+
+
