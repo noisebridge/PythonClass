@@ -1,10 +1,5 @@
 
-
 ##basic server-side web dev with flask - what is required to serve up basic app in python
-
-
-
-
 
 1. InstallFest!
     - fire up a virtualenv and pip install flask
@@ -46,8 +41,5 @@
 - [Important Docs: WTForms](http://wtforms.readthedocs.org/en/latest/index.html)
 - [Important Docs: SQLAlchemy](http://www.sqlalchemy.org/)
 - [All Flask Extensions on PyPI](https://pypi.python.org/pypi?%3Aaction=search&term=wtforms&submit=search)
-
-
-
 
 https://en.wikipedia.org/wiki/Web_Server_Gateway_Interface
