@@ -25,7 +25,12 @@ filt_config_dict = {
         },  
     },
     'loggers': {
-        '': {                  
+        'ex4': {                  
+            'handlers': ['file'], 
+            'level': 'DEBUG',
+            'propagate': True
+        }
+        'splogger': {                  
             'handlers': ['file'], 
             'level': 'DEBUG',
             'propagate': True

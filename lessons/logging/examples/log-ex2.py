@@ -1,6 +1,6 @@
-
-
-
+"""
+This slight modification of example 1 introduces logging to a file.
+"""
 
 import logging
 
@@ -11,6 +11,4 @@ logging.info("info: this string is cool.")
 
 with open('ex1.log', 'r') as f:
     print f.read()
-
-
 

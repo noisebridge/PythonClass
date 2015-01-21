@@ -1,44 +1,31 @@
+"""
+Now lets go for broke. 
 
+This isn't our final version but it will expose you to the settings we will be configuring there.
+
+Steps:
+    1. Set up logger's 'name'.
+    2. Specify a handler (FileHandler)
+    3. Specify a formatter and attach it to the handler.
+    4. Add the handler to the logger 'name'.
+    5. Use the logger.
+
+"""
 
 import logging
-import logging.handlers
 
-logger = logging.getLogger('root_lv')
+myloglv = logging.DEBUG
 
-log_lv = logging.INFO
-
-logger.setLevel(log_lv)
-
-formatter = logging.Formatter('%(asctime)s\t\t%(name)s\t\t%(levelname)s\t\t%(module)s:%(lineno)d\t\t%(message)s')
-
-my_filter = logging.Filter("root_lv.generic_function")
-
-logger.addFilter(my_filter)
+mylogger = logging.getLogger('myrootlevel')
+mylogger.setLevel(myloglv)
 
 logger_handler = logging.FileHandler('example.log')
 
-logger_handler.setFormatter(formatter)
+myformatter = logging.Formatter('%(asctime)s\t\t%(name)s\t\t%(levelname)s\t\t%(module)s:%(lineno)d\t\t%(message)s')
+logger_handler.setFormatter(myformatter)
 
-logger.addHandler(logger_handler)
+mylogger.addHandler(logger_handler)
 
+mylogger.debug("This is my first logging statement.")
 
-
-# Now lets add some log events.
-logger.debug("This is a test log.")
-logger.info("info")
-logger.warning("warning")
-logger.error("error")
-logger.critical("critical")
-
-
-def generic_function():
-    """
-    """
-    logger = logging.getLogger('root_lv.generic_function')
-    for i in range(0,5):
-        logger.debug("This is a current value of i: %s" % i)
-
-    return
-
-generic_function()
 
