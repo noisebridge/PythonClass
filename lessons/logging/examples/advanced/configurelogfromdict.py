@@ -1,20 +1,4 @@
 """
-(ex5)
-This is an expansion of example 4.  The goal is to use filters with dictconfig:
-https://docs.python.org/2/howto/logging-cookbook.html#configuring-filters-with-dictconfig
-
-Defining a filter:
-https://docs.python.org/2/library/logging.html#filter
-
-It is not as simple as adding the filter to the config
-file because a filter is a function.  We will need to
-load the config dict from a file then attach the filter
-function.
-
-
-
-
-(ex4)
 This uses a json file as a config file, which is loaded
 as a Python dict().  The result is a fully configured
 logger.
@@ -31,7 +15,7 @@ import logging.config
 logger = logging.getLogger('ex4')
 
 
-log_config_filename = "logfiltconfig.json"
+log_config_filename = "configs/logconfig.json"
 
 # The JSON object is loaded as a dict
 with open(log_config_filename, 'r') as f:
