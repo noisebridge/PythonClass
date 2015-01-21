@@ -30,11 +30,6 @@ filt_config_dict = {
             'level': 'DEBUG',
             'propagate': True
         }
-        'splogger': {                  
-            'handlers': ['file'], 
-            'level': 'DEBUG',
-            'propagate': True
-        }
     }
 } 
 
