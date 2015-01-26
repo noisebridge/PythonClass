@@ -31,6 +31,8 @@ A major PyClass goal is to break down the courses into independent units. In oth
 
 To best experience the course, spend a short time reviewing the course materials before you come in. If you wish to know this week's courses, please join the mailing list and send an email out to PyClass@googlegroups.com
 
+Lessons are [available on Github](https://github.com/PyClass/PyClassLessons).
+
 
 #####The 'ideal student' for this course can grasp the following code:
 
