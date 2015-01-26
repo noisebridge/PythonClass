@@ -32,7 +32,9 @@ A major PyClass goal is to break down the courses into independent units. In oth
 To best experience the course, spend a short time reviewing the course materials before you come in. If you wish to know this week's courses, please join the mailing list and send an email out to PyClass@googlegroups.com
 
 
-#####The 'ideal student' for this course can grasp the following code (feel free to use web resources to look up anything you don't understand):
+#####The 'ideal student' for this course can grasp the following code:
+
+(Feel free to use web resources to look up anything you don't understand)
 
 ```python
 letter_frequency_dict = {}
@@ -45,8 +47,8 @@ for letter in word:
 ```
 
 
-##### We use the [Socratic Method](http://www.criticalthinking.org/pages/socratic-teaching/606):
-###### A Socratic questioner should: 
+##### We use the [Socratic Method](http://www.criticalthinking.org/pages/socratic-teaching/606)
+###### A Socratic questioner should 
 1. keep the discussion focused
 2. keep the discussion fact based\*
 3. stimulate the discussion with probing questions
