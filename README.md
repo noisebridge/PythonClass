@@ -29,7 +29,7 @@ The pace of the courses will be fast, and the materials will be available online
 
 A major PyClass goal is to break down the courses into independent units. In other words, you won't fall behind if you miss a week. Sounds good, right?
 
-######The ideal student for this course can grasp the following code (feel free to use web resources to look up anything you don't understand):
+#####The 'ideal student' for this course can grasp the following code (feel free to use web resources to look up anything you don't understand):
 
 ```python
 letter_frequency_dict = {}
