@@ -41,7 +41,8 @@ for letter in word:
     letter_frequency_dict[letter] = times
 ```
 
-###### We use the [Socratic Method](http://www.criticalthinking.org/pages/socratic-teaching/606):
+
+##### We use the [Socratic Method](http://www.criticalthinking.org/pages/socratic-teaching/606):
 ###### A Socratic questioner should: 
 1. keep the discussion focused
 2. keep the discussion fact based\*
