@@ -29,18 +29,7 @@ The pace of the courses will be fast, and the materials will be available online
 
 A major PyClass goal is to break down the courses into independent units. In other words, you won't fall behind if you miss a week. Sounds good, right?
 
-###### We use the [Socratic Method](http://www.criticalthinking.org/pages/socratic-teaching/606):
-###### A Socratic questioner should: 
-1. keep the discussion focused
-2. keep the discussion fact based\*
-3. stimulate the discussion with probing questions
-4. periodically summarize what has and what has not been dealt with and/or resolved
-5. draw as many students as possible into the discussion.
-
-\* [intellectually responsible](https://en.wikipedia.org/wiki/Intellectual_responsibility) can be effectively replaced with 'fact based' for our needs.
-
-
-The ideal student for this course can grasp the following code (feel free to use web resources to look up anything you don't understand):
+######The ideal student for this course can grasp the following code (feel free to use web resources to look up anything you don't understand):
 
 ```python
 letter_frequency_dict = {}
@@ -51,6 +40,16 @@ for letter in word:
     times += 1
     letter_frequency_dict[letter] = times
 ```
+
+###### We use the [Socratic Method](http://www.criticalthinking.org/pages/socratic-teaching/606):
+###### A Socratic questioner should: 
+1. keep the discussion focused
+2. keep the discussion fact based\*
+3. stimulate the discussion with probing questions
+4. periodically summarize what has and what has not been dealt with and/or resolved
+5. draw as many students as possible into the discussion.
+
+\* [intellectually responsible](https://en.wikipedia.org/wiki/Intellectual_responsibility) can be effectively replaced with 'fact based' for our needs.
 
 To best experience the course, spend a short time reviewing the course materials before you come in. If you wish to know this week's courses, please join the mailing list and send an email out to PyClass@googlegroups.com
 
