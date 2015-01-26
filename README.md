@@ -32,10 +32,13 @@ A major PyClass goal is to break down the courses into independent units. In oth
 ###### We use the [Socratic Method](http://www.criticalthinking.org/pages/socratic-teaching/606):
 ###### A Socratic questioner should: 
 1. keep the discussion focused
-2. keep the discussion fact based ~~[intellectually responsible](https://en.wikipedia.org/wiki/Intellectual_responsibility)~~
+2. keep the discussion fact based*
 3. stimulate the discussion with probing questions
 4. periodically summarize what has and what has not been dealt with and/or resolved
 5. draw as many students as possible into the discussion.
+
+* [intellectually responsible](https://en.wikipedia.org/wiki/Intellectual_responsibility) can be effectively replaced with 'fact based' for our needs.
+
 
 The ideal student for this course can grasp the following code (feel free to use web resources to look up anything you don't understand):
 
