@@ -1,0 +1,29 @@
+Class Title: JSON Module
+Facilitator: Greg A
+Date: 012515
+These notes are by: Trent R
+
+
+Exercise Ideas:
+===============
+    (greg ran this inside jsonlint.com)
+    Q: How many json objects are in: [3,4]?
+    A: 3 objects.
+
+
+JSON Lesson:
+============
+
+    Add section showing off the Python 2 Library Documentation: https://docs.python.org/2/library/
+    This is in the spirit of this being the 'first lesson' for the course.
+
+
+Ideas: 
+======
+    We should do an XML Lesson!
+
+
+
+Leads for the future:
+=====================
+    Doctest - from jimmy - https://docs.python.org/2/library/doctest.html
