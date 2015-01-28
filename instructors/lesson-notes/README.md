@@ -1,6 +1,8 @@
 
 
-### Lesson notes: running notes of interesting and new things that get mentioned during lessons.
+### Lesson notes
+
+Running notes of interesting and new things that get mentioned during lessons.
 
 Each night we should have a note taker who will be responsible for committing these notes. The note taker should have sat in on the lesson at least once. This isn't always possible, so focus on your personal development first, the notes can afford to suffer.
 
