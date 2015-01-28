@@ -4,9 +4,10 @@
 
 Running notes of interesting and new things that get mentioned during lessons.
 
+##### These lesson notes should never have a critique of any person giving lessons.
+
 Each night we should have a note taker who will be responsible for committing these notes. The note taker should have sat in on the lesson at least once. This isn't always possible, so focus on your personal development first, the notes can afford to suffer.
 
-##### These lesson notes should never have a critique of any person giving lessons.
 
 
 ##### Things that belong in these lesson reviews:
