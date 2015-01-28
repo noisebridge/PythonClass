@@ -1,8 +1,8 @@
 
 
-##### Lesson notes are individual reviews of things that got mentioned during lessons.
+##### Lesson notes are running notes of interesting and new things that got mentioned during lessons.
 
-**These lesson notes should never have a critique of any person giving lessons.**
+###### These lesson notes should never have a critique of any person giving lessons.
 
 
 ###### Things that belong in these lesson reviews:
@@ -13,3 +13,6 @@
 
 ###### Things that do not belong in the lesson reviews:
 - Any critique or review of the instructor, the notes are about content
+
+
+#### YOUR NOTES MUST MAKE SENSE TO OTHER READERS!

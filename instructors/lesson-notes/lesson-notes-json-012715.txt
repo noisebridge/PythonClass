@@ -17,6 +17,8 @@ JSON Lesson:
     Add section showing off the Python 2 Library Documentation: https://docs.python.org/2/library/
     This is in the spirit of this being the 'first lesson' for the course.
 
+    Add section on '' versus u'' versus r''  (string types in Python 2).
+
 
 Ideas: 
 ======
