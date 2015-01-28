@@ -6,7 +6,7 @@ Course 1 - An introduction to the JSON Module in Python
 1. Review JSON format - 15 minutes
 
   a. http://www.json.org/    
-  b. Values: string, number, object, array, true, false, null
+  b. Values: string, number, object, array, true, false, null    
   c. Root Object must be a container: object, array
 
 
