@@ -1,7 +1,7 @@
 
 ### PSAs and Events
 
-**PSA 1-26-15:** As of February 1st, attend PyClass on Tuesdays and Thursdays! Thursday in the Church Classroom will replace the Wednesday in Church Classroom session.
+**PSA 1-26-15:** As of February 1st, attend PyClass on Tuesdays and Thursdays! Thursday in the Church Classroom will replace the Wednesday in Church Classroom session. DO NOT COME ON WEDNESDAY.
 
 **PSA 10-1-14:** PyClass starts at 7:00 PM, try to come a few minutes earlier. We want to finish up by nine so people can hack or catch their preferred train home.  You can come at any time, but YMMV (your mileage may vary).
 
@@ -14,7 +14,7 @@
 We set up the space at 6:45 PM - try to arrive early to help if you are able to.
 
 * Tuesday 7:00 - 9:00 PM PST - 'Turing' Classroom
-* Wednesday 7:00 - 9:00 PM PST - 'Church' Classroom
+* Thursday 7:00 - 9:00 PM PST - 'Church' Classroom
 
 ### Mailing List
 
