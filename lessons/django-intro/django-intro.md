@@ -122,4 +122,4 @@ can use the shell if necessary, but we are only going to use the admin
 
     make an admin.py file in your <appname>
 
-#then uncomment necessary lines in urls.py and settings.py   
+then uncomment necessary lines in urls.py and settings.py. you should be able to figure them out by reading the comments already in those files.
