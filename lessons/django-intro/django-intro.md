@@ -46,11 +46,11 @@ briefly checkout the files that we just created
 
 Now, there are 3 steps to actually make things happen
 
-######1. let your project settings in settings.py know the apps that you have created. 
+######1. Settings: let your project settings in settings.py know the apps that you have created. 
     INSTALLED_APPS = ('<appname>')
 Deciphering between the two can be one of the most frustrating and confusing things in django IMO
 
-######2.  then you make a view function in views.py without making a template.     
+######2. Views: then you make a view function in views.py without making a template.     
 
     from django.http import HttpResponse
     def extreme_basic_view_function(request):   
@@ -58,7 +58,7 @@ Deciphering between the two can be one of the most frustrating and confusing thi
 
   notice the difference in what you have to pass to a view function in contrast to flask, the request object is necessary for django to function. notice that we have instantiated an HttpResponse object which we can just call a response object here
 
-######3. but this won’t work until we let our project know about our url, in urls.py!
+######3. Urls: but this won’t work until we let our project know about our url, in urls.py!
 notice that we are using regex here!
 
 add to urls.py
