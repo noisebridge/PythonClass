@@ -38,14 +38,17 @@ REQUIRES BLANK PAPER
     subl .
 
     python manage.py runserver <port #>
-# this should work!
+
+####Checkpoint: this should work!
 
 python manage.py startapp <appname>
 briefly checkout the files that we just created
 
-now. there are 3 steps to actually make things happen
+Now, there are 3 steps to actually make things happen
 
-######1. let your project settings in settings.py know the apps that you have created. Deciphering between the two can be one of the most frustrating and confusing things in django IMO
+######1. let your project settings in settings.py know the apps that you have created. 
+    INSTALLED_APPS = ('<appname>')
+Deciphering between the two can be one of the most frustrating and confusing things in django IMO
 
 ######2.  then you make a view function in views.py without making a template.     
 
@@ -98,7 +101,7 @@ don’t forget to hook up the url with the proper regex code.
 
 url(r'^better/$', ‘<appname>.views.better_view_function'),
 
-######Data Model:
+####Data Model:
 
 first, more config    
 
