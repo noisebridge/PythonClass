@@ -1,8 +1,13 @@
 Introduction to Django    
 
-warm-up: drawing model of something (grovery list), sketching up what it would look like to the user, what would happen on updates REQUIRES BLANK PAPER    
+warm-up: model your very basic app in your head and be able to write it down on paper
+-write up a data model of something eg: grocery list or sports team, 
+-sketch up what it would look like to the user 
+-draw bubbles and arrows to show what would happen to data and/or UI on updates 
 
-1. How we build web apps, [the simple Django diagram](http://www.thomaswhitton.com/django-presentation/images/432038560_9f8b830dfe_o.png), [a nicer flow diagram](http://www.aprendendodjango.com/gallery/fluxo-no-mvc/file/) en espanol    
+REQUIRES BLANK PAPER    
+
+1. How we build web apps, [the simple Django diagram](http://www.thomaswhitton.com/django-presentation/images/432038560_9f8b830dfe_o.png), and [a nicer flow diagram](http://www.aprendendodjango.com/gallery/fluxo-no-mvc/file/) en espanol    
     -semantics problem of canonical MVC v. django's MTV    
     -btw why is it called django? and what is its story?    
 
