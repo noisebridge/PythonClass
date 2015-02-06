@@ -35,13 +35,14 @@ REQUIRES BLANK PAPER
 
     cd <projectname>
 
-    subl .
+    Now you can open this project folder and see what's inside! I use:   subl .
 
     python manage.py runserver <port #>
 
 ####Checkpoint: this should work!
 
-python manage.py startapp <appname>
+    python manage.py startapp <appname>
+
 briefly checkout the files that we just created
 
 Now, there are 3 steps to actually make things happen
@@ -64,7 +65,7 @@ notice that we are using regex here!
 add to urls.py
 
     urlpatterns = patterns('',
-         url(r'^hello/$', ‘<appname>.views.extreme_basic_view_function')
+         url(r'^hello/$', '<appname>.views.extreme_basic_view_function')
 
 now check to see if that can run
 
@@ -78,7 +79,7 @@ what are we trying to do on the highest level? what are web-apps? what is our pu
 create a template folder in your projects folder.
 to do a template then we must pwd and get our absolute path to hookup the templates folder 
 
-views.py
+views.py    
     from django.template import Context, loader
     from datetime import datetime
 
