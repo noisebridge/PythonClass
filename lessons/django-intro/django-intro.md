@@ -46,18 +46,20 @@ now. there are 3 steps to actually make things happen
 
 1. let your project settings in settings.py know the apps that you have created. Deciphering between the two can be one of the most frustrating and confusing things in django IMO
 
-2.  then you make a view function in views.py without making a template. 
+2.  then you make a view function in views.py without making a template.     
 
-from django.http import HttpResponse
-def extreme_basic_view_function(request):   
+  from django.http import HttpResponse
+  def extreme_basic_view_function(request):   
      return HttpResponse('<html><body>Hello,World!</body></html>')
 
-notice the difference in what you have to pass to a view function in contrast to flask, the request object is necessary for django to function. notice that we have instantiated an HttpResponse object which we can just call a response object here
+  notice the difference in what you have to pass to a view function in contrast to flask, the request object is necessary for django to function. notice that we have instantiated an HttpResponse object which we can just call a response object here
 
 3. but this won’t work until we let our project know about our url! in urls.py!
 notice that we are using regex here!
 
-#add to - urlpatterns = patterns('',
+add to urls.py
+
+urlpatterns = patterns('',
      url(r'^hello/$', ‘<appname>.views.extreme_basic_view_function')
 
 now check to see if that can run
@@ -93,9 +95,10 @@ don’t forget to hook up the url with the proper regex code.
 
 url(r'^better/$', ‘<appname>.views.better_view_function'),
 
-Data Model:
+######Data Model:
 
-first, more config 
+first, more config    
+
 'ENGINE': 'django.db.backends.sqlite3', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
 'NAME': '/Users/me/Documents/Py/PyClass/lessons/django-intro/examples/grocery_project/example.db',                      
 
