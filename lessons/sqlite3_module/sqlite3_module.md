@@ -12,6 +12,7 @@ It provides a SQL interface compliant with the DB-API 2.0 specification describe
 ### 1. Basic Setup
 - [Install sqlite](http://www.sqlite.org/quickstart.html)
 - [sqlite Documentation](http://www.sqlite.org/docs.html)
+- [Syntax Diagrams - Very useful!!](https://www.sqlite.org/syntaxdiagrams.html)
 - Create a database: [use these schema](https://github.com/PyClass/PyClassLessons/tree/master/lessons/sqlite3_module/examples/db). First build the physics database, then build the sampledb database.
 - Write to DB: Run [this](https://github.com/PyClass/PyClassLessons/blob/master/lessons/sqlite3_module/examples/readsample.py) to add some sample entries.
 - Read from DB: Inside the sqlite shell, execute `SELECT * FROM OfficeSupplies;` to see all entries.
