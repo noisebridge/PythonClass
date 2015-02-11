@@ -1,0 +1,34 @@
+
+Flask Meetup is on third Thursday of every month!
+
+We should use way more flask to interact with things in class. 
+One issue: not everyone knows any html.
+
+Fix the SQLite 3 lesson to use the squares of a list of numbers example and schema.
+SQLite is embedded in tons of products for tons of uses (android for example).
+Add a join statement into this example at the end so people are exposed to a join.
+
+Greg's numbers 1-100 with their squares example is way simpler and better. My office supplies and physics objects are overcomplex for instruction.
+
+Polling the class for installation:
+Who is running windows? (installed through cygwin today)
+Who is running mac? (manually installed locally by greg?)
+Who is running linux? (All were debian based today)
+
+Polling the class (see what difficulty level to bat towards):
+Who has used a database?
+Who has heard of SQL?
+Who has used an INSERT or SELECT statement?
+Who has built an SQL schema?
+Who has munged data into a database from some sort of other format (csv/json)?
+
+========================================
+I didn't organize the module md file in a very intuitive way.  
+========================================
+1. Before organizing we should give brief background of SQLite3 and pep249 and how this knowledge will server the class in the future.  Why Database? Why SQL? Why SQLite?
+2. In the future the document should be rearranged to talk about how databases are organized right after installation.  Installation should definitely come first, get this out of the way!
+3. Add bobby tables example to explain why we pass strings in with "insert ?,? into mytable", ('data1', 'data2') (Called: "Exploits of a Mom" xkcd)
+4. Database Normalization is a whole field. We should discuss a little bit of this too!
+
+
+Finally: We should provide a join example. Maybe we could also do a table of cubes and join the table of squares to the table of cubes.
