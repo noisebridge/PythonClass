@@ -3,7 +3,7 @@ import pprint
 import json
 import logging
 
-logging.basicConfig()
+logging.basicConfig(level=logging.DEBUG)
 
 filename = 'workout.json'
 
@@ -45,12 +45,12 @@ for workout, components in workouts_dict.iteritems():
     # Check for missing data and log it.
     for component_key in workout_component_keys:
         if component_key not in components.keys():
-            logging.warn(workout + ": " + component_key + "- KeyError")
+            logging.debug(workout + ": " + component_key + "- KeyError")
 
     # Check for extra data and log it.
     for component_key in components.keys():
         if component_key not in workout_component_keys:
-            logging.warn(workout + ": " + component_key + "- Extra Data")
+            logging.debug(workout + ": " + component_key + "- Extra Data")
 
 
 
