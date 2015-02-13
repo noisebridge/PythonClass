@@ -13,6 +13,7 @@ REQUIRES BLANK PAPER
 
 
 2. Unwrapping the present that is django's MTV framework    
+        
     -setting up the environment of course: virtualenv, pip install Django==1.5    
     -setting up the project: django-admin.py startproject <projectname>    
     -note that your project will contain multiple apps for the purpose of reusable code and uniformity of a contained project    
@@ -23,8 +24,9 @@ REQUIRES BLANK PAPER
 ####what an app is    
     -models.py: This file is used to define your data models that are connected to the database.    
     -tests.py: This houses your test files used for setting up unit and integration tests (don't worry about this for now).    
-    -views.py: This file is your application's controller (as mentioned above), defining the business logic in order to render a view to the browser. 
+    -views.py: This file is your application's controller (as mentioned above), defining the business logic in order to render a view to the browser.
 
+    create a new folder to use as your project root
 
     virtualenv .
     source bin/activate
@@ -33,9 +35,11 @@ REQUIRES BLANK PAPER
 
     django-admin.py startproject <projectname>
 
+    you will soon notice that two folders with that projectname were created
+
     cd <projectname>
 
-    Now you can open this project folder and see what's inside! I use:   subl .
+    Now open this new root folder and see all that's inside! I use:   subl .
 
     python manage.py runserver <port #>
 
