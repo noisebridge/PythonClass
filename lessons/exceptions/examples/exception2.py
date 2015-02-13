@@ -24,16 +24,15 @@ if __name__ == '__main__':
         f.read()
 
     except IOError as e:
-        print "Error!", e # we will look at this next example, ignore it for now
+        print("Error!", e) # we will look at this next example, ignore it for now
 
     # This always runs after the try, even if there is an exception.
     finally:
-        print "Is f closed?", f.closed
+        print("Is f closed?", f.closed)
         f.close() # We need to manually close this, next we will learn a better way
-        print "Is f closed?", f.closed
-
+        print("Is f closed?", f.closed)
 
     # Demonstrate that the application continues
-    print "..."
-    print "Continue on with the application..."
+    print("...")
+    print("Continue on with the application...")
 
