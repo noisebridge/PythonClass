@@ -1,0 +1,15 @@
+
+
+========================================
+I found this excellent description of many keywords: https://docs.python.org/2/reference/simple_stmts.html#raise
+This document covers tons of things called 'simple statements' which at first glance appear to all be keywords.
+
+Here's another similar document for 'compound statements', which is also a bunch of keywords:
+https://docs.python.org/2/reference/compound_stmts.html
+
+Do these two documents comprise all keywords?
+========================================
+
+Also, consider breaking the exception handling keywords out of the control flow, at least as a subset.
+The second subset could be 'regular control flow', things like if, elif, else, while, for.
+
