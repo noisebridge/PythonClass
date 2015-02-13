@@ -20,6 +20,17 @@ import sys # we will use exc_info() function to log our exceptions
 logging.basicConfig(level=logging.DEBUG)
 
 
+def open_a_file(filename):
+    """ Opens the file and returns what it read
+
+    """
+
+    with open(filename, 'r') as f:
+        print f.read()
+
+    return f.read()
+
+
 if __name__ == '__main__':
     """ Catch an IOerror, which includes any time the file doesn't exist.
 
@@ -30,8 +41,7 @@ if __name__ == '__main__':
     filename = "does_not_exist.txt"
 
     try:
-        with open(filename, 'r') as f:
-            print f.read()
+        open_a_file(filename)
     except IOError as e:
         logging.error(e)
         logging.error(sys.exc_info())
