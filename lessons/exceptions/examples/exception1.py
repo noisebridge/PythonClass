@@ -20,10 +20,9 @@ if __name__ == '__main__':
         f.read()
 
     except IOError as e:
-        print "Error!", e # we will look at this next example, ignore it for now
-
+        print( "Error!", e) # we will look at this next example, ignore it for now
 
     # Demonstrate that the application continues
-    print "..."
-    print "Continue on with the application..."
+    print("...")
+    print("Continue on with the application...")
 
