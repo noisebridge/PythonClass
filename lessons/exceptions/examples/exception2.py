@@ -22,18 +22,20 @@ if __name__ == '__main__':
     try:
         f = open(filename, 'w')
         f.read()
+        #Any operations that rely on the file being open go here. If they don't rely on the file
+        #being open, the commands should be placed after the finally block.
 
     except IOError as e:
-        print "Error!", e # we will look at this next example, ignore it for now
+        print("Error!", e) # we will look at this next example, ignore it for now
 
-    # This always runs after the try, even if there is an exception.
+    #This ALWAYS runs after the try weather or not there is an exception and weather or not the
+    #exception is caught.
     finally:
-        print "Is f closed?", f.closed
+        print("Is f closed?", f.closed)
         f.close() # We need to manually close this, next we will learn a better way
-        print "Is f closed?", f.closed
+        print("Is f closed?", f.closed)
 
-
-    # Demonstrate that the application continues
-    print "..."
-    print "Continue on with the application..."
+    #Demonstrate that the application continues
+    print("...")
+    print("Continue on with the application...")
 

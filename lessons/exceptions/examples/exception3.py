@@ -11,7 +11,6 @@ import sys # we will use exc_info() function to log our exceptions
 
 logging.basicConfig(level=logging.DEBUG)
 
-
 if __name__ == '__main__':
     """ Catch an IOerror, which includes any time the file doesn't exist.
 
@@ -23,14 +22,13 @@ if __name__ == '__main__':
 
     try:
         with open(filename, 'r') as f:
-            print f.read()
+            print(f.read())
     except IOError as e:
         logging.error(e)
         logging.error(sys.exc_info())
     # Note that we don't have a finally, with... as did this for us.
 
-
     # Demonstrate that the application continues
-    print "..."
-    print "Continue on with the application..."
+    print("...")
+    print("Continue on with the application...")
 
