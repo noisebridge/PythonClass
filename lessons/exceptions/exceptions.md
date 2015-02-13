@@ -1,17 +1,19 @@
 
 ### Exceptions
 
-Ten thousand foot view:  Exceptions are errors that occur when an application is running. If they 
+Ten thousand foot view:  Exceptions are errors that occur when an application is running.
+
+Warm up: Everyone run examples/example0.py - View an exception.
 
 
-### 0. Two major types of Error Messages - [Syntax Errors vs. Exceptions](https://docs.python.org/2/tutorial/errors.html)
+### 1. Two major types of Error Messages - [Syntax Errors vs. Exceptions](https://docs.python.org/2/tutorial/errors.html)
 - Syntax Errors === Parsing Errors (the 'grammar rules' of Python)
 - Exceptions happen during runtime and can be captured safely and handled, and what we're focused on today
 - The parser will catch Syntax Errors, your application can't run if those exist
 - You can catch exceptions.  The rest of the course will be focused on catching and handling exceptions
 
 
-### 1. Some facts:
+### 2. Some facts about Exceptions
 - Exceptions are classes, following the 'object oriented' programming paradigm
 - Object oriented note: when you catch an exception it is an object, which is instantiated from that class
 - Almost all built-in exceptions inherit from a class called Exception
@@ -25,7 +27,7 @@ Ten thousand foot view:  Exceptions are errors that occur when an application is
 - Control flow is going to be our tool for recording an exception and going on with life (or letting the app fail)
 - Major point of exception control: handling data coming from outside your application
 - Lets do some examples of these control structures: try... except, try... except... finally, with... as, making a with... as.
-- Note the finally will block will run no matter what Exceptions are thrown during the try or except blocks. Think of it as your universal clean-up mechanism. 
+- Finally always runs, even if the exception is raised and the program is stopped. Even if the exception causes the loop to be broken and control to be passed up to a higher level or out of a function. No matter what, finally runs.
 
 
 
