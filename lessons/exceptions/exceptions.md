@@ -25,6 +25,7 @@ Ten thousand foot view:  Exceptions are errors that occur when an application is
 - Control flow is going to be our tool for recording an exception and going on with life (or letting the app fail)
 - Major point of exception control: handling data coming from outside your application
 - Lets do some examples of these control structures: try... except, try... except... finally, with... as, making a with... as.
+- Note the finally will block will run no matter what Exceptions are thrown during the try or except blocks. Think of it as your universal clean-up mechanism. 
 
 
 
