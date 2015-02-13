@@ -1,12 +1,29 @@
 """
-Using a try/except pattern to restrict the user to certain input.
+Course: Exceptions
+Topic:  try... except
+Summary: Lets catch a simple problem.
+
+Takeaways: If we have an issue, the application can handle the issue and keep going. Voila!
 
 """
 
-while True:
+if __name__ == '__main__':
+    """ Catch an IOerror, which includes any time the file doesn't exist.
+
+    """
+
+    # This file doesn't exist, oops!
+    filename = "does_not_exist.txt"
+
     try:
-        x = int(raw_input("Please enter a number: "))
-        break
-    except ValueError:
-        print "Oops!  That was no valid number.  Try again"
-        
+        f = open(filename, 'r')
+        f.read()
+
+    except IOError as e:
+        print "Error!", e # we will look at this next example, ignore it for now
+
+
+    # Demonstrate that the application continues
+    print "..."
+    print "Continue on with the application..."
+
