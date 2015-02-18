@@ -125,15 +125,15 @@ create a new directory to use as your project root
     {% endfor %}
 
     </body>
-</html>
+    </html>
 
-Extra: customize the admin template
+######Extra: customize the admin template
 
-    #find where everything in django resides    
+    --find where everything in django resides    
 
     python -c "import sys sys.path = sys.path[1:]import djangoprint(django.__path__)"    
 
-    #open that path and then 
+    --open that path and then 
     (django/contrib/admin/templates/admin/base_site.html)
 
     find where it says Django Admin and change the naming scheme around
