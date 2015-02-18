@@ -1,4 +1,3 @@
-[Request-Response-Cycle](http://rnevius.github.io/django_request_response_cycle.png)
 
 Introduction to Django Part 2 - Model driven approach 
 
@@ -31,7 +30,9 @@ create a new directory to use as your project root
 
     --ADD YOUR APP TO settings.py
 
-######2. Creating Models and interacting with them by entering the database shell    
+######2. Creating Models and interacting with them by entering the database shell
+
+[nicely categorized django docs including the model layer](https://docs.djangoproject.com/en/1.7/)   
 
     python manage.py migrate  #creating database
 
@@ -104,7 +105,7 @@ create a new directory to use as your project root
         url(r'^$', views.<view_func_name>, name='<good name>'),
         )
 
-    <appname>/urls
+    --in <proj_name>/urls.py
     from django.conf.urls import patterns, include, url
     from django.contrib import admin
 
@@ -129,6 +130,7 @@ create a new directory to use as your project root
     --yep, seriously
 
 ######5. Setting up the view function in views.py
+    from .models import Post
 
     def <view-func-name>(request):
         <data_to_post> = Post.objects.all()
@@ -183,4 +185,7 @@ create a new directory to use as your project root
 [mercador: nice app to learn some principles and look at more django code, though only in 1.5](http://django-marcador.keimlink.de/en/index.html)
 
 paid resource: [https://realpython.com/ - lots of great stuff ranging from beginner to advanced](https://realpython.com/)
+
+######Django at a higher level
+-[Request-Response-Cycle](http://rnevius.github.io/django_request_response_cycle.png)
  
