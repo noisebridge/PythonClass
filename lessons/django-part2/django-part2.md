@@ -27,9 +27,11 @@ create a new directory to use as your project root
 
     python manage.py startapp <appname>
 
-    --open your this directory in your text editor
+    --open this directory in your text editor
 
-######2. Creating Models and interacting with them in the shell and admin interfaces    
+    --ADD YOUR APP TO settings.py
+
+######2. Creating Models and interacting with them by entering the database shell    
 
     python manage.py migrate  #creating database
 
@@ -41,9 +43,33 @@ create a new directory to use as your project root
 
     python manage.py sqlmigrate <appname> 0001
 
+    --run the migrate command one more time
+
+    python manage.py migrate
+
+    --now we can open the shell
+
     python manage.py shell
 
     --import the class you defined in your <appname>.models
+
+    --create some instances of your models
+
+    --examples: 
+    from <appname>.models import Post
+    p = Post(item_name="apples", amount=4, weight=7, content="golden delicious!")
+
+    --make sure to run save method of your instance
+
+    p.save()
+
+    --check to see your entries
+
+    Post.objects.all()
+
+    exit()
+
+######3. Interacting with models through the admin 
 
     python manage.py createsuperuser
 
@@ -53,25 +79,29 @@ create a new directory to use as your project root
 
     python manage.py runserver <port # optional>
 
-    --need to let admin.py know about the models we defined
+    --navigate to the /admin url and login, what can and can't you do?
 
-    --then a single line will connect everything for you
+    --need to let admin.py know about the models we defined, a single line will connect everything for you
 
     admin.site.register(<ModelClass>)
 
-    --we can do a lot of customization of this admin form 
+    --refresh the page, what can and can't you do now?
 
-######3. Setting up proper urls.py structure
+    --we can do a lot of customization of this admin form that we'll leave for later
+
+######4. Setting up proper urls.py structure
 
     re-routing the urls can be a bit tricky and but its necessary for sane and reusable code down the line.
 
-    <appname>/urls
+    touch <appname>/urls.py
+
+    --in <appname>/urls.py
     from django.conf.urls import patterns, url
 
     from . import views
 
     urlpatterns = patterns('',
-        url(r'^$', views.<view_func_name>, name=‘<good name>'),
+        url(r'^$', views.<view_func_name>, name='<good name>'),
         )
 
     <appname>/urls
@@ -79,10 +109,7 @@ create a new directory to use as your project root
     from django.contrib import admin
 
     urlpatterns = patterns('',
-        # Examples:
-        # url(r'^$', ‘<proj_name>.views.home', name='home'),
-        # url(r’^<url_name>/', include(‘<appname>.urls')),
-        url(r’^<url_name>/', include(‘<appname>.urls')),
+        url(r'^<url_name>/', include('<appname>.urls')),
         url(r'^admin/', include(admin.site.urls)),
     )
 
@@ -91,12 +118,22 @@ create a new directory to use as your project root
     --add to settings.py
     TEMPLATE_DIRS = [os.path.join(BASE_DIR, 'templates')]
 
+    --create the templates folder
+
+    mkdir <appname>/templates
+
+    mkdir <appname>/templates/<appname>
+
+    touch <appname>/templates/<appname>/<templatename>.html
+
+    --yep, seriously
+
 ######5. Setting up the view function in views.py
 
     def <view-func-name>(request):
         <data_to_post> = Post.objects.all()
         context = {'<data_to_post>': <data_to_post>}
-        return render(request, '<appname>/main.html', context)
+        return render(request, '<appname>/<templatename>.html', context)
 
     --ok, now we can finally run the server!
 
