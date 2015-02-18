@@ -4,9 +4,9 @@ Introduction to Django Part 2 - Model driven approach
 
     warm-up: briefly review structure of app in Part 1, what questions arise?
 
-1. Starting a fresh project with proper names and structure         
+######1. Starting a fresh project with proper names and structure         
 
--setting up the environment of course:
+--setting up the environment of course:
 create a new directory to use as your project root    
 
     virtualenv .
@@ -23,13 +23,17 @@ create a new directory to use as your project root
 
     touch Makefile
 
-    cd repo_root    
+    cd repo_root  
 
-2. Creating Models and interacting with them in the shell and admin interfaces    
+    python manage.py startapp <appname>
+
+    --open your this directory in your text editor
+
+######2. Creating Models and interacting with them in the shell and admin interfaces    
 
     python manage.py migrate  #creating database
 
-    --make your models in <app>/models.py
+    --make your models in <appname>/models.py
 
     python manage.py makemigrations <appname>
 
@@ -57,7 +61,7 @@ create a new directory to use as your project root
 
     --we can do a lot of customization of this admin form 
 
-3. Setting up proper urls.py structure
+######3. Setting up proper urls.py structure
 
     re-routing the urls can be a bit tricky and but its necessary for sane and reusable code down the line.
 
@@ -82,23 +86,23 @@ create a new directory to use as your project root
         url(r'^admin/', include(admin.site.urls)),
     )
 
-4. Setting up the template path in settings.py     
+######4. Setting up the template path in settings.py     
     
-    #add to settings.py
+    --add to settings.py
     TEMPLATE_DIRS = [os.path.join(BASE_DIR, 'templates')]
 
-5. Setting up the view function in views.py
+######5. Setting up the view function in views.py
 
     def <view-func-name>(request):
         <data_to_post> = Post.objects.all()
         context = {'<data_to_post>': <data_to_post>}
         return render(request, '<appname>/main.html', context)
 
-    #ok, now we can finally run the server!
+    --ok, now we can finally run the server!
 
     python manage.py runserver <port# optional>
 
-6. Slightly intelligent templates
+######6. Slightly intelligent templates
 
     <html> 
     <head> 
