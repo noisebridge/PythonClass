@@ -4,11 +4,10 @@ Introduction to Django Part 2 - Model driven approach
 
     warm-up: briefly review structure of app in Part 1, what questions arise?
 
-1. Starting a fresh project with proper names and structure     
+1. Starting a fresh project with proper names and structure         
 
-    
 -setting up the environment of course:
-create a new directory to use as your project root
+create a new directory to use as your project root    
 
     virtualenv .
 
@@ -24,39 +23,39 @@ create a new directory to use as your project root
 
     touch Makefile
 
-    cd repo_root
+    cd repo_root    
 
 2. Creating Models and interacting with them in the shell and admin interfaces    
 
     python manage.py migrate  #creating database
 
-    #make your models in <app>/models.py
+    --make your models in <app>/models.py
 
     python manage.py makemigrations <appname>
 
-    #let's check out what the actual SQL statements we just wrote look like
+    --let's check out what the actual SQL statements we just wrote look like
 
     python manage.py sqlmigrate <appname> 0001
 
     python manage.py shell
 
-    #import the class you defined in your <appname>.models
+    --import the class you defined in your <appname>.models
 
     python manage.py createsuperuser
 
-    #enter ‘me’ for everything (cuz not putting this into production)
+    --enter ‘me’ for everything (cuz not putting this into production)
 
-    #now we can start the server for a quick check
+    --now we can start the server for a quick check
 
     python manage.py runserver <port # optional>
 
-    #need to let admin.py know about the models we defined
+    --need to let admin.py know about the models we defined
 
-    #then a single line will connect everything for you
+    --then a single line will connect everything for you
 
     admin.site.register(<ModelClass>)
 
-    #we can do a lot of customization of this admin form 
+    --we can do a lot of customization of this admin form 
 
 3. Setting up proper urls.py structure
 
