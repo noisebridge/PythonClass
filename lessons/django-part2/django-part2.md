@@ -174,4 +174,13 @@ create a new directory to use as your project root
     (django/contrib/admin/templates/admin/base_site.html)
 
     find where it says Django Admin and change the naming scheme around
+
+######Tuts, docs and helpers roughly ordered from least to most challenging:
+[DjangoGirls](http://tutorial.djangogirls.org/en/index.html)
+
+[django docs and official tutorial of course](https://docs.djangoproject.com/en/1.7/)
+
+[mercador: nice app to learn some principles and look at more django code, though only in 1.5](http://django-marcador.keimlink.de/en/index.html)
+
+paid resource: [https://realpython.com/ - lots of great stuff ranging from beginner to advanced](https://realpython.com/)
  
