@@ -1,0 +1,22 @@
+<html> 
+<head> 
+<style type="text/css"> 
+ul#list { list-style-type: none; } 
+</style> 
+</head> 
+
+<body>
+{% for item in data_post %}
+
+    <p>{{ item.item_name }}</p>
+<ul id="list">
+    <li>amount: {{ item.amount }}</li>
+    <li>weight: {{ item.weight }}</li>
+    <li>content: {{ item.content }}</li>
+    <li>created: {{ item.created_at }}</li>
+</ul>
+
+{% endfor %}
+
+</body>
+</html>
