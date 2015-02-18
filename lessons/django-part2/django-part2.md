@@ -178,14 +178,14 @@ create a new directory to use as your project root
     find where it says Django Admin and change the naming scheme around
 
 ######Tuts, docs and helpers roughly ordered from least to most challenging:
-[DjangoGirls](http://tutorial.djangogirls.org/en/index.html)
+[DjangoGirls](http://tutorial.djangogirls.org/en/index.html) - really awesome tutorial, includes adding bootstrap framework and deployment on heroku!
 
-[django docs and official tutorial of course](https://docs.djangoproject.com/en/1.7/)
+[django docs and official tutorial of course](https://docs.djangoproject.com/en/1.7/) - nice and thorough, includes many essential and current django conventions
 
-[mercador: nice app to learn some principles and look at more django code, though only in 1.5](http://django-marcador.keimlink.de/en/index.html)
+[mercador](http://django-marcador.keimlink.de/en/index.html) - nice app to learn some principles and look at more django code, though only in 1.5
 
-paid resource: [https://realpython.com/ - lots of great stuff ranging from beginner to advanced](https://realpython.com/)
+paid resource: [https://realpython.com/ ](https://realpython.com/) - lots of great stuff ranging from beginner to advanced
 
 ######Django at a higher level
 -[Request-Response-Cycle](http://rnevius.github.io/django_request_response_cycle.png)
- 
+-[What is a web framework?](http://www.jeffknupp.com/blog/2014/03/03/what-is-a-web-framework/) - excellent write-up by awesome author Jeff Knupp, includes brief explanations of django and flask routing, ORMs and more 
