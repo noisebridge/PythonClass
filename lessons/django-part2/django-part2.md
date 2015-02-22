@@ -32,7 +32,7 @@ create a new directory to use as your project root
 
 ######2. Creating Models and interacting with them by entering the database shell
 
-[nicely categorized django docs including the model layer](https://docs.djangoproject.com/en/1.7/)   
+[nicely categorized django docs on pertinent topics including the model layer](https://docs.djangoproject.com/en/1.7/)   
 
     python manage.py migrate  #creating database
 
