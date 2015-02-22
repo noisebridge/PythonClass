@@ -1,7 +1,9 @@
 
 ### PSAs and Events
 
-**PSA 10-1-14:** PyClass starts at 700 PM, try to come a few minutes earlier. We want to finish up by nine so people can hack or catch their preferred train home.  You can come at any time, but YMMV.
+**PSA 1-26-15:** DO NOT COME TO PYCLASS ON WEDNESDAY (although Noisebridge is still open). As of February 1st, attend PyClass on Tuesdays and Thursdays! Thursday in the Church Classroom will replace the Wednesday.
+
+**PSA 10-1-14:** PyClass starts at 7:00 PM, try to come a few minutes earlier. We want to finish up by nine so people can hack or catch their preferred train home.  You can come at any time, but YMMV (your mileage may vary).
 
 **PSA 8-19-14:** The [noisebridge wiki](https://noisebridge.net/wiki/PyClass) and [github readme](https://github.com/PyClass/PyClass-lesson-plans) files have the same information and updates.
 
@@ -12,7 +14,7 @@
 We set up the space at 6:45 PM - try to arrive early to help if you are able to.
 
 * Tuesday 7:00 - 9:00 PM PST - 'Turing' Classroom
-* Wednesday 7:00 - 9:00 PM PST - 'Church' Classroom
+* Thursday 7:00 - 9:00 PM PST - 'Church' Classroom
 
 ### Mailing List
 
@@ -27,17 +29,14 @@ The pace of the courses will be fast, and the materials will be available online
 
 A major PyClass goal is to break down the courses into independent units. In other words, you won't fall behind if you miss a week. Sounds good, right?
 
-###### We use the [Socratic Method](http://www.criticalthinking.org/pages/socratic-teaching/606):
-```
-A Socratic questioner should: 
-a) keep the discussion focused
-b) keep the discussion intellectually responsible
-c) stimulate the discussion with probing questions
-d) periodically summarize what has and what has not been dealt with and/or resolved
-e) draw as many students as possible into the discussion.
-```
+To best experience the course, spend a short time reviewing the course materials before you come in. If you wish to know this week's courses, please join the mailing list and send an email out to PyClass@googlegroups.com
 
-The ideal student for this course can grasp the following code (feel free to use web resources to look up anything you don't understand):
+Lessons are [available on Github](https://github.com/PyClass/PyClassLessons).
+
+
+#####The 'ideal student' for this course can grasp the following code:
+
+(Feel free to use web resources to look up anything you don't understand)
 
 ```python
 letter_frequency_dict = {}
@@ -49,7 +48,16 @@ for letter in word:
     letter_frequency_dict[letter] = times
 ```
 
-To best experience the course, spend a short time reviewing the course materials before you come in. If you wish to know this week's courses, please join the mailing list and send an email out to PyClass@googlegroups.com
+
+##### We use the [Socratic Method](http://www.criticalthinking.org/pages/socratic-teaching/606)
+###### A Socratic questioner should 
+1. keep the discussion focused
+2. keep the discussion fact based\*
+3. stimulate the discussion with probing questions
+4. periodically summarize what has and what has not been dealt with and/or resolved
+5. draw as many students as possible into the discussion.
+
+\* [intellectually responsible](https://en.wikipedia.org/wiki/Intellectual_responsibility) can be effectively replaced with 'fact based' for our needs.
 
 ### New Student Reading
 

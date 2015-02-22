@@ -6,7 +6,7 @@ Course 1 - An introduction to the JSON Module in Python
 1. Review JSON format - 15 minutes
 
   a. http://www.json.org/    
-  b. Values: string, number, object, array, true, false, null
+  b. Values: string, number, object, array, true, false, null    
   c. Root Object must be a container: object, array
 
 
@@ -19,7 +19,7 @@ Course 1 - An introduction to the JSON Module in Python
 3. Sample JSON Request - Pull some data off a remote server using requests
 
   a. What is requests? http://docs.python-requests.org/en/latest/    
-  b. Use request to get a json encoded object. https://raw.githubusercontent.com/PyClass/PyClass-lesson-plans/master/1_json_module/abcdef.json    
+  b. Use request to get a json encoded object. https://raw.githubusercontent.com/PyClass/PyClassLessons/master/lessons/json_module/examples/abcdef.json  
   c. Run through basic abilities of requests quickly - r.status, r.string, etc.    
   d. r.json() converts the data at the URL to python data types. Requests governs how this is done (probably uses json module).
   e. encoded_object_string = json.dumps(r.json()) will provide a string of the data.    
