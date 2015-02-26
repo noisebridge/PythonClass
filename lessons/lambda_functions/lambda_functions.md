@@ -1,22 +1,21 @@
-### Lambda Functions
+## Lambda Functions
 
-There aren't any packages or setup steps. Python 2.7 supports lambdas with the keyword `lambda`.  
+There are no setup steps since Python 2.7 supports lambdas with the built-in keyword `lambda`.  
 
-## 1. Overview
-[Lamdas](https://docs.python.org/2/reference/expressions.html#lambda) are anonymous functions.  Anonymous means that the function doesn't define a name for itself.  Also lambdas do not use a return statement.  They can be used as an alternative to defining a function, where a data object instead represents a function.
+### 1. Overview
+[Lamdas](https://docs.python.org/2/reference/expressions.html#lambda) are anonymous functions.  They are anonymous since the function doesn't define a name for itself and doesn't use a return statement.  It's a very simple concept.  The useful thing about lamda functions is that they're represented as an object with type 'function'.
 
-This provides the supporting features of a [functional programming language](http://en.wikipedia.org/wiki/Functional_programming).  It has roots in functional programming languages like Lisp and is gaining popularity with support in C++11 and other languages (TBD)
+This provides the supporting features of a [functional programming language](http://en.wikipedia.org/wiki/Functional_programming).  It has roots in functional programming languages like Lisp and is supported in many popular languages such as Javascript, C++11, C#, Objective-C, Java, closure, etc.
 
-## 2. Why use lambdas?
-Well, actually you really don't *need* to. It's an on going debate with people who love and hate it (even eith requests to remove it from python!)  However it may be a natural fit for certain tasks and might be something you would enjoy adding to your tool bag.  If you use closures or other event driven languages
+### 2. Why use lambdas?
+Well, actually you really don't *need* to in Python. There's an on going debate with people who love and hate it (even eith requests to remove it from python!)  However it may be a natural fit for certain tasks and might be something you would enjoy adding to your toolbox.  It may be a good skill to translate to other languages as well.
 
 These tasks include:
 - Simple manipulations of lists and dictionaries.  Lambdas work will with built-in functions:
-    1.[filter](https://docs.python.org/2/library/functions.html#filter) for searching lists
-    2.[map](https://docs.python.org/2/library/functions.html#map) for converting lists
-    3.[reduce](https://docs.python.org/2/library/functions.html#reduce) results in a single output value by summing over each elements in the list
+    1. [filter](https://docs.python.org/2/library/functions.html#filter) for searching lists
+    2. [map](https://docs.python.org/2/library/functions.html#map) for converting lists
+    3. [reduce](https://docs.python.org/2/library/functions.html#reduce) results in a single output value by summing over each elements in the list
 - Callback functions or delayed evaluation
-
 
 Some benefits include:
 - *Can be* easy to read for simple algorithms
@@ -24,16 +23,18 @@ Some benefits include:
 - Used as a 'macro' to hold lists of known parameters.  This could clean up code.
 - The joy of learning a new skill with a funny name!
 
-## 3. Why to avoid lambdas?
+### 3. Why to avoid lambdas?
 In most cases lambdas functions can be represented with defined functions or list comprehension.  For complicated code it's clearer to write out longer procedural code.   Always think of the next poor person who has to read your code!
 
 Lambdas likely won't improve your program's performance.
 
-## 4. More Real World Use Cases
+### 4. More Real World Use Cases
 
-See ex3.py for code regarding:
+NOTE: See ex3.py
 
-Basic data manipulation we've been doing in class can be done in a different way.  For example, querrying or manipulating a JSON document (dictionary structures).  Or generating prime numbers.  
+Basic data manipulation we've been doing in class can be done in a different way.  For example, querrying or manipulating a JSON document (dictionary structures).  
+
+Interesting mathmetics, such as procedurally generating prime numbers.  
 
 Replacing large code blocks of `if` statements to instead use lambda functions.  These are building blocks for some OO design patterns. For example see [Strategy Design](http://sourcemaking.com/design_patterns/strategy)
 
