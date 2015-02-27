@@ -1,1 +1,0 @@
-df = DataFrame({'int_col' : [1,2,6,8,-1], 'float_col' : [0.1, 0.2,0.2,10.1,None], 'str_col' : ['a','b',None,'c','a'], 'groc_col' : ['apples','bananas','coconuts','dogfood',None],'rev_col':range(4,-1,-1)})

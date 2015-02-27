@@ -1,5 +1,11 @@
 ####Introduction to Pandas
 
+update with install instructions:   
+    
+    pip install "ipython[notebook]"
+
+
+
     warm-up: dive right into pandas with .csv files in current directory, we'll address installations and foundations of pandas later   
 
 
