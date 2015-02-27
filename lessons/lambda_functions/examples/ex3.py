@@ -1,3 +1,14 @@
+"""
+
+Some ideas for more advanced concepts with lambdas.
+Each of these examples are separate.  We could also
+try to find a way to use lambdas to re-write code in
+other lesson plans.
+
+"""
+
+# ----------------------------------------------------------
+
 # Computing a prime number. How does this work?
 primes = range(2, 50)
 for i in range(2, 8):
@@ -5,6 +16,7 @@ for i in range(2, 8):
 
 print 'Primes:', primes
 
+# ----------------------------------------------------------
 
 # lets say you have a function that needs to be called for any value
 # in a long series of 'if' statements. How about generating a lookup
@@ -20,6 +32,41 @@ plural_rules = [
 # Call plural rule #1 with argument 4 to find out which sentence form to use.
 print plural_rules[1](4)  # returns 'plural'
 
+# ----------------------------------------------------------
+
+# functional calls that can be changed on the fly. See OO 'strategy' pattern.
+# For example, lets implement a simple action in a lambda function.
+roar = lambda x: x + ' roars!'
+die = lambda x: x + ' dies!'
+action = roar
+action("monster")
+
+action = die
+action("monster")
+
+
+# ----------------------------------------------------------
+
+# GUI programming.  Connect a callback function using a lambda...
+# This code is from: https://en.wikibooks.org/wiki/Computer_Science_Design_Patterns/Strategy
+
+class Button:
+    """A very basic button widget."""
+    def __init__(self, submit_func, label):
+        self.on_submit = submit_func   # Set the strategy function directly
+        self.label = label
+ 
+# Create two instances with different strategies
+button1 = Button(sum, "Add 'em")
+button2 = Button(lambda nums: " ".join(map(str, nums)), "Join 'em")
+ 
+# Test each button
+numbers = range(1, 10)   # A list of numbers 1 through 9
+print button1.on_submit(numbers)  # displays "45"
+print button2.on_submit(numbers)  # displays "1 2 3 4 5 6 7 8 9"
+
+
+# ----------------------------------------------------------
 
 # Closures can be written with lambdas, since it's not a named function definition.
 # These are useful in other languages
@@ -36,17 +83,7 @@ def compose(f, g):
 h = compose(lambda x: x + 2, lambda x: x * x)
 print h(3)
 
-
-# functional calls that can be changed on the fly. See OO 'strategy' pattern.
-# For example, lets re-define the logging class. Note that sys.stdout.write
-# evaluates as an expression, whereas 'print' is a statement.
-import sys
-log_info = lambda x: sys.stdout.write('log: ' + str(x) + '\n')
-log_debug = lambda x: sys.stdout.write('debug: ' + str(x) + '\n')
-s = log_debug
-s("World")
-s = log_info
-s('world')
+# ----------------------------------------------------------
 
 """
 # Lets create a 'macro' that cleans up our code.
@@ -71,18 +108,4 @@ def a_func()
   else
      ...
      call_big_f(argY)
-"""
-
-"""
-# GUI programming.  Connect a callback function using a lambda...
-# Connecting up signals in PyQt applications, like this:
-w = PyQt4.QtGui.QLineEdit()
-w.textChanged.connect(lambda event: dothing())
-
-#Just calling w.textChanged.connect(dothing) would call the dothing method
-#with an extra event argument and cause an error..
-
-#Using the lambda means we can tidily drop the argument without having to
-#define a wrapping function
-
 """

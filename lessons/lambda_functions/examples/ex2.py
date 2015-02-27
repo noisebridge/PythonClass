@@ -13,7 +13,7 @@ words = 'Python supports the creation of anonymous functions at runtime, \
 words_with_on = filter(lambda w: 'on' in w, words)
 print '(lambda)   words containing "on":', words_with_on
 
-# example solution using a function with a loop
+# The same solution as above, but using a function with a loop
 def find_words_containing(words, search_str):
     words_containing = list()
     for word in words:
@@ -32,6 +32,9 @@ print '(for loop) words containing "on":', find_words_containing(words, 'on')
 word_lens = map(lambda i: len(i), words)
 print 'length of each word: ', word_lens
 
+# TBD: Another idea would be to map a list of integers to a string
+#      representing either 'even' or 'odd'. How would that work?
+
 # map two lists together
 names = ['jake', 'sue', 'bob', 'larry']
 greetings = ['hello', 'hi', 'hola', 'howdy']
@@ -47,7 +50,7 @@ c = [True, False, False, True]
 ans = map(lambda x, y, z: x and (y or z), a, b, c)
 print ans
 
-# How would we compute this with for loops or list comprehension?
+#TBD: How would we compute this with for loops or list comprehension?
 
 # ----------------------------------------------------------
 # reduce function
@@ -66,3 +69,24 @@ print 'largest number is: ', largest_val
 
 # Ideas to try: search some JSON data (via filter function)
 # and then modify the results (via map function)
+
+
+# ----------------------------------------------------------
+# sort function
+#
+# A common task is to sort a list, a simple JSON dictionary or an
+# object by a specific attribute/field.  Using lambda gives flexibility.
+
+scores = {'bob': 75, 'sue': 50, 'jack': 100}
+scores_sorted = sorted(scores.items(), key=lambda x: x[1])
+print 'sorted scores are:', scores_sorted
+print 'sorted scores converted back to a dict:', dict(scores_sorted)
+
+# an alternative solution without lambdas:
+import operator
+scores_sorted2 = sorted(scores.items(), key=operator.itemgetter(0))
+
+# TBD: What if we wanted to sort the following object?
+# objects can be sorted as well. An example of sorting a list of 
+# users by their scores:  
+# my_list.sort(key = lambda x: x.score)
