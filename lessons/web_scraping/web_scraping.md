@@ -1,4 +1,4 @@
-####Web Scraping with Scrapy
+###Web Scraping with Scrapy
 
 installation: requires third-party module scrapy    
 
@@ -11,7 +11,7 @@ What is XPath? and [xpath selectors](http://www.w3schools.com/XPath/xpath_syntax
 
 note: watch out how you craft your Xpath queries, there can be lots of tricky spaces and such within the html and tags  
 
-1. Script Integration: let’s see how to get just the information we want back into our core language, python, using our core language, python.  
+####1. Script Integration: let’s see how to get just the information we want back into our core language, python, using our core language, python.    
 -go to virtualenv and then get ready to start your scrapy project through a CLI script much like in django  
 -briefly examine what we have installed and setup   
 -before we actually think about sending out the robots let’s make sure that we know the terms of use and what it says in the robots.txt     
@@ -20,7 +20,7 @@ note: watch out how you craft your Xpath queries, there can be lots of tricky sp
 got to check out the domains sorting options as well
 'http://stackoverflow.com/questions?pagesize=50&sort=newest'    
 
-2. Writing Spider within framework  
+####2. Writing Spider within framework  
 -write the most basic spider for the site that we have already chosen   
 -[refer to the docs to find out what these Items and Fields are](http://doc.scrapy.org/en/latest/topics/items.html)     
 -Items are containers for the data  
@@ -31,7 +31,7 @@ got to check out the domains sorting options as well
     scrapy crawl <spidername> -o items.json -t json   OR    
     scrapy crawl <spidername> -o items.csv -t csv   
 
-3. Underlying code: take a step back 
+####3. Underlying code: take a step back 
 -what's happening when you write the command    
     scrapy crawl <spidername>   
 -what the parse function actually does  
@@ -39,10 +39,10 @@ got to check out the domains sorting options as well
 -how scrapy is async?    
 -diff between base spider and crawl spider     
 
-4. Pick a new website together and repeat that basic process       
+####4. Pick a new website together and repeat that basic process       
 
 
-additional:     
+####additional:     
 [Is scrapy worth your time?](http://stackoverflow.com/questions/6283271/is-it-worth-learning-scrapy) 
 
 Also, scrapy is the most robust in that you can customize is the most if the data you are scraping becomes complicated  
