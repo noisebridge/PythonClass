@@ -2,7 +2,7 @@
 
 installation: requires third-party module scrapy    
 
-    spike: look at an example of an html page in the web console and then figure out how to select certain elements of the DOM using XPath in the console    
+    spike: look at an example of an html page in the web console,    then figure out how to select certain elements of the DOM using XPath in the console    
 
 Developer Tools gives you the ability to test XPath selectors in the JavaScript Console by using $x – eg: $x("//img")
 
@@ -27,13 +27,22 @@ got to check out the domains sorting options as well
 -Fields are metadata in the form of attributes, but are just ‘plain-old’ Python dicts.  
 -after assigning a Field we use Item.fields and use the Item object like a typical python dict API      
 
-command to make it into json:   
-    scrapy crawl <spidername> -o items.json -t json
+    command to make it into json:   
+    scrapy crawl <spidername> -o items.json -t json   OR    
+    scrapy crawl <spidername> -o items.csv -t csv   
 
-3. Pick a new website together and repeat that basic process       
+3. Underlying code: take a step back 
+-what's happening when you write the command    
+    scrapy crawl <spidername>   
+-what the parse function actually does  
+-[knowing how the spiders work](http://doc.scrapy.org/en/latest/topics/spiders.html)
+-how scrapy is async?    
+-diff between base spider and crawl spider     
+
+4. Pick a new website together and repeat that basic process       
 
 
-
+additional:     
 [Is scrapy worth your time?](http://stackoverflow.com/questions/6283271/is-it-worth-learning-scrapy) 
 
 Also, scrapy is the most robust in that you can customize is the most if the data you are scraping becomes complicated  
