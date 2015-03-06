@@ -41,15 +41,16 @@ got to check out the domains sorting options as well eg:
     scrapy crawl <spidername> -o items.json -t json   OR    
     scrapy crawl <spidername> -o items.csv -t csv   
 
-#### 3.Underlying code: take a step back 
+#### 3. Underlying code: take a step back (20 min)
 -what's happening when you write the command       
     scrapy crawl <spidername>      
 -what the parse function actually does  
 -[knowing how the spiders work](http://doc.scrapy.org/en/latest/topics/spiders.html)
 -how scrapy is async?    
--diff between base spider and crawl spider     
+-diff between base spider and crawl spider 
+-parse is a keyword         
 
-####4. Pick a new website together and repeat that basic process       
+####4. Pick a new website together and repeat that basic process (:finish)         
 
 ####5. Pagination and Pipeline into DB  
 

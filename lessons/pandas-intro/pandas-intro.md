@@ -74,4 +74,16 @@ Introducing codename 'badger'
 -10 no true query processing layer  
 -11 slow no multicore distributed algos     
 
-note: this might be a paid system, and since the time of this announcement Wes's company was acquired   
+note: this might be a paid system, and since the time of this announcement Wes's company was acquired 
+
+
+    import pandas as pd     
+    import numpy as np  
+    import matplotlib.pyplot as plt     
+    pd.options.display.mpl_style = 'default'    
+    %matplotlib inline      
+
+
+Resources:  
+[Greg Reda's tut](http://www.gregreda.com/2013/10/26/intro-to-pandas-data-structures/) listed in official docs   
+[Practical Business Python](http://pbpython.com/simple-graphing-pandas.html) simple graphing, but there's lots more on this site      
