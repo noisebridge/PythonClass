@@ -77,7 +77,7 @@ Introducing codename 'badger'
 note: this might be a paid system, and since the time of this announcement Wes's company was acquired 
 
 
-####Basic Analysis, Groupbys, Pivots, and Plots
+###Basic Analysis, Groupbys, Pivots, and Plots
 
 make sure to inclcude these imports and settings at the top of your script  
 
