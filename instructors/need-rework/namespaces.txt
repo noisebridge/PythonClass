@@ -1,0 +1,30 @@
+# anonymous namespace for any script that is run
+>>>__name__
+'_main_'
+
+>>>import json # create json namespace
+>>>json.__name__ # check json's namespace
+'json'
+>>>import pprint as pp # how about an alias?
+>>>pp.__name__ 
+'pprint' # looks like pprint still uses the pprint namespace, an alias must be something else...
+>>> dir()
+['__builtins__', '__doc__', '__name__', '__package__', 'pp'] #oh! the pp alias exists in __main__ to point us to the pprint namespace. now it seems obvious.
+>>> type(pp)
+<type 'module'>
+>>> type(__name__)
+<type 'str'>
+
+# Lets try making our own module...
+
+>>> import types # apparently ModuleType is the type for modules
+>>> testmodule = types.ModuleType('test1') #initiate
+>>> type(testmodule) #check it, is it a module? yes.
+<type 'module'>
+>>> testmodule.x = 5 # lets put a variable in this module's space
+>>> testmodule.x
+5
+>>> dir(testmodule)
+['__doc__', '__name__', 'x']
+>>> testmodule.__name__  # now we will see if it controls it's own namespace's name!
+'test1'
