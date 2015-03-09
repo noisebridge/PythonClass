@@ -24,23 +24,22 @@ def outer():
 
     return inner(), z
 
-"""
-Don't dwell on this during class:
-=================================
-Python 3 has a new keyword called nonlocal used like this:
-    nonlocal z
-This will expose the parent scope of z to the local scope, skirting
-the 'assignment before reference' issue and allowing the parent 
-scope to be changed within the local scope. This may or may not be
-your intended behavior. 
-
-You may not want the parent scope to change within the local 
-scope. But when you do, you don't need to do any weird contortions 
-to accomplish it (e.g. return the new value of z from the inner 
-scope and assign it back to the parent scope for z.
-"""
-
 
 if __name__ == "__main__":
+    """
+    Don't dwell on this during class:
+    =================================
+    Python 3 has a new keyword called nonlocal used like this:
+        nonlocal z
+    This will expose the parent scope of z to the local scope, skirting
+    the 'assignment before reference' issue and allowing the parent 
+    scope to be changed within the local scope. This may or may not be
+    your intended behavior. 
+
+    You may not want the parent scope to change within the local 
+    scope. But when you do, you don't need to do any weird contortions 
+    to accomplish it (e.g. return the new value of z from the inner 
+    scope and assign it back to the parent scope for z.
+    """
 
     print outer()
