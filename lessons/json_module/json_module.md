@@ -1,6 +1,6 @@
 
 
-Course 1 - An introduction to the JSON Module in Python
+#### An introduction to the JSON Module in Python
 
 
 1. Review JSON format - 15 minutes
