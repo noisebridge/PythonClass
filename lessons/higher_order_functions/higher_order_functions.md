@@ -3,7 +3,7 @@
 
 Exploring dynamic argument and keyword quantities, nested functions, higher order functions, closures, and decorators.
 
-If you get behind in this lesson, just keep typing/copying/running code.  This is not going to be easy for most people and it wasn't easy for me to learn either.
+If you get behind in this lesson, just keep typing/copying/running code. The topic is hard at first, so if it feels hard, things are going as planned.
 
 1. Nesting Functions
 
