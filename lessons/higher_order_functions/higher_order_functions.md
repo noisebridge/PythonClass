@@ -5,12 +5,14 @@ Exploring dynamic argument and keyword quantities, nested functions, higher orde
 
 If you get behind in this lesson, just keep typing/copying/running code. The topic is hard at first, so if it feels hard, things are going as planned.
 
-1. Nesting Functions    
-    i. lorem ipsum    
+1. Nesting Functions - How does Python resolve names?
+    I. LEGB?  Local, Enclosing, Global, Built-in.    
+    II. In other words, if Python finds a variable name in a function, then it will stop looking even if the function is in the global scope.    
+    III. See nesting_functions examples.    
 
 
 2. Using `(*args, **kwargs)`:    
-    i. lorem ipsum    
+    i. No discussion here. Head to the examples for args_kwargs.    
 
 
 3. How to get a nested function to close. Also known as a closure.    
