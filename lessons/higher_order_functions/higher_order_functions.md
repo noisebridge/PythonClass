@@ -37,11 +37,17 @@ If you get behind during this lesson, just keep typing/copying/running code. The
 
 
 5. Functools - What's a partial?
-    1. lorem ipsum
+    1. A partial is part of a callable object (generally a function) with a fixed keyword argument or positional argument.
+    2. This reduces the number of arguments that need to be provided to the function, essentially 'fixing' one argument.
+    3. Functools also has an update_wrapper function for making a decorator's wrapper look like the wrapped object. Invoked using the @wraps decorator on the function wrapper. See wraps example.
+    4. [the functools.total_ordering decorator](https://docs.python.org/2/library/functools.html#functools.total_ordering) will autogenerate rich comparisons if you specify a single one.  
+    5. Finally, reduce is located here in Python 3.
 
 
 
 Preparing for this lesson:
+
+This won't guarantee you will be ready for the lesson, but it will serve as a good warm up.
 
 1. Read [Python Scopes and Namespaces](https://docs.python.org/2/tutorial/classes.html#python-scopes-and-namespaces) 
 2. Optional: [Pep 227 - Statically Nested Scopes](http://legacy.python.org/dev/peps/pep-0227/)
