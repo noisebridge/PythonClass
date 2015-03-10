@@ -5,11 +5,11 @@ Exploring dynamic argument and keyword quantities, nested functions, higher orde
 
 If you get behind in this lesson, just keep typing/copying/running code. The topic is hard at first, so if it feels hard, things are going as planned.
 
-1. Nesting Functions
+1. Nesting Functions    
     i. lorem ipsum    
 
 
-2. Using `(*args, **kwargs)`:
+2. Using `(*args, **kwargs)`:    
     i. lorem ipsum    
 
 
@@ -19,11 +19,11 @@ If you get behind in this lesson, just keep typing/copying/running code. The top
     iii. *Why not just put the environment in the global scope?* You could. Security, compartmentalization, memory efficiency, code reusability.  Closures are a sophisticated, optional tool.
 
 
-4. Decorators
+4. Decorators     
     i. lorem ipsum    
 
 
-5. Functools - What's a partial?
+5. Functools - What's a partial?    
     i. lorem ipsum    
 
 
