@@ -6,30 +6,30 @@ Exploring dynamic argument and keyword quantities, nested functions, higher orde
 If you get behind in this lesson, just keep typing/copying/running code. The topic is hard at first, so if it feels hard, things are going as planned.
 
 1. Nesting Functions - How does Python resolve names?    
-    a. LEGB?  Local, Enclosing, Global, Built-in.    
-    b. In other words, if Python finds a variable name in a function, then it will stop looking even if the function is in the global scope.    
-    c. See nesting_functions examples.    
+    1. LEGB?  Local, Enclosing, Global, Built-in.    
+    2. In other words, if Python finds a variable name in a function, then it will stop looking even if the function is in the global scope.    
+    3. See nesting_functions examples.    
 
 
 2. Using `(*args, **kwargs)`:    
-    a. No discussion topic - see args_kwargs examples.    
+    1. No discussion topic - see args_kwargs examples.    
 
 
 3. How to get a nested function to close. Also known as a closure.    
-    a. **A what?** A [closure](http://en.wikipedia.org/wiki/Closure_(computer_programming)) - Simple definition: A function that binds a set of 'private' variables.    
-    b. **How does this help me write useful code?**     
-        i. Control flow.     
-        ii. Private functions for specific environments.     
-        iii. Passing variables to a function based on the context of the function.        
-    c. **Why not just put the environment in the global scope?** You could.     
-        i. Security,     
-        ii. compartmentalization,     
-        iii. memory efficiency, code reusability.      
-        iv. Closures are a sophisticated, optional tool.    
+    1. **A what?** A [closure](http://en.wikipedia.org/wiki/Closure_(computer_programming)) - Simple definition: A function that binds a set of 'private' variables.    
+    2. **How does this help me write useful code?**     
+        1. Control flow.     
+        2. Private functions for specific environments.     
+        3. Passing variables to a function based on the context of the function.        
+    3. **Why not just put the environment in the global scope?** You could.     
+        1. Security,     
+        2. compartmentalization,     
+        3. memory efficiency, code reusability.      
+        4. Closures are a sophisticated, optional tool.    
 
 
 4. Decorators     
-    i. lorem ipsum    
+    1. lorem ipsum    
 
 
 5. Functools - What's a partial?    
