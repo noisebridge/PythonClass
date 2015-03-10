@@ -36,6 +36,11 @@ if __name__ == "__main__":
     scope to be changed within the local scope. This may or may not be
     your intended behavior. 
 
+    In Python 2, people often use a mutable global variable in the
+    parent scope. This allows it to be changed in the child scope.
+    The original source for this code claims this is frequently seen
+    in the wild: http://eev.ee/blog/2011/04/24/gotcha-python-scoping-closures/
+
     You may not want the parent scope to change within the local 
     scope. But when you do, you don't need to do any weird contortions 
     to accomplish it (e.g. return the new value of z from the inner 
