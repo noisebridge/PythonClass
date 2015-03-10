@@ -28,10 +28,12 @@ If you get behind during this lesson, just keep typing/copying/running code. The
         4. Closures are a sophisticated, optional tool
 
 
-4. Decorators - Forget everything about the @ symbol. 
+4. Decorators - Forget everything about the @ symbol for now.
     1. A decorator is a callable object that wraps around another callable object. Often a function that wraps around a function.
     2. The decorator must return a callable object, usually a function.
     3. A decorator is used to add functionality to the original function. Also called enhancement.
+    4. If you have used chaining in other functions, it is a very similar idea. Chains of functions run on each others output from the inside out. Decorators are also wrapped and executed from the inside out.
+    5. Example time. Head over to decorator1.py and continue through all the decorator examples.
 
 
 5. Functools - What's a partial?
