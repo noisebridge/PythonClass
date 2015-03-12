@@ -1,7 +1,7 @@
-OOP, Classes and Class interaction  
+#OOP, Classes and Class interaction  
 
-spike: what OOP isn't   
-let’s open up our good friend [repl.it](http://repl.it/) and [Scheme](https://classes.soe.ucsc.edu/cmps112/Spring03/languages/scheme/SchemeTutorialA.html) some non-OOP     
+######spike: what OOP isn't   
+let’s open up our good friend [repl.it](http://repl.it/) and [Scheme](https://classes.soe.ucsc.edu/cmps112/Spring03/languages/scheme/SchemeTutorialA.html) some non-OOP
     starting with a couple built-in functions   
     (print "Hello, " (read) "!")
     now let's define some of our variabls   
