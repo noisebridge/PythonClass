@@ -41,13 +41,13 @@ Keep in mind the design rule of YAGNI: "ya ain’t gonna need it"
         ranks = ["narf", "Ace", "2", "3", "4", "5", "6", "7",
                  "8", "9", "10", "Jack", "Queen", "King"]
 
-    def __init__(self, anyarg, moreargs): #the initializer for object instance
-        '''where we define instance attributes''' 
-        self.anyarg = anyarg
-        self.moreargs = moreargs
+        def __init__(self, anyarg, moreargs): #the initializer for object instance
+            '''where we define instance attributes''' 
+            self.anyarg = anyarg
+            self.moreargs = moreargs
 
-    def instance_method(self):
-        return "arbitrary example code " + self.anyarg  
+        def instance_method(self):
+            return "arbitrary example code " + self.anyarg  
 
 Note: python OOP implementation exposes instance and class attributes, eg: you can get and set easily!
     instance_attr.now_equals(this)  
