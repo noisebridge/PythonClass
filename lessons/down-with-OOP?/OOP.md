@@ -1,10 +1,10 @@
 #OOP, Classes and Class interaction  
 
 ######spike: what OOP isn't   
-let’s open up our good friend [repl.it](http://repl.it/) and [Scheme](https://classes.soe.ucsc.edu/cmps112/Spring03/languages/scheme/SchemeTutorialA.html) some non-OOP
-    starting with a couple built-in functions   
+let’s open up our good friend [repl.it](http://repl.it/) and [Scheme](https://classes.soe.ucsc.edu/cmps112/Spring03/languages/scheme/SchemeTutorialA.html) some non-OOP starting with a couple built-in functions   
+
     (print "Hello, " (read) "!")
-    now let's define some of our variabls   
+    now let's define some of our variables   
     (define pi 3.14)
     (define square (lambda (x)  (* x x)))
 
@@ -23,7 +23,7 @@ let’s open up our good friend [repl.it](http://repl.it/) and [Scheme](https://
 -These built-in functions are ultimately called by a '__method__' that is to say a "double underscore" method or "dunder" and then executed in the corresponding C code     
 -In order to understand this more need to write our own objects      
 
-    Define Terms:
+    Define Terms:   
     -attribute: data an object contains     
     -method: function an object contains    
     -property: attributes and methods an object contains    
@@ -33,7 +33,10 @@ Keep in mind the design rule of YAGNI: "ya ain’t gonna need it"
 
     Class BlahClass(object):
     '''docstring describing class'''
-    #class methods would go here
+    #class methods go here
+    suits = ["Clubs", "Diamonds", "Hearts", "Spades"]
+    ranks = ["narf", "Ace", "2", "3", "4", "5", "6", "7",
+             "8", "9", "10", "Jack", "Queen", "King"]
 
     def __init__(self, anyarg, moreargs): #the initializer for object instance
         '''where we define instance attributes''' 
@@ -62,6 +65,6 @@ See examples/inheritance-v-composition.py
 
 keep in mind that classes are effectively modules in and of themselves  
 they are also APIs in and of themselves     
-   
+
 
 
