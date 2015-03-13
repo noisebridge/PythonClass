@@ -63,8 +63,8 @@ Now let's take a look at how to make our object more useful to us with [magic me
 
 -the goal of self is to create that unique instance, the goal of __init__ is to populate that instance with methods and attributes
 -we garbage collect an object at the end of its lifecycle we call the __del__ implicitly
---objects such as sockets or file objects might require extra cleanup upon deletion
--one of the best things about the ability to access these magic methods in our language is to contract objects that behave like built-in types. __lt__, __gt__ and others, or we could just use the __cmp__!
+--objects such as sockets or file objects might require extra cleanup upon deletion     
+-one of the best things about the ability to access these magic methods in our language    is to contract objects that behave like built-in types. __lt__, __gt__ and others, or we could just use the __cmp__!     
 #####exercise 3: make a PokerCard class with the functionality of a high or low Ace composition v. inheritance    
 See examples/inheritance-v-composition.py
 
@@ -73,8 +73,13 @@ keep in mind that classes are effectively modules in and of themselves
 they are also APIs in and of themselves     
 keep YAGNI in mind      
 
-#####exercise 4: user defined objects interacting - write a deck class that contains card objects and has necessary methods to play a fair game of poker
+#####exercise 4: user defined objects interacting - write a deck class that contains card objects and has necessary methods to play a fair game of poker    
+Discuss design of these objects and then their interaction  
+
+#####exercises beyond: review the callables.py, inherit-from-string.py and context_manager.py in the examples folder.   
+When are these necessary and when are they not?     
+What does this functionality say about python OOP implementation?   
 
 ###Resources:
 [Raymond Hettinger's talk on Python’s Class Development toolkit](http://pyvideo.org/video/1779/pythons-class-development-toolkit)
-
+[Pretty good post on what OOP is and isn’t using Python](http://www.devshed.com/c/a/Python/Object-Orientation-in-Python/)
