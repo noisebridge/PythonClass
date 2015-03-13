@@ -23,7 +23,7 @@ if __name__ == "__main__":
     """
 
     # We'll append a bunch of functions into this list.
-    myfunctions = []
+    myfunctions = list()
 
 
     for i in range(4):
@@ -48,7 +48,7 @@ if __name__ == "__main__":
             print i
 
         myfunctions.append(f)
-
+    i=7
 
     for my_function in myfunctions:
         my_function()

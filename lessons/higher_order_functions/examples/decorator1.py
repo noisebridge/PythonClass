@@ -18,9 +18,9 @@ def mydecorator(func):
     return func
 
 
-def sample():
+def sample(spaghetti):
     print "instantiating sample function"
-    return 'sample'
+    return spaghetti
 
 if __name__ == "__main__":
     """
@@ -28,5 +28,5 @@ if __name__ == "__main__":
     And yet, this is how we instantiate a returned function.
     """
 
-    print mydecorator(sample)()
+    print mydecorator(sample)('testme')
 

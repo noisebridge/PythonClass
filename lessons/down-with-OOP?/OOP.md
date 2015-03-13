@@ -35,11 +35,11 @@ let’s open up our good friend [repl.it](http://repl.it/) and [Scheme](https://
 Keep in mind the design rule of YAGNI: "ya ain’t gonna need it"
 
     Class BlahClass(object):
-    '''docstring describing class'''
-    #class methods go here
-    suits = ["Clubs", "Diamonds", "Hearts", "Spades"]
-    ranks = ["narf", "Ace", "2", "3", "4", "5", "6", "7",
-             "8", "9", "10", "Jack", "Queen", "King"]
+        '''docstring describing class'''
+        #class methods go here
+        suits = ["Clubs", "Diamonds", "Hearts", "Spades"]
+        ranks = ["narf", "Ace", "2", "3", "4", "5", "6", "7",
+                 "8", "9", "10", "Jack", "Queen", "King"]
 
     def __init__(self, anyarg, moreargs): #the initializer for object instance
         '''where we define instance attributes''' 
