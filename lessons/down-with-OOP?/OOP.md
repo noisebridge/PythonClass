@@ -1,11 +1,14 @@
 #OOP, Classes and Class interaction  
 
 ######spike: what OOP isn't   
-let’s open up our good friend [repl.it](http://repl.it/) and [Scheme](https://classes.soe.ucsc.edu/cmps112/Spring03/languages/scheme/SchemeTutorialA.html) some non-OOP starting with a couple built-in functions   
+let’s open up our good friend [repl.it](http://repl.it/) and [Scheme](https://classes.soe.ucsc.edu/cmps112/Spring03/languages/scheme/SchemeTutorialA.html) some non-OOP code!        
 
+    let's start with a couple built-in functions
     (print "Hello, " (read) "!")
+
     now let's define some of our variables   
     (define pi 3.14)
+
     (define square (lambda (x)  (* x x)))
 
     (define my_list (list 1 2 3 5))
@@ -28,7 +31,7 @@ let’s open up our good friend [repl.it](http://repl.it/) and [Scheme](https://
     -method: function an object contains    
     -property: attributes and methods an object contains    
 
-######exercise 1: syntax and user defined methods by defining a single Playing Card     
+#####exercise 1: syntax and user defined methods by defining a single Playing Card     
 Keep in mind the design rule of YAGNI: "ya ain’t gonna need it"
 
     Class BlahClass(object):
@@ -46,25 +49,32 @@ Keep in mind the design rule of YAGNI: "ya ain’t gonna need it"
     def instance_method(self):
         return "arbitrary example code " + self.anyarg  
 
-######exercise 2: adding 'magic' methods aka 'dunder' methods  
-Now let's take a look at how to make our object more useful to us with [magic methods](http://rafekettler.com/magicmethods.html)    
-    __new__, __del__, __str__, __unicode__, __repr__, __manymanymore__  
-
-__init__ is an initializer, by the time we hit this we have already contracted the object, thus the object already exists.
-
-the goal of self is to create that unique instance, the goal of __init__ is to populate that instance with methods and attributes
-
-Note: python OOP implementation exposes instance attibutes, eg: you can get and set easily!
+Note: python OOP implementation exposes instance and class attributes, eg: you can get and set easily!
     instance_attr.now_equals(this)  
 Why? 
 because its Great!
 "python is language for consenting adults"
 
-######exercise 3: make a PokerCard class with the functionality of a high or low Ace composition v. inheritance    
+#####exercise 2: adding 'magic' methods aka 'dunder' methods  
+Now let's take a look at how to make our object more useful to us with [magic methods](http://rafekettler.com/magicmethods.html)    
+    __new__, __del__, __str__, __unicode__, __repr__, __cmp__, __manymanymore__  
+
+-__init__ is an initializer, by the time we hit this we have already contracted the object, thus the object already exists.
+
+-the goal of self is to create that unique instance, the goal of __init__ is to populate that instance with methods and attributes
+-we garbage collect an object at the end of its lifecycle we call the __del__ implicitly
+--objects such as sockets or file objects might require extra cleanup upon deletion
+-one of the best things about the ability to access these magic methods in our language is to contract objects that behave like built-in types. __lt__, __gt__ and others, or we could just use the __cmp__!
+#####exercise 3: make a PokerCard class with the functionality of a high or low Ace composition v. inheritance    
 See examples/inheritance-v-composition.py
 
+######now how would we make an UnoCard class?
 keep in mind that classes are effectively modules in and of themselves  
 they are also APIs in and of themselves     
+keep YAGNI in mind      
 
+#####exercise 4: user defined objects interacting - write a deck class that contains card objects and has necessary methods to play a fair game of poker
 
+###Resources:
+[Raymond Hettinger's talk on Python’s Class Development toolkit](http://pyvideo.org/video/1779/pythons-class-development-toolkit)
 
