@@ -25,7 +25,7 @@ Please add and delete bullet points as needed. Less is more!
     3. amit. Elem
 
 
-1. ##### First Point
+1. #### First Point
     1. Lorem ipsum
         1. Lorem ipsum
         2. dolor sit
