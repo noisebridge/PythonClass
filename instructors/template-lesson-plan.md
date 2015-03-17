@@ -10,19 +10,19 @@ Please add and delete bullet points as needed. Less is more!
     def sample():
         pass
 
-#### 0. Today's deep dive: The Deep Dive Title Goes Here
-1. Lorem ipsum
+* 0. Today's deep dive: The Deep Dive Title Goes Here *
     1. Lorem ipsum
+        1. Lorem ipsum
+        2. dolor sit
+        3. amit. Elem
     2. dolor sit
+        1. Lorem ipsum
+        2. dolor sit
+        3. amit. Elem
     3. amit. Elem
-2. dolor sit
-    1. Lorem ipsum
-    2. dolor sit
-    3. amit. Elem
-3. amit. Elem
-    1. Lorem ipsum
-    2. dolor sit
-    3. amit. Elem
+        1. Lorem ipsum
+        2. dolor sit
+        3. amit. Elem
 
 
 1. #### First Point
