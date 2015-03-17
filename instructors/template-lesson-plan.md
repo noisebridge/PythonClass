@@ -12,7 +12,43 @@ def sample():
     pass
 ```
 
-0. #### Today's deep dive: The Deep Dive Title Goes Here
+0. #### Installation and Class Prep
+    1. Installation Instructions:
+        1. 
+        2. 
+        3. 
+    2. Class Prep Resources:
+        1. Lorem ipsum
+        2. dolor sit
+        3. amit. Elem
+
+
+1. #### Today's deep dive: The Deep Dive Title Goes Here
+    1. An Explanation - 3 minutes
+        1. Lorem ipsum
+        2. dolor sit
+        3. amit. Elem
+    2. dolor sit
+        1. Lorem ipsum
+        2. dolor sit
+        3. amit. Elem
+
+
+2. #### First Point
+    1. Lorem ipsum
+        1. Lorem ipsum
+        2. dolor sit
+        3. amit. Elem
+    2. dolor sit
+        1. Lorem ipsum
+        2. dolor sit
+        3. amit. Elem
+    3. amit. Elem
+        1. Lorem ipsum
+        2. dolor sit
+        3. amit. Elem
+
+3. #### Second Point
     1. Lorem ipsum
         1. Lorem ipsum
         2. dolor sit
@@ -27,58 +63,7 @@ def sample():
         3. amit. Elem
 
 
-1. #### First Point
+4. #### Extended Resources
     1. Lorem ipsum
-        1. Lorem ipsum
-        2. dolor sit
-        3. amit. Elem
     2. dolor sit
-        1. Lorem ipsum
-        2. dolor sit
-        3. amit. Elem
     3. amit. Elem
-        1. Lorem ipsum
-        2. dolor sit
-        3. amit. Elem
-
-2. #### Second Point
-    1. Lorem ipsum
-        1. Lorem ipsum
-        2. dolor sit
-        3. amit. Elem
-    2. dolor sit
-        1. Lorem ipsum
-        2. dolor sit
-        3. amit. Elem
-    3. amit. Elem
-        1. Lorem ipsum
-        2. dolor sit
-        3. amit. Elem
-
-3. #### Third Point
-    1. Lorem ipsum
-        1. Lorem ipsum
-        2. dolor sit
-        3. amit. Elem
-    2. dolor sit
-        1. Lorem ipsum
-        2. dolor sit
-        3. amit. Elem
-    3. amit. Elem
-        1. Lorem ipsum
-        2. dolor sit
-        3. amit. Elem
-
-4. #### Resources
-    1. Lorem ipsum
-        1. Lorem ipsum
-        2. dolor sit
-        3. amit. Elem
-    2. dolor sit
-        1. Lorem ipsum
-        2. dolor sit
-        3. amit. Elem
-    3. amit. Elem
-        1. Lorem ipsum
-        2. dolor sit
-        3. amit. Elem
