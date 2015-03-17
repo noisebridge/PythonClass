@@ -13,7 +13,7 @@ Please add and delete bullet points as needed. Less is more!
         2. 
         3. 
     2. Class Prep Resources:
-        1. 
+        1. [Sample Link](www.example.com)
         2. 
         3. 
 
@@ -30,36 +30,36 @@ Please add and delete bullet points as needed. Less is more!
         1. 
         2. 
         3. 
-    2. dolor sit
+    2. 
         1. 
         2. 
-        3. 
+        3. See: [example_file.py](example_file.py)
 
 
 2. #### First Point
-    1. Lorem ipsum
+    1. An Explanation - 3 minutes
         1. 
         2. 
         3. 
-    2. dolor sit
+    2. 
         1. 
         2. 
         3. 
-    3. amit. Elem
+    3. 
         1. 
         2. 
         3. 
 
 3. #### Second Point
-    1. Lorem ipsum
+    1. An Explanation - 3 minutes
         1. 
         2. 
         3. 
-    2. dolor sit
+    2. 
         1. 
         2. 
         3. 
-    3. amit. Elem
+    3. 
         1. 
         2. 
         3. 
