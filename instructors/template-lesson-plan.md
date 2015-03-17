@@ -26,7 +26,7 @@ Please add and delete bullet points as needed. Less is more!
         pass
     ```
 
-    1. An Explanation - 3 minutes
+    1. Replace With An Explanation - 3 minutes
         1. 
         2. 
         3. 
@@ -37,7 +37,7 @@ Please add and delete bullet points as needed. Less is more!
 
 
 2. #### First Point
-    1. An Explanation - 3 minutes
+    1. Replace with An Explanation - XX minutes
         1. 
         2. 
         3. 
@@ -51,7 +51,7 @@ Please add and delete bullet points as needed. Less is more!
         3. 
 
 3. #### Second Point
-    1. An Explanation - 3 minutes
+    1. Replace With An Explanation - XX minutes
         1. 
         2. 
         3. 
