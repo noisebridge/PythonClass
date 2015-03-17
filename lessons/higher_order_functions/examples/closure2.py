@@ -50,13 +50,14 @@ if __name__ == "__main__":
 
     for my_function in myfunctions:
         my_function()
-        print my_function.__name__
+        #print my_function.__name__
 
     # One more trick, but this isn't pythonic. Just to see some () syntax.
     # Remember, () is called an argument list or arglist.
 
     for funct_index in range(len(myfunctions)):
-        print("Current index: %s" % funct_index)
-        myfunctions[funct_index]() # Note this instantiation of the list item.
+        #print("Current index: %s" % funct_index)
+        #myfunctions[funct_index]() # Note this instantiation of the list item.
+        pass
 
 

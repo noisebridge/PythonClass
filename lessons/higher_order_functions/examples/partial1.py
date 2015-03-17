@@ -15,6 +15,7 @@ print pythagorean_partial.func
 print pythagorean_partial.args
 print pythagorean_partial.keywords
 
+
 print pythagorean_partial(3)
 #print pythagorean_partial(b=3) # This also works...
 
@@ -33,4 +34,3 @@ print pythagorean_partial2.keywords
 
 # Must supply keywords here, dicts are unordered.
 print pythagorean_partial2(b=2)
-

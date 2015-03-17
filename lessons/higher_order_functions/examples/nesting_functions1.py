@@ -7,6 +7,8 @@ PEP 227 - 'Statically Nested Scopes' - http://legacy.python.org/dev/peps/pep-022
 Allows for closures and lambda functions.
 """
 
+def meow():
+    pass
 
 def cat():
     """ Lets see what z is in each scope.

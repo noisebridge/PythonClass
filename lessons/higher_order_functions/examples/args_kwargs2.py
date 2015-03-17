@@ -16,13 +16,13 @@ Explicit means not using this pattern where possible.
 import this
 
 
-def dyn_function(*args, **kwargs):
-    """ Accept args, kwargs which correspond to a list and a dict respectively.
+def dyn_function(*spaghetti, **potato_hash):
+    """ Accept spaghetti, potato_hash which correspond to a list and a dict respectively.
     """
     
     print "\n\n"
-    print("{}, {}").format(type(args), type(kwargs))
-    print("{}, {}").format(args, kwargs)
+    print("{}, {}").format(type(spaghetti), type(potato_hash))
+    print("{}, {}").format(spaghetti, potato_hash)
 
 
 if __name__ == "__main__":
@@ -34,7 +34,7 @@ if __name__ == "__main__":
     # So what do we expect here?  When are things unpacked?
     # How many objects are going into the function?
     # Are we using the complete functionality inside the function? (hint: no)
-    dyn_function(mylist, mydict)
+    dyn_function(*mylist, **mydict)
 
     # What about here? How many objects?
     # How does the output differ from the above function?

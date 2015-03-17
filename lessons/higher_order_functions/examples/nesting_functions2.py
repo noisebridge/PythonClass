@@ -9,16 +9,17 @@ def outer():
     What do we expect to have printed when we print cat?
     """
 
-    z = 9
+    z = [5]
 
     def inner():
 
         x = 5
-        q = z + x
+        q = sum(z) + x
 
         # Run this with z commented first. Then uncomment z.
         # IMPORTANT: Predict what will happen!
         #z = 5
+        z[0] = 9
 
         return q, z
 
@@ -36,7 +37,7 @@ if __name__ == "__main__":
     scope to be changed within the local scope. This may or may not be
     your intended behavior. 
 
-    In Python 2, people often use a mutable global variable in the
+    In Python 2, people often use a mutable enclosing variable in the
     parent scope. This allows it to be changed in the child scope.
     The original source for this code claims this is frequently seen
     in the wild: http://eev.ee/blog/2011/04/24/gotcha-python-scoping-closures/
