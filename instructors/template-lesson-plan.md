@@ -12,7 +12,7 @@ def sample():
     pass
 ```
 
-* 0. Today's deep dive: The Deep Dive Title Goes Here *
+0. #### Today's deep dive: The Deep Dive Title Goes Here
     1. Lorem ipsum
         1. Lorem ipsum
         2. dolor sit
@@ -41,7 +41,7 @@ def sample():
         2. dolor sit
         3. amit. Elem
 
-2. ##### Second Point
+2. #### Second Point
     1. Lorem ipsum
         1. Lorem ipsum
         2. dolor sit
@@ -55,7 +55,7 @@ def sample():
         2. dolor sit
         3. amit. Elem
 
-3. ##### Third Point
+3. #### Third Point
     1. Lorem ipsum
         1. Lorem ipsum
         2. dolor sit
@@ -69,7 +69,7 @@ def sample():
         2. dolor sit
         3. amit. Elem
 
-4. ##### Resources
+4. #### Resources
     1. Lorem ipsum
         1. Lorem ipsum
         2. dolor sit
