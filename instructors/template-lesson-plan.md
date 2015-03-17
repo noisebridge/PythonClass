@@ -6,9 +6,11 @@ A short description or overview can go here.
 
 Please add and delete bullet points as needed. Less is more!
 
-    # Here's a code block
-    def sample():
-        pass
+```python
+@decorate('Here's a syntax highlighted code block.')
+def sample():
+    pass
+```
 
 * 0. Today's deep dive: The Deep Dive Title Goes Here *
     1. Lorem ipsum
