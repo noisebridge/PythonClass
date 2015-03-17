@@ -1,6 +1,6 @@
 
 
-#### A Generic Template Based on the JSON Template
+#### A Generic Template - based on our other class templates.
 
 A short description or overview can go here.
 
