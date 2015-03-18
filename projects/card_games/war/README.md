@@ -6,6 +6,9 @@
 - The entire deck is dealt at the beginning
 
 
+Jokers removed from the deck before dealing.
+
+
 player deck addition/subtraction:
 - Cards are thrown from the top of the player's deck
 - Cards are recovered to the bottom of the player's deck.
@@ -29,6 +32,7 @@ war events:
 We only have to test for losing - Losing:
 - If you run out of cards, you lose.
 - This can happen any time a card is drawn from your deck.
+OUR TEST - IF A DRAW EVENT FAILS FOR YOU, YOU LOSE
 - Both players must be tested at the same time in case they both lose.
 
 
@@ -38,3 +42,26 @@ We only have to test for losing - Losing:
 
 
 3. Write some behavior for 2 computer players to go head-to-head in war.
+
+
+
+How will we define our game?
+
+1. Start by defining objects:
+Original Deck, Decks, Active Set, Players, Cards, Table
+
+Each card is an object that has two data attributes rank and suit..
+Original Deck is instantiated with one of each Card
+Player has a Deck
+Player has an Active Card?
+Table has an Active Set for each Player?
+Cards that have been played are stored in the Table (Community Object).
+
+2. 
+
+
+
+
+
+
+
