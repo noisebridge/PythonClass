@@ -51,6 +51,7 @@ How will we define our game?
 Original Deck, Decks, Active Set, Players, Cards, Table
 
 Each card is an object that has two data attributes rank and suit..
+Original Deck is a class.
 Original Deck is instantiated with one of each Card
 Player has a Deck
 Player has an Active Card?
