@@ -80,6 +80,6 @@ Discuss design of these objects and then their interaction
 When are these necessary and when are they not?     
 What does this functionality say about python OOP implementation?   
 
-###Resources:
+###Resources:   
 [Raymond Hettinger's talk on Python’s Class Development toolkit](http://pyvideo.org/video/1779/pythons-class-development-toolkit)
 [Pretty good post on what OOP is and isn’t using Python](http://www.devshed.com/c/a/Python/Object-Orientation-in-Python/)
