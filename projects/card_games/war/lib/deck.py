@@ -1,5 +1,8 @@
 """ 
+Deck class -    A generic deck with some functions for manipulating decks.
+                Also the home of self.deck = deque(), child classes may inherit self.deck.
 
+StandardDeck class - Uses Deck to implement a 52-card standard deck of playing cards, no jokers.
 """
 from collections import deque
 import random
@@ -25,10 +28,14 @@ class Deck(object):
         """ Deals an iterable containing one card from the top of the deck.
 
         This function uses pop() to deal from the right. This must be consistent through the class.
+        If there aren't enough cards, return as many cards as are left.
         """
         cards_to_deal = collections.deque()
         for i in range(num_to_deal):
-            cards_to_deal.append(self.deck.pop())
+            try:
+                cards_to_deal.append(self.deck.pop())
+            except IndexError:
+                pass
         return cards_to_deal
 
     def accept_n_cards(self, cards):
