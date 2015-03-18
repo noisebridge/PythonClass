@@ -29,7 +29,7 @@ Please add and delete bullet points as needed. Less is more!
     1. Replace With An Explanation - 3 minutes
         1. 
         2. 
-        3. 
+        3. See: [example_file.py](example_file.py)
     2. Second Part
         1. 
         2. 
@@ -40,29 +40,29 @@ Please add and delete bullet points as needed. Less is more!
     1. Replace with An Explanation - XX minutes
         1. 
         2. 
-        3. 
+        3. See: [example_file.py](example_file.py)
     2. Second Part
         1. 
         2. 
-        3. 
+        3. See: [example_file.py](example_file.py)
     3. Third Part
         1. 
         2. 
-        3. 
+        3. See: [example_file.py](example_file.py)
 
 3. #### Second Point
     1. Replace With An Explanation - XX minutes
         1. 
         2. 
-        3. 
+        3. See: [example_file.py](example_file.py)
     2. Second Part
         1. 
         2. 
-        3. 
+        3. See: [example_file.py](example_file.py)
     3. Third Part
         1. 
         2. 
-        3. 
+        3. See: [example_file.py](example_file.py)
 
 
 4. #### Extended Resources
