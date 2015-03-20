@@ -30,7 +30,7 @@ class Deck(object):
         This function uses pop() to deal from the right. This must be consistent through the class.
         If there aren't enough cards, return as many cards as are left.
         """
-        cards_to_deal = collections.deque()
+        cards_to_deal = deque()
         for i in range(num_to_deal):
             try:
                 cards_to_deal.append(self.deck.pop())

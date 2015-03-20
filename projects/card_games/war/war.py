@@ -1,4 +1,4 @@
-from lib.deck import Deck
+from lib.deck import StandardDeck, Deck
 
 
 class Player(object):
@@ -6,7 +6,6 @@ class Player(object):
     """
     def __init__(self):
         self.stack = Deck()
-
 
 class Table(object):
     """
@@ -43,16 +42,14 @@ class WarGame(object):
     
         # break when someone loses (for now)
         while True:
-            run_round()
-        # Runs at the end of while, even if it never loops
-        else:
-            finish_game()
+            self.run_round()
 
-    def finish_game():
+    def finish_game(self):
         """ Resolve the game
         """
 
-        print losers_list
+        print self.losers_list
+        exit()
 
         
     def run_round(self):
@@ -68,11 +65,14 @@ class WarGame(object):
 
             """
 
-            if ranks.index(card1) > ranks.index(card2):
-                print card1, " > ", card2, " Player 1 wins."
+            card1_rank = self.ranks.index(card1[0].rank)
+            card2_rank = self.ranks.index(card2[0].rank)
+
+            if card1_rank > card2_rank:
+                print card1[0].rank, " > ", card2[0].rank, " Player 1 wins."
                 return self.player1
-            elif ranks.index(card1) < ranks.index(card2):
-                print card1, " < ", card2, " Player 2 wins."
+            elif card1_rank < card2_rank:
+                print card1[0].rank, " < ", card2[0].rank, " Player 2 wins."
                 return self.player2
             # WAR!!
             else:
@@ -82,12 +82,17 @@ class WarGame(object):
         def draw_cards(num_to_draw, player):
             """
             """
-            card = player.deck.deal_n_cards(num_to_draw)
-            if len(card) = 0:
-                losers_list.append(player)
+            card = player.stack.deal_n_cards(num_to_draw)
+            if len(card) == 0:
+                self.losers_list.append(player)
+
+            return card
 
         player1_card = draw_cards(1, self.player1)
         player2_card = draw_cards(1, self.player2)
+        # end the game
+        if len(self.losers_list) > 0:
+            self.finish_game()
         winner = None
 
         while not winner:
@@ -95,23 +100,27 @@ class WarGame(object):
             winner = compare_cards(player1_card, player2_card)
             
             # Give all played cards to the table.
-            table.played_cards.accept_n_cards(player1_card)
-            table.played_cards.accept_n_cards(player2_card)
+            self.table.played_cards.accept_n_cards(player1_card)
+            self.table.played_cards.accept_n_cards(player2_card)
 
             if not winner:
                 # initialize a war
-                table.played_cards.accept_n_cards(draw_cards(3, self.player1))
-                table.played_cards.accept_n_cards(draw_cards(3, self.player2))
+                self.table.played_cards.accept_n_cards(draw_cards(3, self.player1))
+                self.table.played_cards.accept_n_cards(draw_cards(3, self.player2))
                 player1_card = draw_cards(1, self.player1)
                 player2_card = draw_cards(1, self.player2)
-            """
-            """
-         
+                if len(self.losers_list) > 0:
+                    self.finish_game()
+        
+        # Give all the cards in the played_cards to the winner
+        winner.stack.accept_n_cards(self.table.played_cards.deal_n_cards(len(self.table.played_cards.deck)))
+
 
 
     def deal_cards(self):
         """
         """
+
         while len(self.deck.deck):
 
             deal_this_card = self.deck.deal_n_cards()
@@ -121,4 +130,7 @@ class WarGame(object):
             deal_this_card = self.deck.deal_n_cards()
             if deal_this_card:
                 self.player2.stack.accept_n_cards(deal_this_card)
+
+if __name__ == "__main__":
+    wargame = WarGame()
 
