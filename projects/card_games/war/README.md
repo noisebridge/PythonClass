@@ -1,5 +1,5 @@
 
-
+card rank order is 2 to ace, needs specified by an index.
 
 1. Lets settle on a ruleset for the WAR cardgame.
 - 2 Player Game
