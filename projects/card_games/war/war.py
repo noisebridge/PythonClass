@@ -34,6 +34,7 @@ class WarGame(object):
         
         self.deck.shuffle()
         self.deal_cards()
+        self.play_war()
 
     
     def play_war(self):
@@ -68,11 +69,14 @@ class WarGame(object):
             """
 
             if ranks.index(card1) > ranks.index(card2):
-                return player1
+                print card1, " > ", card2, " Player 1 wins."
+                return self.player1
             elif ranks.index(card1) < ranks.index(card2):
-                return player2
+                print card1, " < ", card2, " Player 2 wins."
+                return self.player2
             # WAR!!
             else:
+                print "A war is on!"
                 return None
 
         def draw_cards(num_to_draw, player):
@@ -117,25 +121,4 @@ class WarGame(object):
             deal_this_card = self.deck.deal_n_cards()
             if deal_this_card:
                 self.player2.stack.accept_n_cards(deal_this_card)
-
-
-
-
-print ranks
-
-print ranks.index('two')
-print ranks.index('ace')
-
-# ranks.index('ace') will give the index of ace
-
-for rank in ranks:
-    print ranks.index(rank)
-
-if ranks.index('two') < ranks.index('ace'):
-    print 'ace is greater than two'
-
-
-
-
-
 
