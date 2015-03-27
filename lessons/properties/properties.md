@@ -35,14 +35,8 @@ Building Classes using Python's more obscure but interesting and necessary featu
     dir(t)
     ```
 
-    1. Replace With An Explanation - 3 minutes
-        1. 
-        2. 
-        3. See: [example_file.py](example_file.py)
-    2. Second Part
-        1. 
-        2. 
-        3. See: [example_file.py](example_file.py)
+    1. Build a now method and a tomorrow method - 15 minutes
+        
 
 
 2. #### Static and Class method decorators
