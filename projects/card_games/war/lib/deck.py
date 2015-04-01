@@ -5,8 +5,15 @@ Deck class -    A generic deck with some functions for manipulating decks.
 StandardDeck class - Uses Deck to implement a 52-card standard deck of playing cards, no jokers.
 
 
-Unit Test
-=========
+Unit Test Ideas
+===============
+Test the shuffle method
+Test the cut method
+Test that the StandardDeck attributes are there
+Test deal_n_cards
+Test accept_n_cards
+DONE Test that deck is a deque
+
 
 """
 from collections import deque
