@@ -3,6 +3,11 @@ Deck class -    A generic deck with some functions for manipulating decks.
                 Also the home of self.deck = deque(), child classes may inherit self.deck.
 
 StandardDeck class - Uses Deck to implement a 52-card standard deck of playing cards, no jokers.
+
+
+Unit Test
+=========
+
 """
 from collections import deque
 import random
