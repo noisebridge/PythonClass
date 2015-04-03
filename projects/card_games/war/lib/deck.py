@@ -72,6 +72,9 @@ class StandardDeck(Deck):
             self.rank = rank
             self.suit = suit
 
+        def __repr__(self):
+            return "Card of rank {0}, suit {1}".format(self.rank, self.suit)
+
     # These are sets. They are explicitly unique and unordered. This is just a collection of all possible cards.
     ranks = {"two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "jack", "queen", "king", "ace"}
     suits = {"spades", "clubs", "hearts", "diamonds"}
