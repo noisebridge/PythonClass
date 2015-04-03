@@ -18,6 +18,7 @@ DONE Test that deck is a deque
 """
 from collections import deque
 import random
+import pprint 
 
 
 class Deck(object):
@@ -73,7 +74,7 @@ class StandardDeck(Deck):
             self.suit = suit
 
         def __repr__(self):
-            return "Card of rank {0}, suit {1}".format(self.rank, self.suit)
+            return "Card of rank {0}, suit {1}\n".format(self.rank, self.suit)
 
     # These are sets. They are explicitly unique and unordered. This is just a collection of all possible cards.
     ranks = {"two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "jack", "queen", "king", "ace"}
@@ -89,6 +90,6 @@ class StandardDeck(Deck):
             for rank in self.ranks:
                 self.deck.append(self.Card(rank, suit))
 
-
-
-
+    def __repr__(self):
+        #this = [card.rank for card in self.deck]
+        return "cards {}".format(pprint.pprint((self.deck)))

@@ -78,19 +78,25 @@ class GoFishGame(object):
 
     def run_round(self):
         if self.fishing_pot: #if there aren't any cards in the fishing pot compare books and game ends
-            card_rank_guess = computer_guesser()
+            card_rank_guess = self.computer_guesser()
             not_cur_player = self.cur_player_deq[-1]
             if card_rank_guess in list(not_cur_player.stack.ranks):
-
+                pass
             self.cur_player_deq.rotate()
 
         else:
             self.compare_books()
 
-    def check_hand_for_books(self):
+    def check_hand_for_books(self): #put logic in org_cards
         cur_player = self.cur_players[0]
         for card in cur_player.stack.deck:
-            if card 
+            pass
+
+    def go_fish(self):
+        cur_player = self.cur_players[0]
+        cur_player.stack.accept_n_cards(self.fishing_pot.deal_n_cards())
+        
+
 
     def org_cards_in_hand(self):
         count = Counter(self.cur_players[0].stack.deck)
