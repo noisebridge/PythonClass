@@ -27,6 +27,10 @@ class Deck(object):
     def __init__(self):
         self.deck = deque()
 
+    def __repr__(self):
+        #this = [card.rank for card in self.deck]
+        return "cards {}".format(pprint.pprint((self.deck)))
+
     def shuffle(self):
         """ Randomizes the order of the deck
         """
@@ -74,7 +78,7 @@ class StandardDeck(Deck):
             self.suit = suit
 
         def __repr__(self):
-            return "Card of rank {0}, suit {1}\n".format(self.rank, self.suit)
+            return "{0} of {1}\n".format(self.rank, self.suit)
 
     # These are sets. They are explicitly unique and unordered. This is just a collection of all possible cards.
     ranks = {"two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "jack", "queen", "king", "ace"}
@@ -89,7 +93,3 @@ class StandardDeck(Deck):
         for suit in self.suits:
             for rank in self.ranks:
                 self.deck.append(self.Card(rank, suit))
-
-    def __repr__(self):
-        #this = [card.rank for card in self.deck]
-        return "cards {}".format(pprint.pprint((self.deck)))
