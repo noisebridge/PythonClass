@@ -1,0 +1,24 @@
+
+Class Title: Keywords & Control Flow
+Facilitator: Teddy McWilliams
+Date: 041315
+These notes are by: Trent R
+
+
+Exercise Ideas:
+===============
+
+- Our keywords are truly reserved words and we cannot overwrite them.
+
+
+Ideas to extend this lesson:
+===========================
+
+-WHITE SPACE! Why didn't I include scope and white space in this conversation?  It is the most important part of control flow in Python, and the most unique feature of the language.
+- Show example of colon separated lines instead of newline.
+
+- Do a better job highlighting the COMPLETENESS of the keywords.kwargs list in the class document.
+
+- This lesson is very INTROSPECTIVE. It should be part of an introspecting series and part of a beginner series on the language, near the end. It may be good to be near the INSPECT tool.
+
+-Keywords made a segue into built-in functions, which really makes a lot of sense. For example, differentiating print KW versus print BUILTIN. Note that the print builtin isn't available unless the keyword is disabled (see buildins 2.7 docs): from __future__ import print_function
