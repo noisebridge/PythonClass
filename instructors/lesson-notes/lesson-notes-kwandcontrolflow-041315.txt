@@ -10,9 +10,17 @@ Exercise Ideas:
 
 - Our keywords are truly reserved words and we cannot overwrite them.
 
+- We should do a lesson on GENERATORS, ITERATORS, and SEQUENCES.
+
+- We should do a lesson that somehow covers LIST COMPREHENSIONS, DICT COMPREHENSIONS.
+
 
 Ideas to extend this lesson:
 ===========================
+
+- My examples suck and need fixed.  Each example should quickly introduce one new 'group' of keywords.
+
+- Lets talk about the concept of 'reserved words' and 'reserved words are keywords' earlier.`
 
 -WHITE SPACE! Why didn't I include scope and white space in this conversation?  It is the most important part of control flow in Python, and the most unique feature of the language.
 - Show example of colon separated lines instead of newline.
@@ -22,3 +30,5 @@ Ideas to extend this lesson:
 - This lesson is very INTROSPECTIVE. It should be part of an introspecting series and part of a beginner series on the language, near the end. It may be good to be near the INSPECT tool.
 
 -Keywords made a segue into built-in functions, which really makes a lot of sense. For example, differentiating print KW versus print BUILTIN. Note that the print builtin isn't available unless the keyword is disabled (see buildins 2.7 docs): from __future__ import print_function
+
+- Give a link to this beautiful document: https://docs.python.org/2/reference/simple_stmts.html
