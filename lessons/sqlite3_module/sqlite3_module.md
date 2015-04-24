@@ -10,13 +10,15 @@ Please add and delete bullet points as needed. Less is more!
 
 0. #### Installation and Class Prep
     1. Installation Instructions:
-        1. 
-        2. 
-        3. 
+        1. [Install sqlite](http://www.sqlite.org/quickstart.html)
+        2. [sqlite Documentation](http://www.sqlite.org/docs.html)
     2. Class Prep Resources:
-        1. [Sample Link](www.example.com)
-        2. 
-        3. 
+        1. [Syntax Diagrams - Very useful!!](https://www.sqlite.org/syntaxdiagrams.html)
+
+
+- - - - Create a database: [use these schema](https://github.com/PyClass/PyClassLessons/tree/master/lessons/sqlite3_module/examples/db). First build the physics database, then build the sampledb database.
+- Write to DB: Run [this](https://github.com/PyClass/PyClassLessons/blob/master/lessons/sqlite3_module/examples/readsample.py) to add some sample entries.
+- Read from DB: Inside the sqlite shell, execute `SELECT * FROM OfficeSupplies;` to see all entries.
 
 
 1. #### Today's deep dive: The Deep Dive Title Goes Here
@@ -51,19 +53,27 @@ Please add and delete bullet points as needed. Less is more!
         2. 
         3. See: [example_file.py](example_file.py)
 
-3. #### Second Point
-    1. Replace With An Explanation - XX minutes
-        1. 
-        2. 
+3. #### Organizing or ('munging')[http://en.wikipedia.org/wiki/Mung_%28computer_term%29] data.
+    1. Data will often need reorganized. - 30 minutes
+        1. Key Point: A particular organizational model for a given dataset can be called a 'view' of that data. A single dataset can have many views.
+        3. It's possible that you are only interested in a certain subset of data and could remove irrelevant columns. If you have worked in excel, you have seen data in a specific view.
+        2.  You could filter by category such as with population data, or you could filter based on range, for example price ranges of store items.
         3. See: [example_file.py](example_file.py)
-    2. Second Part
-        1. 
-        2. 
+    2. So how do we get our sql format into a form we actually want?
+        1. SQL Tables are a collection of 1 dimensional columns.  The columns have a 'name' or 'header'.  Each row of the table represents a data point for that table.
+        2. DB->COLUMNS->ROWS->ENTRIES || A database is an arbitrary collection of tables, which is a collection of rows, which is a collection of points.
+        3. Important: In a given row of a table, each column MUST have a value, even if it has no data. The sqlite equivalent of NaN, null, or NA is `null`.
         3. See: [example_file.py](example_file.py)
-    3. Third Part
-        1. 
-        2. 
-        3. See: [example_file.py](example_file.py)
+    3. Data Organization Philosophy
+        1. A single datum should only exist in ONE place. That isn't to say that multiple things couldn't have the same datum
+        2. Don't create views before you know what you need.
+        3. If things belong together, put them together. If they don't, create a new table or even a new database.
+
+### 3. Organizing Data
+- Most of the time you are going to be using a variation of a Python list or a dictionary.
+- List: Ordered, but no 'metadata' describing what is ordered.
+- Dict: Everything has a unique 'hash' which can be considered metadata, but there is no inherent order.
+
 
 
 4. #### Extended Resources - An overview of sqlite technologies
@@ -81,13 +91,6 @@ Please add and delete bullet points as needed. Less is more!
 
 
 
-### 1. Basic Setup
-- [Install sqlite](http://www.sqlite.org/quickstart.html)
-- [sqlite Documentation](http://www.sqlite.org/docs.html)
-- [Syntax Diagrams - Very useful!!](https://www.sqlite.org/syntaxdiagrams.html)
-- Create a database: [use these schema](https://github.com/PyClass/PyClassLessons/tree/master/lessons/sqlite3_module/examples/db). First build the physics database, then build the sampledb database.
-- Write to DB: Run [this](https://github.com/PyClass/PyClassLessons/blob/master/lessons/sqlite3_module/examples/readsample.py) to add some sample entries.
-- Read from DB: Inside the sqlite shell, execute `SELECT * FROM OfficeSupplies;` to see all entries.
 
 
 ### 2. Working with the sample databases
@@ -98,13 +101,6 @@ Please add and delete bullet points as needed. Less is more!
 - A word of caution: sqlite is best for single-user applications.  If you need to allow many users, like with a web app, swap over to Postgres.
 - You can convert to Postgres, and TONS of your knowledge is transferrable, so just use sqlite3 for now and that knowledge will transfer!
 
-
-### 3. Organizing Data
-- Data will often need reorganized. Organize data based on how it will be used and avoid when you can.
-- Relational Databases aren't particularly clever. They are typically 2d tables (rows and columns). This is usually a very good thing.
-- Most of the time you are going to be using a variation of a Python list or a dictionary.
-- List: Ordered, but no 'metadata' describing what is ordered.
-- Dict: Everything has a unique 'hash' which can be considered metadata, but there is no inherent order.
 
 
 
