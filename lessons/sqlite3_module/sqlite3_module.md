@@ -1,13 +1,85 @@
 
-### [sqlite3: The Python 2 Module](https://docs.python.org/2/library/sqlite3.html)
-
+#### [sqlite3: The Python 2 Module](https://docs.python.org/2/library/sqlite3.html)
 
 
 ##### First, an excerpt from the Python 2 docs:
-
 "SQLite is a C library that provides a lightweight disk-based database that doesn’t require a separate server process and allows accessing the database using a nonstandard variant of the SQL query language. Some applications can use SQLite for internal data storage. **It’s also possible to prototype an application using SQLite and then port the code to a larger database such as PostgreSQL or Oracle.**
-
 It provides a SQL interface compliant with the DB-API 2.0 specification described by [PEP 249](http://www.python.org/dev/peps/pep-0249)."
+
+Please add and delete bullet points as needed. Less is more!
+
+0. #### Installation and Class Prep
+    1. Installation Instructions:
+        1. 
+        2. 
+        3. 
+    2. Class Prep Resources:
+        1. [Sample Link](www.example.com)
+        2. 
+        3. 
+
+
+1. #### Today's deep dive: The Deep Dive Title Goes Here
+
+    ```python
+    @decorate('Here's a syntax highlighted code block.')
+    def sample():
+        pass
+    ```
+
+    1. Replace With An Explanation - 3 minutes
+        1. 
+        2. 
+        3. See: [example_file.py](example_file.py)
+    2. Second Part
+        1. 
+        2. 
+        3. See: [example_file.py](example_file.py)
+
+
+2. #### First Point
+    1. Replace with An Explanation - XX minutes
+        1. 
+        2. 
+        3. See: [example_file.py](example_file.py)
+    2. Second Part
+        1. 
+        2. 
+        3. See: [example_file.py](example_file.py)
+    3. Third Part
+        1. 
+        2. 
+        3. See: [example_file.py](example_file.py)
+
+3. #### Second Point
+    1. Replace With An Explanation - XX minutes
+        1. 
+        2. 
+        3. See: [example_file.py](example_file.py)
+    2. Second Part
+        1. 
+        2. 
+        3. See: [example_file.py](example_file.py)
+    3. Third Part
+        1. 
+        2. 
+        3. See: [example_file.py](example_file.py)
+
+
+4. #### Extended Resources - An overview of sqlite technologies
+    1. [What's SQL?](http://en.wikipedia.org/wiki/SQL) - "SQL (Structured Query Language) is a special-purpose programming language designed for managing data held in a relational database management system (RDBMS), or for stream processing in a relational data stream management system (RDSMS).
+    2. [RDBMS](http://en.wikipedia.org/wiki/Relational_database_management_system) - "A relational database management system (RDBMS) is a database management system (DBMS) that is based on the relational model."
+
+    3. [DBMS](http://en.wikipedia.org/wiki/Database) - Database management systems (DBMSs) are computer software applications that interact with the user, other applications, and the database itself to capture and analyze data. A general-purpose DBMS is designed to allow the definition, creation, querying, update, and administration of databases.
+    4. [Relational Model](http://en.wikipedia.org/wiki/Relational_model) - Most relational databases use the SQL data definition and query language; these systems implement what can be regarded as an engineering approximation to the relational model. A table in an SQL database schema corresponds to a predicate variable; the contents of a table to a relation; key constraints, other constraints, and SQL queries correspond to predicates. However, SQL databases deviate from the relational model in many details, and Codd fiercely argued against deviations that compromise the original principles.
+
+
+
+
+
+
+
+
 
 ### 1. Basic Setup
 - [Install sqlite](http://www.sqlite.org/quickstart.html)
@@ -35,14 +107,6 @@ It provides a SQL interface compliant with the DB-API 2.0 specification describe
 - Dict: Everything has a unique 'hash' which can be considered metadata, but there is no inherent order.
 
 
-#### Addendum: An overview of technologies:
-
-1. SQL Databases: Disambiguation
-  - [What's SQL?](http://en.wikipedia.org/wiki/SQL) - "SQL (Structured Query Language) is a special-purpose programming language designed for managing data held in a relational database management system (RDBMS), or for stream processing in a relational data stream management system (RDSMS).
-
-2. [RDBMS](http://en.wikipedia.org/wiki/Relational_database_management_system) - "A relational database management system (RDBMS) is a database management system (DBMS) that is based on the relational model."
-  - [DBMS](http://en.wikipedia.org/wiki/Database) - Database management systems (DBMSs) are computer software applications that interact with the user, other applications, and the database itself to capture and analyze data. A general-purpose DBMS is designed to allow the definition, creation, querying, update, and administration of databases.
-  - [Relational Model](http://en.wikipedia.org/wiki/Relational_model) - Most relational databases use the SQL data definition and query language; these systems implement what can be regarded as an engineering approximation to the relational model. A table in an SQL database schema corresponds to a predicate variable; the contents of a table to a relation; key constraints, other constraints, and SQL queries correspond to predicates. However, SQL databases deviate from the relational model in many details, and Codd fiercely argued against deviations that compromise the original principles.
 
 
 ### TODO: DELETE WHEN COMPLETE
