@@ -1,10 +1,14 @@
-num = 10
-print id(num)
 
-def square_x(x): #arguments are aka parameters
-    x *= x
-    return x
 
-print square_x(num)
-print(num)
-print(id(num))
+def square_x_plus_ten(x): #arguments are aka parameters
+    ''' squares a number and adds ten
+
+    int or float -> int or float 
+
+    '''
+    return x * x + 10
+
+
+
+help(square_x_plus_ten)
+
