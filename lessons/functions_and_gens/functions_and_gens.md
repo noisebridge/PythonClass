@@ -1,7 +1,3 @@
-
-
-#### A Generic Lesson Plan Template - based on our other class templates
-
 Proper Functions and Generators
 
 1. #### Today's deep dive: Writing different functions (15 mins)
@@ -44,9 +40,12 @@ Proper Functions and Generators
 3. #### Functions are self-contained blocks of code (10 mins)    
     1. This means that they can be nicely tested!    
         1. Let's test the first example we wrote with the unittest framework    
-        2. See: [example4-setup.py](example4-setup.py)    
+        2. See: [example4-setup.py](example4-setup.py)  
 
-4. Exercise Reading and Refactoring (20 mins)    
+4. #### Generators and the yield statement (20 mins)    
+    1. [LearnPython resource](http://www.learnpython.org/en/Generators)  
+
+5. #### Exercise Reading and Refactoring (20 mins)    
     1. Refactor the code in [example2.py](example2.py)    
 
 6. #### Resources Used    
