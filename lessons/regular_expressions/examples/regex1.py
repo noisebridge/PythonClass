@@ -2,48 +2,43 @@
 Example 1
 
 Modified from: https://docs.python.org/2/howto/regex.html#regex-howto
+
+There is a bug below that should be KEPT, it is to illustrate a point.
 """
 import re
 
-###
-### Define our regex string
-###
-
-regex_example_string = r'.*test.*'
-
-print
-print "RE =", regex_example_string
-print
-
-###
-### Compile Regular Expression Objects with the string.
-###
-
-p = re.compile(regex_example_string)
-print p
-
-pi = re.compile(regex_example_string, re.IGNORECASE)
-print pi
-
-print
-
-###
-### Test Cases
-###
+# Lets make a few strings to test:
 test_string_1 = "This is a test string."
 
-# Return a titlecased version of the string where words start with an uppercase character and the remaining characters are lowercase.
-# https://docs.python.org/2/library/stdtypes.html#sequence-types-str-unicode-list-tuple-bytearray-buffer-xrange
+# Second string will be a titlecased version of the first:
 test_string_2 = test_string_1.title()
+
+# Now lets define our regular expression as a python raw string
+regex_example_string = r'.*test.*'
+
+
+# Compile Regular Expression Objects with the string.
+my_compiled_re = re.compile(regex_example_string)
+my_compiled_re_ignorecase = re.compile(regex_example_string, re.IGNORECASE)
+
 
 print "Test String 1", test_string_1
 print "Test String 2", test_string_2
 print
 
-###
-### Tests
-###
+
+print "Regular Expression String =", regex_example_string
+print
+
+
+print my_compiled_re
+print my_compiled_re_ignorecase
+print
+
+
 """
+Now it's time to use the regular expressions.
+
 Performing Matches: https://docs.python.org/2/howto/regex.html#performing-matches
 
 match() / search() / findall() / finditer()
@@ -56,31 +51,22 @@ find & findall - return list and iterator objects containing strings respectivel
 """
 
 
-print "Test 1, RE: p =", p.match(test_string_1)
-print "Test 1, RE: pi =", pi.match(test_string_1)
+print "String 1:"
+print "expression: my_compiled_re =", my_compiled_re.match(test_string_1)
+print "expression: my_compiled_re =", my_compiled_re.match(test_string_1).group()
+print "expression: my_compiled_re_ignorecase =", my_compiled_re_ignorecase.match(test_string_1)
+print "expression: my_compiled_re_ignorecase =", my_compiled_re_ignorecase.match(test_string_1).group()
 print
-print "Test 2, RE: p =", p.match(test_string_2)
-print "Test 2, RE: pi =", pi.match(test_string_2)
+
+print "String 2:"
+print "expression: my_compiled_re =", my_compiled_re.match(test_string_2)
+print "Why do we get a bug here? We will need to wrap these things in conditionals for regular use. Use the pattern---   if match: \ do_stuff(match)"
+print "expression: my_compiled_re =", my_compiled_re.match(test_string_2).group()
+print "expression: my_compiled_re_ignorecase =", my_compiled_re_ignorecase.match(test_string_2)
+print "expression: my_compiled_re_ignorecase =", my_compiled_re_ignorecase.match(test_string_2).group()
 print
 
-###
-### Results
-###
-"""
-Lets see what we get!
-"""
+print "Why are they the same memory location?"
+print "Each object is just running a new match on the same compiled regular expression."
 
-#Lets stick to the following:
-matched = p.match(test_string_1)
 
-print matched.group()
-print matched.start()
-print matched.end()
-print matched.span()
-
-len(matched.group())
-
-print "The Whole Match:", test_string_1[matched.start():matched.end()]
-print "The Whole Match len:", len(test_string_1[matched.start():matched.end()])
-print
-print pg.groups()

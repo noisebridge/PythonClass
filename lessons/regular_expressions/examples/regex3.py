@@ -1,12 +1,9 @@
-
 """
-Surprised with the result?  Remember the .* value - this value catches ANYTHING. The result is that the whole string is matched.
+Surprised with the result?  Lets do even more grouping.
 
 How do we extract the information we want??
 
 Grouping! https://docs.python.org/2/howto/regex.html#grouping
-
-Move on to regex2.py. 
 """
 import re
 
