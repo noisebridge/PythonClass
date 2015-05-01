@@ -18,6 +18,8 @@ regex Lesson:
     
     add time constraints to each segment of the lesson
 
+    may want to redo or refactor the exmaples to be more readable and/or focused on introduced functionality
+
     include the context of:
         what a match object is, 
         and what a regular expression object is
