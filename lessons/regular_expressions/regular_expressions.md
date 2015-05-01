@@ -1,7 +1,7 @@
     
 #### Python Regular Expressions   
 
-Regular expression are a small programming language used for matching strings and finding patterns. It comes in various 'flavors', with the most popular being 'perl flavor regular expressions'. You can use these in all different applications, and Python has a built in [regular expression module](https://docs.python.org/2/library/re.html)    
+[Regular Expressions](http://en.wikipedia.org/wiki/Regular_expression) are sequences of characters symbolically used for matching strings and finding patterns. It comes in various 'flavors', with the most popular being 'perl flavor regular expressions'. You can use these in all different applications, and Python has a built in [regular expression module](https://docs.python.org/2/library/re.html)    
  in the Standard Library.
 
 
@@ -15,20 +15,7 @@ Regular expression are a small programming language used for matching strings an
 
 1. #### Today's deep dive: The Deep Dive Title Goes Here
 
-    ```python
-    @decorate('Here's a syntax highlighted code block.')
-    def sample():
-        pass
-    ```
-
-    1. Replace With An Explanation - 3 minutes
-        1. 
-        2. 
-        3. See: [example_file.py](example_file.py)
-    2. Second Part
-        1. 
-        2. 
-        3. See: [example_file.py](example_file.py)
+    1. [Special characters in Python regular expressions: .^$*+?\[]()| and more!](https://docs.python.org/2/library/re.html#regular-expression-syntax)
 
 
 1. #### What are regular expressions?    
