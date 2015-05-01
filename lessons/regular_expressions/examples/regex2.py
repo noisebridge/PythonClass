@@ -1,5 +1,3 @@
-
-
 """
 Surprised with the result?  Remember the .* value - this value catches ANYTHING. The result is that the whole string is matched.
 
@@ -12,6 +10,7 @@ Move on to regex2.py.
 import re
 
 test_string_1 = "This is a test string."
+
 
 regex_extraction_str = r'.*(te(st))(.*)'
 
