@@ -1,6 +1,8 @@
     
 #### Python Regular Expressions   
-A short description or overview can go here.
+
+Regular expression are a small programming language used for matching strings and finding patterns. It comes in various 'flavors', with the most popular being 'perl flavor regular expressions'. You can use these in all different applications, and Python has a built in [regular expression module](https://docs.python.org/2/library/re.html)    
+ in the Standard Library.
 
 
 0. #### Installation and Class Prep
