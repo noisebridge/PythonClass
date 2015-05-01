@@ -39,12 +39,12 @@
   4. [Module level functions](https://docs.python.org/2/howto/regex.html#module-level-functions) - compilation is not always necessary, some general cases are precompile4.    
   5. Continuing through regex2.py, regex3.py
     
-5. #### We're not done yet! Now it's time to put all this hard work to good use.
+6. #### We're not done yet! Now it's time to put all this hard work to good use.
   1. We want to organize our mp3 file library, which has a lot of classics from 'the beatles. Or was it The-beatles? Wow, looks like we also have 'theBeatles' in these filenames...
   2. Shoot, it looks like a lot of different people used similar patterns. This sounds like a job for regular expressions!
 
 
-6. #### Extended Resources: Things you should check out from the 're' module standard library documentation:    
+7. #### Extended Resources: Things you should check out from the 're' module standard library documentation:    
 
   1. [Simple Patterns](https://docs.python.org/2/howto/regex.html#simple-patterns)    
   2. [Repeating Things](https://docs.python.org/2/howto/regex.html#repeating-things)    
