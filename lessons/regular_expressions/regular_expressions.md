@@ -13,7 +13,7 @@
 
 
 
-1. #### Today's deep dive: The Deep Dive Title Goes Here
+1. #### Today's deep dive: Special Characters (Regex Symbols)    
 
     1. [Special characters in Python regular expressions: .^$*+?\()| and more!](https://docs.python.org/2/library/re.html#regular-expression-syntax)
 
