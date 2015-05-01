@@ -15,7 +15,7 @@
 
 1. #### Today's deep dive: The Deep Dive Title Goes Here
 
-    1. [Special characters in Python regular expressions: .^$*+?\[]()| and more!](https://docs.python.org/2/library/re.html#regular-expression-syntax)
+    1. [Special characters in Python regular expressions: .^$*+?\()| and more!](https://docs.python.org/2/library/re.html#regular-expression-syntax)
 
 
 1. #### What are regular expressions?    
