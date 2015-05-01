@@ -1,6 +1,5 @@
     
-#### Python Regular Expressions - [The 're' module](https://docs.python.org/2/library/re.html)    
-    
+#### Python Regular Expressions   
 A short description or overview can go here.
 
 
@@ -8,7 +7,8 @@ A short description or overview can go here.
     1. Installation Instructions:
         1. The re module is part of the Python Standard Library, no installation required.
     2. Class Prep Resources:
-        1. 
+        1. [The 're' module](https://docs.python.org/2/library/re.html)    
+
 
 
 1. #### Today's deep dive: The Deep Dive Title Goes Here
