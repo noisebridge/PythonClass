@@ -81,8 +81,8 @@ This section is under development.
 
 [Digital Ocean $10 Credit](https://www.digitalocean.com/?refcode=1a1061eaf303)
 
-[Amazon's AWS has a free tier that allows you 750 compute hours every month of their t2.micro instances for 12 months]
-(http://aws.amazon.com/free/)
+[Amazon's AWS has a free tier that allows you 750 compute hours every month of their t2.micro instances for 12 months](http://aws.amazon.com/free/)
+
 -Use EC2 to create an instance from the Ubuntu 12.04 AMI  for the most well known and supported platform that will come with Python 2 installed
 
 
