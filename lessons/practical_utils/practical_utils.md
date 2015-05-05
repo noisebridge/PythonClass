@@ -27,9 +27,9 @@ create a blank warmup.py in your favorite text editor
         1. [The Unix Epoch](https://en.wikipedia.org/wiki/Unix_time) know epoch start date in datetime object
         2. Acronym soup: ISO, UTC, GMT, DST, locale
         3. Best post on what every dev should know about dates and times??? [maybe this one](http://blogs.windwardreports.com/davidt/2009/11/what-every-developer-should-know-about-time.html)
-    2. Practical tools from docs    
-        1. [strftime](https://docs.python.org/2/library/datetime.html?highlight=datetime#strftime-and-strptime-behavior)    
-        2. 
+    2. Practical tools from docs: a fairly large module        
+        1. [strftime](https://docs.python.org/2/library/datetime.html?highlight=datetime#strftime-and-strptime-behavior): string format time    
+        2. [tzinfo objects](https://docs.python.org/2/library/datetime.html?highlight=datetime#tzinfo-objects) not addressed
     3. Applying tools (30 mins)
         1. practical conversion problem 1: (1-prob_convert-and-print.py)
         2. much harder and less practical conversion problem 2: (2-prob_convert-and-json.py)    
@@ -51,7 +51,6 @@ create a blank warmup.py in your favorite text editor
     2. Examples in popular python web development     
         1. example-django-envars.py    
         2. example-flask-envars.py[from flask mege-tut](http://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-v-user-logins)    
-        3. See: [example_file.py](example_file.py)
     3. Problem    
         1. 3-prob-newfile.py    
 
