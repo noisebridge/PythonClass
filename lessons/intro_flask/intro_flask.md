@@ -1,6 +1,17 @@
 
 ##basic server-side web dev with flask - what is required to serve up basic app in python
 
+
+great post on how the app.route('/<routename>')[decorator works](http://ains.co/blog/things-which-arent-magic-flask-part-1.html
+)
+
+[SQLAlchemy home](http://www.sqlalchemy.org/): huge and awesome piece of software with many layers of complexity, yet it makes some things very easy!
+
+
+[Flask-WTF](https://flask-wtf.readthedocs.org/en/latest/): especially the quick start of course
+
+
+
 1. InstallFest!
     - fire up a virtualenv and pip install flask
     - use git if along with this lesson for each step if wanted
