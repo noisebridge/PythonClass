@@ -1,7 +1,7 @@
 
 ### PyClass 13-week Course
 
-Monday May 14, we will start a new cycle of PyClass.
+Monday May 18, we will start a new cycle of PyClass.
 
 WHO
 ===
