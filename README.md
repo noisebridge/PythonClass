@@ -15,7 +15,7 @@
 
 We set up the space at 6:45 PM - try to arrive early to help if you are able to.
 
-* Tuesday 7:00 - 9:00 PM PST - 'Turing' Classroom
+* Monday 7:00 - 9:00 PM PST - 'Turing' Classroom
 * Thursday 7:00 - 9:00 PM PST - 'Church' Classroom
 
 ### Mailing List
