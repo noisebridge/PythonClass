@@ -1,4 +1,63 @@
 
+### PyClass 13-week Course
+
+Monday May 14, we will start a new cycle of PyClass.
+
+WHO
+===
+
+If you are new to Python and want to get a jumpstart, this is a great opportunity. We are 
+starting a little bit further back, although a basic knowledge of Python or programming in some language is necessary.
+
+The course is free although we recommend a donation to Noisebridge.
+Donations go to: [https://www.noisebridge.net/wiki/Donate_or_Pay_Dues](https://www.noisebridge.net/wiki/Donate_or_Pay_Dues)
+Recommended Donations: $15, $50, $200+
+Recommended monthly donations: $10, $20, $40, $80+ / month
+
+This is a lower-to-higher intermediate Python class. Each course starts easy and becomes more technical as we head further into the lecture. Significant time is spent integrating with general technologies: sqlite, regular expressions, flask, json, virtualenv, unit tests, and logging are all on the syllabus, along with more python-specific topics.
+
+COURSE LAYOUT
+=============
+
+The pattern of these courses will be a little bit different, we will do a talk every Monday with key examples. Thursday, project night, will be spent building a project using the technology. Both are important if you wish to fully understand and apply each topic.
+
+Courses are (with the exception of the final 3 weeks) modular, and with sufficient understanding of Python you can miss a week and still follow the next week.  
+
+The first two courses are very important to understanding the rest of the class.
+
+The course takes place from 7 PM to 9 PM on Mondays and Thursdays. Some folks arrive early to clean up the room and answer questions.  We sometimes stay late to work on technical questions that come up during the lectures.
+
+More information can be found at:
+[https://noisebridge.net/wiki/Pyclass](https://noisebridge.net/wiki/Pyclass)
+
+All course materials are available on our github repository: [https://github.com/PyClass/PyClassLessons](https://github.com/PyClass/PyClassLessons)
+
+WHERE AND WHEN
+==============
+Monday - Turing Classroom - 7 PM to 9 PM
+Thursday - Church Classroom - 7 PM to 9 PM
+
+We recommend folks arrive at 645 PM to ask/answer questions, settle down, and clean up the room a bit before we start class.
+
+
+SYLLABUS
+========
+1 JSON and Data Containers
+2 Keywords and Control Flow
+3 Virtualenv and 3rd Party Modules
+4 Pythonic Workflow, functions, generators, duck typing
+5 Introspection: pdb, help, dir, inspect, timeit, error handling 
+6 SQLite3
+7 OOP - overview/sample project
+8 Tests - 'unittest' module
+9 Regular Expressions
+10 Logging
+11 Flask - Introduction and Project Template
+12 Flask - A First Webapp - Part 1
+13 Flask - A First Webapp - Part 2
+
+
+
 ### PSAs and Events
 
 **PSA 4-6-15:** As of today, attend PyClass on MONDAY and THURSDAY.  Monday in the Turing classroom will replace the Tuesday session.
