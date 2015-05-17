@@ -1,0 +1,11 @@
+this module ties in the virtualenv environment, how python itself was built, how requests was built and how python was made as well by looking into some of the C code
+its about source code, API design, where to find these resources and how everything intertwines
+
+in the requests segment:
+there should be an example back in the original .py script that we created of how to use the get function with the  params={‘a_name’: param1, ‘b_name’: param2} and even the **kwargs
+something about deactivating the environment should be appended to the lesson as well. 
+
+link for the source code of 2.7.9
+https://www.python.org/downloads/release/python-279/
+
+the code in the virtualenv is the compiled version of python
