@@ -46,7 +46,7 @@ please enter the python interactive interpreter:
   b. note about: '' versus u'' versus r''  (string types in Python 2)     
   c. briefly learning how to reference and read the official python documentation    
 
-#### 3. Sample JSON -  (15 min)
+#### 3. Sample JSON (15 min)
 
   a. We are going to load in the data from the file "abcde.json" in the examples folder       
   b. if you really prefer to later, get a json encoded object from [this url](https://raw.githubusercontent.com/PyClass/PyClassLessons/master/lessons/json_module/examples/abcdef.json) using a 3rd party module of python's called the "requests" module        
