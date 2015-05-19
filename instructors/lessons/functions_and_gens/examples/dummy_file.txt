@@ -1,0 +1,7 @@
+Notice that the type of the result can be regarded as everything past the first supplied argument. This is a consequence of currying, which is made possible by Haskell's support for first-class functions; this function requires two inputs where one argument supplied and the function is "curried" to produce a function for the argument not supplied. Thus calling f(x), where f :: a -> b -> c, yields a new function f2 :: b -> c that can be called f2(b) to produce c.
+The actual type specifications can consist of an actual type, such as Integer, or a general type variable that is used in parametric polymorphic functions, such as a, or b, or anyType. So we can write something like: functionName :: a -> a -> ... -> a
+Since Haskell supports higher-order functions, functions can be passed as arguments. This is written as: functionName :: (a -> a) -> a
+This function takes in a function with type signature a -> a and returns data of type a out.
+Java[edit]
+In the Java virtual machine, internal type signatures are used to identify methods and classes at the level of the virtual machine code.
+Example: The method String String.substring(int, int) is represented as Ljava/lang/String/substring(II)Ljava/lang/String;. The signature of main() method looks like this:

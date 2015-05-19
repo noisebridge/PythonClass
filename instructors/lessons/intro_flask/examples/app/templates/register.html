@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+
+      <div class="large-12 columns">
+        <h6> Give me your data! Its easy!</h6>
+          <br/>
+          <form action="" method="POST">
+            <p>{{ form.username.label }} {{ form.username }}&nbsp;{{ form.email.label }} {{ form.email }}</p>&nbsp;
+            <p>{{ form.password.label }} {{ form.password }}&nbsp;{{ form.confirm.label }} {{ form.confirm }}</p>
+            <p><input class="large round button" type="submit" value="Register"></p>
+          </form>
+      </div>
+
+{% endblock %}

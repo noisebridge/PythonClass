@@ -1,0 +1,16 @@
+This is a practical project. It explores text manipulation. However, don't get caught up in the text manipulation. The learning goals are code organization and how to extend a module. 
+
+More information on [rot13](http://en.wikipedia.org/wiki/ROT13).    
+    
+The objective is to extend the functionality of the provided library to achieve the stated goals. The rot13.py file is in the subdirectory for this module.     
+    
+Feel free to use getsocrata for examples of argparse and configparser if you decide to use those modules.    
+    
+    
+    
+Goals:    
+    
+1. Allow a file to be passed via standard input on program execution (as a parameter). The output can go to stdout or to a file via another standard input parameter, however you determine is best.    
+2. Change the primary/main function to be a standard input loop accepting lines of input, respecting the ability to provide a file on execution as a separate mode.    
+3. Add a new function for rotating by an arbitrary integer over 62 characters rather than 26. You'll need a separate cleaner function for this, since the default string cleaner doesn't allow caps or numbers. The 62 characters are a-z A-Z and 0-9.    
+    
