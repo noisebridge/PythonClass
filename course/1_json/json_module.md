@@ -42,12 +42,15 @@ please enter the python interactive interpreter:
 
 #### 2. Explain Python Data Types & Containers' relationship to JSON library (15 min) 
 
-  a. Json to Python Standard Translation: https://docs.python.org/2/library/json.html#encoders-and-decoders     
+  a. Json to Python Standard Translation: https://docs.python.org/2/library/json.html#encoders-and-decoders  
+  b. note about: '' versus u'' versus r''  (string types in Python 2)     
+  c. briefly learning how to reference and read the official python documentation    
 
 #### 3. Sample JSON -  (15 min)
 
-  a. What is requests? http://docs.python-requests.org/en/latest/    
-  b. The egregiously hard way: use urllib to get a json encoded object. https://raw.githubusercontent.com/PyClass/PyClassLessons/master/lessons/json_module/examples/abcdef.json  
+  a. We are going to load in the data from the file "abcde.json" in the examples folder       
+  b. if you really prefer to later, get a json encoded object from [this url](https://raw.githubusercontent.com/PyClass/PyClassLessons/master/lessons/json_module/examples/abcdef.json) using a 3rd party module of python's called the "requests" module        
+  c. The egregiously hard way to get the same data: use urllib to open and parse data from https://raw.githubusercontent.com/PyClass/PyClassLessons/master/lessons/json_module/examples/abcdef.json    
  
 
 
@@ -55,8 +58,8 @@ please enter the python interactive interpreter:
    
   a. to the docs! [json module](https://docs.python.org/2/library/json.html) in stdlib      
   b. Functions: load, dump, loads, dumps    
-  c. loads and dumps are 'load string' and 'dump string'
-  d. Quick Detour - The 'with' keyword - specifically for file objects.    
+  c. loads and dumps are 'load string' and 'dump string'   
+  d. Quick Detour into a great pythonic idiom - The 'with' keyword - specifically for file objects.    
   ```python
     with open('../abcde.json') as f:        
     for line in f:
