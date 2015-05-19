@@ -1,12 +1,12 @@
 
 
-#### An introduction to the JSON Module in Python
+##### An introduction to the JSON Module in Python
 
 
 #### 0. Today's deep dive: Playing more with python's types and conversions (10 min)
 
 please enter the python interactive interpreter: 
-   ```python```
+    $python
 
     ```python
     number_list = range(11)
