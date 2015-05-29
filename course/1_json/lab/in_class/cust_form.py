@@ -18,6 +18,7 @@ with open('../files/customer_form.json') as fp:
 
     #reassign age value
     cust_record['age'] = 26  
+    print cust_record['age']
     # or add one (this should be 27 now)
     cust_record['age'] += 1
     print cust_record['age']    
