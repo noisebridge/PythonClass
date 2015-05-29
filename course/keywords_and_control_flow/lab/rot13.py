@@ -24,19 +24,21 @@ def encode_with_rot13(message):
     
 
     """
+    def rotate_character(character, alphabet):
+        """ Rotate a character on its alphabet.
+        """
+        rotated_index = (alphabet.index(character) + 13) % 26
+        return alphabet[rotated_index]
+
     # We are ignoring case, we will use lowercase for all.
     alphabet = "abcdefghijklmnopqrstuvwxyz"
-    # Convenience reference.
-    alphabet_upper = alphabet.upper()
 
     result_list = list()
     for character in message:
         if character in alphabet:
-            rotated_index = (alphabet.index(character) + 13) % 26
-            result_list.append(alphabet[rotated_index])
-        elif character in alphabet_upper:
-            rotated_index = (alphabet_upper.index(character) + 13) % 26
-            result_list.append(alphabet_upper[rotated_index])
+            result_list.append(rotate_character(character, alphabet))
+        elif character in alphabet.upper():
+            result_list.append(rotate_character(character, alphabet.upper()))
         else:
             result_list.append(character)
     result = ''.join(result_list)
