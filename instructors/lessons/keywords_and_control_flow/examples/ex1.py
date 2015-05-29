@@ -1,6 +1,7 @@
 
 
 try:
+    yourmom = "hello"
     print yourmom
 except NameError as e:
     print e
@@ -10,7 +11,7 @@ try:
     eval(
     """
 try:
-    and = 5
+    ando = 5
 except Exception as e:
     print e
     """ 

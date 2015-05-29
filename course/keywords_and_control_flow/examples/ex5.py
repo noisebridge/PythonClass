@@ -1,5 +1,4 @@
 
-"""
 class TestException(Exception):
 
     def __init__(self, message):
@@ -9,7 +8,7 @@ class TestException(Exception):
         return repr(self.message)
         
 cat = TestException("TestMessage")
-"""
+
 
 try:
     xatfijerj
