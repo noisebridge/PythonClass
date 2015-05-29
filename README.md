@@ -41,20 +41,21 @@ We recommend folks arrive at 645 PM to ask/answer questions, settle down, and cl
 
 
 SYLLABUS
-========
--JSON and Data Containers
--Keywords and Control Flow
--Virtualenv and 3rd Party Modules
--Pythonic Workflow, functions, generators, duck typing
--Introspection: pdb, help, dir, inspect, timeit, error handling 
--SQLite3
--OOP - overview/sample project
--Tests - 'unittest' module
--Regular Expressions
--Logging
--Flask - Introduction and Project Template
--Flask - A First Webapp - Part 1
--Flask - A First Webapp - Part 2
+========    
+-JSON and Data Containers     
+-Keywords and Control Flow      
+-Virtualenv and 3rd Party Modules       
+-Pythonic Workflow, functions, generators, duck typing      
+-Introspection: pdb, help, dir, inspect, timeit, error handling         
+-SQLite3        
+-OOP - overview/sample project      
+-Tests - 'unittest' module      
+-Regular Expressions        
+-Logging        
+-Flask - Introduction and Project Template      
+-Flask - A First Webapp - Part 1        
+-Flask - A First Webapp - Part 2        
+
 
 
 
