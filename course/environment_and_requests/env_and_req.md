@@ -66,4 +66,7 @@
 
 5. #### Requests Library - 45 mins    
     1. [requests!](http://docs.python-requests.org/) http for humans    
+    2. playing with the api out of the box, reference the quickstart         
+    3. location in the virtualenv:    lib/python2.7/site-packages/     
+
         
