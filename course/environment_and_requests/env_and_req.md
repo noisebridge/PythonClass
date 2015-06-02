@@ -29,20 +29,19 @@
     1. References     
         1. [builtins documentation](https://docs.python.org/2/library/functions.html)    
 
-
 2. #### The Standard Library: - 20 mins    
-        1. [Python Library Reference](https://docs.python.org/2/library/index.html)    
-        2. Builtin modules to have in your pocket  --   warning: Opinions!
-            a. builtins, json, sqlite3, datetime (and friends), random        
-            b. pprint, csv, os, pdb, unittest    
-        3. Builtin modules to know about before long    
-            a. sys, collections, itertools, functools, timeit, futures        
-            b. re, decimal (and math friends), string, copy     
-        4. The long extra mile    
-            a. knowing how import works, the future statement, and all the idioms    
-            b. the [python 3 version of docs:](https://docs.python.org/3/reference/import.html)    
-            c. [talk on how import works:](http://pyvideo.org/video/1707/how-import-works)    
-            d. [lotsa fun with David Beazley:](http://pyvideo.org/video/3387/modules-and-packages-live-and-let-die) modules and packages - PyCon 2015    
+    1. [Python Library Reference](https://docs.python.org/2/library/index.html)    
+    2. Builtin modules to have in your pocket  --   warning: Opinions!    
+        a. builtins, json, sqlite3, datetime (and friends), random        
+        b. pprint, csv, os, pdb, unittest    
+    3. Builtin modules to know about before long    
+        a. sys, collections, itertools, functools, timeit, futures        
+        b. re, decimal (and math friends), string, copy     
+    4. The long extra mile    
+        a. knowing how import works, the future statement, and all the idioms    
+        b. the [python 3 version of docs:](https://docs.python.org/3/reference/import.html)    
+        c. [talk on how import works:](http://pyvideo.org/video/1707/how-import-works)    
+        d. [lotsa fun with David Beazley:](http://pyvideo.org/video/3387/modules-and-packages-live-and-let-die) modules and packages - PyCon 2015    
 
     
 
@@ -55,9 +54,6 @@
         1. Software versioning in general, [PEPs](https://www.python.org/dev/peps/), Python 2 and 3 state of union    
             a. [HHG to python addresses this in writing](http://docs.python-guide.org/en/latest/starting/which-python/#the-state-of-python-2-vs-3)     
 
-        2. 
-        3. See: [example_file.py](example_file.py)
-
 
 4. #### 3rd Party Packages and pypi - 15 mins    
     1. the cheeseshop aka [https://pypi.python.org/pypi](https://pypi.python.org/pypi)    
@@ -69,5 +65,5 @@
 
 
 5. #### Requests Library - 45 mins    
-    1. [homepage:](http://docs.python-requests.org/)    
+    1. [requests!](http://docs.python-requests.org/) http for humans    
         
