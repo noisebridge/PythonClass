@@ -1,0 +1,14 @@
+
+Class Title: Environment and Requests
+Facilitator: TM
+Date: 060115
+These notes are by: TM
+
+
+this lesson is about the python ecosystem and apis across the board, this should clear up a lot of concepts about the stdlib and get people installing 3rd party packages from PyPI with virtualenv and pip. though pre-class should have everyone be able to have those running, staying away from anaconda if possible or knowing how to use it if now
+
+-How do we avoid an installfest? 
+-post virtualenv from read the doc's and email well before this class starts   
+
+
+a little bit more about pip and virtualenv and Ian Bicking, since we’re on the subject of who is behind this software and these related things in software 
