@@ -1,6 +1,8 @@
 
 
-#### Environment, Third Party Packages and Requests
+#### Environment, Third Party Packages and Requests    
+
+-Avoid an installfest?    
 
 0. #### Installation    
     1. Preferred Installations:    
@@ -68,5 +70,21 @@
     1. [requests!](http://docs.python-requests.org/) http for humans    
     2. playing with the api out of the box, reference the quickstart         
     3. location in the virtualenv:    lib/python2.7/site-packages/     
+    4. how HTTP designed and what it does    
+        a. what is an api?
+        b. how would we have designed a pythonic api for HTTP?    
+    5. briefly what is on a webpage and how we can inspect that in the browser    
+    6. how the requests api is designed to use and making simple abcde.json request from git gist       
+        a. how this differs from what we have in the standard library     
+        b. release schedules of 3rd party libraries v. stdlib        
+        c. how the requests api is designed under the hood       
+    7. the term: client side programming     
+        a. [Place Kitten](http://placekitten.com/) API    
+
+6. #### Lab - python the language in the greater scope of software environments and passing information    
+    1. cool things computers can and can't do    
+    2. code other people have written, code other companies have written    
+    3. customizing gently by diving in and breaking OPC    
+    4. working with all sorts of apis            
 
         
