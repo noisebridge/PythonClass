@@ -1,0 +1,28 @@
+1. http://httpbin.org/
+
+2. http://placekitten.com/
+
+3. itunes store api https://www.apple.com/itunes/affiliates/resources/documentation/itunes-store-web-service-search-api.html
+    option 
+
+    gmaps
+    -http://maps.googleapis.com/maps/api/directions/output?parameters
+
+4. wikipedia api
+    -http://www.mediawiki.org/wiki/API:Main_page
+    -http://www.mediawiki.org/wiki/API:Client_code#Python
+
+5. requiring key: twilio
+
+
+data is turtles all the way down
+
+attributes v. methods
+
+apis
+
+webpages, all parts
+
+httpbin
+
+need to remake gist for abcde.json to properly reflect new pyclass repo paths
