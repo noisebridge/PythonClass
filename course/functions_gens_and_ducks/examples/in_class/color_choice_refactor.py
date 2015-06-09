@@ -1,4 +1,5 @@
-"""Choose 3 colors at random from the six color options - "red","blue","green","purple","yellow","orange"
+"""Choose 3 colors at random from the six color options - 
+"red","blue","green","purple","yellow","orange"
 """
 
 import random

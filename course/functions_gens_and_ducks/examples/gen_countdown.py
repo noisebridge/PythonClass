@@ -1,7 +1,7 @@
 def countdown_from_n(n):
     print "Counting down!" 
     while n > 0:
-        yield n # Generate a value (n) n -= 1
+        yield n 
         n -= 1
 
 countdown = countdown_from_n(5)
@@ -12,6 +12,7 @@ print countdown.next()
 print countdown.next()
 print countdown.next()
 print countdown.next()
+#why is it running out?
 
 
 countdown_from_ten = countdown_from_n(10)

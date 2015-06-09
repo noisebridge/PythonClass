@@ -63,7 +63,9 @@ Functions, Generators and Ducks
 
     4. Function Signatures    
         a. [Definition in Computer Science](https://en.wikipedia.org/wiki/Type_signature)    
-        b. Let's look at the signature of the ubiquotous [python builtin open()](https://docs.python.org/2/library/functions.html#open)    
+        b. Let's look at the signature of a couple [built in functions](https://docs.python.org/2/library/functions.html#built-in-functions)     
+            1. next(iterator[, default])    
+            2. print(*objects, sep=' ', end='\n', file=sys.stdout)    
 
 3. #### Enough Thoery, a little more code! (20 mins)    
     a. examples/gen_countdown.py    
