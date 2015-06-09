@@ -3,3 +3,5 @@ def calculate_15perc_tax(bill):
     '''
     bill = float(bill)
     return bill * .15
+
+    
