@@ -3,7 +3,7 @@ Facilitator: TM
 Date: 060815
 These notes are by: TM
 
-duck typing:
+duck typing: note this may be much better left for OOP sessions
 explanation of duck typing failed, a more concrete example than type changin, needs to be included. examples after explanation.
 a type is defined by what it does. maybe a verbal exercise, kinda like pictionary or whatever, it rolls, it usually has an axel, don't reinvent it. 
 we haven't done OOP yet so we can't define a class but we've got to be able to show how we do type conversion or multiplication with float and int types. the harder case is showing a string with numbers included going into a valid numerical type. float("873.1239")
@@ -12,8 +12,15 @@ maybe we should do a quick pp( dir(int) ) and pp( dir(float) )
 below is good and refs the wikipedia article
 http://stackoverflow.com/questions/17028722/is-this-duck-typing-in-python
 
-generators:
-illustration of xrange failed as well. unexpected results. this needs testing, what does below result in?
+yield keywords and generators:
+note: 'what does the yield keyword do' is #1 q on SO
+http://stackoverflow.com/questions/231767/what-does-the-yield-keyword-do-in-python
+
+include example with time module to time things! %timeit
+or better yet use cProfile, probly learn how with pymotw
+http://pymotw.com/2/profile/index.html#module-cProfile
+
+illustration of xrange failed as well. unexpected results. this needs testing, what does below result in? i couldn't get xvar.next() 
 xvar = xrange(3, 79, 3)
 print xvar 
 
@@ -27,6 +34,11 @@ to cap the point of you should always use generators one can even go as far as t
 
 still need to know exactly where these streams are being stored and how to make the sale on generators, get other people to the level of explaining is the goal
 
+ to talk about this intelligently you also need to know how much RAM a data structure is taking up. obviously test this by putting a single big data structure into your module and then use your profiling tools from there, this video by sentdex is fairly good https://www.youtube.com/watch?v=07-K4LFhBMc
+
+also, that python is the language to 'get things done'
+readable, writeable, libraries galore across many domains
+
 function signatures:
 first: next(iterator[, default])
 more advanced: print(*objects, sep=' ', end='\n', file=sys.stdout) signature as the signature example to decode. 
@@ -35,6 +47,10 @@ does a function signature include a function's return value?
 yet, i still can't read the parts of the docs listed below
 primary ::=  atom | attributeref | subscription | slicing | call
 
+functional programming paradigm:
+knowing that we can put functions that evaluate to our proper value in the signature, thus we can nest all sorts of functions together. 
+dict( enumerate( string.ascii_letters)  )
+notice that we are separating nicely, which may help readable and 
 
 explain expressions from the view point of 
 (do x for x in iterable)
@@ -45,7 +61,13 @@ include tuple expression tuple(x for x in iterable), people will of course ask, 
 when introducing the functional paradigm briefly we are introducing the ability to nest functions( upon(functions( upon(functions) ) ) )
 usually its kind to leave a few spaces for human readers
 
-make sure to recap at the end
+introducing list comps, dict comps, generator expressions, set displays
+
+basic dict comp example
+>>> a = enumerate( string.ascii_letters) #enumerate object is unique, does it inherit from a generator type as well?
+>>> b = {v:k for (k,v) in a}
+
+--make sure to recap at the end--
 
 
 --lab
