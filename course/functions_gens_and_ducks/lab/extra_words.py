@@ -1,3 +1,7 @@
+''' this module is to demonstrate a few different ways we can 
+clean text from a file.
+'''
+
 with open("reddit_fav_about_python.txt") as fp:
     full = fp.read()
 
@@ -8,6 +12,10 @@ sw = [' ', " '", '!', '"', '#', '&', "'", "'re", "'s", '(', ')', '*', '+', ',', 
 support_words = ['about', 'above', 'after', 'again', 'against', 'all', 'am', 'amp', 'an', 'and', 'any', 'are', 'as', 'at', 'be', 'because', 'been', 'before', 'being', 'below', 'between', 'both', 'but', 'by', 'can', 'did', 'do', 'does', 'doing', 'don', 'down', 'during', 'each', 'few', 'for', 'from', 'further', 'had', 'has', 'have', 'having', 'he', 'her', 'here', 'hers', 'herself', 'him', 'himself', 'his', 'how', 'if', 'in', 'into', 'is', 'it', 'its', 'itself', 'just', 'me', 'more', 'most', 'must', 'my', 'myself', "n't", 'no', 'nor', 'not', 'now', 'of', 'off', 'on', 'once', 'only', 'or', 'other', 'our', 'ours', 'ourselves', 'out', 'over', 'own', 'raquo', 'same', 'she', 'should', 'so', 'some', 'such', 'than', 'that', 'the', 'their', 'theirs', 'them', 'themselves', 'then', 'there', 'these', 'they', 'this', 'those', 'through', 'to', 'too', 'under', 'until', 'up', 'very', 'was', 'we', 'were', 'what', 'when', 'where', 'which', 'while', 'who', 'whom', 'why', 'will', 'with', 'you', 'your', 'yours', 'yourself', 'yourselves']
 
 def imp_clean_text(text, stop_words=[]):
+    '''clean text of all punctuation and words not deemed to be important
+    file -> list 
+    '''
+
     with open(text) as fp:
         full = fp.read()
     clean_text = list()
@@ -31,11 +39,9 @@ def get_sortedls_of_wordlengths(text):
     return sorted([len(w) for w in get_clean_word_ls(text)])
 
 
-func = func_clean_text("reddit_fav_about_python.txt", stop_words=[sw, support_words])
-
 #clean just using regex
 import re
-def diff_clean_text(text):
+def re_clean_text(text):
     with open(text) as fp:
         full = fp.read()
     return re.sub('^[^a-zA-z]*|[^a-zA-Z]*$','', full)
@@ -56,4 +62,6 @@ def all_words(text):
 
 #now = str(all_words("reddit_fav_about_python.txt").splitlines().rstrip()
 
+#where did this come from?
+#func = func_clean_text("reddit_fav_about_python.txt", stop_words=[sw, support_words])
 

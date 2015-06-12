@@ -4,10 +4,12 @@ Date: 060815
 These notes are by: TM
 
 for practice generators and functional types of programming, duck typing and iterating on things with a "pythonic workflow" it is a good idea to work with text, there are a number of fun applications we can do with this after cleaning the text
--mad libs
--reordering text otherwise
+-mad libs    pretty much string.replace if we're not doing nltk tagging
+-reordering text otherwise, reversing is one possibility
 -generating new text based on the corpus
 -talking with pyttsx
+
+don't forget major issue of handling unicode crap
 
 lab ideas can be a bit difficult, reiterate concepts learned before, getting each token from a generator, manipulating it in the way that we need and prefer, what NLP or nltk things can we accomplish?
 

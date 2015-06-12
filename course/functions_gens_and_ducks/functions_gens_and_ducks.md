@@ -85,5 +85,8 @@ Functions, Generators and Ducks
         1. Let's test the first example we wrote with the unittest framework    
         2. See: [example4-setup.py](example4-setup.py)     
 
-7. #### Lab: Working with data inputs of variable sizes    
-    1. parsing files and doing intelligent NLP      
+7. #### Lab: Working with data inputs of variable sizes - Text Processing    
+    1. parsing files and doing intelligent NLP    
+    2. pymotw - there's a [text processing](http://pymotw.com/2/articles/text_processing.html) section!       
+    3. [Peter Norvig on text processing](http://nbviewer.ipython.org/url/norvig.com/ipython/How%20to%20Do%20Things%20with%20Words.ipynb) ipynb    
+    4. search nltk or text processing in python      

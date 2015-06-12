@@ -1,7 +1,4 @@
 # -*- coding: utf-8 -*-
-#above helps to declare what encoding we want to use in the module
-
-#note this is copied from the first json lab
 
 #above is used to set the encoding for this module, (unfortunately didn't help that much)
 

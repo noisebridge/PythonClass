@@ -1,6 +1,3 @@
-
-
-
 with open('pres_on_trade_2015.txt', 'r') as fp:
     all_text = fp.readlines()
   
