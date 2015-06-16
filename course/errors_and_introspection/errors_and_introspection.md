@@ -49,60 +49,11 @@ Tonight will cover a lot of topics. We'll start by messing with the dir() and he
         3. If you call help on your own function, you'll get a nicely formatted output of the function's docstring and accepted arguments.
         4. [help() details](https://docs.python.org/2/library/functions.html#help)
 
-3. #### Second Point
-    1. Replace With An Explanation - XX minutes
-        1. 
-        2. 
-        3. See: [example_file.py](example_file.py)
-    2. Second Part
-        1. 
-        2. 
-        3. See: [example_file.py](example_file.py)
-    3. Third Part
-        1. 
-        2. 
-        3. See: [example_file.py](example_file.py)
+3. #### Next up: [timeit](https://docs.python.org/2/library/timeit.html)
+    1. Ok, so you want to know how long your code takes... - XX minutes
+        1. First off, `import timeit`
+        2. Lets take a look at the sample code in `timeit.py`
 
-"""
-This isn't a script, here's the first way to run pdb:
-
-
-========================================
-
-So lets start with a working application, success.py:
-
-    $ python -m pdb success.py
-
-Run this inline stack trace module, try out these commands:
-
-    help
-    help where
-    where
-    step
-    [hit enter to repeat step many times]
-
-You should recognize that your application is looping and failing.
-
-========================================
-
-Next lets look at a failing application, fail.py:
-
-    $ python -m pdb fail.py
-
-Lets just use step for now:
-
-    step
-    [hit enter to repeat step many times]
-
-========================================
-
-Ok, so how do we use this in our application if we want to inspect an area that isn't necessarily throwing an error?
-
-    Add this LOC (line of code) to your script:
-    >>> import pdb; pdb.set_trace()
-
-
-"""
 
 4. ####  PDB / stack trace - part of the [debugging suite](https://docs.python.org/2/library/debug.html)
     1. From the [pdb docs](https://docs.python.org/2/library/pdb.html): When invoked as a script, pdb will automatically enter post-mortem debugging if the program being debugged exits abnormally. After post-mortem debugging (or after normal exit of the program), pdb will restart the program. Automatic restarting preserves pdb’s state (such as breakpoints) and in most cases is more useful than quitting the debugger upon program’s exit.
@@ -110,6 +61,8 @@ Ok, so how do we use this in our application if we want to inspect an area that 
         2. There are two main ways to use pdb below.
     2. Method One: `python -m pdb success.py`
         1. Used when you want to step through your whole script/app.
+        2. Lets use the command step to go through success.py with pdb.
+        3. Now lets do this same thing with `fail.py` and compare.
     3. Method Two: `import pdb; pdb.set_trace()`
         1. This puts an arbitrary stack trace in your actual script.
         2. But wait, what's a '[stack trace](https://en.wikipedia.org/wiki/Stack_trace)'?
@@ -123,14 +76,12 @@ Ok, so how do we use this in our application if we want to inspect an area that 
             3. continue - run lines until 'something happens' which triggers pdb
 
 
-4. #### Lab Primer 
+5. #### Lab Primer - not used TAR 061515
     1. What to cover in a lab session
     2. What can we do with concepts learned? - XX minutes   
     3. What are some real world applications?    
     4. How to prep until then
 
 
-5. #### Extended Resources - any links or resources to take this concept further    
-    1. [Sample Link](www.example.com)
-    2. 
-    3. 
+6. #### Extended Resources - not used TAR 061515
+    1.
