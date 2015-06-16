@@ -9,13 +9,10 @@ Tonight will cover a lot of topics. We'll start by messing with the dir() and he
     1. Installation Instructions:
         1. You only need the Python Standard Library
     2. Class Prep Resources:
-        1. []()
-        1. []()
-        1. []()
-        1. []()
+        1. Optional: Review the lesson materials below.
 
 
-1. #### Today's deep dive: The Deep Dive Title Goes Here
+1. #### Today's deep dive: Lets look at the guts of a list and a dict.
 
     ```python
     in_a_list = dir(list())
@@ -39,21 +36,18 @@ Tonight will cover a lot of topics. We'll start by messing with the dir() and he
     
     ```
 
-    1. Replace With An Explanation - 3 minutes
-        1. 
-        2. 
-        3. See: [example_file.py](example_file.py)
-    2. Second Part
-        1. 
-        2. 
-        3. See: [example_file.py](example_file.py)
+    1. First lets look at the contents of dir(list()) and dir(dict()) - 3 minutes
+        1. Note that there are a lot of similar things, and a number of dissimilar things
+        2. Example 1: dicts have keys but obviously lists have no use for taht
+        3. Example 2: lists have __<slice>__ builtins for slicing. Dicts don't but why? (hint: are they ordered?)
 
 
-2. #### First Point
-    1. Replace with An Explanation - XX minutes
-        1. 
-        2. 
-        3. See: [example_file.py](example_file.py)
+2. #### So we just covered a bit about dir, but what is dir?
+    1. Lets learn about the help() method - 15 minutes
+        1. Obvious thing to do:  >>> help(dir)
+        2. Help often provides really terse information.
+        3. If you call help on your own function, you'll get a nicely formatted output of the function's docstring and accepted arguments.
+        4. [help() details](https://docs.python.org/2/library/functions.html#help)
     2. Second Part
         1. 
         2. 
