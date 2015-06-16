@@ -66,13 +66,6 @@ Tonight will cover a lot of topics. We'll start by messing with the dir() and he
 """
 This isn't a script, here's the first way to run pdb:
 
-    $ 
-From our PDB docs:
-
-Once you enter pdb this way, you can use these commands at the (pdb) prompt:
-    https://docs.python.org/2/library/pdb.html#debugger-commands
-    Abbreviations for these commands are listed in parentheses.
-    Entering a blank line repeats the last command entered.
 
 ========================================
 
@@ -118,15 +111,15 @@ We can focus on three commands now, (l)ist, (n)ext, (c)ontinue
 4. ####  PDB / stack trace - part of the [debugging suite](https://docs.python.org/2/library/debug.html)
     1. From the [pdb docs](https://docs.python.org/2/library/pdb.html): When invoked as a script, pdb will automatically enter post-mortem debugging if the program being debugged exits abnormally. After post-mortem debugging (or after normal exit of the program), pdb will restart the program. Automatic restarting preserves pdb’s state (such as breakpoints) and in most cases is more useful than quitting the debugger upon program’s exit.
         1. Lets not get too far into defining what it is, lets just try it out.
-
-    2. Two main ways to use pdb.
-        1. 
-        2. 
-        3. See: [example_file.py](example_file.py)
-    3. Third Part
-        1. 
-        2. 
-        3. See: [example_file.py](example_file.py)
+        2. There are two main ways to use pdb below.
+    2. Method One: `python -m pdb success.py`
+        1. Used when you want to step through your whole script/app.
+    3. Method Two: `import pdb; pdb.set_trace()`
+        1. This puts an arbitrary stack trace in your actual script.
+        2. But wait, what's a '[stack trace](https://en.wikipedia.org/wiki/Stack_trace)'?
+    4. Once you enter pdb, you can use [these commands](https://docs.python.org/2/library/pdb.html#debugger-commands) at the (pdb) prompt.
+        1. Abbreviations for these commands are listed in parentheses.
+        2. Entering a blank line repeats the last command entered.
 
 
 4. #### Lab Primer 
