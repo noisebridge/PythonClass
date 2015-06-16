@@ -10,8 +10,6 @@ Looks like we'll have to run our timeit statements at the bottom:
 """
 import timeit
 
-t1 = timeit.timer
-
 def pop_sample():
     """
     """
@@ -27,8 +25,14 @@ def ipop_sample():
     """
     list2 = range(10000)
     list2b = list()
-    for item in list1:
+    for item in list2:
         list2b.append(list2.pop(0))
     return
 
-    
+if __name__ == '__main__':
+
+    t1 = timeit.timeit("pop_sample()", number=1000, setup="from __main__ import pop_sample")
+    t2 = timeit.timeit("ipop_sample()", number=1000, setup="from __main__ import ipop_sample")
+
+    print "pop:", t1
+    print "ipop:", t2

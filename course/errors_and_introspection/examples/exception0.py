@@ -15,14 +15,12 @@ if __name__ == '__main__':
     # This file doesn't exist, oops!
     filename = "does_not_exist.txt"
 
-    f = open(filename, 'r')
-    f.read()
-
-    """
+    try:
+        f = open(filename, 'r')
+        f.read()
     except IOError as e:
-        print( "Error!", e) # we will look at this next example, ignore it for now
+        print("Error!", e) # we will look at this next example, ignore it for now
 
     # Demonstrate that the application continues
     print("...")
     print("Continue on with the application...")
-    """
