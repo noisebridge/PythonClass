@@ -49,6 +49,16 @@ Tonight will cover a lot of topics. We'll start by messing with the dir() and he
         3. If you call help on your own function, you'll get a nicely formatted output of the function's docstring and accepted arguments.
         4. [help() details](https://docs.python.org/2/library/functions.html#help)
 
+3. Lets discuss errors.  Two major classes, 'syntax errors' and 'exceptions'
+    1. Syntax Errors: Parsing Errors (the 'grammar rules' of Python)
+    2. Exceptions: These happen during runtime. Exceptions can be safely captured and handled. They are a totally legitimate thing in your control flow.
+    3. Exceptions are classes (object oriented paradigm). A captured exception is an object, inheriting from a child of the class `Exception`.
+    4. [Standard Library Built-In Exception Hierarchy!](https://docs.python.org/2/library/exceptions.html#exception-hierarchy)
+    5. Your exceptions can and should also inherit from the `Exception` class.
+    6. Note that these are in `__builtins__`.
+    7. Let use `try/except/finally`. (Other exception control flow: with/as, raise).
+    8. Finally always runs, even if the exception is raised and the program is stopped. Even if the exception causes the loop to be broken and control to be passed up to a higher level or out of a function. No matter what, finally runs.
+
 3. #### Next up: [timeit](https://docs.python.org/2/library/timeit.html)
     1. Ok, so you want to know how long your code takes... - XX minutes
         1. First off, `import timeit`
