@@ -7,4 +7,4 @@ text2_lines = [word for word in text2.split()]
 
 d = difflib.Differ()
 diff = d.compare(list(text1_lines), list(text2_lines))
-print '\n'.join(diff)
+print '\n'.join(diff) 
