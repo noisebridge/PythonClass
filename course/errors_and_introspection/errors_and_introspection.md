@@ -101,10 +101,6 @@ Ok, so how do we use this in our application if we want to inspect an area that 
     Add this LOC (line of code) to your script:
     >>> import pdb; pdb.set_trace()
 
-We can focus on three commands now, (l)ist, (n)ext, (c)ontinue
-    list - print the command where you are in the application but only once...
-    next - execute the next line
-    continue - run lines until 'something happens' which triggers pdb
 
 """
 
@@ -117,9 +113,14 @@ We can focus on three commands now, (l)ist, (n)ext, (c)ontinue
     3. Method Two: `import pdb; pdb.set_trace()`
         1. This puts an arbitrary stack trace in your actual script.
         2. But wait, what's a '[stack trace](https://en.wikipedia.org/wiki/Stack_trace)'?
+        3. Wikipedia is way more info than we wanted! A stack trace is what you see when you have an exception. It's a list of all the layers of code where the exception appeared.
     4. Once you enter pdb, you can use [these commands](https://docs.python.org/2/library/pdb.html#debugger-commands) at the (pdb) prompt.
         1. Abbreviations for these commands are listed in parentheses.
         2. Entering a blank line repeats the last command entered.
+        3. We can focus on three commands now, (l)ist, (n)ext, (c)ontinue
+            1. list - print the command where you are in the application but only once...
+            2. next - execute the next line
+            3. continue - run lines until 'something happens' which triggers pdb
 
 
 4. #### Lab Primer 
