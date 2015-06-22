@@ -49,7 +49,7 @@ Tonight will cover a lot of topics. We'll start by messing with the dir() and he
         3. If you call help on your own function, you'll get a nicely formatted output of the function's docstring and accepted arguments.
         4. [help() details](https://docs.python.org/2/library/functions.html#help)
 
-3. Lets discuss errors.  Two major classes, 'syntax errors' and 'exceptions'
+3. #### Lets discuss errors.  Two major classes, 'syntax errors' and 'exceptions'
     1. Syntax Errors: Parsing Errors (the 'grammar rules' of Python)
     2. Exceptions: These happen during runtime. Exceptions can be safely captured and handled. They are a totally legitimate thing in your control flow.
     3. Exceptions are classes (object oriented paradigm). A captured exception is an object, inheriting from a child of the class `Exception`.
@@ -62,7 +62,7 @@ Tonight will cover a lot of topics. We'll start by messing with the dir() and he
 3. #### Next up: [timeit](https://docs.python.org/2/library/timeit.html)
     1. Ok, so you want to know how long your code takes... - XX minutes
         1. First off, `import timeit`
-        2. Lets take a look at the sample code in `timeit.py`
+        2. Lets take a look at the sample code in `timeit_ex0.py`
 
 
 4. ####  PDB / stack trace - part of the [debugging suite](https://docs.python.org/2/library/debug.html)
