@@ -48,7 +48,7 @@ A wonderful way to encapsulate our data and actions!
 2. #### What to know about python objects by example     
     1. Terms, Concepts and denotative definitions - 25 minutes    
         0. constructor - creation of a new instance of specified object type    
-            a. see examples/inherit_from_string.py     
+            1. see examples/inherit_from_string.py     
         1. initializer - the '__init__' factory, populate that instance with methods and attributes    
         2. attributes - data attributes and method attributes    
         3. self reference - the 'self' is to tell the interpreter which class name an attribute is a member of    
@@ -68,7 +68,7 @@ A wonderful way to encapsulate our data and actions!
         
 
 4. #### Expanding first example: making objects interact    
-    1.  Making a product object - 20 minutes    
+    1.  Making a product object for our dear customer - 20 minutes    
     
 
 5. #### Lab Primer      
