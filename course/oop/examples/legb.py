@@ -1,4 +1,6 @@
-print dir(__builtins__)
+#print dir(__builtins__)
+
+#print zip
 
 class Zip(object):
     open = True
@@ -13,6 +15,10 @@ class Zip(object):
 
 zip = Zip()
 
-zip.zip() 
+print zip
 
-print zip.open
+
+
+#zip.zip() 
+
+#print zip.open
