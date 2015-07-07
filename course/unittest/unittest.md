@@ -11,11 +11,12 @@
     
     
 2. Lets build a tiny little unit testing framework.    
-    1. Build a simple test, e.g. 1+1==2    
-        -  The test isn't the focus yet.    
-    2. Build some more tests (2 more today)    
-        -  Two more tests in the same category.    
-        -  Simple math is best, we just want to get enough tests to see implementation patterns.    
+    1. Build a simple test, e.g. >>> assert 1+2==3    
+        -  We keep the contents of the test simple to focus on the test.     
+    2. Build some more tests:    
+        -  Lets do a simple abstraction of the first test: a=1;b=2;c=3;  assert a + b == c
+        -  Note the setup, we must set the values of a,b,c.
+        -  Lets also try loading 123.json file and testing that all contents can be converted to integers.
     3. Now lets generalize. 4 things change in each test.    
         -  test name - although you could have different text for fail/success    
         -  assert statement simply takes True/False (or a list of True/False) - we use only == to keep things simple    
