@@ -1,8 +1,7 @@
 """
 """
 
-myconditions = [1,2]
-myresult = 3
+mytestconditions = [ ([1,2],3), ([2,4],6), ([3,6],9) ]
 
 def sum_my_list(mylist):
 
@@ -12,5 +11,10 @@ def sum_my_list(mylist):
 
     return myresult
 
-
-assert sum_my_list(myconditions) == myresult
+try:
+    for condition, result in mytestconditions:
+        # check that the conditions produce the result
+        assert sum_my_list(condition) == result
+        print "Passed"
+except AssertionError:
+    print "Failed"
