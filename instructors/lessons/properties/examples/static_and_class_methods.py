@@ -16,17 +16,18 @@ class Date(object):
         t = time.localtime(time.time() + 86400) 
         return Date(t.tm_year, t.tm_mon, t.tm_mday)
 
-    @classmethod 
-    def now(cls):
+    '''@classmethod 
+    def cls_now(cls):
         t = time.localtime()
         # Create an object of the appropriate type 
-        return cls(t.tm_year, t.tm_month, t.tm_mday)
+        return cls(t.tm_year, t.tm_month, t.tm_mday)'''
 
 # Example of creating some dates
 a = Date(1967, 4, 9)
 b = Date.now() # Calls static method now()
 c = Date.tomorrow() # Calls static method tomorrow()
-print a
+#d = Date.cls_now()
+print a.__dict__
 print b
 print c
 
