@@ -39,7 +39,6 @@ class PlayingDeck(object):
         self.deck_container = deque()
         self.type_of_card = type_of_card
 
-
     def build_standard_deck(self):
         for rank in self.ranks:
              for suit in self.suits:
@@ -47,12 +46,10 @@ class PlayingDeck(object):
 
         return "deck of type {} built".format(self.type_of_card)
 
-
     def __repr__(self):
         '''used to print info about Card
         '''
         return "deck of length: {0}\n all cards: {1}".format(len(self.deck_container), self.deck_container)
-
 
     def cut(self):
         '''cut the deck using a generated psuedo random integer
@@ -85,7 +82,6 @@ class PlayingDeck(object):
         '''
         for card in cards:
             self.deck_container.appendleft(card)
-
 
 if __name__ == '__main__':
     '''Inside this block is code that should only be run when this module is exectued directly, 
