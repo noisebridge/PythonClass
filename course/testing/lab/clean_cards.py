@@ -70,9 +70,10 @@ class PlayingDeck(object):
     def pass_n_cards(self, num_to_deal):
         '''take n amount of cards from top of PlayingDeck instance, 
                that is from the right side of the deck_container
+               this method needs the ability to hold each 'popped' card until 
+                  it is passed and received by another Deck-like object
         '''
-
-        holder = deque()    #need ability to hold each 'popped' card until passed and received by another Deck like object
+        holder = deque()    
         for num in range(num_to_deal):
             holder.append(self.deck_container.pop())
         return holder
