@@ -39,13 +39,12 @@ class PlayingDeck(object):
         self.deck_container = deque()
         self.type_of_card = type_of_card
 
-
     def build_standard_deck(self):
         for rank in self.ranks:
              for suit in self.suits:
                  self.deck_container.append(self.type_of_card(rank, suit))
 
-        #return "deck of type {} built".format(self.type_of_card)
+        return "deck of type {} built".format(self.type_of_card)
 
 
     def __repr__(self):
@@ -91,25 +90,11 @@ if __name__ == '__main__':
        not when its objects imported
     '''
  
-    #all statements below are to verify various things with print statements 
-
-    pd = PlayingDeck( PlayingCard ) 
+    pd = PlayingDeck(PlayingCard) 
     #another_playing_deck = PlayingDeck(PlayingCard)
 
     #print dir(pd)
     #print pd.build_standard_deck()
-
-
-    #pd.build_standard_deck()
-
-    #print pd.deck_container
-    #print len(pd.deck_container)
-
-    #print pd.deck_container[5]
-
-    #print pd.pass_n_cards(1)
-
-
 
 
   
