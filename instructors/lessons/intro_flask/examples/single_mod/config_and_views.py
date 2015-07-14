@@ -1,7 +1,10 @@
-from flask import Flask, render_template, request
 from os.path import dirname, abspath, join
-from forms import PersonForm
+
+from flask import Flask, render_template, request
 from flask.ext.sqlalchemy import SQLAlchemy
+
+from forms import PersonForm
+
 
 _cwd = dirname(abspath(__file__))
 

@@ -1,9 +1,16 @@
+from os.path import dirname, abspath, join
+
 from flask.ext.sqlalchemy import SQLAlchemy
 
+
+#for the config section
 _cwd = dirname(abspath(__file__))
 SQLALCHEMY_DATABASE_URI = 'sqlite:///' + join(_cwd, 'flask_temp.db')
 
+
+#need to run this just ONCE to create the database
 db.create_all()
+#note that in class we ran this in the interactive shell
 
 
 class Person(db.Model):
@@ -11,14 +18,14 @@ class Person(db.Model):
 
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String)
-    fav_food = db.Column(db.String)
-    timesff_eaten_per_day = db.Column(db.Integer)
+    SSN = db.Column(db.Integer)
+    age = db.Column(db.Integer)
 
-    def __init__(self, name, fav_food, timesff_eaten_per_day):
+    def __init__(self, name, SSN, age):
         self.name = name 
-        self.fav_food = fav_food
-        self.timesff_eaten_per_day = timesff_eaten_per_day
+        self.SSN = SSN
+        self.age = age
 
 
     def __repr__(self):
-        return '<Person: {}'.format(self.name)
+        return "Person: name {0} - SSN {1} - age {2}".format(self.name, self.SSN, self.age)
