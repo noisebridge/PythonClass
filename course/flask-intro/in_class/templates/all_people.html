@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+
+{% block content %}  
+
+  <h2> Here are some people and their SSNs! </h2>
+
+  {% if not people %}
+    <p> add some data in the form to commit to db! </p>
+  {% endif %}
+
+  {% for person in people %}
+    <li> full person object: {{ person }} </li> 
+    <li> name: {{ person.name }} </li> 
+    <li> SSN: {{ person.SSN }} </li> 
+    <li> age: {{ person.age }} </li> 
+    </br>
+  {% endfor %}
+
+  {% if people %}
+    <!-- just one more little jinja2 feature below -->
+    <p> number of people: {{ people|length }}
+  {% endif %}
+
+  <div>
+    <a href="/person_form"> back to person_form </a>
+  </div>
+{% endblock %}

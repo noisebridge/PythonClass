@@ -4,24 +4,17 @@
   </head>
 
   <body>
-    <title>Title here</title>
+    <title>Very Fun App</title>
      
 
-    <h1> My Page </h1>
-     
-    {%  for num in num_list %}
-      <li> this is number: {{ num }} </li>
-    {% endfor %}
+    <h1> Hi there, your data is my pleasure :) </h1>
+    
 
-    <form method="POST" action="/person_form">
+    <!-- the block content jinja2 tags simply enable our file to be extended 
+    by other html files-->
+    {% block content %}
 
-    {{ person_form.csrf_token }}
-    {{ person_form.name.label }} {{ person_form.name(size=20) }}
-    {{ person_form.SSN.label }} {{ person_form.SSN(size=20) }}
-    {{ person_form.age.label }} {{ person_form.age(size=20) }}
-
-    <input type="submit" value="Gimme Data!">
-    </form>
+    {% endblock %}
     
   </body>
 </html>
