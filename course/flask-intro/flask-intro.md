@@ -83,4 +83,11 @@ Basics concepts and interactive pipeline
     2. [What exactly is a web framework: SO](http://stackoverflow.com/questions/3345512/what-exactly-is-a-web-framework#3345751)    
     3. Knowing where the flask package and source code lives in your virtualenv    
         1. the source code is relatively readable     
-    
+    4. [what is whisky?](https://www.python.org/dev/peps/pep-0333/) or WSGI?    
+ 
+ 8. spiel on webflow    
+    browser sends the request (which is essentially a string of bytes) through the web to your web server, most likely nginx
+    your web server, hands over the request to a WSGI server, most likely uWSGI, or directly serves a file from the filesystem (although i’m not sure i fully gather the latter part)
+    unlike a web server, a WSGI server can run python applications, the request populates a Python dictionary called environ and optionally passes through several layers of middleware, ultimately reaching your Web application
+    after going through all the application logic of routing to a specific view, probably querying the database, doing database filtering and view logic, then finally the HttpResponse object gets rendered into a huge string and a web page is rendered in the user’s browser.
+
