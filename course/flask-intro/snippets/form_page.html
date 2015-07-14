@@ -1,0 +1,22 @@
+<html>
+  <head>
+
+  </head>
+
+  <body>
+    <title>Your data is mine</title>
+
+    <h1> Give me your data! muwahahaha </h1>
+    <form method="POST" action="/person">
+    {{ person_form.csrf_token }}
+    {{ person_form.name.label }} {{ person_form.name(size=20) }}
+    {{ person_form.fav_food.label }} {{ person_form.fav_food(size=40) }}
+    {{ person_form.timesff_eaten_per_day.label }} {{ person_form.timesff_eaten_per_day }}
+    <input type="submit" value="Gimme!">
+    </form>
+
+    <a href='/index'>back to index</a>
+
+  </body>
+
+</html>
