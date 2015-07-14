@@ -6,7 +6,9 @@ class Circle(object):
 
     def __repr__(self):
         return "a circle with radius {}".format(self.radius)
+
     # Some additional properties of Circles 
+    
     @property #not an attribute to be modified but to be calculated itself
     #an attribute is to be calculated not to be modified 
     def area(self):
