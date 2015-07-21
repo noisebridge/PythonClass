@@ -25,13 +25,14 @@
   4. Special rules abound! In python, . will not match a newline unless you set the DOTALL flag.  Regular Expressions are part magic.
 
     
+## This section is covered in the how-to. Either remove it or reduce the how-to and integrate this.
 4. #### What about in Python?    
   1. Regular expressions can parse 8-bit or unicode strings.    
   2. The backslash character escapes special characters in regular expression strings. Because backslash is also used to escape things in Python strings, it is better to use the raw string format r'<str>' for your regular expression string. Raw strings don't need escaped.    
   3. [Regex HOWTO](https://docs.python.org/2/howto/regex.html#regex-howto) - Python is 'Perl Style'     
   4. This module creates objects for matches and provides helper methods for matches, searches, and other string comparison operations.    
     
-    
+## This is for the lab
 5. #### Lets do some regular expressions!    
   1. Compiling a string to a regex object using match/search/find/findall. [Match vs. Search](https://docs.python.org/2/howto/regex.html#match-versus-search) As a general rule, if you can use search you should. This is for efficiency, so if you don't need efficency, do what you want. According to the docs, the re module is highly optimize4.    
   2. Example: regex1.py - viewing the results stored in a match object    
