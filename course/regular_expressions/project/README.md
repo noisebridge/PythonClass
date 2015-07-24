@@ -21,11 +21,9 @@
 2b needs expanded, lets break down that line:
 
 What are the steps we should take to assemble that?
-1. Take the django regular expression and get it working with re.
+1. Find a regular expression on the internet which we understand and which achieves our validation needs.
 2a. Make an iterator by opening the file and looping over each candidate.
 2b. For each candidate, pass it through the compiled re object and return the result.
 3. Check the result, true or false, continue with path item 3 based on that test.
 
 
-
-###### Idea: Try out a multiline match
