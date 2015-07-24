@@ -1,4 +1,4 @@
-test@test.com
+test@test.com@fail
 example@gmail.com
 derp*q?
 potato@cannon.org

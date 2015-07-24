@@ -1,1 +1,1 @@
-["test@test.com", "example@gmail.com", "potato@cannon.org"]
+["test@test.com@fail", "example@gmail.com", "potato@cannon.org"]

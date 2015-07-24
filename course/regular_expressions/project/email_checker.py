@@ -7,6 +7,8 @@ Store the result in one of 2 files:
     1. valid emails.
     2. invalid emails.
 
+
+NOTE: This project still fails on a case when the email has a trailing string. This is because the re.match() method only matches the beginning of the string. We should match the whole string.
 """
 import re
 
