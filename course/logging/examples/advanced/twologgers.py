@@ -28,6 +28,6 @@ splogger.debug("Spaghetti time.")
 
 mylogger.debug("This is my first logging statement.")
 
-logging.debug("What root name is this logged to?")
+logging.critical("What root name is this logged to?")
 
 
