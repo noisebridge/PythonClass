@@ -8,11 +8,9 @@ logging infrastructure on top of.
 import logging, logging.config
 import json
 
-ADD_LOGGER_NAME = 'add_logger'
 LOGCONFIG_FILENAME = 'logconfig.json'
 
-
-add_logger = logging.getLogger(ADD_LOGGER_NAME)
+add_logger = logging.getLogger(__name__)
 
 with open(LOGCONFIG_FILENAME, 'r') as fp:
     logconfig = json.load(fp)
@@ -25,7 +23,14 @@ def add_some_numbers(a, b):
 
     """
 
-    return a + b*2
+    logger_name = 'add_some_numbers'
+    logger = logging.getLogger(__name__).getChild(logger_name)
+
+    result = a + b
+    
+    logger.info("Result of add_some_numbers: {}".format(result))
+
+    return result
 
 
 if __name__ == "__main__":
