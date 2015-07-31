@@ -3,9 +3,29 @@ A simple set of math methods that we can build our
 logging infrastructure on top of.
 
 
-"""
-import lib.logger
 
+"""
+import logging, logging.config
+import json
+
+LOGCONFIG_FILENAME = 'logconfig.json'
+
+add_logger = logging.getLogger(__name__)
+add_logger2 = logging.getLogger(__name__+'2')
+
+with open(LOGCONFIG_FILENAME, 'r') as fp:
+    logconfig = json.load(fp)
+
+logging.config.dictConfig(logconfig)
+
+
+
+
+# lets create a string to use as a filter
+filtered_logs = __name__ + '.add_some_numbers'
+# now lets add a filter
+add_filter = logging.Filter(filtered_logs)
+add_logger.addFilter(add_filter)
 
 def add_some_numbers(a, b):
     """ Adds the passed parameters and returns the result.
