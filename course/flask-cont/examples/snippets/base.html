@@ -1,0 +1,21 @@
+<html>
+  <head>
+
+  </head>
+
+  <body>
+    <title>{% block title %}Title goes here, this is on the browser tab {% endblock title%}</title>
+     
+
+    <h1> Hi there, the header would go here </h1>
+    
+
+    <!-- the blocks in jinja2 tags simply enable our file to be extended 
+    by other html files-->
+
+    {% block content %}
+
+    {% endblock %}
+    
+  </body>
+</html>

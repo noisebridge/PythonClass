@@ -1,0 +1,25 @@
+{% extends "bootstrap/base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block forms %}
+    
+  <div class="container">               
+    <h1> quick form below courtesy of wtforms </h1>
+    {{ wtf.quick_form(player_sign_up_form) }}
+  </div>
+
+  <div class="container">   
+
+    <h1> NON quick form below </h1>
+          
+    <form method="POST" action="/signup">
+      {{ player_sign_up_form.csrf_token }}
+      {{ player_sign_up_form.name.label }}    {{ player_sign_up_form.name }}
+      {{ player_sign_up_form.age.label }}     {{ player_sign_up_form.age }}
+      {{ player_sign_up_form.chips.label }}   {{ player_sign_up_form.chips }}
+      <input type="submit" value="gimME!">
+    </form>
+
+  </div>
+
+{% endblock forms %}
