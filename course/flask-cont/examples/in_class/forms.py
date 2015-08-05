@@ -8,4 +8,4 @@ class HackNewsUserForm(Form):
     name = StringField('name', validators=[DataRequired()])
     password = PasswordField('password', validators=[DataRequired()])
     email = EmailField('email', validators=[DataRequired()])
-    recaptcha = RecaptchaField()
+    # recaptcha = RecaptchaField()

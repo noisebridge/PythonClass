@@ -1,10 +1,10 @@
 from datetime import datetime
 
-from hack_news import db
+from config import db
 
 
 class User(db.Model):
- 
+
     __tablename__ = "hack_news_users"
 
     id = db.Column(db.Integer, primary_key=True)

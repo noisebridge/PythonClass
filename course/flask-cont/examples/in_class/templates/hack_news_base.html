@@ -17,6 +17,15 @@
     {% block content %}
 
     {% endblock %}
+
+    {% block navbar %}
+      <div>
+        <a href="{{ url_for('signup') }}"> signup </a>
+      </div>
+      <div>
+        <a href="{{ url_for('hello_again') }}"> standings </a>
+      </div>
+    {% endblock navbar %}
     
   </body>
 </html>
