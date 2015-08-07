@@ -22,13 +22,15 @@ def signup():
         print 'poster'
         if signup_form.validate_on_submit():
             print "was valid"
+
             user = User(signup_form.name.data,
                         signup_form.password.data,
                         signup_form.email.data)
             print user, 'user'
+
             print 'signup form attrs', (signup_form.name.data,
-                        signup_form.password.data,
-                        signup_form.email.data)
+                                        signup_form.password.data,
+                                        signup_form.email.data)
             db.session.add(user)
             db.session.commit()
 
