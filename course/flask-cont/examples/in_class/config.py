@@ -11,6 +11,8 @@ db = SQLAlchemy(app)
 #config section
 SECRET_KEY = 'sshh it"s a secret'
 RECAPTCHA_PUBLIC_KEY = 'hello captcha'
+
+
 _cwd = dirname(abspath(__file__))
 SQLALCHEMY_DATABASE_URI = 'sqlite:///' + join(_cwd, 'hack_news.db')
 

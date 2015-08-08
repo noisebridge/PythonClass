@@ -1,0 +1,3 @@
+user1 = User("shell1", "asdfas;lkj", "me@me.com")
+user2 = User("shell2", "asdfas;lkj", "me2@me2.com")
+user1 = User("shell3", "asdfas;lkj", "me3@me3.com")

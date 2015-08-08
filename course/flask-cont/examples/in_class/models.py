@@ -1,9 +1,16 @@
 from datetime import datetime
 
+from flask.ext.login import UserMixin
+
 from config import db
 
+def create_db():
+    """need to run this just ONCE to create the database
+    """
+    db.create_all()
 
-class User(db.Model):
+
+class User(UserMixin, db.Model):
 
     __tablename__ = "hack_news_users"
 
@@ -20,3 +27,4 @@ class User(db.Model):
 
     def __repr__(self):
         return '<User {0}, Email: {1}>'.format(self.username, self.email)
+
