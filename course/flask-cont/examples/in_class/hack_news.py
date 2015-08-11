@@ -1,4 +1,4 @@
-from flask import render_template, request, redirect, url_for, session, flash
+from flask import render_template, request, redirect, url_for, session, flash, abort
 from flask.ext.login import LoginManager, login_user, login_required
 
 from config import app, db
@@ -13,10 +13,12 @@ login_manager.login_view = 'signup'
 
 @login_manager.user_loader
 def load_user(user):
+    print user 
     return User.query.get(user)
 
 
 @app.route("/")
+@login_required
 def hello():
     print session
     print "next is dir(session)"
@@ -41,12 +43,15 @@ def signup():
 
     print 'signup'
     print 'request.args', request.args
-    error = None
 
+    error = None
     signup_form = HackNewsUserForm(request.form)
     if request.method == "POST":
         print 'poster'
         if signup_form.validate_on_submit():
+
+
+
             print "was valid"
 
             user = User(signup_form.name.data,
@@ -57,10 +62,9 @@ def signup():
             flash('Logged in successfully.')
 
             print 'request.args', request.args
+            print session
 
-            # next = request.args.get('next')
-            # if not next:
-            #      return abort(400)
+            print request.args.get('next')
 
             print user, 'user'
 
@@ -70,7 +74,7 @@ def signup():
             db.session.add(user)
             db.session.commit()
 
-            return redirect(url_for('hello_again'))
+            return redirect(request.args.get('next'))
         else:
              print error
 
