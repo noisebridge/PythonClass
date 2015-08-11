@@ -6,13 +6,10 @@ import logging
 
 myloglv = logging.DEBUG
 
-
 mylogger = logging.getLogger('myrootlevel')
-
 splogger = logging.getLogger('spaghettilogger')
 
 mylogger.setLevel(myloglv)
-
 splogger.setLevel(myloglv)
 
 logger_handler = logging.FileHandler('example.log')
@@ -25,7 +22,6 @@ splogger.addHandler(logger_handler)
 
 
 splogger.debug("Spaghetti time.")
-
 mylogger.debug("This is my first logging statement.")
 
 logging.critical("What root name is this logged to?")

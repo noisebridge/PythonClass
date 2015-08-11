@@ -6,8 +6,12 @@ In the last example we will get an equivalent short snip for a more advanced log
 
 import logging
 
-logging.basicConfig(level='DEBUG')
+logging.basicConfig(level='ERROR')
 
 logging.debug("This is a string that we want to log.")
+logging.warning("This is a string that we want to log.")
+#logging.debug("This is a string that we want to log.")
+#logging.debug("This is a string that we want to log.")
+#logging.debug("This is a string that we want to log.")
 
 
