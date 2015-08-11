@@ -1,4 +1,4 @@
-from flask import render_template, request, redirect, url_for, session, flash, abort
+from flask import render_template, request, redirect, url_for, session, flash
 from flask.ext.login import LoginManager, login_user, login_required
 
 from config import app, db
@@ -14,7 +14,6 @@ login_manager.login_view = 'signup'
 @login_manager.user_loader
 def load_user(user):
     return User.query.get(user)
-
 
 
 @app.route("/")
@@ -41,7 +40,7 @@ def hello_again():
 def signup():
 
     print 'signup'
-    print dir(request)
+    print 'request.args', request.args
     error = None
 
     signup_form = HackNewsUserForm(request.form)
@@ -56,6 +55,8 @@ def signup():
 
             login_user(user)
             flash('Logged in successfully.')
+
+            print 'request.args', request.args
 
             # next = request.args.get('next')
             # if not next:
