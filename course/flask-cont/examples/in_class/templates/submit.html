@@ -1,0 +1,12 @@
+{% include 'hack_news_base.html' %}
+
+Submit
+</br>
+
+<form method="POST" action="/">
+  title: {{ hack_news_submit_form.title }}
+  url: {{ hack_news_submit_form.url }} 
+  </br> or </br>
+  text: {{ hack_news_submit_form.text }}
+  <input type="submit" value="submit">
+</form>

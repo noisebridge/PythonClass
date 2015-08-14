@@ -2,8 +2,8 @@ from flask import render_template, request, redirect, url_for, session, flash, a
 from flask.ext.login import LoginManager, login_user, login_required
 
 from config import app, db
-from forms import HackNewsUserForm
-from models import User
+from forms import HackNewsUserForm, HackNewsPostForm
+from models import User, Post 
 
 
 login_manager = LoginManager()
@@ -17,7 +17,7 @@ def load_user(user):
     return User.query.get(user)
 
 
-@app.route("/")
+@app.route("/to_delete")
 @login_required
 def hello():
     print session
@@ -31,11 +31,32 @@ def hello():
 
 
 @app.route("/hi", methods=["GET", "POST"])
-@login_required
 def hello_again():
     all_users = User.query.all()
-    return render_template("custom_hello.html", all_users=all_users )
+    return render_template("custom_hello.html", all_users=all_users)
 
+
+@app.route("/", methods=["GET", "POST"])
+def home():
+    all_posts = Post.query.all()
+    return render_template("home.html", all_posts=all_posts)
+
+
+@app.route("/submit", methods=["GET", "POST"])
+def submit():
+    hack_news_submit_form = HackNewsPostForm(request.form)
+    print session 
+    if request.method == "POST":
+        if hack_news_submit_form.validate_on_submit():
+            post = Post(hack_news_submit_form.title.data, 
+                        hack_news_submit_form.url.data, 
+                        'test_user')
+            db.session.add(post)
+            db.session.commit()
+
+            return redirect(url_for('home'))
+
+    return render_template("submit.html", hack_news_submit_form=hack_news_submit_form)
 
 
 @app.route("/signup", methods=["GET", "POST"]) 
@@ -74,7 +95,7 @@ def signup():
             db.session.add(user)
             db.session.commit()
 
-            return redirect(request.args.get('next'))
+            return redirect(url_for('hello_again'))
         else:
              print error
 
