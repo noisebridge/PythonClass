@@ -18,7 +18,6 @@ def load_user(user):
 
 
 @app.route("/to_delete")
-@login_required
 def hello():
     print session
     print "next is dir(session)"
@@ -44,10 +43,16 @@ def home():
 
 @app.route("/submit", methods=["GET", "POST"])
 def submit():
+    print "hit submit route"
     hack_news_submit_form = HackNewsPostForm(request.form)
-    print session 
+    error = None
+    print "session", session 
+    print "request.form is: {}".format(request.form)
+    
     if request.method == "POST":
+        print "method was post"
         if hack_news_submit_form.validate_on_submit():
+            print "validated"
             post = Post(hack_news_submit_form.title.data, 
                         hack_news_submit_form.url.data, 
                         'test_user')
@@ -56,7 +61,7 @@ def submit():
 
             return redirect(url_for('home'))
 
-    return render_template("submit.html", hack_news_submit_form=hack_news_submit_form)
+    return render_template("submit.html", hack_news_submit_form=hack_news_submit_form, error=error)
 
 
 @app.route("/signup", methods=["GET", "POST"]) 

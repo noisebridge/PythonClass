@@ -1,12 +1,17 @@
 {% include 'hack_news_base.html' %}
 
-Submit
+<h1>Submit</h1>
 </br>
 
-<form method="POST" action="/">
+<form method="POST" action="/submit">
+  {{ hack_news_submit_form.csrf_token }}
   title: {{ hack_news_submit_form.title }}
-  url: {{ hack_news_submit_form.url }} 
-  </br> or </br>
-  text: {{ hack_news_submit_form.text }}
+
+  </br> 
+  <div>
+    url: {{ hack_news_submit_form.url }} 
+    or  
+    text: {{ hack_news_submit_form.text }}
+  </div>
   <input type="submit" value="submit">
 </form>
