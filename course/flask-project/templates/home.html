@@ -1,0 +1,16 @@
+{% include "hack_news_base.html" %}
+
+{% block content %}
+
+{{ all_posts }}
+  {% for post in all_posts %}
+    <ul>  
+      <li> title: {{ post.title }} </li>
+      <li> (domain: {{ post.domain }}) </li>
+      <li> points: {{ post.points }} </li>
+      <li> submitted by: {{ post.username }} </li>
+    </ul>
+  {% endfor %}
+
+
+{% endblock %}
