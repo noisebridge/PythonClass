@@ -1,15 +1,20 @@
+Emulating ["Hacker News"](https://news.ycombinator.com/) using python's [flask web framework](http://flask.pocoo.org/)
+
+
 ####Getting Running
--create and activate virtualenv using python 2.7.X     
+-create and activate virtualenv. this project is using python 2.7.X     
 -pip install -r requirements.txt    
--open a python shell: from models import createdb    
- @python'''>>> create_db()'''    
--
+-open a python shell:     
+```python    
+>>> from models import createdb    
+>>> create_db()    
+```    
 
 
 ####Goals    
-
-0. upvotes
+0. upvotes    
     -with simple ajax call     
+    -Please replace grayarrow.gif with Unicode character ▲ to make the upvote triangle look crisp on high-resolution displays    
 1. comments    
     -updating models    
     -enabling replies    
@@ -26,7 +31,8 @@
 6. archives exposed and pagination    
 7. basic outward facing web API    
 8. newest section    
-9. add days ago added
+9. add "days ago" field    
+10. add a FAVICON!! 
 
 how do HN comments work? front and back-end
 
@@ -34,7 +40,7 @@ how do HN comments work? front and back-end
 
 CRUD
 
-Create:     
-Read     
-Update     apply only to comments section    
-Delete    is there delete?     
+Create: enter data into the database, through user entry or otherwise     
+Read: query the database and display in html templates     
+Update: query, modify, then save data back to the database     for this project: applies mostly to comments section    
+Delete: delete records if necessary   for this project: is there delete?     
