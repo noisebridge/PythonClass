@@ -1,4 +1,4 @@
-{# {% include "hack_news_base.html" %} #}
+{% include "hack_news_base.html" %} 
 
 {% block content %}
 
@@ -8,79 +8,87 @@
 
 {# <!--all elements reside in one center tag, then in one table tag--> #}
   <center>
-    <table id="hnmain" border="0" cellpadding="0" cellspacing="0" width="85%" bgcolor="#f6f6ef">
-      <tr>
-        <td bgcolor="#ff6600">
-        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="padding:2px">
-          <tr> {# the 'yc' logo #}
-            <td style="width:18px;padding-right:4px">
-              <a href="http://www.ycombinator.com"><img src="static/images/y18.gif" width="18" height="18" style="border:1px #ffffff solid;"></a>
-            </td>
-            {# the navbar #}
-            <td style="line-height:12pt; height:10px;"><span class="pagetop"><b>
+  <table id="hnmain" border="0" cellpadding="0" cellspacing="0" width="85%" bgcolor="#f6f6ef">
+    <tr>
+      <td bgcolor="#ff6600">
+      <table border="0" cellpadding="0" cellspacing="0" width="100%" style="padding:2px">
+        <tr> 
+          {# the 'Y' logo #}
+          <td style="width:18px;padding-right:4px"> 
+            <a href="http://www.ycombinator.com"><img src="static/images/y18.gif" width="18" height="18" style="border:1px #ffffff solid;"></a>
+          </td>
+          {# the navbar #}
+          <td style="line-height:12pt; height:10px;">
+            <span class="pagetop"><b>
               <a href="news">Hacker News</a></b><img src="s.gif" height="1" width="10">
-               <a href="newest">new</a> | 
-               <a href="threads?id=teddymcw-test">threads</a> | 
-               <a href="newcomments">comments</a> | 
-               <a href="show">show</a> | 
-               <a href="ask">ask</a> | 
-               <a href="jobs">jobs</a> | 
-               <a href="{{ url_for('submit') }}">submit</a></span></td><td style="text-align:right;padding-right:4px;">
-               <span class="pagetop">
-                 <a href="user?id=teddymcw-test">teddymcw-test</a>(1) |
-                 <a href="logout?goto=news">logout</a>
-               </span>
+              <a href="newest">new</a> | 
+              <a href="threads?id=teddymcw-test">threads</a> | 
+              <a href="newcomments">comments</a> | 
+              <a href="show">show</a> | 
+              <a href="ask">ask</a> | 
+              <a href="jobs">jobs</a> | 
+              <a href="{{ url_for('submit') }}">submit</a>
+            </span>
+          </td>
+          {# user links #}
+          <td style="text-align:right;padding-right:4px;">
+            <span class="pagetop">
+              <a href="user?id=teddymcw-test">teddymcw-test</a>(1) |
+              <a href="logout?goto=news">logout</a>
+            </span>
+          </td>
+        </tr>
+      </table>
+      </td>
+    </tr>
+        
+    {# posts table #}
+    <tr style="height:10px"></tr>
+    <tr>
+      <td>
+        <table border="0" cellpadding="0" cellspacing="0">
+
+        {% for post in all_posts %}
+  
+        <tr style="height:5px">
+          <tr class='athing'>
+            <td align="right" valign="top" class="title">
+              <span class="rank">{{ loop.index }}.</span>
+            </td>
+            <td>
+              <center>
+              {# votes #}
+              <a id="up_10073578" onclick="return vote(this)" href="vote?for=10073578&amp;dir=up&amp;auth=babec96bc637f079d63957f06ce965ecd0a32907&amp;goto=news">
+                <div class="votearrow" title="upvote"></div>
+              </a>
+              </center>
+            </td>
+            <td class="title">
+              <span class="deadmark"></span>
+                <a href="{{ post.domain }}" rel="nofollow">{{ post.title }}</a>
+                <span class="sitebit comhead"> ({{ post.domain }})</span>
             </td>
           </tr>
-        </table>
-        </td>
-      </tr>
-        
+          <tr>
+            <td colspan="2"></td>
+            <td class="subtext">
+              <span class="score" id="score_10073578">{{ post.points }}</span> 
+              by <a href="user?id=darklighter3">{{ post.username }}</a> 
+                 <a href="item?id=10073578">11 hours ago</a>
+                  | <a href="item?id=10073578">158 comments</a> 
+            </td>
+          </tr> 
+        </tr>
+      {% endfor %}
+       {# note if links are visited they will be grey according to our news.css file
+       a:visited { color:#828282; text-decoration:none; } #}
 
-      {# <tr style="height:10px"></tr>
-        <tr>
-          <td><img src="s.gif" height="20" width="0"> #}
-        {# <tr>
-          <td></td>
-          <td><img src="s.gif" height="1" width="14"></td>
-          <td>These are jobs at startups that were funded by Y Combinator.
-        You can also get a job at a YC startup through
-        <a href="https://triplebyte.com/?ref=yc_jobs"><u>Triplebyte</u></a>.
-#}
 
-    
-
-    
-
-    
-  
-    
-    {# <tr style="height:5px">
-      <tr class='athing'>
-        <td align="right" valign="top" class="title"><span class="rank">1.</span></td>     <td></td>
-        <td class="title"><span class="deadmark"></span>
-          <a href="item?id=10076643">Teespring (YC W13) Is Looking for a Senior Full-Stack Engineer</a>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="2"></td>
-        <td class="subtext">
-          3 hours ago              
-        </td>
-      </tr>
-    </tr> #}
-
-    <table border="0" cellpadding="0" cellspacing="0">
-
-    {% for post in all_posts %}
-
-    
-    <tr style="height:5px">
-
+      <tr style="height:20px"></tr>
       <tr class='athing'>
         <td align="right" valign="top" class="title">
-          <span class="rank">{{ loop.counter }}</span>
-        </td>
+          <span class="rank">3.</span>
+        </td>      
         <td>
           <center>
           {# votes #}
@@ -91,22 +99,16 @@
         </td>
         <td class="title">
           <span class="deadmark"></span>
-            <a href="{{ post.domain }}">{{ post.title }}</a>
-            <span class="sitebit comhead"> ({{ post.domain }})</span>
+            <a href="https://www.scienceexchange.com/jobs?gh_jid=89107" rel="nofollow">Science Exchange (YC S11) Is Hiring a Junior BI Engineer</a>
+          <span class="sitebit comhead"> (scienceexchange.com)</span>
         </td>
       </tr>
+
       <tr>
         <td colspan="2"></td>
-        <td class="subtext">
-          <span class="score" id="score_10073578">{{ post.points }}</span> 
-          by <a href="user?id=darklighter3">{{ post.username }}</a> 
-             <a href="item?id=10073578">11 hours ago</a>
-              | <a href="item?id=10073578">158 comments</a> 
-        </td>
-      </tr> 
-
-    </tr>
-  {% endfor %}
+        <td class="subtext"> 4 minutes ago </td>
+      </tr>
+    </table>
 
 
 
@@ -129,10 +131,7 @@
     #}
     {# not formatted: see if browser changes and formats #}
     {# </td></tr> #}
-    <tr style="height:20px"></tr>
-      <tr class='athing'>
-    <td align="right" valign="top" class="title"><span class="rank">3.</span></td>      <td></td><td class="title"><span class="deadmark"></span><a href="https://www.scienceexchange.com/jobs?gh_jid=89107" rel="nofollow">Science Exchange (YC S11) Is Hiring a Junior BI Engineer</a><span class="sitebit comhead"> (scienceexchange.com)</span></td></tr><tr><td colspan="2"></td><td class="subtext">
-      4 minutes ago              </td></tr>
+    
 
 {# <tr>
 all_posts query: {{ all_posts }}

@@ -7,6 +7,7 @@
 
 
 ####Goals    
+
 0. upvotes
     -with simple ajax call     
 1. comments    
@@ -25,6 +26,7 @@
 6. archives exposed and pagination    
 7. basic outward facing web API    
 8. newest section    
+9. add days ago added
 
 how do HN comments work? front and back-end
 
