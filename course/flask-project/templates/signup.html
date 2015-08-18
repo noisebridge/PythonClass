@@ -1,0 +1,13 @@
+{% include "hack_news_base.html" %}
+
+{% block content %}
+
+<form method="POST" action="/signup">
+    {{ signup_form.csrf_token }}
+    {{ signup_form.name.label }} {{ signup_form.name(size=20) }}
+    {{ signup_form.password.label }} {{ signup_form.password(size=40) }}
+    {{ signup_form.email.label }} {{ signup_form.email }}
+    <input type="submit" value="GimMe!">
+</form>
+ 
+{% endblock %}

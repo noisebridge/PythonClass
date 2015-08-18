@@ -44,8 +44,14 @@ class Post(db.Model):
     def __init__(self, title, domain, username):
         self.title = title
         self.domain = domain 
+        self.points = 0
         self.username = username
 
+
     def __repr__(self):
-        return "title: {0}, poster username: {1}".format(self.title, self.username)
+        return "title: {0},  \
+                poster username: {1}, \
+                points: {2}, \
+                domain {3} \
+                ".format(self.title, self.username, self.points, self.domain)
 

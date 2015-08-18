@@ -11,6 +11,7 @@ class HackNewsUserForm(Form):
     #note there is an Email Validator as well
 
 
+
 class HackNewsPostForm(Form):
     title = StringField('title', validators=[DataRequired()])
     url = URLField('url', validators=[URL(message="link to post"), DataRequired()])

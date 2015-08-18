@@ -7,21 +7,28 @@
 
 
 ####Goals    
-0.     
+0. upvotes
+    -with simple ajax call     
 1. comments    
     -updating models    
     -enabling replies    
-    -updating front end in accordance with reply style   
+    -updating front end in accordance with reply style    
 2. auth and login    
-3. post link or text    
-cut down our urls into domains for viewing in template
+    -reg form    
+    -give logged in Users permissions/abilities to submit, vote, comment    
+3. post link or text option    
+    -cut down our urls into domains for viewing in template    
 4. ranking algorithm    
-5. basic html and css   
+ 4a. cron job to save points and update ranking order    
+5. basic html and css    
 6. get it on remote server    
 6. archives exposed and pagination    
 7. basic outward facing web API    
+8. newest section    
 
-how do HN comments work?
+how do HN comments work? front and back-end
+
+
 
 CRUD
 

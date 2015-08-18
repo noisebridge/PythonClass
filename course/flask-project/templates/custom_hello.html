@@ -1,7 +1,13 @@
 {% extends "hack_news_base.html" %}
 
 
-
+{% block customhello %}
+    <footer> 
+    {% if current_user.is_authenticated() %}
+    Hi {{ current_user.username }}!
+    {% endif %}
+    </footer>
+{% endblock %}
 
 
 {% block content %}

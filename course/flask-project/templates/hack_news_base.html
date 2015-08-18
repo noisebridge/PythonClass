@@ -1,22 +1,18 @@
 
 <html>
   <head>
+     
+     {% block title %}<title> Hack News </title>{% endblock title%}
 
   </head>
 
   <body>
   <!-- the block tags in jinja2 enable our html file to be extended by other html files, and individual blocks to be customized by being "overridden" in other html files-->
 
-    <title>{% block title %} Hack News {% endblock title%}</title>
+    
      
 
-    <h1> Hack News: Rapid-Protoly-Typical </h1>
-
-    {% block customhello %}
-      {% if current_user.is_authenticated() %}
-        Hi {{ current_user.name }}!
-      {% endif %}
-    {% endblock %}
+    {# <h1> Hack News: Rapid-Protoly-Typical </h1>no longer needed #}
 
     {% block errors %}
       {% with messages = get_flashed_messages() %}
@@ -29,17 +25,19 @@
         {% endif %}
       {% endwith %}
 
-  
+     {% if error %}
       <div class="container">
         error: {{ error }}
       </div>
+     {% endif %}
+
     {% endblock %}
 
     
     {% block content %}
        <!-- main block where majority of page content goes -->
     {% endblock %}
-
+{# 
     {% block navbar %}
       <div>
         <a href="{{ url_for('signup') }}"> signup </a>
@@ -53,7 +51,8 @@
       <div>
         <a href="{{ url_for('hello') }}"> hello </a>
       </div>
-    {% endblock navbar %}
+    {% endblock navbar %} 
+#}
     
   </body>
 </html>
