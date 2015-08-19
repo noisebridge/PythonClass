@@ -110,7 +110,91 @@
       </tr>
     </table>
 
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      var $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
+    </script>
 
+    <script type=text/javascript>
+       $(function() {
+         var submit_form = function(e) {
+       $.getJSON($SCRIPT_ROOT + '/_add_numbers', {
+         a: $('input[name="a"]').val(),
+         b: $('input[name="b"]').val(),
+         c: 1
+       }, function(data) {
+         $('#result').text(data.result);
+         $('input[name=a]').focus().select();
+      });
+      return false;
+      };
+      $('a#calculate').bind('click', submit_form);
+      $('input[type=text]').bind('keydown', function(e) {
+        if (e.keyCode == 13) {
+          submit_form(e);
+        }
+      });
+      $('input[name=a]').focus();
+    });
+    </script>
+
+    <script type=text/javascript>
+    $(function() {
+    $('a#doit').bind('click', function() {
+      $.getJSON($SCRIPT_ROOT + '/_add_numbers', {
+        d: 1,
+       }
+
+     </script>
+     //   $(function() {
+     //     $('#hello').click(function() {
+     //         var j_jonah = 23;
+     //         $.ajax({
+     //             url: '/_add_numbers',
+     //             data: {'ex5': 5, 'c': 2},
+     //             type: 'POST',
+     //             success: function(response) {
+     //                 console.log(response);
+     //             },
+     //             error: function(error) {
+     //                 console.log(error);
+     //             }
+     //         });
+     //     });
+     // });
+     
+
+    <script type=text/javascript>
+       $(function() {
+         $('#e').click(function() {
+             var upvote_number = 14;
+             $.getJSON({$SCRIPT_ROOT + '/_add_numbers', {
+                 e: 55,
+                 num: upvote_number,
+                 success: function(response) {
+                     console.log(response);
+                 },
+                 error: function(error) {
+                     console.log(error);
+                 }
+             });
+         });
+     });
+     </script>
+
+<h1>jQuery Example</h1>
+<p>
+  <input type="text" size="5" name="a"> +
+  <input type="text" size="5" name="b"> =
+  <span id="result">?</span>
+<p><a href=# id="calculate">calculate server side</a>
+
+  <a href=# id="c"> ˆ upvoteit dummy</a> 
+
+  <span id="noid">haha its a span</span>
+  <a href=# id="e"> ˆ up vote it tho </a> 
+
+{% endblock %}
 
 
         {# <td></td>
@@ -145,4 +229,3 @@ all_posts query: {{ all_posts }}
   {% endfor %}
 </tr> #}
 
-{% endblock %}

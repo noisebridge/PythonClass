@@ -2,6 +2,7 @@
 
 {% block content %}
 
+Signup:
 <form method="POST" action="/signup">
     {{ signup_form.csrf_token }}
     {{ signup_form.name.label }} {{ signup_form.name(size=20) }}

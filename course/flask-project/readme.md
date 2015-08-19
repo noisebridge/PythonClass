@@ -3,7 +3,7 @@ Emulating ["Hacker News"](https://news.ycombinator.com/) using python's [flask w
 
 ####Getting Running
 -create and activate virtualenv. this project is using python 2.7.X     
--pip install -r requirements.txt    
+-$ pip install -r requirements.txt    
 -open a python shell:     
 ```python    
 >>> from models import createdb    
