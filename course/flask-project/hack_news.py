@@ -93,25 +93,6 @@ def hello_again():
     all_users = User.query.all()
     return render_template("custom_hello.html", all_users=all_users)
 
-@app.route('/_add_numbers', methods=["GET", "POST"])
-def add_numbers():
-    a = request.args.get('a', 0, type=int)
-    b = request.args.get('b', 0, type=int)
-    print a, b
-    c = request.args.get('c', 0, type=int)
-    print 'c', c
-    print 'request.args', request.args 
-    print jsonify(result = a+b)
-    print jsonify({'value of c': c})
-    return jsonify(result = a+b)
-
-@app.route('/_more_add_numbers', methods=["GET", "POST"])
-def more_add_numbers():
-    print 'request.args', request.args
-    e_num = request.args.get('e', type=int)
-    print e_num
-    return jsonify({e_num: e_num})
-
 
 if __name__ == '__main__':
     app.run(debug=True)
