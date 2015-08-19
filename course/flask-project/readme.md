@@ -2,13 +2,16 @@ Emulating ["Hacker News"](https://news.ycombinator.com/) using python's [flask w
 
 
 ####Getting Running
--create and activate virtualenv. this project is using python 2.7.X     
--$ pip install -r requirements.txt    
--open a python shell:     
+0. make sure to have cloned the [PyClass repo](https://github.com/PyClass/PyClassLessons)
+1. create and activate a virtualenv this project uses python 2.7.X     
+3. navigate to the flask-project directory    
+    '$ pip install -r requirements.txt'    
+4. open a python shell and give the command to initialize and create the sqlite db:     
 ```python    
 >>> from models import createdb    
 >>> create_db()    
 ```    
+5. information on subsequent db migrations can be found with [flask-migrate docs](https://flask-migrate.readthedocs.org/en/latest/)    
 
 
 ####Goals    
