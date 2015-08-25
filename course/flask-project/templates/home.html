@@ -58,9 +58,9 @@
             <td>
               <center>
               {# votes #}
-              <a id="up_10073578" onclick="return vote(this)" href="vote?for=10073578&amp;dir=up&amp;auth=babec96bc637f079d63957f06ce965ecd0a32907&amp;goto=news">
-                <div class="votearrow" title="upvote"></div>
-              </a>
+              <div class="votearrow" id="{{ post.id }}" >
+                <div title="upvote">ˆ</div>
+              </div>
               </center>
             </td>
             <td class="title">
@@ -83,7 +83,7 @@
        {# note if links are visited they will be grey according to our news.css file
        a:visited { color:#828282; text-decoration:none; } #}
 
-
+{# HARDCODED still #}
       <tr style="height:20px"></tr>
       <tr class='athing'>
         <td align="right" valign="top" class="title">
@@ -111,17 +111,22 @@
     </table>
 
     <script>
-    $( "div.votearrow" ).click(function() {
+    $( ".votearrow" ).click(function() {
       $( this ).hide();
-    });
+    
+
+    var voted_id = $(this).attr('id');
 
     $.ajax( {
          type: "POST",
          url: '/handle_votes',
-         data: data,
-         success: success,
-         dataType: dataType
-       })
+         data: {"voted_id" : voted_id},
+         success: function(response) {console.log(response) },
+         // dataType: dataType
+       });
+    
+
+   });
 
 
     </script>

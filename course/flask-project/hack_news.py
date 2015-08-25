@@ -87,8 +87,17 @@ def signup():
 
 @app.route("/handle_votes", methods=["GET", "POST"])
 def handle_this():
-     #db stuff
-     pass
+     print 'request.args', request.args
+     print 'request.form', request.form
+     voted_id = request.form['voted_id']
+
+     add_to_post = Post.query.filter_by(id=voted_id).first()
+     add_to_post.points += 1
+     db.session.commit()
+     print add_to_post
+
+     hello = {"hello": add_to_post.title}
+     return jsonify(hello)
 
 #displays users to be deleted in final project
 @app.route("/hi", methods=["GET", "POST"])
