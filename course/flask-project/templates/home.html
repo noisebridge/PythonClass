@@ -92,8 +92,8 @@
         <td>
           <center>
           {# votes #}
-          <a id="up_10073578" onclick="return vote(this)" href="vote?for=10073578&amp;dir=up&amp;auth=babec96bc637f079d63957f06ce965ecd0a32907&amp;goto=news">
-            <div class="votearrow" title="upvote"></div>
+          <a id="up_10073578" >
+            <div class="votearrow" title="upvote">X</div>
           </a>
           </center>
         </td>
@@ -110,7 +110,21 @@
       </tr>
     </table>
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>
+    $( "div.votearrow" ).click(function() {
+      $( this ).hide();
+    });
+
+    $.ajax( {
+         type: "POST",
+         url: '/handle_votes',
+         data: data,
+         success: success,
+         dataType: dataType
+       })
+
+
+    </script>
     
 
 {% endblock %}

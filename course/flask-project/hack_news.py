@@ -85,6 +85,10 @@ def signup():
 
     return render_template("signup.html", signup_form=signup_form, error=error)
 
+@app.route("/handle_votes", methods=["GET", "POST"])
+def handle_this():
+     #db stuff
+     pass
 
 #displays users to be deleted in final project
 @app.route("/hi", methods=["GET", "POST"])
