@@ -33,8 +33,13 @@
           {# user links #}
           <td style="text-align:right;padding-right:4px;">
             <span class="pagetop">
-              <a href="user?id=teddymcw-test">teddymcw-test</a>(1) |
-              <a href="logout?goto=news">logout</a>
+                {% if current_user.is_authenticated() %}
+                  {{ current_user.username }}
+                {% else %}
+                <a href="{{ url_for('login') }}">login</a>
+                {% endif %}
+                |
+              <a href="{{ url_for('logout') }}">logout</a>
             </span>
           </td>
         </tr>

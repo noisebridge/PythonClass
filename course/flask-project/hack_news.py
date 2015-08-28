@@ -1,9 +1,9 @@
 from flask import render_template, request, redirect, url_for, session, flash, jsonify
-from flask.ext.login import LoginManager, login_user, login_required
+from flask.ext.login import LoginManager, login_user, login_required, logout_user
 from sqlalchemy import desc 
 
 from config import app, db
-from forms import HackNewsUserForm, HackNewsPostForm
+from forms import HackNewsUserForm, HackNewsPostForm, HackNewsLoginForm
 from models import User, Post 
 
 
@@ -29,6 +29,11 @@ def home():
  
     all_posts = Post.query.order_by(desc(Post.points))
     return render_template("home.html", all_posts=all_posts)
+
+@app.route("/latest")
+def latest():
+     latest_posts = Post.query.order_by(desc(Post.date_added))
+     return render_template("latest.html", latest_posts=latest_posts)
 
 
 @app.route("/submit", methods=["GET", "POST"])
@@ -84,6 +89,40 @@ def signup():
             return redirect(url_for('hello_again'))
 
     return render_template("signup.html", signup_form=signup_form, error=error)
+
+
+@app.route("/login", methods=["GET", "POST"])
+def login():
+    login_form = HackNewsLoginForm(request.form)
+    error = None
+
+    print "hit login"
+    if request.method == "POST":
+        print "post"
+        if login_form.validate_on_submit():
+            print 'form valid'
+            check_user = User.query.filter_by( username=login_form.name.data ).first()
+             
+            print "check_user", check_user, type(check_user)
+
+            if check_user.password == login_form.password.data:
+                print "checked password too"
+                flash('Logged in successfully.')
+                login_user(check_user)
+
+                return redirect(url_for('home'))
+
+            else: 
+                 flash('Not logged in successfully.')
+
+    return render_template("login.html", login_form=login_form, error=error)
+
+@app.route("/logout")
+@login_required
+def logout():
+    logout_user()
+    return redirect(url_for('home'))
+
 
 @app.route("/handle_votes", methods=["GET", "POST"])
 def handle_this():
