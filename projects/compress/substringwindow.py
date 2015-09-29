@@ -1,5 +1,12 @@
 """
 Illustrate a comparison window for a substring
+
+NEXT STEPS:
+    The code below only checks against target substrings that start with the leftmost character.
+    In order to check all target substrings possible, you must wrap the outer while loop in 
+    another loop which will increment the starting index for the window size and keep testing.
+    Next you must consider whether to test the left side, excluded portion (hint: don't do it,
+    because each pair was already tested that direction inside the loop).
 """
 import math
 
