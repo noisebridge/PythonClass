@@ -10,7 +10,7 @@ Well, we have the substring 'cat' twice.
 
 indexed source string:
 catcat
-123456 (index values)
+012345 (index values)
 
 possible result:
-1,4-cat
+0,3-cat
