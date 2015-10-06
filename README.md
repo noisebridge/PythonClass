@@ -64,19 +64,6 @@ for letter in word:
 
 \* [intellectually responsible](https://en.wikipedia.org/wiki/Intellectual_responsibility) can be effectively replaced with 'fact based' for our needs.
 
-WHO
-===
-
-If you are new to Python and want to get a jumpstart, this is a great opportunity. We are 
-starting a little bit further back, although a basic knowledge of Python or programming in some language is necessary.
-
-The course is free although we recommend a donation to Noisebridge.
-Donations go to: [https://www.noisebridge.net/wiki/Donate_or_Pay_Dues](https://www.noisebridge.net/wiki/Donate_or_Pay_Dues)
-Recommended Donations: $15, $50, $200+
-Recommended monthly donations: $10, $20, $40, $80+ / month
-
-This is a lower-to-higher intermediate Python class. Each course starts easy and becomes more technical as we head further into the lecture. Significant time is spent integrating with general technologies: sqlite, regular expressions, flask, json, virtualenv, unit tests, and logging are all on the syllabus, along with more python-specific topics.
-
 
 
 ### New Student Reading
@@ -124,4 +111,13 @@ Another critical tool is git:
 *Windows: http://git-scm.com/download/win    
 *Mac: http://git-scm.com/download/mac    
 *Linux: (use your package manager)    
+
+
+### Free to all - please donate to Noisebridge!
+
+The course is free although we recommend a donation to Noisebridge.
+Donations go to: [https://www.noisebridge.net/wiki/Donate_or_Pay_Dues](https://www.noisebridge.net/wiki/Donate_or_Pay_Dues)
+Recommended Donations: $15, $50, $200+
+Recommended monthly donations: $10, $20, $40, $80+ / month
+
 
