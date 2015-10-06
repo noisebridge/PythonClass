@@ -1,5 +1,7 @@
 === PSAs and Events ===
 
+'''PSA 10-6-15:''' Class is currently only occuringg on MONDAY. THURSDAY meetings are not happening until a second instructor starts again.
+
 '''PSA 4-6-15:''' As of today, attend PyClass on MONDAY and THURSDAY. Monday in the Turing classroom will replace the Tuesday session.
 
 '''PSA 1-26-15:''' Thursday in the Church Classroom will replace the Wednesday session.
@@ -14,8 +16,8 @@
 
 We set up the space at 6:45 PM - try to arrive early to help if you are able to.
 
-* Tuesday 7:00 - 9:00 PM PST - 'Turing' Classroom
-* Thursday 7:00 - 9:00 PM PST - 'Church' Classroom
+* Monday 7:00 - 9:00 PM PST - 'Turing' Classroom
+* Thursday - CANCELLED TEMPORARILY - 7:00 - 9:00 PM PST - 'Church' Classroom
 
 === Mailing List ===
 
@@ -68,6 +70,10 @@ This section is under development.
 
 [https://www.digitalocean.com/?refcode=1a1061eaf303 Digital Ocean $10 Credit]
 
+[http://aws.amazon.com/free/ Amazon's AWS has a free tier that allows you 750 compute hours every month of their t2.micro instances for 12 months]
+
+-Use EC2 to create an instance from the Ubuntu 12.04 AMI for the most well known and supported platform that will come with Python 2 installed
+
 For the sake of our sanity we use Python 2 for this course.
 
 Installing Python with [http://docs.python-guide.org/en/latest/ The Hitchhiker’s Guide to Python!]
@@ -79,4 +85,8 @@ Emergency Python Command Line: http://repl.it/languages/Python
 Some routes:<br />1. Install a linux virtual machine on another computer using virtualbox.<br />2. Use the command line in your apple machine.<br />3. Explore POSIX for windows: http://en.wikipedia.org/wiki/POSIX#POSIX_for_Windows
 
 Another critical tool is git:<br />''Windows: http://git-scm.com/download/win<br />''Mac: http://git-scm.com/download/mac<br />*Linux: (use your package manager)
+
+=== Free to all - please donate to Noisebridge! ===
+
+The course is free although we recommend a donation to Noisebridge. Donations go to: https://www.noisebridge.net/wiki/Donate_or_Pay_Dues Recommended Donations: $15, $50, $200+ Recommended monthly donations: $10, $20, $40, $80+ / month
 

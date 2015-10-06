@@ -1,7 +1,7 @@
 
 ### PSAs and Events
 
-**PSA 10-6-15:** Class is currently only occuringg on MONDAY. THURSDAY meetings are not happening until a second instructor starts again.
+**PSA 10-6-15:** Class is currently only on MONDAY. THURSDAY meetings are not happening until a second instructor starts again.
 
 **PSA 4-6-15:** As of today, attend PyClass on MONDAY and THURSDAY.  Monday in the Turing classroom will replace the Tuesday session.
 
