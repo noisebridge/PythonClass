@@ -1,65 +1,7 @@
 
-### PyClass 13-week Course
-
-Monday May 18, we will start a new cycle of PyClass.
-
-WHO
-===
-
-If you are new to Python and want to get a jumpstart, this is a great opportunity. We are 
-starting a little bit further back, although a basic knowledge of Python or programming in some language is necessary.
-
-The course is free although we recommend a donation to Noisebridge.
-Donations go to: [https://www.noisebridge.net/wiki/Donate_or_Pay_Dues](https://www.noisebridge.net/wiki/Donate_or_Pay_Dues)
-Recommended Donations: $15, $50, $200+
-Recommended monthly donations: $10, $20, $40, $80+ / month
-
-This is a lower-to-higher intermediate Python class. Each course starts easy and becomes more technical as we head further into the lecture. Significant time is spent integrating with general technologies: sqlite, regular expressions, flask, json, virtualenv, unit tests, and logging are all on the syllabus, along with more python-specific topics.
-
-COURSE LAYOUT
-=============
-
-The pattern of these courses will be a little bit different, we will do a talk every Monday with key examples. Thursday, project night, will be spent building a project using the technology. Both are important if you wish to fully understand and apply each topic.
-
-Courses are (with the exception of the final 3 weeks) modular, and with sufficient understanding of Python you can miss a week and still follow the next week.  
-
-The first two courses are very important to understanding the rest of the class.
-
-The course takes place from 7 PM to 9 PM on Mondays and Thursdays. Some folks arrive early to clean up the room and answer questions.  We sometimes stay late to work on technical questions that come up during the lectures.
-
-More information can be found at:
-[https://noisebridge.net/wiki/Pyclass](https://noisebridge.net/wiki/Pyclass)
-
-All course materials are available on our github repository: [https://github.com/PyClass/PyClassLessons](https://github.com/PyClass/PyClassLessons)
-
-WHERE AND WHEN
-==============
-Monday - Turing Classroom - 7 PM to 9 PM
-Thursday - Church Classroom - 7 PM to 9 PM
-
-We recommend folks arrive at 645 PM to ask/answer questions, settle down, and clean up the room a bit before we start class.
-
-
-SYLLABUS
-========    
--JSON and Data Containers     
--Keywords and Control Flow      
--Virtualenv and 3rd Party Modules       
--Pythonic Workflow, functions, generators, duck typing      
--Introspection: pdb, help, dir, inspect, timeit, error handling         
--SQLite3        
--OOP - overview/sample project      
--Tests - 'unittest' module      
--Regular Expressions        
--Logging        
--Flask - Introduction and Project Template      
--Flask - A First Webapp - Part 1        
--Flask - A First Webapp - Part 2        
-
-
-
-
 ### PSAs and Events
+
+**PSA 10-6-15:** Class is currently only occuringg on MONDAY. THURSDAY meetings are not happening until a second instructor starts again.
 
 **PSA 4-6-15:** As of today, attend PyClass on MONDAY and THURSDAY.  Monday in the Turing classroom will replace the Tuesday session.
 
@@ -76,7 +18,8 @@ SYLLABUS
 We set up the space at 6:45 PM - try to arrive early to help if you are able to.
 
 * Monday 7:00 - 9:00 PM PST - 'Turing' Classroom
-* Thursday 7:00 - 9:00 PM PST - 'Church' Classroom
+* Thursday - CANCELLED TEMPORARILY - 7:00 - 9:00 PM PST - 'Church' Classroom
+
 
 ### Mailing List
 
@@ -120,6 +63,21 @@ for letter in word:
 5. draw as many students as possible into the discussion.
 
 \* [intellectually responsible](https://en.wikipedia.org/wiki/Intellectual_responsibility) can be effectively replaced with 'fact based' for our needs.
+
+WHO
+===
+
+If you are new to Python and want to get a jumpstart, this is a great opportunity. We are 
+starting a little bit further back, although a basic knowledge of Python or programming in some language is necessary.
+
+The course is free although we recommend a donation to Noisebridge.
+Donations go to: [https://www.noisebridge.net/wiki/Donate_or_Pay_Dues](https://www.noisebridge.net/wiki/Donate_or_Pay_Dues)
+Recommended Donations: $15, $50, $200+
+Recommended monthly donations: $10, $20, $40, $80+ / month
+
+This is a lower-to-higher intermediate Python class. Each course starts easy and becomes more technical as we head further into the lecture. Significant time is spent integrating with general technologies: sqlite, regular expressions, flask, json, virtualenv, unit tests, and logging are all on the syllabus, along with more python-specific topics.
+
+
 
 ### New Student Reading
 
