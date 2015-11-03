@@ -25,7 +25,11 @@ We set up the space at 6:45 PM - try to arrive early to help if you are able to.
 
 Sign up for this to hear updates and conversations regarding the course!
 
-[PyClass-Discussion](http://groups.google.com/group/pyclass)
+[Python & PyClass Mailing List](https://www.noisebridge.net/mailman/listinfo/python)
+
+The mailing list uses GNU Mailman and pipermail.  To search archives you may find it helpful to download the archive .tar.gz (compressed) file and use regular expressions (grep) to search.
+
+The Python Class Google Group Closed on Tuesday, November 3rd, 2015. 
 
 
 ### Class Description, Goals, and Ideal Student
