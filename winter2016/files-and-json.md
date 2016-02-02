@@ -5,7 +5,7 @@
 This is a compressed lesson designed as a jumpstart for working with the open() built-in method and the json module.
 
 
-1. #### Today's deep dive: Opening a file (10 minutes)
+1. ##### Today's deep dive: Opening a file (10 minutes)
 
     ```python
     myfile = 'info.txt'
@@ -25,7 +25,7 @@ This is a compressed lesson designed as a jumpstart for working with the open() 
         2. In what ways does this conform to PEP 8?
 
 
-2. #### Working with open() built-in method to access a file (50 minutes)
+2. ##### Working with open() built-in method to access a file (50 minutes)
 
     1. The Python [open() built-in method](https://docs.python.org/2/library/functions.html#open)- 10 minutes
         1. Best practice - use this method in the code pattern above, [with...as](https://docs.python.org/2/reference/compound_stmts.html#the-with-statement).
@@ -48,7 +48,7 @@ This is a compressed lesson designed as a jumpstart for working with the open() 
 
 		```
 
-3. Review JSON format and discuss Python types (30 min)
+3. ##### Review JSON format and discuss Python types (30 min)
 
     1. [JavaScript Object Notation == JSON](http://www.json.org/)
         1. What is a [railroad diagram](https://en.wikipedia.org/wiki/Syntax_diagram)?
@@ -66,7 +66,7 @@ This is a compressed lesson designed as a jumpstart for working with the open() 
         3. Encoding and decoding is done by the json module. There are more details [here](https://docs.python.org/2/library/json.html#encoders-and-decoders).
 
 
-### Example 1: Using json.loads() and json.dumps()
+4. ##### Example 1: Using json.loads() and json.dumps()
 
 ``` Python
 >>>
@@ -88,7 +88,7 @@ This is a compressed lesson designed as a jumpstart for working with the open() 
 >>>
 ```
 
-### Example 2: Using json.load() and json.dump()
+5. ##### Example 2: Using json.load() and json.dump()
 
 ``` Python
 """
