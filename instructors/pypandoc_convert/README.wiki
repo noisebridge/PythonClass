@@ -1,6 +1,6 @@
 === PSAs and Events ===
 
-'''PSA 10-6-15:''' Class is currently only occuringg on MONDAY. THURSDAY meetings are not happening until a second instructor starts again.
+'''PSA 10-6-15:''' Class is currently only on MONDAY. THURSDAY meetings are not happening until a second instructor starts again.
 
 '''PSA 4-6-15:''' As of today, attend PyClass on MONDAY and THURSDAY. Monday in the Turing classroom will replace the Tuesday session.
 
@@ -23,7 +23,11 @@ We set up the space at 6:45 PM - try to arrive early to help if you are able to.
 
 Sign up for this to hear updates and conversations regarding the course!
 
-[http://groups.google.com/group/pyclass PyClass-Discussion]
+[https://www.noisebridge.net/mailman/listinfo/python Python &amp; PyClass Mailing List]
+
+The mailing list uses GNU Mailman and pipermail. To search archives you may find it helpful to download the archive .tar.gz (compressed) file and use regular expressions (grep) to search.
+
+The Python Class Google Group Closed on Tuesday, November 3rd, 2015.
 
 === Class Description, Goals, and Ideal Student ===
 
@@ -40,7 +44,7 @@ Lessons are [https://github.com/PyClass/PyClassLessons available on Github].
 (Feel free to use web resources to look up anything you don't understand)
 
 <source lang="python">letter_frequency_dict = {}
-word = &quot;noisebridge&quot;
+word = "noisebridge"
  
 for letter in word:
     times = letter_frequency_dict.get(letter, 0)
@@ -60,7 +64,13 @@ for letter in word:
 
 === New Student Reading ===
 
-If you are new to python or programming in general here are some excellent resources:<br />-[http://learnpythonthehardway.org/ Learn Python the Hardway] - great guide for total beginner<br />-[http://www.swaroopch.com/notes/python/ Byte of Python] - nice guide for total beginner and new to python<br />-[https://docs.python.org/2/tutorial/ Excellent Official Python Tutorial - 2.7.8] - great for new to python<br />-[http://shop.oreilly.com/product/0636920028154.do Learning Python 5th edition (also at sf lib)] - A comprehensive guide to the language and its uses<br />-[http://pymotw.com/2/ Python Module of the Week] - Learning the standard library by example<br />-[https://www.python.org/doc/ The docs themselves! 2.x for this class] - Learn what is and how to use the standard library
+If you are new to python or programming in general here are some excellent resources:<br />
+-[http://learnpythonthehardway.org/ Learn Python the Hardway] - great guide for total beginner<br />
+-[http://www.swaroopch.com/notes/python/ Byte of Python] - nice guide for total beginner and new to python<br />
+-[https://docs.python.org/2/tutorial/ Excellent Official Python Tutorial - 2.7.8] - great for new to python<br />
+-[http://shop.oreilly.com/product/0636920028154.do Learning Python 5th edition (also at sf lib)] - A comprehensive guide to the language and its uses<br />
+-[http://pymotw.com/2/ Python Module of the Week] - Learning the standard library by example<br />
+-[https://www.python.org/doc/ The docs themselves! 2.x for this class] - Learn what is and how to use the standard library
 
 There are many, many good resources for learning the language of Python and how to do awesome things with it. Those listed above are just a few based on personal experience and strong recommendations.
 
@@ -82,9 +92,15 @@ Emergency Python Command Line: http://repl.it/languages/Python
 
 '''We accept refugees using all operating systems. You will be politely prodded in the direction of solutions that are closer to posix standards: http://en.wikipedia.org/wiki/POSIX#Mostly_POSIX-compliant'''
 
-Some routes:<br />1. Install a linux virtual machine on another computer using virtualbox.<br />2. Use the command line in your apple machine.<br />3. Explore POSIX for windows: http://en.wikipedia.org/wiki/POSIX#POSIX_for_Windows
+Some routes:<br />
+1. Install a linux virtual machine on another computer using virtualbox.<br />
+2. Use the command line in your apple machine.<br />
+3. Explore POSIX for windows: http://en.wikipedia.org/wiki/POSIX#POSIX_for_Windows
 
-Another critical tool is git:<br />''Windows: http://git-scm.com/download/win<br />''Mac: http://git-scm.com/download/mac<br />*Linux: (use your package manager)
+Another critical tool is git:<br />
+''Windows: http://git-scm.com/download/win<br />
+''Mac: http://git-scm.com/download/mac<br />
+*Linux: (use your package manager)
 
 === Free to all - please donate to Noisebridge! ===
 
