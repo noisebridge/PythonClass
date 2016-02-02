@@ -66,50 +66,50 @@ This is a compressed lesson designed as a jumpstart for working with the open() 
         3. Encoding and decoding is done by the json module. There are more details [here](https://docs.python.org/2/library/json.html#encoders-and-decoders).
 
 
-4. ##### Example 1: Using json.loads() and json.dumps()
+    1. ###### Example 1: Using json.loads() and json.dumps()
 
-``` Python
->>>
->>> import json
->>>
->>> dir()
-['__builtins__', '__doc__', '__name__', '__package__', 'json']
->>> dir(json)
-['JSONDecoder', 'JSONEncoder', '__all__', '__author__', '__builtins__', '__doc__', '__file__', '__name__', '__package__', '__path__', '__version__', '_default_decoder', '_default_encoder', 'decoder', 'dump', 'dumps', 'encoder', 'load', 'loads', 'scanner']
->>>
->>> my_json_string = u'{"5":"hello world"}'
->>> json.loads(my_json_string)
-{u'5': u'hello world'}
->>> my_dict = json.loads(my_json_string)
->>> my_dict
-{u'5': u'hello world'}
->>> json.dumps(my_dict)
-'{"5": "hello world"}'
->>>
-```
+        ``` Python
+        >>>
+        >>> import json
+        >>>
+        >>> dir()
+        ['__builtins__', '__doc__', '__name__', '__package__', 'json']
+        >>> dir(json)
+        ['JSONDecoder', 'JSONEncoder', '__all__', '__author__', '__builtins__', '__doc__', '__file__', '__name__', '__package__', '__path__', '__version__', '_default_decoder', '_default_encoder', 'decoder', 'dump', 'dumps', 'encoder', 'load', 'loads', 'scanner']
+        >>>
+        >>> my_json_string = u'{"5":"hello world"}'
+        >>> json.loads(my_json_string)
+        {u'5': u'hello world'}
+        >>> my_dict = json.loads(my_json_string)
+        >>> my_dict
+        {u'5': u'hello world'}
+        >>> json.dumps(my_dict)
+        '{"5": "hello world"}'
+        >>>
+        ```
 
-5. ##### Example 2: Using json.load() and json.dump()
+    2. ###### Example 2: Using json.load() and json.dump()
 
-``` Python
-"""
-These are where your notes go.
+    ``` Python
+    """
+    These are where your notes go.
 
-Notes are good.
+    Notes are good.
 
-Check out docstrings for more information.
-"""
-import json
+    Check out docstrings for more information.
+    """
+    import json
 
-my_json_dict = {"5":"hello world"}
+    my_json_dict = {"5":"hello world"}
 
-myfile = 'info.json'
+    myfile = 'info.json'
 
-with open(myfile, 'w') as f:
-    json.dump(my_json_dict, f)
+    with open(myfile, 'w') as f:
+        json.dump(my_json_dict, f)
 
-with open(myfile, 'r') as f:
-    mydict = json.load(f)
+    with open(myfile, 'r') as f:
+        mydict = json.load(f)
 
-print mydict
-```
+    print mydict
+    ```
 
