@@ -60,13 +60,13 @@ This is a compressed lesson designed as a jumpstart for working with the open() 
     2. Python Data Types can be [encoded to to JSON (and back!)](https://docs.python.org/2/library/json.html#encoders-and-decoders)
         1. This is called `encoding` and `decoding`. This allows complex data structures to exist easily as `flat` strings. It makes it easy to transport all this structure.
 
-4. Lets convert some JSON!
-        1. Two key actions are `encode` and `decode`. 
-        2. In the Python `json` module, these will be available as [`dump/load` and `dumps/loads`](https://docs.python.org/2/library/json.html#basic-usage)
-        3. Encoding and decoding is done by the json module. There are more details [here](https://docs.python.org/2/library/json.html#encoders-and-decoders).
+4. ###### Lets convert some JSON!
+    1. Two key actions are `encode` and `decode`. 
+    2. In the Python `json` module, these will be available as [`dump/load` and `dumps/loads`](https://docs.python.org/2/library/json.html#basic-usage)
+    3. Encoding and decoding is done by the json module. There are more details [here](https://docs.python.org/2/library/json.html#encoders-and-decoders).
 
 
-    1. ###### Example 1: Using json.loads() and json.dumps()
+    4. ###### Example 1: Using json.loads() and json.dumps()
 
         ``` Python
         >>>
@@ -88,7 +88,7 @@ This is a compressed lesson designed as a jumpstart for working with the open() 
         >>>
         ```
 
-    2. ###### Example 2: Using json.load() and json.dump()
+    5. ###### Example 2: Using json.load() and json.dump()
 
     ``` Python
     """
