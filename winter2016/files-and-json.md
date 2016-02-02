@@ -38,17 +38,15 @@ This is a compressed lesson designed as a jumpstart for working with the open() 
         3. 'a' - append a file starting at the last byte.
         4. 'rw' - read and write. be careful! if you read up to a point you can overwrite from there. This is challenging to use and you never really need it.
         5. 'b' - must be added on to 'r', 'w', probably 'a' in windows. It means binary mode. Files could be interacted with as binary or as bytes.
-        
-Lets try using a file mode:
+		6. Lets try using a file mode:
+		```python
 
-    ```python
-    myfile = 'info.txt'
+		myfile = 'info.txt'
 
-    with open(myfile) as f:
-        contents = f.read()
+		with open(myfile, 'w') as f:
+			f.write('The world is talking back to you.\n')
 
-    print(contents)
-    ```
+		```
 
 3. Review JSON format and discuss Python types (30 min)
 
@@ -67,10 +65,51 @@ Lets try using a file mode:
         2. In the Python `json` module, these will be available as [`dump/load` and `dumps/loads`](https://docs.python.org/2/library/json.html#basic-usage)
         3. Encoding and decoding is done by the json module. There are more details [here](https://docs.python.org/2/library/json.html#encoders-and-decoders).
 
-Example of dumps(), loads()
 
+### Example 1: Using json.loads() and json.dumps()
 
-Example of dump(), load()
+``` Python
+>>>
+>>> import json
+>>>
+>>> dir()
+['__builtins__', '__doc__', '__name__', '__package__', 'json']
+>>> dir(json)
+['JSONDecoder', 'JSONEncoder', '__all__', '__author__', '__builtins__', '__doc__', '__file__', '__name__', '__package__', '__path__', '__version__', '_default_decoder', '_default_encoder', 'decoder', 'dump', 'dumps', 'encoder', 'load', 'loads', 'scanner']
+>>>
+>>> my_json_string = u'{"5":"hello world"}'
+>>> json.loads(my_json_string)
+{u'5': u'hello world'}
+>>> my_dict = json.loads(my_json_string)
+>>> my_dict
+{u'5': u'hello world'}
+>>> json.dumps(my_dict)
+'{"5": "hello world"}'
+>>>
+```
 
+### Example 2: Using json.load() and json.dump()
 
+``` Python
+"""
+These are where your notes go.
+
+Notes are good.
+
+Check out docstrings for more information.
+"""
+import json
+
+my_json_dict = {"5":"hello world"}
+
+myfile = 'info.json'
+
+with open(myfile, 'w') as f:
+    json.dump(my_json_dict, f)
+
+with open(myfile, 'r') as f:
+    mydict = json.load(f)
+
+print mydict
+```
 
