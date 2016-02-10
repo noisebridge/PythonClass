@@ -91,7 +91,7 @@ This lesson covers some topics related to strings in Python. In particular: enco
     4. Iterating over a list of strings:
         1. Again, we use the for... in pattern:
 
-    5. Regular Expressions - a definition, you should know they exist and try them out.
-        1. Regular expressions are strings that can match a set of regular strings.
+    5. Regular Expressions - Know they exist; try them out sometime.
+        1. Regular expressions are strings that can match a SET of regular strings.
             1. There's a lot to say about these
-            2. Check out the Python `re` library
+            2. Check out the Python `re` library, it is already on your computer.
