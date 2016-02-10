@@ -34,7 +34,6 @@ This lesson covers some topics related to strings in Python. In particular: enco
     1. First off, what are they?
     2. ascii - this is a 1:1 encoding of bytes to characters, it can only represent the english letters and some additional stuff.
     3. unicode - this is a huge set of characters representing many languages. Not all fonts support all sections of unicode. Unicode costs between 1-4 bytes per character.
-        1. If you 
     4. So what does Python use in the Python interpreter?
         1. Python 2 uses ascii for strings, but has unicode strings available if you choose to use them.
         2. Python 3 uses unicode by default, so you never have to think about it.
@@ -45,6 +44,7 @@ This lesson covers some topics related to strings in Python. In particular: enco
         2. unicode = u'this is a unicode string'
         3. raw = r'this needs no escapes'
     6. String escapes - a string will often need escapes.
+        1.  Let's play with [escape sequences!](https://docs.python.org/2/reference/lexical_analysis.html#string-literals)
         ```python
         >>> 'hello world'
         >>> 'hello humans\' world'
@@ -74,17 +74,19 @@ This lesson covers some topics related to strings in Python. In particular: enco
         ```
         2. These things are string methods. [Lets look at some](https://docs.python.org/2/library/stdtypes.html#string-methods)
             1. lower(), capitalize(), title()
-            2. find(), rfind(), count()
-            3. partition(), rpartition(), split()
     
 
     2. Now lets slice a string.
         1. [Reference documentation](https://docs.python.org/2/reference/expressions.html#slicings)
         2. [Slice Tutorial](https://docs.python.org/2/tutorial/introduction.html#strings)
 
-    3. Substring search:
-        1. The easy way:
-            1. `for mystr in bigstring: pass`
+    3. Substring Search - find a string that fits inside another string.
+        1. How many instances of 'is' are in 'this is my string'?
+        2. Lets work with some more string methods.
+            1. find(), rfind(), 
+            2. count()
+            3. partition(), rpartition()
+            4. split()
 
     4. Iterating over a list of strings:
         1. Again, we use the for... in pattern:
