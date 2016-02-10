@@ -32,28 +32,15 @@ This lesson covers some topics related to strings in Python. In particular: enco
 
 2. ##### String Encoding! ascii or utf-8?
     1. First off, what are they?
-    2. ascii - this is a 1:1 encoding of bytes to characters, it can only represent the english letters and some additional stuff.
-    3. unicode - this is a huge set of characters representing many languages. Not all fonts support all sections of unicode. Unicode costs between 1-4 bytes per character.
-    4. So what does Python use in the Python interpreter?
+        1. ascii - this is a 1:1 encoding of bytes to characters, it can only represent the english letters and some additional stuff.
+        2. unicode - this is a huge set of characters representing many languages. Not all fonts support all sections of unicode. Unicode costs between 1-4 bytes per character.
+    2. So what does Python use in the Python interpreter?
         1. Python 2 uses ascii for strings, but has unicode strings available if you choose to use them.
         2. Python 3 uses unicode by default, so you never have to think about it.
         3. You can identify a unicode string because it will look like this: u'hello world'.
         4. How do you know if you are using Python 2 or 3? When you type the python command, you have to type `python3` to use Python 3 on most systems.
-    5. Lets use Python 2 - Three types of string declarations:
-        1. ascii = 'this is a string'
-        2. unicode = u'this is a unicode string'
-        3. raw = r'this needs no escapes'
-    6. String escapes - a string will often need escapes.
-        1.  Let's play with [escape sequences!](https://docs.python.org/2/reference/lexical_analysis.html#string-literals)
-        ```python
-        >>> 'hello world'
-        >>> 'hello humans\' world'
-        >>> '\\'
-        >>> r'\\'
-        >>> '\\\\'
-        ```
-    7. What about your file, does that have to be unicode? [Lets check PEP 263](https://www.python.org/dev/peps/pep-0263/)
-        1. The Python 2 interpreter defaults to decoding a file (script) as ascii.
+    3. What about your source code file, does that have to be ascii or unicode? [Lets check PEP 263](https://www.python.org/dev/peps/pep-0263/)
+        1. The Python 2 interpreter defaults to decoding a source code file (a script) as ascii.
         2. In order to use a different encoding you need to specify it:
             1. emacs-friendly: `# -*- coding: utf-8 -*-`
             2. vim-friendly:`# vim: set fileencoding=utf-8 :`
@@ -62,6 +49,19 @@ This lesson covers some topics related to strings in Python. In particular: enco
         3. What about Python 3?
             1. Python 3 uses utf-8 [as the default file coding](https://docs.python.org/3.3/howto/unicode.html#the-string-type)
             2. PEP 263 still applies to Python 3.
+    4. Lets use Python 2 - Three types of string declarations:
+        1. ascii = 'this is a string'
+        2. unicode = u'this is a unicode string'
+        3. raw = r'this needs no escapes'
+    5. String escapes - a string will often need escapes.
+        1.  Let's play with [escape sequences!](https://docs.python.org/2/reference/lexical_analysis.html#string-literals)
+        ```python
+        >>> 'hello world'
+        >>> 'hello humans\' world'
+        >>> '\\'
+        >>> r'\\'
+        >>> '\\\\'
+        ```
 
 3. ##### Lets play with some strings.
 
