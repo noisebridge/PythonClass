@@ -2,7 +2,7 @@
 
 #### Opening, Reading, and writing Files.  JSON and the JSON module.
 
-This is a compressed lesson designed as a jumpstart for working with the open() built-in method and the json module.
+This is a compressed lesson designed as a jumpstart for working with the open() built-in method, json encoding, unicode encoding, and the json module.
 
 
 1. ##### Today's deep dive: Opening a file (10 minutes)
