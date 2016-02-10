@@ -90,26 +90,26 @@ This is a compressed lesson designed as a jumpstart for working with the open() 
 
     3. ###### Example 2: Using json.load() and json.dump()
 
-    ``` Python
-    """
-    These are where your notes go.
+        ``` Python
+        """
+        These are where your notes go.
 
-    Notes are good.
+        Notes are good.
 
-    Check out docstrings for more information.
-    """
-    import json
+        Check out docstrings for more information.
+        """
+        import json
 
-    my_json_dict = {"5":"hello world"}
+        my_json_dict = {"5":"hello world"}
 
-    myfile = 'info.json'
+        myfile = 'info.json'
 
-    with open(myfile, 'w') as f:
-        json.dump(my_json_dict, f)
+        with open(myfile, 'w') as f:
+            json.dump(my_json_dict, f)
 
-    with open(myfile, 'r') as f:
-        mydict = json.load(f)
+        with open(myfile, 'r') as f:
+            mydict = json.load(f)
 
-    print mydict
-    ```
+        print mydict
+        ```
 
