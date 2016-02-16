@@ -87,29 +87,20 @@ Other things that are algorithms: tying your shoes, addition, making an omelet.
         print "The value we will search for: {}".format(our_value)
         ```
 
+    5. Now let's make the phone book searh algorithm!
+        1. Some more specifications:
+            1. Write a function that returns the value we chose (57th index).
+            2. The function should use a binary tree search and take the data set and the value we want to find as inputs.
+            3. The function should return the index of the value. That's 57! (pitfall: the index starts at 0!)
+            4. Test the function on other values using new test values (REQUIREMENT 3).
+            5. What would a unit test for this look like?
 
-
-
-    3. What about your source code file, does that have to be ascii or unicode? [Lets check PEP 263](https://www.python.org/dev/peps/pep-0263/)
-        1. The Python 2 interpreter defaults to decoding a source code file (a script) as ascii.
-        2. In order to use a different encoding you need to specify it:
-            1. emacs-friendly: `# -*- coding: utf-8 -*-`
-            2. vim-friendly:`# vim: set fileencoding=utf-8 :`
-            3. Precise definition from PEP 263: encoding must match the regular expression `"coding[:=]\s*([-\w.]+)"`
-            4. you could use human friendly: `# this file uses the encoding: utf-8`
-        3. What about Python 3?
-            1. Python 3 uses utf-8 [as the default file coding](https://docs.python.org/3.3/howto/unicode.html#the-string-type)
-            2. PEP 263 still applies to Python 3.
-    4. Lets use Python 2 - Three types of string declarations:
-        1. ascii = 'this is a string'
-        2. unicode = u'this is a unicode string'
-        3. raw = r'this needs no escapes'
-    5. String escapes - a string will often need escapes.
-        1.  Let's play with [escape sequences!](https://docs.python.org/2/reference/lexical_analysis.html#string-literals)
+    6. An example (put the code from class here).
+        1. ** Don't look at this example until after class! **
+            1. This time around you can't - hah! We haven't written it yet.
+        2. How can we use this same set of requirements to write other algorithms?
+        3. Can we use this as a structure for unit tests?
         ```python
-        >>> 'hello world'
-        >>> 'hello humans\' world'
-        >>> '\\'
-        >>> r'\\'
-        >>> '\\\\'
+        """ placeholder
+        """
         ```
