@@ -61,13 +61,16 @@ Other things that are algorithms: tying your shoes, addition, making an omelet.
         # if we do this we can probably all get the same list        
         random.seed(99)
 
-        mynumbers = random.sample(1000000, 100)
-
-        print mynumbers[0:10]
-        print mynumbers.sort()[0:10]
-        print mynumbers[0:10]
-
-        our_dataset = mynumbers.sort()
+        our_dataset = random.sample(range(1000000), 100)
+        
+        # we are printing these to see if everyone has the same numbers! check it.
+        print our_dataset[0:10]
+        # this does sort the actual our_dataset list. 
+        # A list is a mutable object (an object that can be mutated/changed).
+        # remember our strings were immutable (cannot be mutated/changed) objects.
+        # string internal functions CANNOT alter themselves.
+        our_dataset.sort()
+        print our_dataset[0:10]
         ```
 
     3. Description of our search algorithm (REQUIREMENT 2)
@@ -77,6 +80,12 @@ Other things that are algorithms: tying your shoes, addition, making an omelet.
             3. Repeat 2 until you are on the right page.
             4. When on the same page, you can repeat this with the actual values.
 
+    4. The value 57th index of the dataset (REQUIREMENT 3)
+        1. Append this to our code above:
+        ```python
+        our_value = our_dataset[57]
+        print "The value we will search for: {}".format(our_value)
+        ```
 
 
 
