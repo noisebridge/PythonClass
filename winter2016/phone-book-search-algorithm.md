@@ -87,15 +87,15 @@ Other things that are algorithms: tying your shoes, addition, making an omelet.
         print "The value we will search for: {}".format(our_value)
         ```
 
-    5. Now let's make the phone book searh algorithm!
-        1. Some more specifications:
-            1. Write a function that returns the value we chose (57th index).
-            2. The function should use a binary tree search and take the data set and the value we want to find as inputs.
-            3. The function should return the index of the value. That's 57! (pitfall: the index starts at 0!)
-            4. Test the function on other values using new test values (REQUIREMENT 3).
-            5. What would a unit test for this look like?
+3. Now let's make the phone book search algorithm!
+    1. Some more specifications:
+        1. Write a function that returns the value we chose (57th index).
+        2. The function should use a binary tree search and take the data set and the value we want to find as inputs.
+        3. The function should return the index of the value. That's 57! (pitfall: the index starts at 0!)
+        4. Test the function on other values using new test values (REQUIREMENT 3).
+        5. What would a unit test for this look like?
 
-    6. An example (put the code from class here).
+    2. An example (put the code from class here).
         1. **Don't look at this example until after class!**
             1. This time around you can't - hah! We haven't written it yet.
         2. How can we use this same set of requirements to write other algorithms?
