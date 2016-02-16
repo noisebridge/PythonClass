@@ -101,7 +101,50 @@ Other things that are algorithms: tying your shoes, addition, making an omelet.
     2. An example **Don't look at this example until after class!** This time around you can't - hah! We haven't written it yet.
         1. How can we use this same set of requirements to write other algorithms?
         2. Can we use this as a structure for unit tests?
+
         ```python
-        """ placeholder
+        """ Our implementation of the phonebook search
+
+        A more detailed descripton goes here, it can be multiline
+        and have lots of details.
         """
+        import random
+        from math import floor
+
+        # if we do this we can probably all get the same list        
+        random.seed(99)
+
+        our_dataset = random.sample(range(1000000), 100)
+
+        # we are printing these to see if everyone has the same numbers! check it.
+        print our_dataset[0:10]
+        # this does sort the actual our_dataset list. 
+        # A list is a mutable object (an object that can be mutated/changed).
+        # remember our strings were immutable (cannot be mutated/changed) objects.
+        # string internal functions CANNOT alter themselves.
+        our_dataset.sort()
+        print our_dataset[0:10]
+
+        our_value = our_dataset[57]
+        print "The value we will search for: {}".format(our_value)
+
+        def phonebook_search(dataset, target_value, target_offset=0):
+            """ Return the index of a value in the dataset using binary search.
+
+            This can also be multiline.
+            """
+
+            halfway_point = int(floor(len(dataset)/2))
+            
+            if dataset[halfway_point] < target_value:
+                return phonebook_search(dataset[halfway_point:], target_value, target_offset+halfway_point)
+
+            elif dataset[halfway_point] == target_value:
+                return target_offset+halfway_point
+
+            else:
+                return phonebook_search(dataset[0:halfway_point], target_value, target_offset)
+                
+
+        print phonebook_search(our_dataset, our_value)
         ```
