@@ -32,21 +32,55 @@ Other things that are algorithms: tying your shoes, addition, making an omelet.
     second_number = 10
     returned_from_the_function = add_a_number(first_number, second_number)
     print "Result of {} + {}: {}".format(first_number, second_number, returned_from_the_function)
-        
-        
     ```
 
+    1. What is this tricky scope concept?
+        1. It determines what you can see from your location in your code. 
+        2. Remember: a name/variable is just a 'name' assigned to ANY object.
+
+    2. Some scope guidelines:
+        3. Globally defined (no indentation) names can be seen from anywhere.
+        4. Names defined in a function or class can not be seen except in functions or classes (or modules) that are children of that class.
+        5. This means scope can be thought of like a tree with global as the roots.
+        6. Pitfall: a name cannot be used before it is defined. The code runs one line at a time.
 
 
-2. ##### String Encoding! ascii or utf-8?
-    1. First off, what are they?
-        1. ascii - this is a 1:1 encoding of bytes to characters, it can only represent the english letters and some additional stuff.
-        2. unicode - this is a huge set of characters representing many languages. Not all fonts support all sections of unicode. Unicode costs between 1-4 bytes per character.
-    2. So what does Python use in the Python interpreter?
-        1. Python 2 uses ascii for strings, but has unicode strings available if you choose to use them.
-        2. Python 3 uses unicode by default, so you never have to think about it.
-        3. You can identify a unicode string because it will look like this: u'hello world'.
-        4. How do you know if you are using Python 2 or 3? When you type the python command, you have to type `python3` to use Python 3 on most systems.
+
+2. ##### What are we even doing? Lets set up our phone book search:
+    
+    1. Some things we need:
+        1. Data to search through. It must be sorted. Why?
+        2. A description of how our search will operate.
+        3. A value to search for. Lets arbitrarily start with the 57th index value (of 100).
+
+    2. DATA SET (REQUIREMENT 1)
+        1. First we need data. Lets make a [random list](https://docs.python.org/2/library/random.html#random.sample) of 100 items between the numbers 1 to one million.
+        ```python
+        import random
+
+        # if we do this we can probably all get the same list        
+        random.seed(99)
+
+        mynumbers = random.sample(1000000, 100)
+
+        print mynumbers[0:10]
+        print mynumbers.sort()[0:10]
+        print mynumbers[0:10]
+
+        our_dataset = mynumbers.sort()
+        ```
+
+    3. Description of our search algorithm (REQUIREMENT 2)
+        1. What is a phone book search?
+            1. Open a phonebook half way.
+            2. If the first letters of the last name you are searching for is before your location, open the book up in the middle of the first half. Otherwise open to the middle of the second half.
+            3. Repeat 2 until you are on the right page.
+            4. When on the same page, you can repeat this with the actual values.
+
+
+
+
+
     3. What about your source code file, does that have to be ascii or unicode? [Lets check PEP 263](https://www.python.org/dev/peps/pep-0263/)
         1. The Python 2 interpreter defaults to decoding a source code file (a script) as ascii.
         2. In order to use a different encoding you need to specify it:
@@ -70,36 +104,3 @@ Other things that are algorithms: tying your shoes, addition, making an omelet.
         >>> r'\\'
         >>> '\\\\'
         ```
-
-3. ##### Lets play with some strings.
-
-    1. First lets look inside a string
-        1. Lets use the dir built-in method.
-        ```python
-        >>> mystring = "this is my string"
-        >>> help(dir)
-        >>> dir(mystring)
-        ```
-        2. These things are string methods. [Lets look at some](https://docs.python.org/2/library/stdtypes.html#string-methods)
-            1. lower(), capitalize(), title()
-    
-
-    2. Now lets slice a string.
-        1. [Reference documentation](https://docs.python.org/2/reference/expressions.html#slicings)
-        2. [Slice Tutorial](https://docs.python.org/2/tutorial/introduction.html#strings)
-
-    3. Substring Search - find a string that fits inside another string.
-        1. How many instances of 'is' are in 'this is my string'?
-        2. Lets work with some more string methods.
-            1. find(), rfind(), 
-            2. count()
-            3. partition(), rpartition()
-            4. split()
-
-    4. Iterating over a list of strings:
-        1. Again, we use the for... in pattern:
-
-    5. Regular Expressions - Know they exist; try them out sometime.
-        1. Regular expressions are strings that can match a SET of regular strings.
-            1. There's a lot to say about these
-            2. Check out the Python `re` library, it is already on your computer.
