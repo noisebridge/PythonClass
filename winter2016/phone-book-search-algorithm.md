@@ -1,6 +1,6 @@
 
 
-#### String Management - processing strings and extracting information
+#### The Phone Book Search Algorithm
 
 We'll be writing an algorithm tonight that describes the 'phone book' search method, a way of quickly searching a list of items for a specific item.
 
