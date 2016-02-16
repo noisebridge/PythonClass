@@ -96,7 +96,7 @@ Other things that are algorithms: tying your shoes, addition, making an omelet.
             5. What would a unit test for this look like?
 
     6. An example (put the code from class here).
-        1. ** Don't look at this example until after class! **
+        1. *Don't look at this example until after class!*
             1. This time around you can't - hah! We haven't written it yet.
         2. How can we use this same set of requirements to write other algorithms?
         3. Can we use this as a structure for unit tests?
