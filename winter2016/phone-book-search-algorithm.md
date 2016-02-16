@@ -56,6 +56,8 @@ Other things that are algorithms: tying your shoes, addition, making an omelet.
     2. DATA SET (REQUIREMENT 1)
         1. First we need data. Lets make a [random list](https://docs.python.org/2/library/random.html#random.sample) of 100 items between the numbers 1 to one million.
         ```python
+        """ Start a new file and put this code in it!!
+        """
         import random
 
         # if we do this we can probably all get the same list        
@@ -83,13 +85,14 @@ Other things that are algorithms: tying your shoes, addition, making an omelet.
     4. The value 57th index of the dataset (REQUIREMENT 3)
         1. Append this to our code above:
         ```python
+        # add this code to the last snip of code.
         our_value = our_dataset[57]
         print "The value we will search for: {}".format(our_value)
         ```
 
 3. Now let's make the phone book search algorithm!
     1. Some more specifications:
-        1. Write a function that returns the value we chose (57th index).
+        1. Write a function that returns the index we chose (57th index).
         2. The function should use a binary tree search and take the data set and the value we want to find as inputs.
         3. The function should return the index of the value. That's 57! (pitfall: the index starts at 0!)
         4. Test the function on other values using new test values (REQUIREMENT 3).
