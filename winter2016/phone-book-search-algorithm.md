@@ -95,11 +95,9 @@ Other things that are algorithms: tying your shoes, addition, making an omelet.
         4. Test the function on other values using new test values (REQUIREMENT 3).
         5. What would a unit test for this look like?
 
-    2. An example (put the code from class here).
-        1. **Don't look at this example until after class!**
-            1. This time around you can't - hah! We haven't written it yet.
-        2. How can we use this same set of requirements to write other algorithms?
-        3. Can we use this as a structure for unit tests?
+    2. An example **Don't look at this example until after class!** This time around you can't - hah! We haven't written it yet.
+        1. How can we use this same set of requirements to write other algorithms?
+        2. Can we use this as a structure for unit tests?
         ```python
         """ placeholder
         """
