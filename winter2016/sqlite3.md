@@ -30,7 +30,7 @@ Use SQLite to store information inside your application. It was originally devel
         .open "polygons.sqlite" 
 
 
-        CREATE TABLE IF NOT EXISTS "Polygon" ( 
+        CREATE TABLE IF NOT EXISTS "Polygons" ( 
             "pKey" INTEGER PRIMARY KEY,
             "Name" varchar(255) DEFAULT NULL, 
             "Sides"  varchar(255) DEFAULT NULL,
@@ -39,44 +39,86 @@ Use SQLite to store information inside your application. It was originally devel
         ```
 
 
-### 2. Working with the sample databases
-- An outline of our Python goals: make database connection, write or read entries, commit changes, close connection.
-- First lets [read it](https://github.com/PyClass/PyClassLessons/blob/master/lessons/sqlite3_module/examples/readsample.py) into a list of tuples. This is the default data structure returned by sqlite3.
-- Now lets [write some data, note that we let the db assign the pkey](https://github.com/PyClass/PyClassLessons/blob/master/lessons/sqlite3_module/examples/writesample.py).
-- Most basic uses will be a variation on this.
-- A word of caution: sqlite is best for single-user applications.  If you need to allow many users, like with a web app, swap over to Postgres.
-- You can convert to Postgres, and TONS of your knowledge is transferrable, so just use sqlite3 for now and that knowledge will transfer!
--WHY SQLITE??
 
-2. #### First Point
-    1. Replace with An Explanation - XX minutes
-        1. 
-        2. 
-        3. See: [example_file.py](example_file.py)
-    2. Second Part
-        1. 
-        2. 
-        3. See: [example_file.py](example_file.py)
-    3. Third Part
-        1. 
-        2. 
-        3. See: [example_file.py](example_file.py)
+```
+SQLite version 3.8.10.2 2015-05-20 18:17:19
+Enter ".help" for usage hints.
+Connected to a transient in-memory database.
+Use ".open FILENAME" to reopen on a persistent database.
+sqlite> .open mypolygons.sqlite
+```
 
-3. #### Organizing or ('munging')[http://en.wikipedia.org/wiki/Mung_%28computer_term%29] data.
-    1. Data will often need reorganized. - 30 minutes
-        1. Key Point: A particular organizational model for a given dataset can be called a 'view' of that data. A single dataset can have many views.
-        3. It's possible that you are only interested in a certain subset of data and could remove irrelevant columns. If you have worked in excel, you have seen data in a specific view.
-        2.  You could filter by category such as with population data, or you could filter based on range, for example price ranges of store items.
-    2. So how do we get our sql format into a form we actually want?
-        1. SQL Tables are a collection of 1 dimensional columns.  The columns have a 'name' or 'header'.  Each row of the table represents a data point for that table.
-        2. DB->COLUMNS->ROWS->ENTRIES || A database is an arbitrary collection of tables, which is a collection of rows, which is a collection of points.
-        3. Important: In a given row of a table, each column MUST have a value, even if it has no data. The sqlite equivalent of NaN, null, or NA is `null`.
-    3. Data Organization Philosophy
-        1. A single datum should only exist in ONE place. That isn't to say that multiple things couldn't have the same datum
-        2. Don't create views before you know what you need.
-        3. If things belong together, put them together. If they don't, create a new table or even a new database.
-        4. Most of the time a Python `list()` or `dict()` will serve as an excellent representation of your data.
 
+
+2. ##### Interacting with our database in Python.
+
+    In this section, we will use Python's [sqlite3 module](https://docs.python.org/2/library/sqlite3.html) to communicate with our database.
+    
+    1. Goals: read from the database, write to the database, see our work.
+
+    2. Examples:
+        1. Write Data:
+        ```python
+        """Write a sample directly from a Python list of lists.
+        """
+        import sqlite3
+
+        FILENAME = "mypolygons.sqlite"
+        TABLE_NAME = "Polygons"
+
+        if __name__ == '__main__':
+            """ Write some data to our database.
+            """
+
+            SAMPLE_DATA_1 = (None, "square", 4, "four")
+            SAMPLE_DATA_2 = (None, "triangle", 3, "three")
+
+            # Create a connection to the database, assign to a name
+            conn = sqlite3.connect(FILENAME)
+
+            # We will use the cursor object to perform transactions.
+            c = conn.cursor()
+
+            # we can use {table} with the string function "format"
+            # more here: https://docs.python.org/2/library/string.html#format-string-syntax
+            INSERT_STATEMENT = "INSERT INTO {table} VALUES (?,?,?,?)"
+            MY_INSERT_STATEMENT = INSERT_STATEMENT.format(table=TABLE_NAME)
+
+            # execute the insert transaction -- it isn't committed to the database yet!!
+            c.execute(MY_INSERT_STATEMENT, SAMPLE_DATA_1)
+            c.execute(MY_INSERT_STATEMENT, SAMPLE_DATA_2)
+
+            # This commits the transaction
+            conn.commit()
+
+            # Close the connection to the database.
+            conn.close()
+        ```
+
+
+        1. Read Data: add this after the cursor is established, comment out the line `c.execute(MY_INSERT_STATEMENT, SAMPLE_DATA)` for now.
+        ```python
+            
+            SELECT STATEMENT = "SELECT * FROM {table}"
+            MY_SELECT_STATEMENT = SELECT_STATEMENT.format(table=TABLE_NAME)
+            c.execute(MY_SELECT_STATEMENT)
+
+            # retool this select statement to accomodate WHERE for sides < 4
+        ```
+        3. See our work:
+        ```
+        sqlite> .open mypolygons.sqlite
+        sqlite> .schema
+        CREATE TABLE "Polygons" (
+            "pKey" INTEGER PRIMARY KEY,
+            "Name" varchar(255) DEFAULT NULL,
+            "Sides"  varchar(255) DEFAULT NULL,
+            "SidesEnglish"   varchar(255) DEFAULT NULL
+        );
+        sqlite> select * from Polygons;
+        1|square|4|four
+        sqlite> ^D
+        ```
 
 4. #### Extended Resources - An overview of sqlite technologies
     1. [What's SQL?](http://en.wikipedia.org/wiki/SQL) - "SQL (Structured Query Language) is a special-purpose programming language designed for managing data held in a relational database management system (RDBMS), or for stream processing in a relational data stream management system (RDSMS).
@@ -86,10 +128,9 @@ Use SQLite to store information inside your application. It was originally devel
     4. [Relational Model](http://en.wikipedia.org/wiki/Relational_model) - Most relational databases use the SQL data definition and query language; these systems implement what can be regarded as an engineering approximation to the relational model. A table in an SQL database schema corresponds to a predicate variable; the contents of a table to a relation; key constraints, other constraints, and SQL queries correspond to predicates. However, SQL databases deviate from the relational model in many details, and Codd fiercely argued against deviations that compromise the original principles.
 
 
-### TODO: DELETE WHEN COMPLETE
-  - Links below go to proper examples in folder.
-  - Discuss autocommmit, manual commit, buffered? commits (with example)
-  - row.keys() <-- get keys/headers for table
-  - SQLite and Python Types: https://docs.python.org/2/library/sqlite3.html#introduction
-  - Dealing with Date: https://docs.python.org/2/library/sqlite3.html#default-adapters-and-converters
-  - 
+Open Questions - Determine if these belong in this lesson:
+* Discuss autocommmit, manual commit, buffered? commits (with example)
+* row.keys() <-- get keys/headers for table
+* SQLite and Python Types: https://docs.python.org/2/library/sqlite3.html#introduction
+* Dealing with Date: https://docs.python.org/2/library/sqlite3.html#default-adapters-and-converters
+* Munging data?
