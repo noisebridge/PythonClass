@@ -1,10 +1,10 @@
 
-### sqlite3
+### The 'SQLite' Relational Database Format
 
-Use sqlite3 to store information inside your application. It was originally developed for the US Navy to embed in their hardware, so it's pretty robust.
+Use SQLite to store information inside your application. It was originally developed for the US Navy to embed in their hardware. SQLite is ubiquitous in software.
 
 
-```SQLite is a C library that provides a lightweight disk-based database that doesn’t require a separate server process and allows accessing the database using a nonstandard variant of the SQL query language. Some applications can use SQLite for internal data storage. **It’s also possible to prototype an application using SQLite and then port the code to a larger database such as PostgreSQL or Oracle.** It provides a SQL interface compliant with the DB-API 2.0 specification described by [PEP 249](http://www.python.org/dev/peps/pep-0249)."```
+>SQLite is a C library that provides a lightweight disk-based database that doesn’t require a separate server process and allows accessing the database using a nonstandard variant of the SQL query language. Some applications can use SQLite for internal data storage. **It’s also possible to prototype an application using SQLite and then port the code to a larger database such as PostgreSQL or Oracle.** It provides a SQL interface compliant with the DB-API 2.0 specification described by [PEP 249](http://www.python.org/dev/peps/pep-0249)."
 
 [Excerpt from sqlite3 module](https://docs.python.org/2/library/sqlite3.html)
 
