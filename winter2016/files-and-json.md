@@ -7,6 +7,10 @@ This is a compressed lesson designed as a jumpstart for working with the open() 
 
 1. ##### Today's deep dive: Opening a file (10 minutes)
 
+    ```bash
+    $ echo "hello world" > info.txt
+    ```
+
     ```python
     myfile = 'info.txt'
 
