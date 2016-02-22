@@ -17,7 +17,7 @@ Use SQLite to store information inside your application. It was originally devel
             2. Each row has one field per column.
         2. Schema - A schema describes a table.
         3. Database - a collection of tables, schemas, and some related things.
-    2. Type this code into a file to make a database:
+    2. Type this code into `myschema.schema` and run it to make a database:
 
         ```
         -- Run this file with the .read command.
@@ -27,7 +27,7 @@ Use SQLite to store information inside your application. It was originally devel
 
         -- The .open command will open a database. If it doesn't
         -- exist, it will create it. (are there exceptions to this?)
-        .open "polygons.sqlite" 
+        .open "mypolygons.sqlite" 
 
 
         CREATE TABLE IF NOT EXISTS "Polygons" ( 
