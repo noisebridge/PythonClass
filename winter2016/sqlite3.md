@@ -18,26 +18,25 @@ Use SQLite to store information inside your application. It was originally devel
         2. Schema - A schema describes a table.
         3. Database - a collection of tables, schemas, and some related things.
     2. Type this code into a file to make a database:
-        1.
-            ```
-            -- Run this file with the .read command.
-            -- Older sqlite3 (osx packages a really old version) apparently don't have this.
-            -- If this happens, you can run sqlite3 at the command prompt and type the following in.
+
+        ```
+        -- Run this file with the .read command.
+        -- Older sqlite3 (osx packages a really old version) apparently don't have this.
+        -- If this happens, you can run sqlite3 at the command prompt and type the following in.
 
 
-            -- The .open command will open a database. If it doesn't
-            -- exist, it will create it. (are there exceptions to this?)
-            .open "polygons.sqlite" 
+        -- The .open command will open a database. If it doesn't
+        -- exist, it will create it. (are there exceptions to this?)
+        .open "polygons.sqlite" 
 
 
-            CREATE TABLE IF NOT EXISTS "Polygon" ( 
-                "pKey" INTEGER PRIMARY KEY,
-                "Name" varchar(255) DEFAULT NULL, 
-                "Sides"  varchar(255) DEFAULT NULL,
-                "SidesEnglish"   varchar(255) DEFAULT NULL,
-            );
-            ```
-
+        CREATE TABLE IF NOT EXISTS "Polygon" ( 
+            "pKey" INTEGER PRIMARY KEY,
+            "Name" varchar(255) DEFAULT NULL, 
+            "Sides"  varchar(255) DEFAULT NULL,
+            "SidesEnglish"   varchar(255) DEFAULT NULL,
+        );
+        ```
 
 
 ### 2. Working with the sample databases
@@ -90,9 +89,6 @@ Use SQLite to store information inside your application. It was originally devel
 ### TODO: DELETE WHEN COMPLETE
   - Links below go to proper examples in folder.
   - Discuss autocommmit, manual commit, buffered? commits (with example)
-  - Creating functions in queries: https://docs.python.org/2/library/sqlite3.html#sqlite3.Connection.create_function
-  - Everything after functions: aggregates, collations, row factories, text factories, row objects, and the rest of that section.
-  - Try to remove this from the code: explain why you have to specify str. That still isn't clear to me... 
   - row.keys() <-- get keys/headers for table
   - SQLite and Python Types: https://docs.python.org/2/library/sqlite3.html#introduction
   - Dealing with Date: https://docs.python.org/2/library/sqlite3.html#default-adapters-and-converters
