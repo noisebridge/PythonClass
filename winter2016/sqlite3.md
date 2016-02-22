@@ -19,7 +19,7 @@ Use SQLite to store information inside your application. It was originally devel
         3. Database - a collection of tables, schemas, and some related things.
     2. Type this code into a file to make a database:
         1.
-            ```sql
+            ```SQL
             -- Run this file with the .read command.
             -- Older sqlite3 (osx packages a really old version) apparently don't have this.
             -- If this happens, you can run sqlite3 at the command prompt and type the following in.
