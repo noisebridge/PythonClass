@@ -83,14 +83,19 @@ Use SQLite to store information inside your application. It was originally devel
             ```
 
 
-        2. Read Data: add this after the cursor is established, comment out the line `c.execute(MY_INSERT_STATEMENT, SAMPLE_DATA)` for now.
+        2. Read Data: add this after the cursor is established. Comment out the lines similar to `c.execute(MY_INSERT_STATEMENT, SAMPLE_DATA)` for now.
             ```python
                 
-                SELECT STATEMENT = "SELECT * FROM {table}"
+                SELECT_STATEMENT = "SELECT * FROM {table}"
                 MY_SELECT_STATEMENT = SELECT_STATEMENT.format(table=TABLE_NAME)
                 c.execute(MY_SELECT_STATEMENT)
+                print c.fetchone()
+                print c.fetchone()
+                print c.fetchone()
+                # print c.fetchall()  # try this with fetchone commented out.
 
                 # retool this select statement to accomodate WHERE for sides < 4
+                # hint: you must make a new SELECT statement.
             ```
 
         3. See our work:
