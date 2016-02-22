@@ -34,7 +34,7 @@ Use SQLite to store information inside your application. It was originally devel
             "pKey" INTEGER PRIMARY KEY,
             "Name" varchar(255) DEFAULT NULL, 
             "Sides"  varchar(255) DEFAULT NULL,
-            "SidesEnglish"   varchar(255) DEFAULT NULL,
+            "SidesEnglish"   varchar(255) DEFAULT NULL
         );
         ```
 
