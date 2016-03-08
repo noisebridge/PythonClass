@@ -23,14 +23,16 @@ Today is going to get a little theoretical and you'll find interesting applicati
             def cat():
                 """ The cat function is written in main.
                 """
-                print("z in cat BEFORE ASSIGNMENT {}".format(z))
+                #if you use z in cat, you cannot call it before using it...
+                #print("z in cat BEFORE ASSIGNMENT {}".format(z))
                 z = 10
                 print("z in cat AFTER ASSIGNMENT {}".format(z))
 
                 def cat_helper():
                     """ The cat_helper function is inside of cat only.
                     """
-                    print("z in cat_helper BEFORE ASSIGNMENT {}".format(z))
+                    #if you use z in cat_helper, you cannot call it before using it...
+                    #print("z in cat_helper BEFORE ASSIGNMENT {}".format(z))
                     z = 5
                     print("z in cat_helper AFTER ASSIGNMENT {}".format(z))
                     
