@@ -52,8 +52,32 @@ Today is going to get a little theoretical and you'll find interesting applicati
             cat()
             ```
 
-2. Using `(*args, **kwargs)`:
-    1. No discussion topic - see args_kwargs examples.
+2. Using Argument packing and unpacking: `(*args, **kwargs)`
+    1. Two operations:
+        1. The * operator will pack or unpack a tuple.
+        2. The ** operator will pack or unpack a dict.
+        3. Lets try unpacking some stuff:
+            ```
+            my_list = [1,2,3] # can also be a tuple
+            my_dict = ["first" : "hello", "second" : "world"]
+
+            def my_function(a, b, c, first, second):
+                print a, b, c
+                print first, second
+
+            my_function(*my_list, **my_dict)
+            ```
+        4. Lets try a second way:
+            ```
+            def my_function(*args, **kwargs):
+                print a, b, c
+                print first, second
+
+            my_function(1, 2, 3, first="hello", second="world")
+            ```
+    2. One rule: don't get sloppy. Explicit is better than implicit.
+        1. You will see code where people stop defining variables in their function.
+        2. These people are failing. Code is written to be read by humans, and that's a key principle of python.
 
 
 3. Functions are objects.
@@ -85,19 +109,28 @@ Today is going to get a little theoretical and you'll find interesting applicati
         print(my_functions[0](1, 2))
         print(my_functions[1](1, 2))
         ```
-    3. Ok lets get weird. These anonymous functions don't have names.
-        ```
-        # open up a python terminal:
-        addx = lambda b, x: b + x
-        
-        my_functions = [addx, lambda b, x: b * x]
+    3. Ok lets get weird. These anonymous functions don't need names.
+        1. Now lets open up a python terminal.
+            ```
 
-        # lets multiply without the word multx
-        print(my_functions[1](b,x))
+            # we can write a square function without even giving it a name
+            b = 2
+            x = 4
+            print(lambda b, x: b ** x)
 
-        ```
+            # or it can still have a name...
+            addx = lambda b, x: b + x
+            
+            my_functions = [addx, lambda b, x: b * x]
 
-3. How to get a nested function to close. Also known as a closure.
+            # lets multiply without the word multx
+            print(my_functions[1](b,x))
+            ```
+        2. Why do we need these? Simply put, we don't.
+
+
+## NOTE: May remove from lesson
+4. How to get a nested function to close. Also known as a closure.
     1. **A what?** A [closure](http://en.wikipedia.org/wiki/Closure_(computer_programming)) - Simple definition: A function that binds a set of 'private' variables.
     2. **How does this help me write useful code?** 
         1. Control flow
@@ -110,7 +143,8 @@ Today is going to get a little theoretical and you'll find interesting applicati
         4. Closures are a sophisticated, optional tool
 
 
-4. Decorators - Forget everything about the @ symbol for now.
+## NOTE: May remove from lesson
+5. Decorators - Forget everything about the @ symbol for now.
     1. A decorator is a callable object that wraps around another callable object. Often a function that wraps around a function.
     2. The decorator must return a callable object, usually a function.
     3. A decorator is used to add functionality to the original function. Also called enhancement.
@@ -118,7 +152,8 @@ Today is going to get a little theoretical and you'll find interesting applicati
     5. Example time. Head over to decorator1.py and continue through all the decorator examples.
 
 
-5. Functools - What's a partial?
+## NOTE: May remove from lesson
+6. Functools - What's a partial?
     1. A [partial](https://docs.python.org/2/library/functools.html#functools.partial) is part of a callable object (generally a function) with a fixed keyword argument or positional argument. This reduces the number of arguments that need to be provided to the function, essentially 'fixing' one argument.
     2. Review the partial example.
     3. Functools also has an update_wrapper function for making a decorator's wrapper look like the wrapped object. Invoked using the @wraps decorator on the function wrapper. 
@@ -128,6 +163,7 @@ Today is going to get a little theoretical and you'll find interesting applicati
 
 
 
+## NOTE: needs revised based on above removals (4, 5, 6)
 Preparing for this lesson:
 
 This won't guarantee you will be ready for the lesson, but it will serve as a good warm up.
