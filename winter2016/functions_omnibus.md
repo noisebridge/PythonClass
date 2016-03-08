@@ -39,7 +39,7 @@ Today is going to get a little theoretical and you'll find interesting applicati
                     return
                 
                 # this is inside of cat
-                meow()
+                cat_helper()
                 return
 
             # now we are back in main
