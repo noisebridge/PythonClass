@@ -15,6 +15,9 @@ Today is going to get a little theoretical and you'll find interesting applicati
             """ Lets see what z is in each scope.
 
             What will we see for each value of z?
+
+            After this, remove the assignment of z in each function and see what happens.
+            Finally, add the assignment back and uncomment the BEFORE_ASSIGNMENT print lines.
             """
 
             # 
