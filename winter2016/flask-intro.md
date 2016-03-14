@@ -21,12 +21,16 @@ This is a basic introduction to flask intended to give us an understanding of th
     from flask import Flask
     app = Flask(__name__)
 
+	# never leave this on in production or someone will break your site.
+	app.debug = True
+
     @app.route("/")
     def hello():
         return "Hello world!"
 
     if __name__ == "__main__":
         app.run()
+		# app.run(0.0.0.0) # will run your site on all public IPs. No need to do this.
     ```
 
     1. Ok... how do I see my work?
@@ -42,8 +46,9 @@ This is a basic introduction to flask intended to give us an understanding of th
 
 2. ##### Lets get this working with a template!
 
-    1. Flask [uses Jinja2](http://jinja.pocoo.org/docs/dev/)
-        1. We just use it. There is [a tutorial](http://flask.pocoo.org/docs/0.10/tutorial/templates/) for this.
+    1. Flask [uses Jinja2](http://jinja.pocoo.org/docs/dev/).
+        1. We just import it. There is [a tutorial](http://flask.pocoo.org/docs/0.10/tutorial/templates/) for this.
+        2. Lets update our code to have the extra import and a new route/template.
             ```python
             from Flask import flask, render_template
             
@@ -51,6 +56,17 @@ This is a basic introduction to flask intended to give us an understanding of th
             @app.route("/sample-page/")
             def samplepage():
                 return render_template("sample-page.html")
+            ```
+        3. This sample is from the tutorial's template page. Put this in templates/ folder which is just the default.
+            ```html
+			<!doctype html>
+			<title>Sample Template</title>
+			<link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+			<div class=page>
+			  <h1>This is our sample app!</h1>
+			  {% block body %}
+			  {% endblock %}
+			</div>
             ```
 
 
