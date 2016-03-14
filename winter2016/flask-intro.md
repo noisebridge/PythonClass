@@ -36,7 +36,7 @@ This is a basic introduction to flask intended to give us an understanding of th
     1. Ok... how do I see my work?
         1. Run your application `$ python app.py`
         2. In a browser, go to `http://localhost:5000`
-        3. You should see these words: Hello World!
+        3. You should see these words: `Hello world!`
 
     2. Other topics we will cover today:
         1. Accessing a template
@@ -58,7 +58,7 @@ This is a basic introduction to flask intended to give us an understanding of th
                 return render_template("sample-page.html")
             ```
         3. This sample is from the tutorial's template page. Put this in templates/ folder which is just the default.
-            ```html
+            ```Jinja2
 			<!doctype html>
 			<title>Sample Template</title>
 			<link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
