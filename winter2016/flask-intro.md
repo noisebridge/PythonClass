@@ -2,20 +2,22 @@
 
 #### Introduction to Flask Microframework for Web Development
 
-This is a basic introduction to flask intended to give us an understanding of the popular Model, Template, View web application code pattern.
+This is a basic introduction to flask intended to give us an understanding of the popular Model, Template, View web application code pattern. Flask has [an excellent tutorial](http://flask.pocoo.org/docs/0.10/).
 
 
-1. ##### Today's deep dive: Opening a file (10 minutes)
+1. ##### Today's deep dive: [Run Flask](http://flask.pocoo.org/)
 
     ```bash
+    # This part goes in your bash shell.
     # you must have python-virtualenv and python-pip installed to use a virtualenv
+    $ mkdir sampleapp
+    $ cd sampleapp
     $ virtualenv venv
     $ . venv/bin/activate
     $ pip install flask
     ```
 
     ```python
-    # code from flask.pocoo.org, call it app.py
     from flask import Flask
     app = Flask(__name__)
 
@@ -38,13 +40,18 @@ This is a basic introduction to flask intended to give us an understanding of th
         3. Static assets
 
 
-2. ##### Lets get this working with an HTML template!
+2. ##### Lets get this working with a template!
 
-    1. [Stuff]()
-        1. More Stuff
+    1. Flask [uses Jinja2](http://jinja.pocoo.org/docs/dev/)
+        1. We just use it. There is [a tutorial](http://flask.pocoo.org/docs/0.10/tutorial/templates/) for this.
             ```python
+            from Flask import flask, render_template
+            
+            # lets add a new route
+            @app.route("/sample-page/")
+            def samplepage():
+                return render_template("sample-page.html")
             ```
-        2. Even more stuff
 
 
     2. ###### Example 1: Using json.loads() and json.dumps()
