@@ -49,6 +49,7 @@ This is a basic introduction to flask intended to give us an understanding of th
     1. Flask [uses Jinja2](http://jinja.pocoo.org/docs/dev/).
         1. We just import it. There is [a tutorial](http://flask.pocoo.org/docs/0.10/tutorial/templates/) for this.
         2. Lets update our code to have the extra import and a new route/template.
+
             ```python
             from Flask import flask, render_template
             
@@ -57,7 +58,9 @@ This is a basic introduction to flask intended to give us an understanding of th
             def samplepage():
                 return render_template("sample-page.html")
             ```
+
         3. This sample is from the tutorial's template page. Put this in templates/ folder which is just the default.
+
             ```
             <!doctype html>
             <title>Sample Template</title>
@@ -69,6 +72,7 @@ This is a basic introduction to flask intended to give us an understanding of th
             </div>
             ```
 
+        4. Another thingy
 
     2. ###### Example 1: Using json.loads() and json.dumps()
 
