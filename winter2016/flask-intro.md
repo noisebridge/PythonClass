@@ -71,8 +71,9 @@ This is a basic introduction to flask intended to give us an understanding of th
               {% endblock %}
             </div>
             ```
+        4. Make a directory `static` in your project and add an empty `style.css` file to it.
 
-        4. The [key features of templates](http://flask.pocoo.org/docs/0.10/patterns/templateinheritance/) are `{% block MYBLOCK %}`, `import`, and `extends`.
+        5. The [key features of templates](http://flask.pocoo.org/docs/0.10/patterns/templateinheritance/) are `{% block MYBLOCK %}`, `import`, and `extends`.
             1. Usually you will use a base template that will just have blocks.
                 1. Some default blocks: `header`, `head`, `title`, `body`, `footer`, `footerjs`
                 2. Then inside the base template you'll `include` different files.
