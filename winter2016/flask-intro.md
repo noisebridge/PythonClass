@@ -51,7 +51,7 @@ This is a basic introduction to flask intended to give us an understanding of th
         2. Lets update our code to have the extra import and a new route/template.
 
             ```python
-            from flask import Flask, render_template
+            from flask import Flask, render_template, url_for
             
             # lets add a new route
             @app.route("/sample-page/")
