@@ -59,9 +59,9 @@ This is a basic introduction to flask intended to give us an understanding of th
                 return render_template("sample-page.html")
             ```
 
-        3. This sample is from the tutorial's template page. Put this in templates/ folder which is just the default.
+        3. This sample is from the tutorial's template page. Put this in `/templates/sample-page.html`. `/templates/` is the default path in a Flask project.
 
-            ```
+            ```html
             <!doctype html>
             <title>Sample Template</title>
             <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
