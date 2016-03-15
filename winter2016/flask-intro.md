@@ -72,23 +72,20 @@ This is a basic introduction to flask intended to give us an understanding of th
             </div>
             ```
 
-        4. Another thingy
+        4. The [key features of templates](http://flask.pocoo.org/docs/0.10/patterns/templateinheritance/) are `{% block MYBLOCK %}`, `import`, and `extends`.
+            1. Usually you will use a base template that will just have blocks.
+                1. Some default blocks: `header`, `head`, `title`, `body`, `footer`, `footerjs`
+                2. Then inside the base template you'll `include` different files.
+                3. Finally, on your actual pages, you'll `extend` your base template with actual content.
+                4. If you want to see a template system, check out [library-org](https://github.com/robbintt/library-org)
+            2. ###### We won't cover these details today, please review this in detail and try it out.
+        
 
-    2. ###### Example 1: Using json.loads() and json.dumps()
 
-        ``` Python
-        ```
+3. ##### The final piece today is a Model! This wires a database into our app.
 
-    3. ###### Example 2: Using json.load() and json.dump()
-
-        ``` Python
-        """
-        ```
-
-3. ##### Lets get this working with an HTML template!
-
-    1. [Stuff]()
-        1. More Stuff
+    1. [There are a lot of ways to use Flask-SQLAlchemy](http://flask.pocoo.org/docs/0.10/patterns/sqlalchemy/).
+        1. We will follow the **Flask-SQLAlchemy Extension** pattern.
             ```python
             ```
         2. Even more stuff
