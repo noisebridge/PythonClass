@@ -85,20 +85,36 @@ This is a basic introduction to flask intended to give us an understanding of th
 3. ##### The final piece today is a Model! This wires a database into our app.
 
     1. [There are a lot of ways to use Flask-SQLAlchemy](http://flask.pocoo.org/docs/0.10/patterns/sqlalchemy/).
-        1. We will follow the **Flask-SQLAlchemy Extension** pattern.
+        1. We will follow the [Flask-SQLAlchemy Extension](http://flask-sqlalchemy.pocoo.org/2.1/) pattern.
+        2. The following code is cribbed from [here](http://flask-sqlalchemy.pocoo.org/2.1/quickstart/#a-minimal-application). Please put this code in `sample_model.py`.
+
             ```python
+			from flask import Flask
+			from flask_sqlalchemy import SQLAlchemy
+
+			app = Flask(__name__)
+			app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////tmp/test.db'
+			db = SQLAlchemy(app)
+
+			class User(db.Model):
+				id = db.Column(db.Integer, primary_key=True)
+				username = db.Column(db.String(80), unique=True)
+				email = db.Column(db.String(120), unique=True)
+
+				def __init__(self, username, email):
+					self.username = username
+					self.email = email
+
+				def __repr__(self):
+					return '<User %r>' % self.username
             ```
-        2. Even more stuff
 
+        2. Lets take the rest of the course just to take a look at this.
+            1. Perform the db creation step.
+            2. Continue typing the commands in the howto.
+        
+        3. Possible Class Extension 
+            1. Get this code integrated into our basic app!  
+            2. Too long for today.
 
-    2. ###### Example 1: Using json.loads() and json.dumps()
-
-        ``` Python
-        ```
-
-    3. ###### Example 2: Using json.load() and json.dump()
-
-        ``` Python
-        """
-        ```
 
