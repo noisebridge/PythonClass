@@ -64,7 +64,7 @@ This is a basic introduction to flask intended to give us an understanding of th
             ```html
             <!doctype html>
             <title>Sample Template</title>
-            <link rel=stylesheet type=text/css href="style.css">
+            <link rel=stylesheet type=text/css href="/style.css">
             <div class=page>
               <h1>This is our sample app!</h1>
               {% block body %}
