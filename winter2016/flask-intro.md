@@ -51,7 +51,7 @@ This is a basic introduction to flask intended to give us an understanding of th
         2. Lets update our code to have the extra import and a new route/template.
 
             ```python
-            from Flask import flask, render_template
+            from flask import Flask, render_template
             
             # lets add a new route
             @app.route("/sample-page/")
@@ -64,7 +64,7 @@ This is a basic introduction to flask intended to give us an understanding of th
             ```html
             <!doctype html>
             <title>Sample Template</title>
-            <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+            <link rel=stylesheet type=text/css href="style.css">
             <div class=page>
               <h1>This is our sample app!</h1>
               {% block body %}
