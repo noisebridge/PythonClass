@@ -1,0 +1,725 @@
+{
+  "slides": [
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 130,
+          "y": 274,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "text": "<div align=\"center\">Python and Elasticsearch<br></div>",
+          "size": 72,
+          "selected": false,
+          "skewX": 0
+        },
+        {
+          "TextBox": {},
+          "x": 402,
+          "y": 393,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 36,
+          "text": "Jay Addison<br>",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 0,
+      "selected": false,
+      "active": false,
+      "x": 180,
+      "y": 180
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 307,
+          "y": 325,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 72,
+          "text": "Introduction",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 1,
+      "selected": false,
+      "active": false,
+      "x": 460,
+      "y": 180
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 198,
+          "y": 54,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 72,
+          "text": "Install Elasticsearch<br>",
+          "selected": false
+        },
+        {
+          "src": "https://elastic.co/downloads/elasticsearch",
+          "type": "WebFrame",
+          "x": 285,
+          "y": 170,
+          "scale": {
+            "x": 0.4760416666666667,
+            "y": 0.4760416666666667,
+            "width": 457,
+            "height": 365.6
+          },
+          "selected": false
+        },
+        {
+          "TextBox": {},
+          "x": 202,
+          "y": 595,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 36,
+          "text": "<font color=\"#3837ab\">https://elastic.co/downloads/elasticsearch</font><br>",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 2,
+      "selected": false,
+      "active": false,
+      "x": 740,
+      "y": 180
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 182,
+          "y": 52,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 72,
+          "text": "Search Engine Basics<br>",
+          "selected": false
+        },
+        {
+          "TextBox": {},
+          "x": 193,
+          "y": 284,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 41,
+          "text": "Goal:<br><br>Find all occurrences&nbsp; of&nbsp; some<br>phrase/words in a (potentially huge)<br>collection of documents<br>",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 3,
+      "selected": false,
+      "active": false,
+      "x": 1020,
+      "y": 180
+    },
+    {
+      "components": [
+        {
+          "src": "http://www.librairie-du-cardinal.com/produit/42620_5.jpg",
+          "type": "Image",
+          "x": 285,
+          "y": 55,
+          "scale": {
+            "x": 0.7566666666666667,
+            "y": 0.7566666666666667,
+            "width": 454,
+            "height": 605.3333333333334
+          },
+          "imageType": "JPG",
+          "selected": false
+        },
+        {
+          "TextBox": {},
+          "x": 288,
+          "y": 691,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 16,
+          "text": "Source: Sacroruma Bibl. Concordantiae<br>De Sancto Caro<br>",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 4,
+      "selected": false,
+      "active": false,
+      "x": 1300,
+      "y": 180
+    },
+    {
+      "components": [
+        {
+          "src": "http://images.slideplayer.com/25/7955116/slides/slide_21.jpg",
+          "type": "Image",
+          "x": 150,
+          "y": 54,
+          "scale": {
+            "x": 0.778125,
+            "y": 0.778125,
+            "width": 747,
+            "height": 560.25
+          },
+          "imageType": "JPG",
+          "selected": false
+        },
+        {
+          "TextBox": {},
+          "x": 173,
+          "y": 647,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 16,
+          "text": "Source: UC BERKELEY Big Data Processing<br>with MapReduce and Spark<br>",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 5,
+      "selected": false,
+      "active": false,
+      "x": 1580,
+      "y": 180
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 422,
+          "y": 323,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 58,
+          "text": "Break<br>",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 6,
+      "selected": false,
+      "active": false,
+      "x": 1860,
+      "y": 180
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 252,
+          "y": 42,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 83,
+          "text": "Elasticsearch",
+          "selected": false
+        },
+        {
+          "TextBox": {},
+          "x": 331,
+          "y": 353,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 38,
+          "text": "<b>Input</b>: JSON documents<br>",
+          "selected": false
+        },
+        {
+          "TextBox": {},
+          "x": 294,
+          "y": 437,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 38,
+          "text": "<b>Storage</b>: Lucene indexes<br>",
+          "selected": false
+        },
+        {
+          "TextBox": {},
+          "x": 316,
+          "y": 528,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 38,
+          "text": "<b>Query</b>: JSON syntax<br>",
+          "selected": false
+        },
+        {
+          "TextBox": {},
+          "x": 267,
+          "y": 258,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 38,
+          "text": "<b>Interface</b>: HTTP requests<br>",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 7,
+      "selected": false,
+      "active": false,
+      "x": 180,
+      "y": 400
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 157,
+          "y": 50,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 72,
+          "text": "Command-line Search<br>",
+          "selected": false
+        },
+        {
+          "src": "https://asciinema.org/a/3198unzbytxzg6xvlsfcl1i3z",
+          "type": "WebFrame",
+          "x": 229,
+          "y": 188,
+          "scale": {
+            "x": 0.5947916666666667,
+            "y": 0.5947916666666667,
+            "width": 571,
+            "height": 456.80000000000007
+          },
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 8,
+      "selected": false,
+      "active": false,
+      "markdown": "",
+      "x": 460,
+      "y": 400
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 287,
+          "y": 53,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 83,
+          "text": "Python + ES<br>",
+          "selected": false
+        },
+        {
+          "TextBox": {},
+          "x": 125,
+          "y": 194,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 24,
+          "text": "There are a few libraries out there for using Elasticsearch from Python - today<br>we're going to use the officially supported 'elasticsearch-py' library which can<br>be downloaded and installed via the Python cheese-shop<br> ",
+          "selected": false
+        },
+        {
+          "src": "http://i.imgur.com/M5KKmaE.png",
+          "type": "Image",
+          "x": 176,
+          "y": 350,
+          "scale": {
+            "x": 0.6294326241134752,
+            "y": 0.6294326241134752,
+            "width": 710,
+            "height": 212.74822695035462
+          },
+          "imageType": "PNG",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 9,
+      "selected": false,
+      "active": false,
+      "x": 740,
+      "y": 400
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 354,
+          "y": 63,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 83,
+          "text": "Exercise<br>",
+          "selected": false
+        },
+        {
+          "TextBox": {},
+          "x": 178,
+          "y": 247,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 32,
+          "text": "Now we're going to download some content<br>from the web, use the standard 'elasticsearch-py'<br>library to index it, and then search through that<br>content<br><br>Rough ideas about what our code should look like?<br>",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 10,
+      "selected": false,
+      "active": false,
+      "x": 1020,
+      "y": 400
+    },
+    {
+      "components": [
+        {
+          "src": "http://i.imgur.com/jU3MM5P.png",
+          "type": "Image",
+          "x": 84,
+          "y": 23,
+          "scale": {
+            "x": 0.5850066934404284,
+            "y": 0.5850066934404284,
+            "width": 874.0000000000001,
+            "height": 716.0481927710844
+          },
+          "imageType": "PNG",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 11,
+      "selected": false,
+      "active": false,
+      "x": 1300,
+      "y": 400
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 187,
+          "y": 58,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 83,
+          "text": "Search by Domain<br>",
+          "selected": false
+        },
+        {
+          "src": "http://i.imgur.com/F1FofTF.png",
+          "type": "Image",
+          "x": 109,
+          "y": 210,
+          "scale": {
+            "x": 0.6145038167938931,
+            "y": 0.6145038167938931,
+            "width": 805,
+            "height": 483
+          },
+          "imageType": "PNG",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 12,
+      "selected": false,
+      "active": false,
+      "x": 1580,
+      "y": 400
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 141,
+          "y": 216,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 29,
+          "text": "Powerful concept -<br>Documents can be more than just text -&nbsp; example: flight fare<br>",
+          "selected": false
+        },
+        {
+          "TextBox": {},
+          "x": 82,
+          "y": 47,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 83,
+          "text": "Elasticsearch: datatypes<br>",
+          "selected": false
+        },
+        {
+          "src": "http://i.imgur.com/C4ktNZc.png",
+          "type": "Image",
+          "x": 229,
+          "y": 337,
+          "scale": {
+            "x": 0.6893564356435643,
+            "y": 0.6893564356435643,
+            "width": 557,
+            "height": 257.8193069306931
+          },
+          "imageType": "PNG",
+          "selected": false
+        },
+        {
+          "TextBox": {},
+          "x": 196,
+          "y": 646,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 29,
+          "text": "\"flights to Seattle in October for less than $200\"<br>",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 13,
+      "selected": false,
+      "active": false,
+      "x": 1860,
+      "y": 400
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 165,
+          "y": 89,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 58,
+          "text": "Advanced Exercise (optional)<br>",
+          "selected": false
+        },
+        {
+          "TextBox": {},
+          "x": 178,
+          "y": 258,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 32,
+          "text": "Let's re-use our indexing code - with some small<br>modifications - to download GeoJSON for the<br>boundaries of world countries.<br><br>Then let's write a small web application to find the<br>country which matches an input (longitude, latitude)<br>pair.<br>",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 14,
+      "selected": false,
+      "active": false,
+      "x": 180,
+      "y": 620
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 295,
+          "y": 63,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 83,
+          "text": "Questions?",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 15,
+      "selected": true,
+      "active": true,
+      "x": 460,
+      "y": 620
+    }
+  ],
+  "activeSlide": {
+    "components": [
+      {
+        "TextBox": {},
+        "x": 295,
+        "y": 63,
+        "scale": {
+          "x": 1,
+          "y": 1
+        },
+        "type": "TextBox",
+        "size": 83,
+        "text": "Questions?",
+        "selected": false
+      }
+    ],
+    "z": 0,
+    "impScale": 3,
+    "rotateX": 0,
+    "rotateY": 0,
+    "rotateZ": 0,
+    "index": 15,
+    "selected": true,
+    "active": true,
+    "x": 460,
+    "y": 620
+  },
+  "fileName": "elasticsearch",
+  "deckVersion": "1.0",
+  "customBackgrounds": {
+    "bgs": []
+  },
+  "overviewX": 1020,
+  "overviewY": 400
+}
