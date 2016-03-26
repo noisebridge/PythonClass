@@ -1,0 +1,4 @@
+python-mnist==0.3
+numpy==1.10.4
+scipy==0.17.0
+cython==0.23.4
