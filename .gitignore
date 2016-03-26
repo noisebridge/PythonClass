@@ -4,3 +4,5 @@
 *.pyo
 
 venv*
+
+guest-talks/20160328-machine-learning/data
