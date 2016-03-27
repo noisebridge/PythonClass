@@ -1,19 +1,27 @@
 #!/usr/bin/python
 
+# HTTP client
 import httplib
 import json
+import os
 
+# Model training
 from mnist import MNIST
 import numpy as np
-import pandas
-import sklearn_pandas
 from sklearn import neural_network as nn
-from sklearn.preprocessing import StandardScaler
+
+# Model serialization
 from sklearn2pmml import sklearn2pmml
+from sklearn.externals import joblib
 
 
-def query_digit(digit):
-    host, port = "localhost", 4567
+def query_digit(digit, host=None, port=None):
+    """
+    Issues HTTP POST to host, port with digit array
+    Expects a digit in the response
+    """
+    if not host or not port:
+        host, port = "localhost", 4567
     con = httplib.HTTPConnection(host, port)
     params = json.dumps({"data": digit})
     con.request("POST", "/digit", params)
@@ -32,19 +40,16 @@ def draw_random_misclassification(truth_array, prediction, test_label, test_data
 
 def main():
     data = MNIST('./data')
-    col_names = ["x" + str(x) for x in range(784)]
-    # Define a transform function that will be serialized with the model
-    mnist_mapper = sklearn_pandas.DataFrameMapper([(col_names, StandardScaler()), ("digit", None)])
+
+    def transform(x):
+        return x / 255.
 
     # 60,000 train samples of 28x28 grid, domain 0-255
     mnist_train_data, mnist_train_label = data.load_training()
-    mnist_train_df = pandas.concat((pandas.DataFrame(mnist_train_data, columns=col_names),
-                                    pandas.DataFrame(list(mnist_train_label), columns=["digit"])),
-                                   axis=1)
-    mnist_train_df_norm = mnist_mapper.fit_transform(mnist_train_df)
+    mnist_train_data_norm = np.array([transform(np.array(x)) for x in mnist_train_data])
 
     mlp_config = {'hidden_layer_sizes': (1000,),
-                  'activation': 'tanh',
+                  'activation': 'relu',
                   'algorithm': 'adam',
                   'max_iter': 20,
                   'early_stopping': True,
@@ -52,21 +57,30 @@ def main():
                   'verbose': True
                   }
     mnist_classifier = nn.MLPClassifier(**mlp_config)
-    mnist_classifier.fit(X=mnist_train_df_norm[:, 0:28 * 28], y=mnist_train_df_norm[:, 28 * 28])
+    mnist_classifier.fit(X=mnist_train_data_norm, y=mnist_train_label)
 
     # 10,000 test samples
     mnist_test_data, mnist_test_label = data.load_testing()
-    mnist_test_df = pandas.concat((pandas.DataFrame(mnist_test_data, columns=col_names),
-                                   pandas.DataFrame(list(mnist_test_label), columns=["digit"])),
-                                  axis=1)
-    mnist_test_df_norm = mnist_mapper.fit_transform(mnist_test_df)
+    mnist_test_data_norm = np.array([transform(np.array(x)) for x in mnist_test_data])
 
-    prediction = mnist_classifier.predict_proba(mnist_test_df_norm[:, 0:28 * 28])
+    prediction = mnist_classifier.predict_proba(mnist_test_data_norm)
     truth_array = [prediction[idx].argmax() == mnist_test_label[idx] for idx in range(len(prediction))]
     accuracy = float(sum(truth_array)) / float(len(truth_array))
     print "out of sample model accuracy [%s]" % accuracy
-    print "serializing to pmml"
-    sklearn2pmml(mnist_classifier, mnist_mapper, "MLP_MNIST.pmml", with_repr=True)
+
+    print "serializing to pmml without transform (User defined transform not yet supported"
+    pmml_path = "./model_pmml"
+    if not os.path.exists(pmml_path):
+        os.mkdir(pmml_path)
+    sklearn2pmml(mnist_classifier, None, pmml_path + "/MLP_MNIST.pmml", with_repr=True)
+
+    print "serializing with joblib for import in python"
+    # KJS TODO: Serialize transform with the model
+    pickle_path = "./model_pickle"
+    if not os.path.exists(pickle_path):
+        os.mkdir(pickle_path)
+    joblib.dump(mnist_classifier, pickle_path + "/MLP_MNIST.pkl")
+
 
 if __name__ == '__main__':
     main()
