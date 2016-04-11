@@ -32,7 +32,7 @@ create table routes
     airline_id int,
     from_airport_id int,
     to_airport_id int,
-    equipment char(3),
+    equipment text,
 
     primary key (airline_id, from_airport_id, to_airport_id)
 );

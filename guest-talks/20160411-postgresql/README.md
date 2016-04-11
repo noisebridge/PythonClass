@@ -111,3 +111,50 @@ create our schema:
 ```
 psql -f schema/openflights.sql
 ```
+
+3. ##### Loading data into our database
+
+Now let's use Python's support for reading CSV files to load the raw data
+from OpenFlights into our PostgreSQL database tables one by one.
+
+See the loader code in:
+
+```
+loaders/airlines.py
+loaders/airports.py
+loaders/routes.py
+```
+
+4. ##### Making it easier to query our routes
+
+The output from our routes table is hard to read:
+
+```
+# select * from routes limit 5;
+ airline_id | from_airport_id | to_airport_id | equipment
+------------+-----------------+---------------+-----------
+        410 |            2965 |          2990 | CR2
+        410 |            2966 |          2990 | CR2
+        410 |            2966 |          2962 | CR2
+        410 |            2968 |          2990 | CR2
+        410 |            2968 |          4078 | CR2
+(5 rows)
+```
+
+We can use a SQL 'view' to make this more readable:
+
+```
+create view routes_view as
+select
+    a.name,
+    a.iata as airline_iata,
+    f.iata as from_iata,
+    f.country as from_country,
+    t.iata as to_iata,
+    t.country as to_country,
+    r.equipment
+from routes as r
+join airlines as a on a.id = r.airline_id
+join airports as f on f.id = r.from_airport_id
+join airports as t on t.id = r.to_airport_id
+```
