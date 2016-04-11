@@ -58,7 +58,7 @@ define a schema - this tells the database which tables of data we will collect,
 what columns those tables will have, and what values we'll allow for each row
 in each table.
 
-Let's aim to import a subset of the fields available - we should aim to build
+Let's aim to import a subset of the fields available - we should try to build
 our tools in a way that we can always add other fields later if they become
 relevant.
 
@@ -127,7 +127,7 @@ loaders/routes.py
 
 4. ##### Making it easier to query our routes
 
-The output from our routes table is hard to read:
+The contents of our routes table is hard to read:
 
 ```
 # select * from routes limit 5;
