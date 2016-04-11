@@ -23,7 +23,7 @@ airlines operate between those airports.  We'll be using it as an example of a
 dataset we can load into PostgreSQL and then run queries against.
 
 
-1. #### Examining our raw data
+1. ##### Examining our raw data
 
 The data directory contains three files downloaded from OpenFlights:
 
@@ -49,4 +49,65 @@ The data directory contains three files downloaded from OpenFlights:
 BA,1355,SIN,3316,LHR,507,,0,744 777
 BA,1355,SIN,3316,MEL,3339,Y,0,744
 TOM,5013,ACE,1055,BFS,465,,0,320
+```
+
+2. ##### Creating an appropriate schema
+
+In the SQL language, before loading data into a database, you should first
+define a schema - this tells the database which tables of data we will collect,
+what columns those tables will have, and what values we'll allow for each row
+in each table.
+
+Let's aim to import a subset of the fields available - we should aim to build
+our tools in a way that we can always add other fields later if they become
+relevant.
+
+Here's a suggested schema in SQL:
+
+```
+drop table airlines if exists;
+create table airlines
+(
+    id int,
+    name text,
+    iata char(2),
+    icao char(3),
+    country text,
+    active boolean,
+
+    primary key (id)
+);
+
+drop table airports if exists;
+create table airports
+(
+    id int,
+    name text,
+    city text,
+    country text,
+    iata char(3),
+    icao char(4),
+    latitude float,
+    longitude float,
+
+    primary key (id)
+);
+
+drop table routes if exists;
+create table routes
+(
+    airline_id int,
+    from_airport_id int,
+    to_airport_id int,
+    equipment char(3),
+
+    primary key (airline_id, from_airport_id, to_airport_id)
+);
+```
+
+This schema is available in `schema/openflights.sql`, and we can use that to
+create our schema:
+
+```
+psql -f schema/openflights.sql
 ```
