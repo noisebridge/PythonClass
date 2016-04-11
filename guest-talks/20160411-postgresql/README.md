@@ -141,7 +141,7 @@ The output from our routes table is hard to read:
 (5 rows)
 ```
 
-We can use a SQL 'view' to make this more readable:
+We can use a SQL 'view' to make our data easier to query:
 
 ```
 create view routes_view as
@@ -157,4 +157,22 @@ from routes as r
 join airlines as a on a.id = r.airline_id
 join airports as f on f.id = r.from_airport_id
 join airports as t on t.id = r.to_airport_id
+```
+
+
+5. ##### Querying the data set
+
+Now that we have our data available in the database, and we've built ourselves
+an (optional) view to make it easier to query, let's see how we can use Python
+to produce result sets from the data.
+
+In this example we'll create a small Flask web application to serve up results;
+we'll create an API which takes one or more airports as input, and produces
+the set of all countries which can be flown to form there (and which airlines
+and destination airports are available)
+
+See the query code in:
+
+```
+webapp/destinations.py
 ```
