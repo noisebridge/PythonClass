@@ -146,7 +146,7 @@ We can use a SQL 'view' to make this more readable:
 ```
 create view routes_view as
 select
-    a.name,
+    a.name as airline,
     a.iata as airline_iata,
     f.iata as from_iata,
     f.country as from_country,
