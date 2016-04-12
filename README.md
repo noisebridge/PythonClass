@@ -1,13 +1,7 @@
 
 ### PSAs and Events
 
-**PSA 10-6-15:** Class is currently only on MONDAY. THURSDAY meetings are not happening until a second instructor starts again.
-
-**PSA 4-6-15:** As of today, attend PyClass on MONDAY and THURSDAY.  Monday in the Turing classroom will replace the Tuesday session.
-
-**PSA 1-26-15:** Thursday in the Church Classroom will replace the Wednesday session.
-
-**PSA 10-1-14:** PyClass starts at 7:00 PM, try to come a few minutes earlier. We want to finish up by nine so people can hack or catch their preferred train home.  You can come at any time, but YMMV (your mileage may vary).
+**PSA 4-12-16:** The new session of the six-week Python Class will start on Monday 4/18.
 
 **PSA 8-19-14:** The [noisebridge wiki](https://noisebridge.net/wiki/PyClass) and [github readme](https://github.com/PyClass/PyClass-lesson-plans) files have the same information and updates.
 
@@ -86,9 +80,8 @@ Those listed above are just a few based on personal experience and strong recomm
 
 ###  OS / Environment / Versions
 
-This section is under development.
 
-[Digital Ocean $10 Credit](https://www.digitalocean.com/?refcode=1a1061eaf303)
+[Digital Ocean $10 Credit](https://m.do.co/c/a4d54c9e5004) An easy way to get a free linux environment. If you are on windows, you can login with [PuTTY](http://www.putty.org/).
 
 [Amazon's AWS has a free tier that allows you 750 compute hours every month of their t2.micro instances for 12 months](http://aws.amazon.com/free/)
 
@@ -111,7 +104,7 @@ Some routes:
 3. Explore POSIX for windows: http://en.wikipedia.org/wiki/POSIX#POSIX_for_Windows    
     
 
-Another critical tool is git:    
+Another key tool is git:    
 *Windows: http://git-scm.com/download/win    
 *Mac: http://git-scm.com/download/mac    
 *Linux: (use your package manager)    
@@ -119,8 +112,7 @@ Another critical tool is git:
 
 ### Free to all - please donate to Noisebridge!
 
-The course is free although we recommend a donation to Noisebridge.
-Donations go to: [https://www.noisebridge.net/wiki/Donate_or_Pay_Dues](https://www.noisebridge.net/wiki/Donate_or_Pay_Dues)
+The course is free, if you wish to donate, please give to [Noisebridge](https://donate.noisebridge.net)
 Recommended Donations: $15, $50, $200+
 Recommended monthly donations: $10, $20, $40, $80+ / month
 
