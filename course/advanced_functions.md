@@ -1,5 +1,5 @@
 
-### Functions Omnibus
+### Advanced Functions
 
 A bag of tricks regarding namespace/scope, code blocks, argument un/packing, lambdas (anonymous function), closures, and maybe more.
 
