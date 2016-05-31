@@ -172,3 +172,8 @@ This won't guarantee you will be ready for the lesson, but it will serve as a go
 2. Optional: [Pep 227 - Statically Nested Scopes](http://legacy.python.org/dev/peps/pep-0227/)
 3. If you know nothing else, know that python resolves scopes in LEGB order: local, enclosing, global, built-in.
 4. [Closure and Decorator Blog Post by Simeon Franklin](http://simeonfranklin.com/blog/2012/jul/1/python-decorators-in-12-steps/) of SF Python.
+
+
+##### Additional Resources:
+
+* https://docs.python.org/3/howto/functional.html
