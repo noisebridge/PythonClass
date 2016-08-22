@@ -1,7 +1,7 @@
 
 ### PSAs and Events
 
-**PSA 4-12-16:** The new session of the six-week Python Class will start on Monday 4/18.
+**PSA 8-22-16:** The new session of the six-week Python Class will start on Monday 8/22/16.
 
 **PSA 8-19-14:** The [noisebridge wiki](https://noisebridge.net/wiki/PyClass) and [github readme](https://github.com/PyClass/PyClass-lesson-plans) files have the same information and updates.
 
@@ -9,10 +9,7 @@
 
 ### Scheduled Weekly Meeting Times
 
-We set up the space at 6:45 PM - try to arrive early to help if you are able to.
-
 * Monday 7:00 - 9:00 PM PST - 'Turing' Classroom
-* Thursday - CANCELLED TEMPORARILY - 7:00 - 9:00 PM PST - 'Church' Classroom
 
 
 ### Mailing List
