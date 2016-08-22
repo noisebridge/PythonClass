@@ -1,0 +1,52 @@
+MIME-Version: 1.0
+Received: by 10.36.46.151 with HTTP; Mon, 22 Aug 2016 14:58:28 -0700 (PDT)
+Date: Mon, 22 Aug 2016 14:58:28 -0700
+Delivered-To: robbintt@gmail.com
+Message-ID: <CAJujfrA2Ac-mZ0G0Pw9hTgN2S8xepjuS5uj17s8=RpoeUiuh7w@mail.gmail.com>
+Subject: Intermediate Python, Monday 7 PM: JSON, Unicode, and File Handling
+From: Trent Robbins <robbintt@gmail.com>
+To: noisebridge-announce@lists.noisebridge.net, python@lists.noisebridge.net
+Content-Type: multipart/alternative; boundary=001a114405acea3ca8053ab0256b
+
+--001a114405acea3ca8053ab0256b
+Content-Type: text/plain; charset=UTF-8
+
+A new six-week session of Intermediate Python begins today, August 22nd.
+
+To prepare for the course, please review the course outline on github
+<https://github.com/PyClass/PyClassLessons/blob/master/course/json-unicode-and-file-handling.md>
+.
+
+
+== General Information Below ==
+
+All course contents can be found in the PyClassLessons github repository
+<https://github.com/PyClass/PyClassLessons>.
+
+This group meets every Monday at 7 PM in the Turing classroom.
+
+More information can be found on the meetup page
+<https://www.meetup.com/noisebridge/events/233083265/>.
+
+
+Best,
+Trent
+
+--001a114405acea3ca8053ab0256b
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">A new six-week session of Intermediate Python begins today=
+, August 22nd.<div><br></div><div>To prepare for the course, please review =
+the course outline=C2=A0on <a href=3D"https://github.com/PyClass/PyClassLes=
+sons/blob/master/course/json-unicode-and-file-handling.md">github</a>.</div=
+><div><br></div><div><br></div><div>=3D=3D General Information Below =3D=3D=
+</div><div><br></div><div>All course contents can be found in the <a href=
+=3D"https://github.com/PyClass/PyClassLessons">PyClassLessons github reposi=
+tory</a>.</div><div><br></div><div>This group meets every Monday at 7 PM in=
+ the Turing classroom.</div><div><br></div><div>More information can be fou=
+nd on the <a href=3D"https://www.meetup.com/noisebridge/events/233083265/">=
+meetup page</a>.</div><div><br></div><div><br></div><div>Best,</div><div>Tr=
+ent</div></div>
+
+--001a114405acea3ca8053ab0256b--
