@@ -1,6 +1,6 @@
 
 
-#### Opening, Reading, and writing Files.  JSON and the JSON module.
+#### JSON, Unicode, and File Handling
 
 This is a compressed lesson designed as a jumpstart for working with the open() built-in method, json encoding, unicode encoding, and the json module.
 
