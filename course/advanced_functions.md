@@ -20,7 +20,7 @@ Today is going to get a little theoretical and you'll find interesting applicati
             Finally, add the assignment back and uncomment the BEFORE_ASSIGNMENT print lines.
             """
 
-            # 
+            #
             z = 15
 
             def cat():
@@ -38,16 +38,16 @@ Today is going to get a little theoretical and you'll find interesting applicati
                     #print("z in cat_helper BEFORE ASSIGNMENT {}".format(z))
                     z = 5
                     print("z in cat_helper AFTER ASSIGNMENT {}".format(z))
-                    
+
                     return
-                
+
                 # this is inside of cat
                 cat_helper()
                 return
 
             # now we are back in main
             print("z in main {}".format(z))
-            
+
             # lets run cat()... it will run meow() from inside cat()
             cat()
             ```
@@ -59,7 +59,7 @@ Today is going to get a little theoretical and you'll find interesting applicati
         3. Lets try unpacking some stuff:
             ```
             my_list = [1,2,3] # can also be a tuple
-            my_dict = ["first" : "hello", "second" : "world"]
+            my_dict = {"first" : "hello", "second" : "world"}
 
             def my_function(a, b, c, first, second):
                 print a, b, c
@@ -120,7 +120,7 @@ Today is going to get a little theoretical and you'll find interesting applicati
 
             # or it can still have a name...
             addx = lambda b, x: b + x
-            
+
             my_functions = [addx, lambda b, x: b * x]
 
             # lets multiply without the word multx
@@ -132,12 +132,12 @@ Today is going to get a little theoretical and you'll find interesting applicati
 ## NOTE: May remove from lesson
 4. How to get a nested function to close. Also known as a closure.
     1. **A what?** A [closure](http://en.wikipedia.org/wiki/Closure_(computer_programming)) - Simple definition: A function that binds a set of 'private' variables.
-    2. **How does this help me write useful code?** 
+    2. **How does this help me write useful code?**
         1. Control flow
         2. Private functions for specific environments
         3. Passing variables to a function based on the context of the function
-    3. **Why not just put the environment in the global scope?** You could. 
-        1. Security 
+    3. **Why not just put the environment in the global scope?** You could.
+        1. Security
         2. compartmentalization
         3. memory efficiency, code reusability
         4. Closures are a sophisticated, optional tool
@@ -156,7 +156,7 @@ Today is going to get a little theoretical and you'll find interesting applicati
 6. Functools - What's a partial?
     1. A [partial](https://docs.python.org/2/library/functools.html#functools.partial) is part of a callable object (generally a function) with a fixed keyword argument or positional argument. This reduces the number of arguments that need to be provided to the function, essentially 'fixing' one argument.
     2. Review the partial example.
-    3. Functools also has an update_wrapper function for making a decorator's wrapper look like the wrapped object. Invoked using the @wraps decorator on the function wrapper. 
+    3. Functools also has an update_wrapper function for making a decorator's wrapper look like the wrapped object. Invoked using the @wraps decorator on the function wrapper.
     4. Review the wraps example.
     5. [the functools.total_ordering decorator](https://docs.python.org/2/library/functools.html#functools.total_ordering) will autogenerate rich comparisons if you specify a single one.  
     6. Finally, reduce is located here in Python 3.
@@ -168,7 +168,7 @@ Preparing for this lesson:
 
 This won't guarantee you will be ready for the lesson, but it will serve as a good warm up.
 
-1. Read [Python Scopes and Namespaces](https://docs.python.org/2/tutorial/classes.html#python-scopes-and-namespaces) 
+1. Read [Python Scopes and Namespaces](https://docs.python.org/2/tutorial/classes.html#python-scopes-and-namespaces)
 2. Optional: [Pep 227 - Statically Nested Scopes](http://legacy.python.org/dev/peps/pep-0227/)
 3. If you know nothing else, know that python resolves scopes in LEGB order: local, enclosing, global, built-in.
 4. [Closure and Decorator Blog Post by Simeon Franklin](http://simeonfranklin.com/blog/2012/jul/1/python-decorators-in-12-steps/) of SF Python.
