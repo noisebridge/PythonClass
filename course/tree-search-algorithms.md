@@ -6,14 +6,16 @@ Trees are an extremely common data-structure in software; they're very
 useful for representing hierarchical relationships (like the folders or
 directories on your hard disk, or a chart of a large organization's structure).
 
-If we are lucky, then a tree can be 'ordered' - binary trees are a common
-example.  For these, we can determine where to find or place any item by
-comparing it to the root node, and if it's smaller, looking down to the 'left'
-of the tree, or if it's larger, to the 'right'.
+Most trees like those in the examples above contain no 'order' in the tree;
+that is, if I asked you to find a file named 'test.py', it's hard to tell
+just by looking at the folder names where that file will be; you would have
+to open a few (or maybe all) of them to find it.  We're going to write code
+to do this automatically - these are called 'tree search algorithms'.
 
-This class will focus on trees without order, where we need to /traverse/ the
-tree to find items we're looking for.  The two most common algorithms for
-tree traversal are Depth-First Search (DFS) and Breadth-First Search (BFS).
+Our tree search algorithms will _traverse_ the tree to find items we're
+looking for.  The two most common algorithms for tree traversal are
+Depth-First Search (DFS) and Breadth-First Search (BFS), and we'll look at
+both.
 
 
 ## Depth-First Search
