@@ -28,7 +28,7 @@ tree.  This is a perfect fit for a recursive function:
 * If not, repeat on both the left and then the right children
 
 Let's try to code this up in Python using the file 'exercise.py' which
-has placeholders for our code:
+has an example `tree` and placeholders for our code:
 
 ```
 virtualenv venv
