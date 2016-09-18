@@ -7,15 +7,15 @@ useful for representing hierarchical relationships (like the folders or
 directories on your hard disk, or a chart of a large organization's structure).
 
 Most trees like those in the examples above contain no 'order' in the tree;
-that is, if I asked you to find a file named 'test.py', it's hard to tell
-just by looking at the folder names where that file will be; you would have
-to open a few (or maybe all) of them to find it.  We're going to write code
-to do this automatically - these are called 'tree search algorithms'.
+for example, if I asked you to find a file named 'test.py' on a hard disk, it's
+hard to tell just by looking at the folder names where that file will be; you
+would have to open a few (or maybe all) of them to find it.  We're going to
+write code to do this kind of search automatically - these are called
+'tree search algorithms'.
 
-Our tree search algorithms will _traverse_ the tree to find items we're
-looking for.  The two most common algorithms for tree traversal are
-Depth-First Search (DFS) and Breadth-First Search (BFS), and we'll look at
-both.
+Our algorithms will _traverse_ the tree to find items we're looking for.  The
+two most common algorithms for tree traversal are Depth-First Search (DFS) and
+Breadth-First Search (BFS), and we'll look at both.
 
 
 ## Depth-First Search
