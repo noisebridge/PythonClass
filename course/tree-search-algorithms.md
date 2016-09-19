@@ -1,6 +1,6 @@
-#### Tree Search Algorithms
+## Tree Search Algorithms
 
-## About Trees
+#### About Trees
 
 Trees are an extremely common data-structure in software; they're very
 useful for representing hierarchical relationships (like the folders or
@@ -18,7 +18,7 @@ two most common algorithms for tree traversal are Depth-First Search (DFS) and
 Breadth-First Search (BFS), and we'll look at both.
 
 
-## Depth-First Search
+#### Depth-First Search
 
 A depth-first search traversal navigates all the way to the leaf nodes of our
 tree.  This is a perfect fit for a recursive function:
