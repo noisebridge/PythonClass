@@ -8,6 +8,7 @@ def depth_first_search(tree, target):
     """
     if tree is None:
         return None
+    print("DFS: Checking node with value '{}'".format(tree.value))
     if tree.value == target:
         return tree
     return depth_first_search(tree.left, target) \
@@ -19,7 +20,8 @@ def breadth_first_search(tree, target):
     """
     nodes = [tree]
     while nodes:
-        node = nodes.pop()
+        node = nodes.pop(0)
+        print("BFS: Checking node with value '{}'".format(node.value))
         if node.value == target:
             return node
         if node.left:
