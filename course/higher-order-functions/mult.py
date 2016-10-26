@@ -1,14 +1,3 @@
-
-### Higher Order Functions
-
-#### Ten Thousand Foot View
-
-A function that acts on or `returns` another function.
-
-
-#### 5 Minute Deep Dive - [Functools](https://docs.python.org/2/library/functools.html)
-
-```python
 import functools
 
 def multip(*args):
@@ -51,30 +40,20 @@ my_function_list.append(multip222)
 for i in my_function_list:
     print(i(1,2,3,4))
 
+my_functions = list()
 for i in range(100):
     my_functions.append(functools.partial(multip, i))
 
 for i in my_functions:
     print(i(1,2,3))
 
-```
 
-#### Unpacking the Deep Dive
+print my_functions
+print my_function_list
 
-List sections here as we flesh them out
-
-1. What is a [partial](https://docs.python.org/2/library/functools.html#functools.partial)
-    - [partial parameters](https://docs.python.org/2/library/functools.html#partial-objects)?
-    
-    - talked about first class objects
-        - called a function from its index on a list
-
-    - talk about scope
-
-#### Function Scope, Global Scope, LEGB
-
-    - LEGB = Local, Enclosing, Global, Builtins
-
-
-
+for i in my_function_list:
+    try:
+        print i.__name__
+    except AttributeError:
+        print("This object has no name!")
 
