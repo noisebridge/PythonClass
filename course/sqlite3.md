@@ -17,24 +17,26 @@ Use SQLite to store information inside your application. It was originally devel
             2. Each row has one field per column.
         2. Schema - A schema describes a table.
         3. Database - a collection of tables, schemas, and some related things.
-    2. Type this code into `myschema.schema` and run it to make a database:
+    2. Type this code into a file, `my_schema.sqlite3`, and run it to make a database:
 
         ```
-        -- Run this file with the .read command.
-        -- Older sqlite3 (osx packages a really old version) apparently don't have this.
-        -- If this happens, you can run sqlite3 at the command prompt and type the following in.
+        -- Run this file with the `.read` command.
+        -- Older sqlite3 (osx used to package a really old one) apparently don't have this.
+        -- One alternative is to run `sqlite3 < my_schema.sqlite3`
 
 
         -- The .open command will open a database. If it doesn't
-        -- exist, it will create it. (are there exceptions to this?)
-        .open "mypolygons.sqlite" 
+        -- exist, it will create it. 
+        .open "users.sqlite" 
 
 
-        CREATE TABLE IF NOT EXISTS "Polygons" ( 
+        CREATE TABLE IF NOT EXISTS "users" ( 
             "pKey" INTEGER PRIMARY KEY,
-            "Name" varchar(255) DEFAULT NULL, 
-            "Sides"  varchar(255) DEFAULT NULL,
-            "SidesEnglish"   varchar(255) DEFAULT NULL
+            "username" varchar(255) DEFAULT NULL, 
+            "age" varchar(255) DEFAULT NULL,
+            "first_name" varchar(255) DEFAULT NULL,
+            "last_name" varchar(255) DEFAULT NULL,
+            "fav_color" varchar(255) DEFAULT NULL
         );
         ```
 
@@ -50,15 +52,16 @@ Use SQLite to store information inside your application. It was originally devel
             """
             import sqlite3
 
-            FILENAME = "mypolygons.sqlite"
-            TABLE_NAME = "Polygons"
+            FILENAME = "users.sqlite"
+            TABLE_NAME = "users"
 
             if __name__ == '__main__':
                 """ Write some data to our database.
                 """
 
-                SAMPLE_DATA_1 = (None, "square", 4, "four")
-                SAMPLE_DATA_2 = (None, "triangle", 3, "three")
+                # TODAY: import your json into python as a python data structure
+                # code here
+
 
                 # Create a connection to the database, assign to a name
                 conn = sqlite3.connect(FILENAME)
@@ -68,12 +71,14 @@ Use SQLite to store information inside your application. It was originally devel
 
                 # we can use {table} with the string function "format"
                 # more here: https://docs.python.org/2/library/string.html#format-string-syntax
-                INSERT_STATEMENT = "INSERT INTO {table} VALUES (?,?,?,?)"
+                INSERT_STATEMENT = "INSERT INTO {table} VALUES (?,?,?,?,?)"
                 MY_INSERT_STATEMENT = INSERT_STATEMENT.format(table=TABLE_NAME)
 
-                # execute the insert transaction -- it isn't committed to the database yet!!
-                c.execute(MY_INSERT_STATEMENT, SAMPLE_DATA_1)
-                c.execute(MY_INSERT_STATEMENT, SAMPLE_DATA_2)
+                # execute the insert transaction 
+                # TODAY: add the correct variables for MY_LIST_X
+                # OPTIONAL: try `execute many`
+                c.execute(MY_INSERT_STATEMENT, MY_LIST_1)
+                c.execute(MY_INSERT_STATEMENT, MY_LIST_2)
 
                 # This commits the transaction
                 conn.commit()
@@ -100,16 +105,9 @@ Use SQLite to store information inside your application. It was originally devel
 
         3. See our work:
             ```
-            sqlite> .open mypolygons.sqlite
+            sqlite> .open users.sqlite
             sqlite> .schema
-            CREATE TABLE "Polygons" (
-                "pKey" INTEGER PRIMARY KEY,
-                "Name" varchar(255) DEFAULT NULL,
-                "Sides"  varchar(255) DEFAULT NULL,
-                "SidesEnglish"   varchar(255) DEFAULT NULL
-            );
-            sqlite> select * from Polygons;
-            1|square|4|four
+            sqlite> select * from users;
             sqlite> ^D
             ```
 

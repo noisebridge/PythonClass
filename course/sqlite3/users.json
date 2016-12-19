@@ -1,0 +1,32 @@
+[ 
+  { "username" : "franz",
+    "age" : "32",
+    "first_name" : "franz",
+    "last_name" : "ferdinand",
+    "fav_color" : "blue" 
+  },
+  { "username" : "fran99",
+    "age" : "19",
+    "first_name" : "Francine",
+    "last_name" : "Bowyer",
+    "fav_color" : "Red" 
+  },
+  { "username" : "349402345703245",
+    "age" : "999",
+    "first_name" : "Hoboken",
+    "last_name" : "Johnnie",
+    "fav_color" : "No" 
+  },
+  { "username" : "yesatrull",
+    "age" : "14",
+    "first_name" : "joe",
+    "last_name" : "wellis",
+    "fav_color" : "purple" 
+  },
+  { "username" : "chooooooo",
+    "age" : "28",
+    "first_name" : "Cho",
+    "last_name" : "Ma",
+    "fav_color" : "Green" 
+  }
+]
