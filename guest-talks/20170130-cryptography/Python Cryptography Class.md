@@ -9,6 +9,10 @@ Speaker: Blake Griffith
 * Wiki Entry [https://noisebridge.net/wiki/Pyclass](https://noisebridge.net/wiki/Pyclass)
 * Lessons [https://github.com/PyClass/PyClassLessons/tree/master/course](https://github.com/PyClass/PyClassLessons/tree/master/course)
 
+* **PDF Notes download** the handwritten notes here (warning these are incompete) [noisebridge-python-cryptography-2017_01-30.pdf](noisebridge-python-cryptography-2017_01-30)
+
+![Notes](images/notes_screenshot.png)
+
 ## Code
 
 
