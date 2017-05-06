@@ -57,8 +57,7 @@ Species = recordtype("Species", ["id",
                                  "hair_colors",
                                  "url",
                                  "people",
-                                 "films", ]
-                     )
+                                 "films", ])
 
 
 Film = recordtype("Film", ["id",
@@ -115,11 +114,14 @@ def is_specific_url(url):
 
 
 def get_all_people():
+    """
+    You can hit the resource name without an ID to get a listing of all of that resource
+    """
 
-    resp = session.get(GHIBLI_URL + "people")
-    people = [Person(**json_person)
-              for json_person in resp.json()]
-    return people
+        resp = session.get(GHIBLI_URL + "people")
+        people = [Person(**json_person)
+                  for json_person in resp.json()]
+        return people
 
 
 def make_crossover(all_people):
@@ -151,7 +153,7 @@ def main():
     for person in people:
         person.species = get_record(Species, person.species)
         film_objs = []
-        # I wish this graph was fully connected...
+        # I wish this graph was fully connected, it would be cooler for the story, maybe...
         for film_url in person.films:
             film = get_record(Film, film_url)
             film.locations = [get_record(Location, url)
