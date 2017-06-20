@@ -71,7 +71,7 @@ Use SQLite to store information inside your application. It was originally devel
 
                 # we can use {table} with the string function "format"
                 # more here: https://docs.python.org/2/library/string.html#format-string-syntax
-                INSERT_STATEMENT = "INSERT INTO {table} VALUES (?,?,?,?,?)"
+                INSERT_STATEMENT = "INSERT INTO {table} VALUES (?,?,?,?,?,?)"
                 MY_INSERT_STATEMENT = INSERT_STATEMENT.format(table=TABLE_NAME)
 
                 # execute the insert transaction 
