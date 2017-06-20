@@ -59,9 +59,9 @@ Use SQLite to store information inside your application. It was originally devel
                 """ Write some data to our database.
                 """
 
-                # TODAY: import your json into python as a python data structure
-                # code here
-
+                # some default users
+                MY_LIST_1 = [None, 'jennymc', '30', 'jenny', 'mccloud', 'blue']
+                MY_LIST_2 = [None, 'joewilson', '30', 'joe', 'wilson', 'yellow']
 
                 # Create a connection to the database, assign to a name
                 conn = sqlite3.connect(FILENAME)
