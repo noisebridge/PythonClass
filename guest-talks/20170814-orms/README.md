@@ -9,6 +9,8 @@ This lesson covers 3 Python ORMs: [the Django ORM](docs.djangoproject.com/#the-m
 Say you have a database that looks like this:
 
 ```
+$ pgcli orms
+orms> select * from users;
 +-------------------|---------------+
 | email             | name          |
 |-------------------|---------------|
