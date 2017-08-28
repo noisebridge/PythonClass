@@ -1,0 +1,8 @@
+appdirs==1.4.3
+coverage==4.4.1
+hypothesis==3.8.3
+packaging==16.8
+py==1.4.33
+pyparsing==2.2.0
+pytest==3.0.7
+six==1.10.0
