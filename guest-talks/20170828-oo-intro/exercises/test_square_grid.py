@@ -16,8 +16,8 @@ class TestSquareGrid(unittest.TestCase):
             g = SquareGrid(four_by_three)
 
     def test_string_representation(self):
-        """Test that the object behaves correctly with the `str()` built-n"""
-        expected_string = '\n'.join(' '.join(str(x) for x in row) for row in m)
+        """Test that the object behaves correctly with the `str()` built-in"""
+        expected_string = "0 0 0\n1 1 1\n2 2 2"
         self.assertEqual(str(self.good_grid), expected_string)
 
     def test_length(self):
