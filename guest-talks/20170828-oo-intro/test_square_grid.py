@@ -23,3 +23,19 @@ class TestSquareGrid(unittest.TestCase):
     def test_length(self):
         """Test that the object returns a useful length"""
         self.assertEqual(len(self.good_grid), 3)
+
+    def test_addition(self):
+        """Test that addition for well-defined grids succeeds"""
+        m = [[1,1,1],[1,1,1],[1,1,1]]
+        g = SquareGrid(m)
+        grid_sum = self.good_grid + g
+        result_matrix = grid_sum.matrix
+        expected_matrix = [[1,1,1],[2,2,2],[3,3,3]]
+        self.assertEqual(result_matrix, expected_matrix)
+
+    def test_addition_fails_on_mixed_dimensions(self):
+        """Test that addition is undefined for grids of unequal dimension"""
+        m = [[1,1,1,1],[1,1,1,1],[1,1,1,1],[1,1,1,1]]
+        g = SquareGrid(m)
+        with self.assertRaises(ValueError) as err:
+            c = self.good_grid + g
