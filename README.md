@@ -1,5 +1,5 @@
 PyClass meets every Monday from 7 to 9 PM (PST) in the 'Church' classroom.
-The course is entirely free, but [Noisebridge](https://donate.noisebridge.net) runs entirely on donations.
+The course is entirely free, but donations to [Noisebridge](https://donate.noisebridge.net) are welcome.
 
 ### PSAs and Events
 TBD
@@ -11,7 +11,7 @@ The course is designed with the following constraints in mind:
 - Each lesson stands alone, so it's okay to miss a week!
 - The core, repeated modules are regularly updated.
 
-To best experience the course, spend a short time reviewing the course materials before you come in. If you wish to know what's scheduled for this week, please join [the mailing list](#mailing-list) and send an email out to PyClass@googlegroups.com
+To best experience the course, spend a short time reviewing the materials beforehand. If you wish to know what's scheduled for this week, please join [the mailing list](#mailing-list) and send an email out to PyClass@googlegroups.com
 
 #### Prerequisites
 Ideally, students starting the course can grasp the following code. Feel free to use web resources to look up anything you don't understand!
@@ -30,37 +30,36 @@ for letter in word:
 A Socratic questioner should 
 
 1. keep the discussion focused
-2. keep the discussion fact based\*
+2. keep the discussion fact-based\*
 3. stimulate the discussion with probing questions
 4. periodically summarize what has and what has not been dealt with and/or resolved
 5. draw as many students as possible into the discussion.
 
-\* [intellectually responsible](https://en.wikipedia.org/wiki/Intellectual_responsibility) can be effectively replaced with 'fact based' for our needs.
+\* [intellectually responsible](https://en.wikipedia.org/wiki/Intellectual_responsibility) can be effectively replaced with 'fact-based' for our needs.
 
 ### New Student Reading
 
 #### Installing Python
 For the sake of our sanity, we use Python 2 for this course.
 
-Check out [The Hitchhiker’s Guide to Python!](http://docs.python-guide.org/en/latest/) for help installing Python and finding useful packages. In an emergency, you can access Python [in your browser](http://repl.it/languages/Python).
+Check out [The Hitchhiker’s Guide to Python!](http://docs.python-guide.org/en/latest/) for help installing Python, learning best practices, and finding useful packages. In an emergency, you can access Python [in your browser](http://repl.it/languages/Python).
 
 #### Python Resources
 If you are new to Python or to programming in general, here are some excellent resources:
-- [Learn Python the Hardway](http://learnpythonthehardway.org/) - great guide for total beginner
-- [Byte of Python](http://www.swaroopch.com/notes/python/) - nice guide for total beginner and new to python
-- [Excellent Official Python Tutorial - 2.7.8](https://docs.python.org/2/tutorial/) - great for new to python
-- [Learning Python 5th edition](http://shop.oreilly.com/product/0636920028154.do) - A comprehensive guide to the language and its uses. Also available at the SF public library.
-- [Python Module of the Week](http://pymotw.com/2/) - Learning the standard library by example
-- [The docs themselves! 2.x for this class](https://www.python.org/doc/) - Learn what is and how to use the standard library
+- [Learn Python the Hardway](http://learnpythonthehardway.org/)
+- [Byte of Python](http://www.swaroopch.com/notes/python/)
+- [Excellent Official Python Tutorial - 2.7.8](https://docs.python.org/2/tutorial/)
+- [Learning Python 5th edition](http://shop.oreilly.com/product/0636920028154.do) (Also available at the SF public library!)
+
+Once you feel comfortable with the basics of the language, you can explore the standard library!
+- [The official Python 2 documentation](https://www.python.org/doc/)
+- [Python Module of the Week](http://pymotw.com/2/)
 
 There are many, many good resources for learning the language of Python and how to do awesome things with it.
 Those listed above are just a few based on personal experience and strong recommendations.
 
 #### git
-While git is worth learning in and off itself, it will be particularly useful when trying to get the source code for each week's class.
-* Windows: http://git-scm.com/download/win
-* Mac: http://git-scm.com/download/mac
-* Linux: (use your package manager)
+While git is worth learning in general, it will be particularly useful when trying to get the source code for each week's class. Installers are available for [Windows](http://git-scm.com/download/win) and [Mac](http://git-scm.com/download/mac), and Linux users can install via their package manager.
 
 ###  OS / Environment / Versions
 We accept refugees using all operating systems. You will be politely prodded in the direction of solutions that are closer to [POSIX standards](http://en.wikipedia.org/wiki/POSIX#Mostly_POSIX-compliant).
