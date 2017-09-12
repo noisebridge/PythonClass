@@ -1,17 +1,8 @@
+PyClass meets every Monday from 7 to 9 PM (PST) in the 'Church' classroom.
+The course is entirely free, but [Noisebridge](https://donate.noisebridge.net) runs entirely on donations.
+
 ### PSAs and Events
 TBD
-
-### Scheduled Weekly Meeting Times
-* Monday 7:00 - 9:00 PM PST - 'Turing' Classroom
-
-### Mailing List
-Sign up for this to hear updates and conversations regarding the course!
-
-[Python & PyClass Mailing List](https://www.noisebridge.net/mailman/listinfo/python)
-
-The mailing list uses GNU Mailman and pipermail.  To search archives you may find it helpful to download the archive .tar.gz (compressed) file and use regular expressions (grep) to search.
-
-The Python Class Google Group Closed on Tuesday, November 3rd, 2015. 
 
 ### Class Description, Goals, and Ideal Student
 The pace of the courses will be fast, and the materials will be available online 24/7. We plan to frequently repeat modules with new twists as we iterate over course materials.
@@ -72,19 +63,21 @@ Installing Python with [The Hitchhiker’s Guide to Python!](http://docs.python-
 
 Emergency Python Command Line: [http://repl.it/languages/Python](http://repl.it/languages/Python)
 
-**We accept refugees using all operating systems. You will be politely prodded in the direction of solutions that are closer to posix standards: [http://en.wikipedia.org/wiki/POSIX#Mostly_POSIX-compliant](http://en.wikipedia.org/wiki/POSIX#Mostly_POSIX-compliant)**
+**We accept refugees using all operating systems. You will be politely prodded in the direction of solutions that are closer to [POSIX standards](http://en.wikipedia.org/wiki/POSIX#Mostly_POSIX-compliant)**
 
 Some routes:
 1. Install a linux virtual machine on another computer using virtualbox.
 2. Use the command line in your apple machine.
-3. Explore POSIX for windows: http://en.wikipedia.org/wiki/POSIX#POSIX_for_Windows
+3. Explore [POSIX for windows](http://en.wikipedia.org/wiki/POSIX#POSIX_for_Windows)
 
 Another key tool is git:
 * Windows: http://git-scm.com/download/win
 * Mac: http://git-scm.com/download/mac
 * Linux: (use your package manager)
 
-### Free to all - please donate to Noisebridge!
-The course is free, if you wish to donate, please give to [Noisebridge](https://donate.noisebridge.net)
-Recommended Donations: $15, $50, $200+
-Recommended monthly donations: $10, $20, $40, $80+ / month
+### Mailing List
+Sign up for the [Noisebridge Python Mailing List](https://www.noisebridge.net/mailman/listinfo/python) to hear updates and conversations regarding the course!
+
+The mailing list uses GNU Mailman and pipermail.  To search archives you may find it helpful to download the archive `.tar.gz` (compressed) file and use regular expressions (`grep`) to search.
+
+The Python Class Google Group Closed on Tuesday, November 3rd, 2015.
