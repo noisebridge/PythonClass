@@ -5,16 +5,16 @@ The course is entirely free, but [Noisebridge](https://donate.noisebridge.net) r
 TBD
 
 ### Class Description, Goals, and Ideal Student
-The pace of the courses will be fast, and the materials will be available online 24/7. We plan to frequently repeat modules with new twists as we iterate over course materials.
+The course is designed with the following constraints in mind:
+- The barrier to entry is low, but the pace is fast.
+- All materials must be made [available on Github](https://github.com/PyClass/PyClassLessons).
+- Each lesson stands alone, so it's okay to miss a week!
+- The core, repeated modules are regularly updated.
 
-A major PyClass goal is to break down the courses into independent units. In other words, you won't fall behind if you miss a week. Sounds good, right?
+To best experience the course, spend a short time reviewing the course materials before you come in. If you wish to know what's scheduled for this week, please join [the mailing list](#mailing-list) and send an email out to PyClass@googlegroups.com
 
-To best experience the course, spend a short time reviewing the course materials before you come in. If you wish to know this week's courses, please join the mailing list and send an email out to PyClass@googlegroups.com
-
-Lessons are [available on Github](https://github.com/PyClass/PyClassLessons).
-
-##### The 'ideal student' for this course can grasp the following code:
-(Feel free to use web resources to look up anything you don't understand)
+#### Prerequisites
+Ideally, students starting the course can grasp the following code. Feel free to use web resources to look up anything you don't understand!
 
 ```python
 letter_frequency_dict = {}
@@ -26,7 +26,7 @@ for letter in word:
     letter_frequency_dict[letter] = times
 ```
 
-##### We use the [Socratic Method](http://www.criticalthinking.org/pages/socratic-teaching/606)
+#### We use the [Socratic Method](http://www.criticalthinking.org/pages/socratic-teaching/606)
 A Socratic questioner should 
 
 1. keep the discussion focused
