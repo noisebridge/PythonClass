@@ -1,5 +1,5 @@
 PyClass meets every Monday from 7 to 9 PM (PST) in the 'Church' classroom.
-The course is entirely free, but donations to [Noisebridge](https://donate.noisebridge.net) are welcome.
+The course is **entirely free**, but donations to [Noisebridge](https://donate.noisebridge.net) are welcome!
 
 ### PSAs and Events
 TBD
@@ -46,13 +46,13 @@ Check out [The Hitchhiker’s Guide to Python!](http://docs.python-guide.org/en/
 
 #### Python Resources
 If you are new to Python or to programming in general, here are some excellent resources:
+- [The Official Python 2 Tutorial](https://docs.python.org/2/tutorial/)
 - [Learn Python the Hardway](http://learnpythonthehardway.org/)
 - [Byte of Python](http://www.swaroopch.com/notes/python/)
-- [Excellent Official Python Tutorial - 2.7.8](https://docs.python.org/2/tutorial/)
-- [Learning Python 5th edition](http://shop.oreilly.com/product/0636920028154.do) (Also available at the SF public library!)
+- [Learning Python, 5th edition](http://shop.oreilly.com/product/0636920028154.do) (Also available at the SF public library!)
 
 Once you feel comfortable with the basics of the language, you can explore the standard library!
-- [The official Python 2 documentation](https://www.python.org/doc/)
+- [The Official Python 2 Documentation](https://docs.python.org/2/library/)
 - [Python Module of the Week](http://pymotw.com/2/)
 
 There are many, many good resources for learning the language of Python and how to do awesome things with it.
