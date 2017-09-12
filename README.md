@@ -39,41 +39,40 @@ A Socratic questioner should
 
 ### New Student Reading
 
-If you are new to python or programming in general here are some excellent resources:
+#### Installing Python
+For the sake of our sanity, we use Python 2 for this course.
+
+Check out [The Hitchhiker’s Guide to Python!](http://docs.python-guide.org/en/latest/) for help installing Python and finding useful packages. In an emergency, you can access Python [in your browser](http://repl.it/languages/Python).
+
+#### Python Resources
+If you are new to Python or to programming in general, here are some excellent resources:
 - [Learn Python the Hardway](http://learnpythonthehardway.org/) - great guide for total beginner
 - [Byte of Python](http://www.swaroopch.com/notes/python/) - nice guide for total beginner and new to python
 - [Excellent Official Python Tutorial - 2.7.8](https://docs.python.org/2/tutorial/) - great for new to python
-- [Learning Python 5th edition (also at sf lib)](http://shop.oreilly.com/product/0636920028154.do) - A comprehensive guide to the language and its uses
+- [Learning Python 5th edition](http://shop.oreilly.com/product/0636920028154.do) - A comprehensive guide to the language and its uses. Also available at the SF public library.
 - [Python Module of the Week](http://pymotw.com/2/) - Learning the standard library by example
 - [The docs themselves! 2.x for this class](https://www.python.org/doc/) - Learn what is and how to use the standard library
 
 There are many, many good resources for learning the language of Python and how to do awesome things with it.
 Those listed above are just a few based on personal experience and strong recommendations.
 
-###  OS / Environment / Versions
-[Digital Ocean $10 Credit](https://m.do.co/c/a4d54c9e5004) An easy way to get a free linux environment. If you are on windows, you can login with [PuTTY](http://www.putty.org/).
-
-[Amazon's AWS has a free tier that allows you 750 compute hours every month of their t2.micro instances for 12 months](http://aws.amazon.com/free/)
-
-- Use EC2 to create an instance from the Ubuntu 16.04 AMI for the most well known and supported platform
-
-For the sake of our sanity we use Python 2 for this course.
-
-Installing Python with [The Hitchhiker’s Guide to Python!](http://docs.python-guide.org/en/latest/)
-
-Emergency Python Command Line: [http://repl.it/languages/Python](http://repl.it/languages/Python)
-
-**We accept refugees using all operating systems. You will be politely prodded in the direction of solutions that are closer to [POSIX standards](http://en.wikipedia.org/wiki/POSIX#Mostly_POSIX-compliant)**
-
-Some routes:
-1. Install a linux virtual machine on another computer using virtualbox.
-2. Use the command line in your apple machine.
-3. Explore [POSIX for windows](http://en.wikipedia.org/wiki/POSIX#POSIX_for_Windows)
-
-Another key tool is git:
+#### git
+While git is worth learning in and off itself, it will be particularly useful when trying to get the source code for each week's class.
 * Windows: http://git-scm.com/download/win
 * Mac: http://git-scm.com/download/mac
 * Linux: (use your package manager)
+
+###  OS / Environment / Versions
+We accept refugees using all operating systems. You will be politely prodded in the direction of solutions that are closer to [POSIX standards](http://en.wikipedia.org/wiki/POSIX#Mostly_POSIX-compliant).
+
+Some options:
+1. Use the command line in your Linux or Apple machine.
+2. Install a Linux virtual machine on another computer using Virtualbox.
+3. Explore [POSIX for windows](http://en.wikipedia.org/wiki/POSIX#POSIX_for_Windows)
+4. Use a virtual private server (VPS).
+    - [Digital Ocean $10 Credit](https://m.do.co/c/a4d54c9e5004) An easy way to get a free linux environment. If you are on Windows, you can login with [PuTTY](http://www.putty.org/).
+    - Amazon's AWS has a [free tier](http://aws.amazon.com/free/) that allows you 750 compute hours every month of their t2.micro instances for 12 months.
+        - Use EC2 to create an instance from the Ubuntu 16.04 AMI for the most well known and supported platform.
 
 ### Mailing List
 Sign up for the [Noisebridge Python Mailing List](https://www.noisebridge.net/mailman/listinfo/python) to hear updates and conversations regarding the course!
