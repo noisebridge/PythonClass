@@ -5,8 +5,8 @@ using the Python standard library, the role of the Global Interpreter Lock (GIL)
 If time allows, conventional strategies for circumventing the limitations
 imposed by a GIL will be discussed.
 
-*Update: it's a bit misleading that the title leads off with "threading."
-The talk is more generally focused on concurrent programming.*
+**Update: it's a bit misleading that the title leads off with "threading."
+The talk is more generally focused on concurrent programming.**
 
 In this talk:
 - Concurrency at a high level
@@ -29,7 +29,7 @@ The algorithm relinquishes the engine to the calling process
 and waits until a different engine is provided to it,
 at which point it installs the new engine.
 
-Functions that involve such an exchange of control are called *coroutines*.
+Functions that involve such an exchange of control are called **coroutines**.
 
 Now, we can:
 - Write one coroutine and use it twice - once each for two cars of the same model.
@@ -47,12 +47,12 @@ We've overlooked some things.
 Suppose we have two or more tasks to execute.
 
 If we only start when no other task is ongoing,
-then we are executing them *sequentially*.
-Otherwise, we are carrying them out *concurrently*.
+then we are executing them **sequentially**.
+Otherwise, we are carrying them out **concurrently**.
 
-*Parallel algorithms* distribute computations over
+**Parallel algorithms** distribute computations over
 multiple devices or multiple processors,
-whereas *serial* algorithms assume that
+whereas **serial** algorithms assume that
 all computations must take place on a single processor.
 
 Question: can we write a concurrent program that executes
@@ -67,7 +67,7 @@ So, we can think about several models now:
 ## Sharing resources
 If a parallel computation requires no shared resources or coordination
 between processes,
-then the problem being solved is said to be *embarrassingly parallel*.
+then the problem being solved is said to be **embarrassingly parallel**.
 However, this is not the case for most problems of interest.
 For instance,
 many processes may need access to a shared resource,
@@ -164,22 +164,22 @@ For more on coroutines, see David Beazley's talk,
 ### Sharing State
 However, sharing state is often viewed as an antipattern when it is unnecessary.
 In fact, part of the Rob Pike's philosophy in designing Go
-is that concurrent processes should *share state by communicating*,
-as opposed to *communicating by sharing state*.
+is that concurrent processes should **share state by communicating**,
+as opposed to **communicating by sharing state**.
 
-*Note: if you're coming from another language,
+**Note: if you're coming from another language,
 Python 2's `mutex` doesn't work the way you think it does.
 It's meant for single-threaded contexts,
 (CITATION NEEDED)
 and is deprecated for a reason.
-Use the synchronization objects from `threading`.)*
+Use the synchronization objects from `threading`.)**
 
 ### Global Interpreter Lock
 While Jython and IronPython actually do allow proper OS level threading
 and PyPy provides green threads,
 CPython (the reference implementation that you probably use)
 does not allow for "proper" threading.
-This is a constraint imposed by the use a *global interpreter lock*, or *GIL*.
+This is a constraint imposed by the use a **global interpreter lock**, or **GIL**.
 
 It happens that the GIL is itself a mutex that prevents
 a given Python process from controlling more than one native thread at once.
@@ -191,9 +191,9 @@ that also has a nice table.
 ## Asyncio
 If you're familiar with JavaScript,
 you're probably familiar with its use of an event loop.
-An *event loop* is a design pattern that enables the programmer to say,
+An **event loop** is a design pattern that enables the programmer to say,
 "Do `f`. When `f` is complete, pass the output of `f` to the function `g`."
-Here, `g` is a *callback*.
+Here, `g` is a **callback**.
 This can be accomplished by dedicating the main thread to the event loop,
 as long as we restrict each such `f` to be a computation outsourced
 to a different process or piece of hardware.
