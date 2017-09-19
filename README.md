@@ -1,5 +1,8 @@
 PyClass meets every Monday from 7 to 9 PM (PST) in the 'Church' classroom.
-The course is **entirely free**, but donations to [Noisebridge](https://donate.noisebridge.net) are welcome!
+
+The course is free! If you wish to donate, please give to [Noisebridge](https://donate.noisebridge.net).
+- Recommended Donations: $15, $50, $200+
+- Recommended monthly donations: $10, $20, $40, $80+ / month
 
 ### PSAs and Events
 TBD
