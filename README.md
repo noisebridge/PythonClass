@@ -1,42 +1,23 @@
+PyClass meets every Monday from 7 to 9 PM (PST) in the 'Church' classroom.
+
+The course is free! If you wish to donate, please give to [Noisebridge](https://donate.noisebridge.net).
+- Recommended Donations: $15, $50, $200+
+- Recommended monthly donations: $10, $20, $40, $80+ / month
 
 ### PSAs and Events
-
-**PSA 8-22-16:** The new session of the six-week Python Class will start on Monday 8/22/16.
-
-**PSA 8-19-14:** The [noisebridge wiki](https://noisebridge.net/wiki/PyClass) and [github readme](https://github.com/PyClass/PyClass-lesson-plans) files have the same information and updates.
-
-**PSA 8-16-14:** The new curriculum for the Noisebridge PyClass is a crash course in the Python standard library, also touching on modules that are popular but not quite part of the standard modules. Scroll down to see the course list.
-
-### Scheduled Weekly Meeting Times
-
-* Monday 7:00 - 9:00 PM PST - 'Turing' Classroom
-
-
-### Mailing List
-
-Sign up for this to hear updates and conversations regarding the course!
-
-[Python & PyClass Mailing List](https://www.noisebridge.net/mailman/listinfo/python)
-
-The mailing list uses GNU Mailman and pipermail.  To search archives you may find it helpful to download the archive .tar.gz (compressed) file and use regular expressions (grep) to search.
-
-The Python Class Google Group Closed on Tuesday, November 3rd, 2015. 
-
+TBD
 
 ### Class Description, Goals, and Ideal Student
+The course is designed with the following constraints in mind:
+- The barrier to entry is low, but the pace is fast.
+- All materials must be made [available on Github](https://github.com/PyClass/PyClassLessons).
+- Each lesson stands alone, so it's okay to miss a week!
+- The core, repeated modules are regularly updated.
 
-The pace of the courses will be fast, and the materials will be available online 24/7. We plan to frequently repeat modules with new twists as we iterate over course materials.
+To best experience the course, spend a short time reviewing the materials beforehand. If you wish to know what's scheduled for this week, please join [the mailing list](#mailing-list) and send an email out to PyClass@googlegroups.com
 
-A major PyClass goal is to break down the courses into independent units. In other words, you won't fall behind if you miss a week. Sounds good, right?
-
-To best experience the course, spend a short time reviewing the course materials before you come in. If you wish to know this week's courses, please join the mailing list and send an email out to PyClass@googlegroups.com
-
-Lessons are [available on Github](https://github.com/PyClass/PyClassLessons).
-
-
-#####The 'ideal student' for this course can grasp the following code:
-
-(Feel free to use web resources to look up anything you don't understand)
+#### Prerequisites
+Ideally, students starting the course can grasp the following code. Feel free to use web resources to look up anything you don't understand!
 
 ```python
 letter_frequency_dict = {}
@@ -48,69 +29,56 @@ for letter in word:
     letter_frequency_dict[letter] = times
 ```
 
+#### We use the [Socratic Method](http://www.criticalthinking.org/pages/socratic-teaching/606)
+A Socratic questioner should 
 
-##### We use the [Socratic Method](http://www.criticalthinking.org/pages/socratic-teaching/606)
-###### A Socratic questioner should 
 1. keep the discussion focused
-2. keep the discussion fact based\*
+2. keep the discussion fact-based\*
 3. stimulate the discussion with probing questions
 4. periodically summarize what has and what has not been dealt with and/or resolved
 5. draw as many students as possible into the discussion.
 
-\* [intellectually responsible](https://en.wikipedia.org/wiki/Intellectual_responsibility) can be effectively replaced with 'fact based' for our needs.
-
-
+\* [intellectually responsible](https://en.wikipedia.org/wiki/Intellectual_responsibility) can be effectively replaced with 'fact-based' for our needs.
 
 ### New Student Reading
 
-If you are new to python or programming in general here are some excellent resources:    
--[Learn Python the Hardway](http://learnpythonthehardway.org/) - great guide for total beginner    
--[Byte of Python](http://www.swaroopch.com/notes/python/) - nice guide for total beginner and new to python    
--[Excellent Official Python Tutorial - 2.7.8](https://docs.python.org/2/tutorial/) - great for new to python    
--[Learning Python 5th edition (also at sf lib)](http://shop.oreilly.com/product/0636920028154.do) - A comprehensive guide to the language and its uses    
--[Python Module of the Week](http://pymotw.com/2/) - Learning the standard library by example    
--[The docs themselves! 2.x for this class](https://www.python.org/doc/) - Learn what is and how to use the standard library
+#### Installing Python
+For the sake of our sanity, we use Python 2 for this course.
+
+Check out [The Hitchhiker’s Guide to Python!](http://docs.python-guide.org/en/latest/) for help installing Python, learning best practices, and finding useful packages. In an emergency, you can access Python [in your browser](http://repl.it/languages/Python).
+
+#### Python Resources
+If you are new to Python or to programming in general, here are some excellent resources:
+- [The Official Python 2 Tutorial](https://docs.python.org/2/tutorial/)
+- [Learn Python the Hardway](http://learnpythonthehardway.org/)
+- [Byte of Python](http://www.swaroopch.com/notes/python/)
+- [Learning Python, 5th edition](http://shop.oreilly.com/product/0636920028154.do) (Also available at the SF public library!)
+
+Once you feel comfortable with the basics of the language, you can explore the standard library!
+- [The Official Python 2 Documentation](https://docs.python.org/2/library/)
+- [Python Module of the Week](http://pymotw.com/2/)
 
 There are many, many good resources for learning the language of Python and how to do awesome things with it.
-Those listed above are just a few based on personal experience and strong recommendations.  
+Those listed above are just a few based on personal experience and strong recommendations.
 
+#### git
+While git is worth learning in general, it will be particularly useful when trying to get the source code for each week's class. Installers are available for [Windows](http://git-scm.com/download/win) and [Mac](http://git-scm.com/download/mac), and Linux users can install via their package manager.
 
 ###  OS / Environment / Versions
+We accept refugees using all operating systems. You will be politely prodded in the direction of solutions that are closer to [POSIX standards](http://en.wikipedia.org/wiki/POSIX#Mostly_POSIX-compliant).
 
+Some options:
+1. Use the command line in your Linux or Apple machine.
+2. Install a Linux virtual machine on another computer using Virtualbox.
+3. Explore [POSIX for windows](http://en.wikipedia.org/wiki/POSIX#POSIX_for_Windows)
+4. Use a virtual private server (VPS).
+    - [Digital Ocean $10 Credit](https://m.do.co/c/a4d54c9e5004) An easy way to get a free linux environment. If you are on Windows, you can login with [PuTTY](http://www.putty.org/).
+    - Amazon's AWS has a [free tier](http://aws.amazon.com/free/) that allows you 750 compute hours every month of their t2.micro instances for 12 months.
+        - Use EC2 to create an instance from the Ubuntu 16.04 AMI for the most well known and supported platform.
 
-[Digital Ocean $10 Credit](https://m.do.co/c/a4d54c9e5004) An easy way to get a free linux environment. If you are on windows, you can login with [PuTTY](http://www.putty.org/).
+### Mailing List
+Sign up for the [Noisebridge Python Mailing List](https://www.noisebridge.net/mailman/listinfo/python) to hear updates and conversations regarding the course!
 
-[Amazon's AWS has a free tier that allows you 750 compute hours every month of their t2.micro instances for 12 months](http://aws.amazon.com/free/)
+The mailing list uses GNU Mailman and pipermail.  To search archives you may find it helpful to download the archive `.tar.gz` (compressed) file and use regular expressions (`grep`) to search.
 
--Use EC2 to create an instance from the Ubuntu 16.04 AMI for the most well known and supported platform
-
-
-For the sake of our sanity we use Python 2 for this course.
-
-Installing Python with [The Hitchhiker’s Guide to Python!](http://docs.python-guide.org/en/latest/)
-
-Emergency Python Command Line: [http://repl.it/languages/Python](http://repl.it/languages/Python)
-
-
-**We accept refugees using all operating systems. You will be politely prodded in the direction of solutions that are closer to posix standards: [http://en.wikipedia.org/wiki/POSIX#Mostly_POSIX-compliant](http://en.wikipedia.org/wiki/POSIX#Mostly_POSIX-compliant)**
-
-
-Some routes:    
-1. Install a linux virtual machine on another computer using virtualbox.    
-2. Use the command line in your apple machine.    
-3. Explore POSIX for windows: http://en.wikipedia.org/wiki/POSIX#POSIX_for_Windows    
-    
-
-Another key tool is git:    
-*Windows: http://git-scm.com/download/win    
-*Mac: http://git-scm.com/download/mac    
-*Linux: (use your package manager)    
-
-
-### Free to all - please donate to Noisebridge!
-
-The course is free, if you wish to donate, please give to [Noisebridge](https://donate.noisebridge.net)
-Recommended Donations: $15, $50, $200+
-Recommended monthly donations: $10, $20, $40, $80+ / month
-
-
+The Python Class Google Group Closed on Tuesday, November 3rd, 2015.
