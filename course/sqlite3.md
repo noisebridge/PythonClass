@@ -1,9 +1,28 @@
+### Databases ###
+
+What is a database and what are they useful for?
+
+A 'database' can be any collection of data in a structured format.  When people talk about databases in programming, they usually mean a system which allows the creation of a 'schema' - a way for us to describe how we want to store our data using a set of tables, each of which contains rows and columns.
+
+Once we have a schema - which can contain as many tables as we'd like - we can start to populate those tables with data.  You can think of each table as being like a sheet in a spreadsheet - for example, here's what a snippet of a noisebridge 'events' table might look like:
+
+
+| class_id | first_name | hyperlink |
+| ------- | ------------ | ----- |
+| 1 | CircuitHackingMondays | https://www.noisebridge.net/wiki/Circuit_Hacking_Monday |
+| 2 | PythonClass | https://github.com/noisebridge/PythonClass |
+| ... | ... | ... |
+
+Defining the schema, populating the tables with data, and accessing data from table(s) is all achieved using a standard language called 'Structured Query Language' - commonly abbreviated as 'SQL'.
+
 
 ### The 'SQLite' Relational Database Format
 
-Use SQLite to store information inside your application. It was originally developed for the US Navy to embed in their hardware. SQLite is ubiquitous in software.
+Many database systems are available which can represent and store the data we looked at above.  In this class, we'll use a system called 'SQLite', which is available for free and provides read & write access to databases stored as single files on disk.
 
+Many other database servers - such as PostgreSQL or Microsoft SQL Server - require you to run a 'server' which provides access to your database over the network.  SQLite is in some ways easier, since we can read and write from the database within a single program; in our case we'll be using Python programs.  After the program finishes, our database remains in it's current state until another program runs and modifies or accesses it.
 
+From the Python `sqlite3` [documentation](https://docs.python.org/2/library/sqlite3.html):
 
 >SQLite is a C library that provides a lightweight disk-based database that doesn’t require a separate server process and allows accessing the database using a nonstandard variant of the SQL query language. Some applications can use SQLite for internal data storage. **It’s also possible to prototype an application using SQLite and then port the code to a larger database such as PostgreSQL or Oracle.** It provides a SQL interface compliant with the DB-API 2.0 specification described by [PEP 249](http://www.python.org/dev/peps/pep-0249)." - from [The Python 'sqlite3' Module](https://docs.python.org/2/library/sqlite3.html)
 
