@@ -56,9 +56,14 @@ From the Python `sqlite3` [documentation](https://docs.python.org/2/library/sqli
         Use ".open FILENAME" to reopen on a persistent database.
         sqlite>
         ```
+    4.
         This is prompting us for a command, and instructing us how to create a 'persistent' (saved) database, which is what we want.  Type `.open users.db` to create a database named `users.db`
+        ```
+        sqlite> .open users.db
+        sqlite>
+        ```
         
-    4. Now we can create our users table by reading and executing our schema file:
+    5. Now we can create our users table by reading and executing our schema file:
 
         ```
         .read users_schema.sql
