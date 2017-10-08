@@ -66,7 +66,8 @@ From the Python `sqlite3` [documentation](https://docs.python.org/2/library/sqli
     5. Now we can create our users table by reading and executing our schema file:
 
         ```
-        .read users_schema.sql
+        sqlite> .read users_schema.sql
+        sqlite>
         ```
     
 
