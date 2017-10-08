@@ -34,21 +34,11 @@ From the Python `sqlite3` [documentation](https://docs.python.org/2/library/sqli
         1. Table - similar to an excel spreadsheet, it is a collection of rows and columns.
             1. Each column has a `name` and `the same data type for each value` in the column.
             2. Each row has one field per column.
-        2. Schema - A schema describes a table.
-        3. Database - a collection of tables, schemas, and some related things.
-    2. Type this code into a file, `my_schema.sqlite3`, and run it to make a database:
+        2. Schema - A schema describes the layout and columns for the tables in a database
+        3. Database - The on-disk representation of tables and other objects ('views', 'functions', ...)
+    2. Type this code into a file, `users_schema.sql`:
 
         ```
-        -- Run this file with the `.read` command.
-        -- Older sqlite3 (osx used to package a really old one) apparently don't have this.
-        -- One alternative is to run `sqlite3 < my_schema.sqlite3`
-
-
-        -- The .open command will open a database. If it doesn't
-        -- exist, it will create it. 
-        .open "users.sqlite" 
-
-
         CREATE TABLE IF NOT EXISTS "users" ( 
             "pKey" INTEGER PRIMARY KEY,
             "username" varchar(255) DEFAULT NULL, 
@@ -58,6 +48,22 @@ From the Python `sqlite3` [documentation](https://docs.python.org/2/library/sqli
             "fav_color" varchar(255) DEFAULT NULL
         );
         ```
+    3. Now let's create a new SQLite database on disk.  Run `sqlite3`.  You should see something like:
+        ```
+        SQLite version 3.8.5 2014-08-15 22:37:57
+        Enter ".help" for usage hints.
+        Connected to a transient in-memory database.
+        Use ".open FILENAME" to reopen on a persistent database.
+        sqlite>
+        ```
+        This is prompting us for a command, and instructing us how to create a 'persistent' (saved) database, which is what we want.  Type `.open users.db` to create a database named `users.db`
+        
+    4. Now we can create our users table by reading and executing our schema file:
+
+        ```
+        .read users_schema.sql
+        ```
+    
 
 2. ##### Interacting with our database in Python.
 
@@ -71,7 +77,7 @@ From the Python `sqlite3` [documentation](https://docs.python.org/2/library/sqli
             """
             import sqlite3
 
-            FILENAME = "users.sqlite"
+            FILENAME = "users.db"
             TABLE_NAME = "users"
 
             if __name__ == '__main__':
@@ -124,7 +130,7 @@ From the Python `sqlite3` [documentation](https://docs.python.org/2/library/sqli
 
         3. See our work:
             ```
-            sqlite> .open users.sqlite
+            sqlite> .open users.db
             sqlite> .schema
             sqlite> select * from users;
             sqlite> ^D
