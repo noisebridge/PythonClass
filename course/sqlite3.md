@@ -1,10 +1,8 @@
-### Databases ###
+### Database Applications ###
 
-What is a database and what are they useful for?
+A 'database' can be any collection of data in a structured format.  When people talk about databases in programming, they usually mean a system which lets you as the developer define a 'schema' for a dataset - a way to describe how to store data as a set of tables, each of which contains rows and columns.
 
-A 'database' can be any collection of data in a structured format.  When people talk about databases in programming, they usually mean a system which allows the creation of a 'schema' - a way for us to describe how we want to store our data using a set of tables, each of which contains rows and columns.
-
-Once we have a schema - which can contain as many tables as we'd like - we can start to populate those tables with data.  You can think of each table as being like a sheet in a spreadsheet - for example, here's what a snippet of a noisebridge 'events' table might look like:
+Once a schema is created, we can start to populate the tables with data.  You can think of each table as being like a sheet in a spreadsheet - for example, here's what a snippet of a noisebridge 'events' table might look like:
 
 
 | class_id | first_name | hyperlink |
