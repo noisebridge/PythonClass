@@ -2,6 +2,10 @@
 
 A 'database' can be any collection of data in a structured format.  When people talk about databases in programming, they usually mean a system which lets you as the developer define a 'schema' for a dataset - a way to describe how to store data as a set of tables, each of which contains rows and columns.
 
+Data itself can be any type of information we can extract structure from.  It could be a list of registered users for a website, so that we can provide them with user accounts.  Or it could be a set of products, prices, and categories (perhaps with one table for each?).
+
+Good schema design generally reduces 'duplication' of information between tables - reducing duplication is called 'normalization'.
+
 Once a schema is created, we can start to populate the tables with data.  You can think of each table as being like a sheet in a spreadsheet - for example, here's what a snippet of a noisebridge 'events' table might look like:
 
 
@@ -85,59 +89,46 @@ Let's install SQLite before we get started with some practical examples.
 
         1. Write Data:
             ```python
-            """Write a sample directly from a Python list of lists.
-            """
+            # Import the database access library
             import sqlite3
 
             FILENAME = "users.db"
             TABLE_NAME = "users"
 
-            if __name__ == '__main__':
-                """ Write some data to our database.
-                """
+            # some default users
+            JENNY_DATA = [None, 'jennymc', '30', 'jenny', 'mccloud', 'blue']
+            JOE_DATA = [None, 'joewilson', '30', 'joe', 'wilson', 'yellow']
 
-                # some default users
-                MY_LIST_1 = [None, 'jennymc', '30', 'jenny', 'mccloud', 'blue']
-                MY_LIST_2 = [None, 'joewilson', '30', 'joe', 'wilson', 'yellow']
-
-                # Create a connection to the database, assign to a name
-                conn = sqlite3.connect(FILENAME)
+            # Create a connection to the database
+            with sqlite3.connect(FILENAME) as conn:
 
                 # We will use the cursor object to perform transactions.
                 c = conn.cursor()
 
                 # we can use {table} with the string function "format"
                 # more here: https://docs.python.org/2/library/string.html#format-string-syntax
-                INSERT_STATEMENT = "INSERT INTO {table} VALUES (?,?,?,?,?,?)"
-                MY_INSERT_STATEMENT = INSERT_STATEMENT.format(table=TABLE_NAME)
+                INSERT_STATEMENT = "INSERT INTO {table} VALUES (?,?,?,?,?,?)" \
+                                   .format(table=TABLE_NAME)
 
                 # execute the insert transaction 
                 # TODAY: add the correct variables for MY_LIST_X
                 # OPTIONAL: try `execute many`
-                c.execute(MY_INSERT_STATEMENT, MY_LIST_1)
-                c.execute(MY_INSERT_STATEMENT, MY_LIST_2)
-
-                # This commits the transaction
-                conn.commit()
-
-                # Close the connection to the database.
-                conn.close()
+                c.execute(INSERT_STATEMENT, JENNY_DATA)
+                c.execute(INSERT_STATEMENT, JOE_DATA)
             ```
-
 
         2. Read Data: add this after the cursor is established. Comment out the lines similar to `c.execute(MY_INSERT_STATEMENT, SAMPLE_DATA)` for now.
             ```python
                 
-                SELECT_STATEMENT = "SELECT * FROM {table}"
-                MY_SELECT_STATEMENT = SELECT_STATEMENT.format(table=TABLE_NAME)
-                c.execute(MY_SELECT_STATEMENT)
-                print c.fetchone()
-                print c.fetchone()
-                print c.fetchone()
-                # print c.fetchall()  # try this with fetchone commented out.
+            SELECT_STATEMENT = "SELECT * FROM {table}".format(table=TABLE_NAME)
+            c.execute(SELECT_STATEMENT)
+            print c.fetchone()
+            print c.fetchone()
+            print c.fetchone()
+            # print c.fetchall()  # try this with fetchone commented out.
 
-                # retool this select statement to accomodate WHERE for sides < 4
-                # hint: you must make a new SELECT statement.
+            # retool this select statement to accomodate WHERE for sides < 4
+            # hint: you must make a new SELECT statement.
             ```
 
         3. See our work:
