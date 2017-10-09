@@ -47,7 +47,7 @@ Let's install SQLite before we get started with some practical examples.
         CREATE TABLE IF NOT EXISTS "users" ( 
             "pKey" INTEGER PRIMARY KEY,
             "username" varchar(255) DEFAULT NULL, 
-            "age" varchar(255) DEFAULT NULL,
+            "age" INT DEFAULT NULL,
             "first_name" varchar(255) DEFAULT NULL,
             "last_name" varchar(255) DEFAULT NULL,
             "fav_color" varchar(255) DEFAULT NULL
@@ -117,9 +117,9 @@ Let's install SQLite before we get started with some practical examples.
                 c.execute(INSERT_STATEMENT, JOE_DATA)
             ```
 
-        2. Read Data: add this after the cursor is established. Comment out the lines similar to `c.execute(MY_INSERT_STATEMENT, SAMPLE_DATA)` for now.
+        2. Read Data: add this after the cursor is established. Comment out the lines similar to `c.execute(INSERT_STATEMENT, SAMPLE_DATA)` for now.
+
             ```python
-                
             SELECT_STATEMENT = "SELECT * FROM {table}".format(table=TABLE_NAME)
             c.execute(SELECT_STATEMENT)
             print c.fetchone()
@@ -129,6 +129,9 @@ Let's install SQLite before we get started with some practical examples.
 
             # retool this select statement to accomodate WHERE for sides < 4
             # hint: you must make a new SELECT statement.
+            
+            # tuples can be messy to work with - can you figure out how to
+            # get the column names for each of the values we fetch?
             ```
 
         3. See our work:
@@ -145,12 +148,3 @@ Let's install SQLite before we get started with some practical examples.
 
     3. [DBMS](http://en.wikipedia.org/wiki/Database) - Database management systems (DBMSs) are computer software applications that interact with the user, other applications, and the database itself to capture and analyze data. A general-purpose DBMS is designed to allow the definition, creation, querying, update, and administration of databases.
     4. [Relational Model](http://en.wikipedia.org/wiki/Relational_model) - Most relational databases use the SQL data definition and query language; these systems implement what can be regarded as an engineering approximation to the relational model. A table in an SQL database schema corresponds to a predicate variable; the contents of a table to a relation; key constraints, other constraints, and SQL queries correspond to predicates. However, SQL databases deviate from the relational model in many details, and Codd fiercely argued against deviations that compromise the original principles.
-
-
-
-4. #### Open Questions - Determine if these belong in this lesson:
-* Discuss autocommmit, manual commit, buffered? commits (with example)
-* row.keys() <-- get keys/headers for table
-* SQLite and Python Types: https://docs.python.org/2/library/sqlite3.html#introduction
-* Dealing with Date: https://docs.python.org/2/library/sqlite3.html#default-adapters-and-converters
-* Munging data?
