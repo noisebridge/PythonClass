@@ -22,7 +22,12 @@ Many other database servers - such as PostgreSQL or Microsoft SQL Server - requi
 
 >SQLite is a C library that provides a lightweight disk-based database that doesn’t require a separate server process and allows accessing the database using a nonstandard variant of the SQL query language. Some applications can use SQLite for internal data storage. **It’s also possible to prototype an application using SQLite and then port the code to a larger database such as PostgreSQL or Oracle.** It provides a SQL interface compliant with the DB-API 2.0 specification described by [PEP 249](http://www.python.org/dev/peps/pep-0249)." - from [The Python 'sqlite3' Module](https://docs.python.org/2/library/sqlite3.html)
 
+Let's install SQLite before we get started with some practical examples.
 
+- On OSX with Homebrew, type `brew install sqlite`
+- On Debian/Ubuntu or similar Linux distributions, type `apt-get install sqlite`
+- For Centos/Fedora, use `yum install sqlite`
+- For anything else, ask the instructor :)
 
 1. ##### Today's deep dive: Create a [database schema](https://www.sqlite.org/lang.html).
 
