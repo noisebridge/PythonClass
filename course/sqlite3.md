@@ -44,7 +44,11 @@ Many other database servers - such as PostgreSQL or Microsoft SQL Server - requi
             "fav_color" varchar(255) DEFAULT NULL
         );
         ```
-    3. Now let's create a new SQLite database on disk.  Run `sqlite3`.  You should see something like:
+        - Take a moment to think about what this code is doing and what it represents
+        - Ask questions if anything seems unclear!
+        - Once you understand, feel free to continue on with the next few steps
+       
+    3. Now that we have a schema, let's create the SQLite database on disk.  Run `sqlite3`.  You should see something like:
         ```
         SQLite version 3.8.5 2014-08-15 22:37:57
         Enter ".help" for usage hints.
@@ -52,15 +56,15 @@ Many other database servers - such as PostgreSQL or Microsoft SQL Server - requi
         Use ".open FILENAME" to reopen on a persistent database.
         sqlite>
         ```
-    4.
-        This is prompting us for a command, and instructing us how to create a 'persistent' (saved) database, which is what we want.  Type `.open users.db` to create a database named `users.db`
+        
+    4. Create a 'persistent' (saved) database on disk, by typing `.open users.db` to create a database named `users.db`
         ```
         sqlite> .open users.db
         sqlite>
         ```
+        - You should see a new file called 'users.db' appear in your working directory
         
     5. Now we can create our users table by reading and executing our schema file:
-
         ```
         sqlite> .read users_schema.sql
         sqlite>
