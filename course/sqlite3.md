@@ -15,7 +15,7 @@ Once a schema is created, we can start to populate the tables with data.  You ca
 | 2 | PythonClass | https://github.com/noisebridge/PythonClass |
 | ... | ... | ... |
 
-Defining the schema, populating the tables with data, and accessing data from table(s) is all achieved using a standard language called 'Structured Query Language' - commonly abbreviated as 'SQL'.
+Defining the schema, populating the tables with data, and querying the content of table(s) are all achieved using a language called 'Structured Query Language' - commonly abbreviated as 'SQL'.
 
 
 ### The 'SQLite' Relational Database Format
