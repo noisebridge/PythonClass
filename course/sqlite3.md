@@ -5,7 +5,7 @@ A 'database' can be any collection of data in a structured format.  When people 
 Once a schema is created, we can start to populate the tables with data.  You can think of each table as being like a sheet in a spreadsheet - for example, here's what a snippet of a noisebridge 'events' table might look like:
 
 
-| class_id | first_name | hyperlink |
+| class_id | name | hyperlink |
 | ------- | ------------ | ----- |
 | 1 | CircuitHackingMondays | https://www.noisebridge.net/wiki/Circuit_Hacking_Monday |
 | 2 | PythonClass | https://github.com/noisebridge/PythonClass |
