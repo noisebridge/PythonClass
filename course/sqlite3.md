@@ -63,8 +63,9 @@ Many other database servers - such as PostgreSQL or Microsoft SQL Server - requi
         sqlite>
         ```
         - You should see a new file called 'users.db' appear in your working directory
+        - This is our (currently empty) database, and no schema has yet been specified for it
         
-    5. Now we can create our users table by reading and executing our schema file:
+    5. Now we can apply our database schema by reading and executing our schema file:
         ```
         sqlite> .read users_schema.sql
         sqlite>
