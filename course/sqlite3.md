@@ -126,9 +126,10 @@ Let's install SQLite before we get started with some practical examples.
             print c.fetchone()
             print c.fetchone()
             # print c.fetchall()  # try this with fetchone commented out.
-
-            # retool this select statement to accomodate WHERE for sides < 4
-            # hint: you must make a new SELECT statement.
+            
+            # the above program prints all records in the database
+            # can you write one which asks for an input color, and only
+            # prints users who have that as a favorite?
             
             # tuples can be messy to work with - can you figure out how to
             # get the column names for each of the values we fetch?
