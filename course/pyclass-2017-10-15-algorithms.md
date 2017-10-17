@@ -61,7 +61,7 @@ False
 True
 ```
 
-1. [Bubble sort](https://en.wikipedia.org/wiki/Bubble_sort)
+### 1. [Bubble sort](https://en.wikipedia.org/wiki/Bubble_sort)
 
 This is an inefficient but easy to implement sorting algorithm.
 
@@ -92,7 +92,7 @@ The unsorted list is no longer accessible!
 We can copy the list before we sort it, but in practice the `sorted` builtin,
 which we should really be using, returns a copy of the list.
 
-2. [Topological Sort](https://en.wikipedia.org/wiki/Topological_sorting)
+### 2. [Topological Sort](https://en.wikipedia.org/wiki/Topological_sorting)
 
 Finds an ordering that satisfies dependencies.
 These are relatively common in real-world applications!
@@ -169,7 +169,7 @@ Again, this mutates the graph, so make a copy before calling this implementation
 
 There's no builtin for this algorithm, but you can find [toposort](https://pypi.python.org/pypi/toposort) on the Python Package Index (pypi).
 
-3. Graph search: depth-first and breadth-first search
+### 3. Graph search: depth-first and breadth-first search
 
 Let's use the US state borders as an example graph this time. We can get the bordering states from https://state.1keydata.com/bordering-states-list.php.
 
