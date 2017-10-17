@@ -203,7 +203,7 @@ Let's use the US state borders as an example graph this time. We can get the bor
 ...     queue = [start]
 ...     seen = []
 ...     while queue:
-...         node = queue.pop()
+...         node = queue.pop(0)
 ...
 ...            if node not in seen:
 ...                seen.append(node)
@@ -223,9 +223,10 @@ You can even make networkx draw your graph:
 
 ```python
 >>> import matplotlib.pyplot as plt
->>> from networkx import nx
+>>> import networkx as nx
+
 >>> G = nx.Graph(g)
 
-nx.draw(G, with_labels=True)
-plt.show()
+>>> nx.draw(G, with_labels=True)
+>>> plt.show()
 ```
