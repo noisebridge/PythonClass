@@ -84,3 +84,21 @@ Functions in python:
             @memoize / @cached
         - Functools
             -partial
+
+Code Example:
+
+
+```def memoize(func):
+     ...:     all_results_ever = {}
+     ...:     def run_func(*a, **kw):
+     ...:         function_args = (a, tuple(kw.items()))
+     ...:         if function_args in all_results_ever:
+     ...:             return all_results_ever[function_args]
+     ...:
+     ...:         else:
+     ...:             result = func(*a, **kw)
+     ...:             all_results_ever[function_args] = result
+     ...:             return result
+     ...:     return run_func```
+     
+
