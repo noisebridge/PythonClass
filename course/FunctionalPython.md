@@ -2,11 +2,15 @@
 
 https://github.com/rmsadik/x/blob/master/CleanCode/Clean%20Code.pdf
 Clean code:
-    - page 31-37 (up to switch statement)
-    - 39-47 (starting from Use Descriptive Names, to Error.java)
-    - 49 (just Conclusion)
+
+ - page 31-37 (up to switch statement)
+ - 39-47 (starting from Use Descriptive Names, to Error.java)
+ - 49 (just Conclusion)
+
 It's written for java but most of the principles apply to python, and is the best treatment of the subject I've seen.
+
 *I'm recommending this reading because I think it's very valuable*
+*Do this before or after class*
 
 
 # Class
