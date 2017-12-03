@@ -4,8 +4,9 @@ def lowercase(string):
 
 # Concatenate using a loop
 def concat_loop(strings):
-    result = ','
+    result = ''
     for string in strings:
+        result += ','
         result += lowercase(string)  # !
     return result
 
