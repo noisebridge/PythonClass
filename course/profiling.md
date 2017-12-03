@@ -80,11 +80,9 @@ def concat_loop(strings):
         result += lowercase(string)
     return result
 
-
-    # Concatenate using string.join
-    def concat_join(strings):
-        return ','.join([lowercase(string) for string in strings])
-
+# Concatenate using string.join
+def concat_join(strings):
+    return ','.join([lowercase(string) for string in strings])
 
 # Read in the system dictionary and produce a
 # comma-separated
