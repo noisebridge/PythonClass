@@ -65,11 +65,31 @@ trace.
 
 
 #### Example ####
-The file `001-string-concat.py` in this directory contains
-code which reads all the words from the system dictionary,
-and then lowercases them and turns the results into a comma
-separated list.
-
 Let's use Pyflame to examine where most of the execution
-time is spent during this example, and then try applying
-performance improvements.
+time is spent when we run an example, and then use the
+results to make directed performance improvements.
+
+```
+def lowercase(string):
+    return string.lower()
+
+# Concatenate using a loop
+def concat_loop(strings):
+    result = ','
+    for string in strings:
+        result += lowercase(string)
+    return result
+
+
+    # Concatenate using string.join
+    def concat_join(strings):
+        return ','.join([lowercase(string) for string in strings])
+
+
+# Read in the system dictionary and produce a
+# comma-separated
+# list of lowercase words
+strings = open('/usr/share/dict/words').readlines()
+concat_loop(strings)
+concat_join(strings)
+```
