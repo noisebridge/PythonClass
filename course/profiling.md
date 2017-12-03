@@ -12,20 +12,32 @@ profiling today, using a tool called Pyflame.
 
 #### Pyflame ####
 Pyflame is an open-source profiling tool developed by Uber.
-It can be attached to existing processes, or used to
-examine the performance of a new process.
+It's a sampling profiler - it regularly 'inspects' the
+program's state, and records the stack of Python functions
+at that point in time.  Each entry in the stack will have
+a filename, and file line number, and usually a function
+name.
 
-Pyflame is a sampling profiler - instead of recording
-every single function call, it rapidly 'inspects' the
-state of a program, and records the current Python stack
-during each snapshot.
+To help imagine the sample data Pyflame collects, here's
+the familiar textual representation of a stacktrace:
+
+```
+  Example Stacktrace
+  ---
+  File "./test.py", line 57, in <module>
+      bar()
+  File "./test.py", line 55, in bar
+      return foo()
+  File "./test.py", line 50, in foo
+      something_invalid()
+```
 
 We can attach Pyflame to programs that are already
-running, and we can control the sampling rate it uses.
-In general, higher sampling rates will be more accurate
-but also introduce some level of performance overhead.
-By default Pyflame will inspect a program 1000 times
-per second.
+running, and tune how frequently it will collect samples.
+
+Higher sampling rates will be more accurate but do
+introduce some additional CPU overhead.  By default Pyflame
+samples a program 1000 times per second.
 
 
 #### When to profile ####
