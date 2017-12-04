@@ -94,3 +94,18 @@ strings = open('/usr/share/dict/words').readlines()
 concat_loop(strings)
 concat_join(strings)
 ```
+
+#### Example 2 ####
+Let's look at another common situation - we have some code
+which is performing long-running I/O calls (in this case,
+web network calls).
+
+The PythonClass repository includes two implementations of
+remote file download and their corresponding profiles.
+
+
+#### Example 3 ####
+In this final example, `003-word-db.py`, we have a flawed
+implementation of a Trie datastructure.  Can we use Pyflame
+to identify the source of a performance bug and (massively)
+improve the runtime?
