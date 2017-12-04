@@ -63,6 +63,8 @@ Flamegraphs are a popular tool for this purpose; included
 below is an example of a flamegraph for a Python program
 trace.
 
+![example](profiling/flamegraph.png)
+
 
 #### Example ####
 Let's use Pyflame to examine where most of the execution
