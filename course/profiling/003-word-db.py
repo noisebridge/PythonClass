@@ -34,9 +34,11 @@ class Trie(object):
                 node.children[head] = Trie.Node()
 
             # Try to find a matching child node
+            match = None
             for key in node.children:
-                if node.children[key] == head:
-                    node = value
+                if key == head:
+                    match = node.children[key]
+            node = match
 
             # Move to the next character in the string
             head, tail = tail[0:1], tail[1:]
