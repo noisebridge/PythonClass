@@ -58,8 +58,8 @@ which moves the cursor to the beginning of the line.
 This behavior mimics the behavior of typewriters,
 and *it allows us to redraw the line currently being printed.*
 
-Note that, in order to prevent the cursor to the next line
-when calling `print()`, we can call `print("foo bar", endwith='')`.
+Note that, in order to prevent the cursor from moving to the next line
+when calling `print()`, we can call `print("foo bar", end='')`.
 
 ```python
 from time import sleep
