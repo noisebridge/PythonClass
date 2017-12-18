@@ -1,9 +1,35 @@
 # Python and the Terminal
 
-## Terminal Emulator vs. Console
-See [one](https://superuser.com/questions/144666/what-is-the-difference-between-shell-console-and-terminal)
-of these [two](https://askubuntu.com/questions/506510/what-is-the-difference-between-terminal-console-shell-and-command-line)
-great Q&A discussions on the matter.
+## Parsing Arguments to CLI Applications
+The Python standard library includes [argparse](https://docs.python.org/3/library/argparse.html),
+as well as a [tutorial](https://docs.python.org/3/howto/argparse.html#id1)
+on the module.
+
+Armin Ronacher gave us [Click](http://click.pocoo.org/5/),
+which makes it easy to create this kind of application.
+Click provides a clean decorator API,
+and it's designed to allow for different Click applications to be nested.
+That is, a Click application can load another Click application,
+with the latter's commands appearing as subcommands of the former.
+
+## What is a terminal, anyway?
+This has been well-explained [here](https://askubuntu.com/questions/506510/what-is-the-difference-between-terminal-console-shell-and-command-line):
+
+```
+The short answer is that
+
+terminal = text input/output environment
+console = physical terminal
+shell = command line interpreter
+
+...
+
+Input: the terminal converts keys into control sequences (e.g. Left → \e[D). The shell converts control sequences into commands (e.g. \e[D → backward-char).
+
+...
+
+Output: the shell emits instructions such as “display foo”, “switch the foreground color to green”, “move the cursor to the next line”, etc. The terminal acts on these instructions.
+```
 
 ## Escape Sequences
 Historically, terminals would communicate over 8-bit serial lines.
@@ -20,18 +46,6 @@ of an escape sequence.
 Introducing more bytes meant more control operations could be specified.
 
 (TODO Add a bit more on this.)
-
-## Parsing Arguments to CLI Applications
-The Python standard library includes [argparse](https://docs.python.org/3/library/argparse.html),
-as well as a [tutorial](https://docs.python.org/3/howto/argparse.html#id1)
-on the module.
-
-Armin Ronacher gave us [Click](http://click.pocoo.org/5/),
-which makes it easy to create this kind of application.
-Click provides a clean decorator API,
-and it's designed to allow for different Click applications to be nested.
-That is, a Click application can load another Click application,
-with the latter's commands appearing as subcommands of the former.
 
 ## Terminal Drawing With Control Characters
 You're probably familiar with the role of the line feed character `\n`.
