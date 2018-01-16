@@ -6,11 +6,11 @@ This is a compressed lesson designed as a jumpstart for working with the open() 
 1. ##### Working with open() built-in method to access a file (50 minutes)
 
 ```bash
-$ echo "hello world" > info.txt
+$ echo "hello world" > input.txt
 ```
 
 ```python
-filename = 'info.txt'
+filename = 'input.txt'
 
 f = open(filename)
 contents = f.read()
@@ -34,7 +34,7 @@ print(contents)
         program below is completely functionally equivalent:
 
 ```python
-filename = 'info.txt'
+filename = 'input.txt'
 
 with open(filename) as f:
     contents = f.read()
@@ -55,14 +55,13 @@ print(contents)
         4. 'rw' - read and write. be careful! if you read up to a point you can overwrite from there. This is challenging to use and you never really need it.
         5. 'b' - must be added on to 'r', 'w', probably 'a' in windows. It means binary mode. Files could be interacted with as binary or as bytes.
 		6. Lets try using a file mode:
-		```python
 
-		myfile = 'info.txt'
+```python
+filename = 'output.txt'
 
-		with open(myfile, 'w') as f:
-			f.write('The world is talking back to you.\n')
-
-		```
+with open(filename, 'w') as f:
+	f.write('The world is talking back to you.\n')
+```
 
 3. ##### Review JSON format and discuss Python types (30 min)
 
