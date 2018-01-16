@@ -1,5 +1,3 @@
-
-
 #### JSON, Unicode, and File Handling
 
 This is a compressed lesson designed as a jumpstart for working with the open() built-in method, json encoding, unicode encoding, and the json module.
@@ -12,9 +10,9 @@ This is a compressed lesson designed as a jumpstart for working with the open() 
     ```
 
     ```python
-    myfile = 'info.txt'
+    filename = 'info.txt'
 
-    with open(myfile) as f:
+    with open(filename) as f:
         contents = f.read()
 
     print(contents)
