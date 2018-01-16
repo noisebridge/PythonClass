@@ -27,7 +27,7 @@ print(contents)
         3. We read out the contents of the file, and then `close` the file
         4. Finally we print out the contents
 
-    2. Simplifying our code - 10 minutes
+    2. Simplifying our code
 
         The `close` step in the program is interesting.  Almost every file
         `open` should be followed by a corresponding file `close`.  Python
@@ -44,9 +44,10 @@ print(contents)
 ```
 
         1. Best practice - use `open` with the code pattern above, [with...as](https://docs.python.org/2/reference/compound_stmts.html#the-with-statement).
-        2. The colon on line 3 indicates the beginning of a `code block`.  The
-        file `f` is only open until we reach the end of the block.
-        3. Take a look at the docs for
+        2. The colon on line 3 indicates the beginning of a `code block` (also
+        used for `if` and `else` conditions).  The file `f` is only open until
+        we reach the end of the block.
+        3. Let's take a look at the docs for
         [open][https://docs.python.org/2/library/functions.html#open]
 
     2. So, what [mode](https://docs.python.org/2/library/functions.html#open)s can we open a file in?
@@ -66,66 +67,86 @@ with open(filename, 'w') as f:
 
 3. ##### Review JSON format and discuss Python types (30 min)
 
-    1. [JavaScript Object Notation == JSON](http://www.json.org/)
-        1. What is a [railroad diagram](https://en.wikipedia.org/wiki/Syntax_diagram)?
-        2. The whole JSON 'piece' you are working with value must be a JSON value.
-        3. Usually you will want this to be an OBJECT or ARRAY, since you want to have more than one piece of data.
-        4. JSON Lint webapp can be used to check for valid JSON: [http://jsonlint.com/](http://jsonlint.com/)
-        5. Side note: `python -m json.tool MYJSONFILE.json` on the command line will give you a human readable 'pretty looking' version. This is a tool contained in the json module.
+JSON (JavaScript Object Notation) is a file format which can be used to store
+and communicate data between computer systems, while still being (arguably)
+readable by humans.  It's commonly used as a format for storing data in files
+and for as a 'response' format for web APIs.
 
-    2. Python Data Types can be [encoded to to JSON (and back!)](https://docs.python.org/2/library/json.html#encoders-and-decoders)
-        1. This is called `encoding` and `decoding`. This allows complex data structures to exist easily as `flat` strings. It makes it easy to transport all this structure.
+A JSON document describing some of the metadata about Noisebridge could be
+written as:
+
+```
+{
+    "address": "2169 Mission Street, San Francisco, CA",
+    "name": "Noisebridge",
+    "open": true,
+    "members": ["a", "b", "c", ... ]
+}
+```
+
+Note that JSON is a little stricter than Python with regards to quotation
+marks and trailing commas; we always have to use double quotes for
+fields/values, and we are not allowed trailing commas in lists or objects.
+
+The full JSON format is specified at [json.org](http://www.json.org/) as a
+[railroad diagram](https://en.wikipedia.org/wiki/Syntax_diagram).
+
+Let's use a built-in Python tool to pretty-print some JSON data so that it's
+more readable for us.
+
+```json
+{"url":"www.example.com","metadata":{"crawled_at":"2018-01-15","title":"Example Domain"}}
+```
+
+```bash
+python -m json.tool example.json`
+```
+
+Python Data Types can be [encoded to to JSON (and back!)](https://docs.python.org/2/library/json.html#encoders-and-decoders)
+
+This is called `encoding` and `decoding`. This allows complex data structures to exist easily as `flat` strings. It makes it easy to transport all this structure.
 
 4. ###### Lets convert some JSON!
-    1. Two key actions are `encode` and `decode`. 
-        1. In the Python `json` module, these will be available as [`dump/load` and `dumps/loads`](https://docs.python.org/2/library/json.html#basic-usage)
-        2. Encoding and decoding is done by the json module. There are more details [here](https://docs.python.org/2/library/json.html#encoders-and-decoders).
+
+Two key actions are `encode` and `decode`. 
+
+In the Python `json` module, these will be available as [`dump/load` and `dumps/loads`](https://docs.python.org/2/library/json.html#basic-usage)
+
+Encoding and decoding is done by the json module. There are more details [here](https://docs.python.org/2/library/json.html#encoders-and-decoders).
 
 
-    2. ###### Example 1: Using json.loads() and json.dumps()
+###### Example: Using json.loads() and json.dumps()
 
-        ``` Python
-        >>>
-        >>> import json
-        >>>
-        >>> dir()
-        ['__builtins__', '__doc__', '__name__', '__package__', 'json']
-        >>> dir(json)
-        ['JSONDecoder', 'JSONEncoder', '__all__', '__author__', '__builtins__', '__doc__', '__file__', '__name__', '__package__', '__path__', '__version__', '_default_decoder', '_default_encoder', 'decoder', 'dump', 'dumps', 'encoder', 'load', 'loads', 'scanner']
-        >>>
-        >>> my_json_string = u'{"5":"hello world"}'
-        >>> json.loads(my_json_string)
-        {u'5': u'hello world'}
-        >>> my_dict = json.loads(my_json_string)
-        >>> my_dict
-        {u'5': u'hello world'}
-        >>> json.dumps(my_dict)
-        '{"5": "hello world"}'
-        >>>
-        ```
+```python
+>>> import json
+>>> help(json)
+>>>
+>>> my_json_string = u'{"message":"hello world"}'
+>>> json.loads(my_json_string)
+{u'message': u'hello world'}
+>>>
+>>> my_dict = json.loads(my_json_string)
+>>> my_dict
+{u'message': u'hello world'}
+>>>
+>>> json.dumps(my_dict)
+'{"message": "hello world"}'
+>>>
+```
 
-    3. ###### Example 2: Using json.load() and json.dump()
+###### Exercise: Using json.load() and json.dump()
 
-        ``` Python
-        """
-        These are where your notes go.
+```python
+"""
+import json
 
-        Notes are good.
+data = {"message": "hello world"}
 
-        Check out docstrings for more information.
-        """
-        import json
+filename = 'data.json'
 
-        my_json_dict = {"5":"hello world"}
+# write the data into the file data.json
+# close the data.json file
 
-        myfile = 'info.json'
-
-        with open(myfile, 'w') as f:
-            json.dump(my_json_dict, f)
-
-        with open(myfile, 'r') as f:
-            mydict = json.load(f)
-
-        print mydict
-        ```
-
+# read the data back from data.json
+# print the newly-read data and then close data.json
+```
