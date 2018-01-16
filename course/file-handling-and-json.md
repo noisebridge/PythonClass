@@ -43,7 +43,10 @@ with open(filename) as f:
 print(contents)
 ```
 
-1. Best practice - use `open` with the code pattern above, [with...as](https://docs.python.org/2/reference/compound_stmts.html#the-with-statement).
+1. Best practice - use `open` with the code pattern above,
+[with...as](https://docs.python.org/2/reference/compound_stmts.html#the-with-statement).
+This is called a 'context manager', and will ensure that the file is closed
+even if your code encounters an exception.
 2. The colon on line 3 indicates the beginning of a `code block` (also
 used for `if` and `else` conditions).  The file `f` is only open until
 we reach the end of the block.
