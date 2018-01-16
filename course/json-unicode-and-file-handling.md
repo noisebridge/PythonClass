@@ -3,36 +3,50 @@
 This is a compressed lesson designed as a jumpstart for working with the open() built-in method, json encoding, unicode encoding, and the json module.
 
 
-1. ##### Today's deep dive: Opening a file (10 minutes)
+1. ##### Working with open() built-in method to access a file (50 minutes)
 
-    ```bash
-    $ echo "hello world" > info.txt
-    ```
+```bash
+$ echo "hello world" > info.txt
+```
 
-    ```python
-    filename = 'info.txt'
+```python
+filename = 'info.txt'
 
-    with open(filename) as f:
-        contents = f.read()
+f = open(filename)
+contents = f.read()
+f.close()
 
-    print(contents)
-    ```
+print(contents)
+```
 
-    1. What is going on here? - 3 minutes
-        1. First we save the filename as a 'string' variable in python
-        2. Next we pass that filename through the open command
-        3. But what the heck are the words 'with' and 'as' doing? This is a code pattern. More on this later.
-    2. Reference Notes (self-teaching only)
-        1. Why did we put print in parentheses? Do we have to? Should we?
-        2. In what ways does this conform to PEP 8?
+    1. What is going on here?
 
+        1. First we create a variable to hold the filename as a string
+        2. Next we pass that variable to the built-in Python `open` function
+        3. We read out the contents of the file, and then `close` the file
+        4. Finally we print out the contents
 
-2. ##### Working with open() built-in method to access a file (50 minutes)
+    2. Simplifying our code - 10 minutes
 
-    1. The Python [open() built-in method](https://docs.python.org/2/library/functions.html#open)- 10 minutes
-        1. Best practice - use this method in the code pattern above, [with...as](https://docs.python.org/2/reference/compound_stmts.html#the-with-statement).
-        2. A `code pattern` is a `template` that you can copy whenever you need to do a similar thing.
-        3. What about the colon? That's the beginning of a `code block`. That's an indented section that might run based on the [keyword](https://docs.python.org/2/library/keyword.html) before it.
+        The `close` step in the program is interesting.  Almost every file
+        `open` should be followed by a corresponding file `close`.  Python
+        provides us with a way to make this process slightly easier.  The
+        program below is completely functionally equivalent:
+
+```python
+filename = 'info.txt'
+
+with open(filename) as f:
+    contents = f.read()
+
+print(contents)
+```
+
+        1. Best practice - use `open` with the code pattern above, [with...as](https://docs.python.org/2/reference/compound_stmts.html#the-with-statement).
+        2. The colon on line 3 indicates the beginning of a `code block`.  The
+        file `f` is only open until we reach the end of the block.
+        3. Take a look at the docs for
+        [open][https://docs.python.org/2/library/functions.html#open]
 
     2. So, what [mode](https://docs.python.org/2/library/functions.html#open)s can we open a file in?
         1. 'r' - read mode. Read a file from the first byte. Cannot write.
