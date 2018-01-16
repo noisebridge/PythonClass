@@ -1,9 +1,10 @@
-#### JSON, Unicode, and File Handling
+#### File Handling and JSON in Python
 
-This is a compressed lesson designed as a jumpstart for working with the open() built-in method, json encoding, unicode encoding, and the json module.
+This lesson convers some of the basics of file input and output using Python,
+as well as the popular JSON data encoding.
 
 
-1. ##### Working with open() built-in method to access a file (50 minutes)
+1. ##### Working with open() built-in method to access a file
 
 ```bash
 $ echo "hello world" > input.txt
