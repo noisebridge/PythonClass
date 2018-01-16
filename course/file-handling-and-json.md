@@ -20,19 +20,19 @@ f.close()
 print(contents)
 ```
 
-    1. What is going on here?
+1. What is going on here?
 
-        1. First we create a variable to hold the filename as a string
-        2. Next we pass that variable to the built-in Python `open` function
-        3. We read out the contents of the file, and then `close` the file
-        4. Finally we print out the contents
+    1. First we create a variable to hold the filename as a string
+    2. Next we pass that variable to the built-in Python `open` function
+    3. We read out the contents of the file, and then `close` the file
+    4. Finally we print out the contents
 
-    2. Simplifying our code
+2. Simplifying our code
 
-        The `close` step in the program is interesting.  Almost every file
-        `open` should be followed by a corresponding file `close`.  Python
-        provides us with a way to make this process slightly easier.  The
-        program below is completely functionally equivalent:
+    The `close` step in the program is interesting.  Almost every file
+    `open` should be followed by a corresponding file `close`.  Python
+    provides us with a way to make this process slightly easier.  The
+    program below is completely functionally equivalent:
 
 ```python
 filename = 'input.txt'
@@ -43,20 +43,20 @@ with open(filename) as f:
 print(contents)
 ```
 
-        1. Best practice - use `open` with the code pattern above, [with...as](https://docs.python.org/2/reference/compound_stmts.html#the-with-statement).
-        2. The colon on line 3 indicates the beginning of a `code block` (also
-        used for `if` and `else` conditions).  The file `f` is only open until
-        we reach the end of the block.
-        3. Let's take a look at the docs for
-        [open][https://docs.python.org/2/library/functions.html#open]
+1. Best practice - use `open` with the code pattern above, [with...as](https://docs.python.org/2/reference/compound_stmts.html#the-with-statement).
+2. The colon on line 3 indicates the beginning of a `code block` (also
+used for `if` and `else` conditions).  The file `f` is only open until
+we reach the end of the block.
+3. Let's take a look at the docs for
+[open][https://docs.python.org/2/library/functions.html#open]
 
-    2. So, what [mode](https://docs.python.org/2/library/functions.html#open)s can we open a file in?
-        1. 'r' - read mode. Read a file from the first byte. Cannot write.
-        2. 'w' - delete the whole file and start writing from the first byte.
-        3. 'a' - append a file starting at the last byte.
-        4. 'rw' - read and write. be careful! if you read up to a point you can overwrite from there. This is challenging to use and you never really need it.
-        5. 'b' - must be added on to 'r', 'w', probably 'a' in windows. It means binary mode. Files could be interacted with as binary or as bytes.
-		6. Lets try using a file mode:
+2. So, what [mode](https://docs.python.org/2/library/functions.html#open)s can we open a file in?
+    1. 'r' - read mode. Read a file from the first byte. Cannot write.
+    2. 'w' - delete the whole file and start writing from the first byte.
+    3. 'a' - append a file starting at the last byte.
+    4. 'rw' - read and write. be careful! if you read up to a point you can overwrite from there. This is challenging to use and you never really need it.
+    5. 'b' - must be added on to 'r', 'w', probably 'a' in windows. It means binary mode. Files could be interacted with as binary or as bytes.
+    6. Lets try using a file mode:
 
 ```python
 filename = 'output.txt'
