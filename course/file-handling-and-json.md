@@ -106,7 +106,7 @@ Python Data Types can be [encoded to to JSON (and back!)](https://docs.python.or
 
 This is called `encoding` and `decoding`. This allows complex data structures to exist easily as `flat` strings. It makes it easy to transport all this structure.
 
-4. ###### Lets convert some JSON!
+4. ##### Lets convert some JSON!
 
 Two key actions are `encode` and `decode`. 
 
