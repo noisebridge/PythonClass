@@ -53,7 +53,7 @@ we reach the end of the block.
 3. Let's take a look at the docs for
 [open][https://docs.python.org/2/library/functions.html#open]
 
-2. So, what [mode](https://docs.python.org/2/library/functions.html#open)s can we open a file in?
+2. So, what [modes](https://docs.python.org/2/library/functions.html#open) can we open a file in?
     1. 'r' - read mode. Read a file from the first byte. Cannot write.
     2. 'w' - delete the whole file and start writing from the first byte.
     3. 'a' - append a file starting at the last byte.
