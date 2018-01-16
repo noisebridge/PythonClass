@@ -65,7 +65,7 @@ with open(filename, 'w') as f:
 	f.write('The world is talking back to you.\n')
 ```
 
-3. ##### Review JSON format and discuss Python types (30 min)
+3. ##### Review JSON format and discuss Python types
 
 JSON (JavaScript Object Notation) is a file format which can be used to store
 and communicate data between computer systems, while still being (arguably)
