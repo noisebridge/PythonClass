@@ -85,5 +85,6 @@ This lesson covers some topics related to strings in Python. In particular: enco
 
     5. Regular Expressions - Know they exist; try them out sometime.
         1. Regular expressions are strings that can match a SET of regular strings.
-            1. There's a lot to say about these
+            1. There's a lot to say about these!
             2. Check out the Python `re` library, it is already on your computer.
+            3. [Regexr](https://regexr.com/) is a nice resource for learning regular expressions interactively.
