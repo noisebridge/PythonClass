@@ -7,12 +7,12 @@ This lesson covers some topics related to strings in Python. In particular: enco
     # Do this in the console so you can see the difference!
     mystring = "hello world"
 
-    # What are we seeing here?
+    # What methods are defined on strings?
     dir(mystring)
 
     # Let's try using some methods...
     mystring.upper()
-    # Did that permanently change the string?
+    # What happened? Did that permanently change the original string?
     mystring.title()
     # How about that? Why did we get the result we did?
     
@@ -58,15 +58,15 @@ This lesson covers some topics related to strings in Python. In particular: enco
         ```
 
 3. ##### Lets play with some strings.
-    1. First lets look inside a string
-        1. Lets use the `dir` built-in method.
-        ```python
-        >>> mystring = "this is my string"
-        >>> help(dir)
-        >>> dir(mystring)
-        ```
+    1. String methods
+        1. Let's look at the string methods we listed in the deep-dive: `dir('hello')`.
         2. These things are string methods. [Lets look at some](https://docs.python.org/2/library/stdtypes.html#string-methods)
-            1. `lower()`, `capitalize()`, `title()`
+            1. Change capitalization: `lower()`, `upper()`, `capitalize()`, `swapcase()`, `title()`
+            2. Manipulate whitespace: `strip()`, `lstrip()`, `rstrip()`, `ljust()`, `rjust()`, `center()`, `expandtabs()`
+            3. Test properties: `isalnum()`, `isalpha()`, `isdigit()`, `islower()`, `isspace()`, `istitle()`, `isupper()`
+            4. Replacement: `replace()`, `translate()`
+            5. Manipulate encodings: `decode()`, `encode()`
+            6. Divide, combine: `join()`, `split()`, `splitlines()`
 
     2. Now lets slice a string.
         1. [Reference documentation](https://docs.python.org/2/reference/expressions.html#slicings)
@@ -75,13 +75,13 @@ This lesson covers some topics related to strings in Python. In particular: enco
     3. Substring Search - find a string that fits inside another string.
         1. How many instances of 'is' are in 'this is my string'?
         2. Lets work with some more string methods.
-            1. find(), rfind(), 
-            2. count()
-            3. partition(), rpartition()
-            4. split()
+            1. `find()`, `rfind(), `
+            2. `count()`
+            3. `partition()`, `rpartition()`
 
-    4. Iterating over a list of strings:
-        1. Again, we use the `for ...in` pattern:
+    4. String iteration
+        1. Iterate over characters in a string: `for c in some_string: ...`
+        2. Iterate over a list of strings: `for s in some_strings: ...`
 
     5. Regular Expressions - Know they exist; try them out sometime.
         1. Regular expressions are strings that can match a SET of regular strings.
