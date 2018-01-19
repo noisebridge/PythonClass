@@ -1,34 +1,28 @@
-
-
 #### String Management - processing strings and extracting information
 
 This lesson covers some topics related to strings in Python. In particular: encoding, string management, built-in methods, iterating over strings, substring search, and immutability (concept: immutable type).
 
-
 1. ##### Today's deep dive: dissecting a string (10 minutes)
-
     ```python
     # Do this in the console so you can see the difference!
-
     mystring = "hello world"
 
-    # what are we seeing here?
+    # What are we seeing here?
     dir(mystring)
 
-    # lets try using some methods...
+    # Let's try using some methods...
     mystring.upper()
-    # did that permanently change the string?
+    # Did that permanently change the string?
     mystring.title()
-    # how about that? Why did we get the result we did?
+    # How about that? Why did we get the result we did?
     
-    # now lets coerce something else into a string
+    # Now let's coerce something else into a string
     mynumber = 1001001
     my_coerced_string = str(mynumber)
-    # number and string are similar enough that python can have regular rules to do this
-    # if you wanted to follow different rules, you could write them yourself
+    # Number and string are similar enough that python can have regular rules to do this
+    # If you wanted to follow different rules, you could write them yourself
+    # by overriding an object's __str__ method
     ```
-
-
 
 2. ##### String Encoding! ascii or utf-8?
     1. First off, what are they?
@@ -43,16 +37,16 @@ This lesson covers some topics related to strings in Python. In particular: enco
         1. The Python 2 interpreter defaults to decoding a source code file (a script) as ascii.
         2. In order to use a different encoding you need to specify it:
             1. emacs-friendly: `# -*- coding: utf-8 -*-`
-            2. vim-friendly:`# vim: set fileencoding=utf-8 :`
+            2. vim-friendly: `# vim: set fileencoding=utf-8 :`
             3. Precise definition from PEP 263: encoding must match the regular expression `"coding[:=]\s*([-\w.]+)"`
             4. you could use human friendly: `# this file uses the encoding: utf-8`
         3. What about Python 3?
             1. Python 3 uses utf-8 [as the default file coding](https://docs.python.org/3.3/howto/unicode.html#the-string-type)
             2. PEP 263 still applies to Python 3.
     4. Lets use Python 2 - Three types of string declarations:
-        1. ascii = 'this is a string'
-        2. unicode = u'this is a unicode string'
-        3. raw = r'this needs no escapes'
+        1. `ascii = 'this is a string'`
+        2. `unicode = u'this is a unicode string'`
+        3. `raw = r'this needs no escapes'`
     5. String escapes - a string will often need escapes.
         1.  Let's play with [escape sequences!](https://docs.python.org/2/reference/lexical_analysis.html#string-literals)
         ```python
@@ -64,17 +58,15 @@ This lesson covers some topics related to strings in Python. In particular: enco
         ```
 
 3. ##### Lets play with some strings.
-
     1. First lets look inside a string
-        1. Lets use the dir built-in method.
+        1. Lets use the `dir` built-in method.
         ```python
         >>> mystring = "this is my string"
         >>> help(dir)
         >>> dir(mystring)
         ```
         2. These things are string methods. [Lets look at some](https://docs.python.org/2/library/stdtypes.html#string-methods)
-            1. lower(), capitalize(), title()
-    
+            1. `lower()`, `capitalize()`, `title()`
 
     2. Now lets slice a string.
         1. [Reference documentation](https://docs.python.org/2/reference/expressions.html#slicings)
@@ -89,7 +81,7 @@ This lesson covers some topics related to strings in Python. In particular: enco
             4. split()
 
     4. Iterating over a list of strings:
-        1. Again, we use the for... in pattern:
+        1. Again, we use the `for ...in` pattern:
 
     5. Regular Expressions - Know they exist; try them out sometime.
         1. Regular expressions are strings that can match a SET of regular strings.
