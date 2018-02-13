@@ -1,9 +1,11 @@
-
-
 #### Introduction to Flask Microframework for Web Development
 
-This is a basic introduction to flask intended to give us an understanding of the popular Model, Template, View web application code pattern. Flask has [an excellent tutorial](http://flask.pocoo.org/docs/0.10/).
+This is a basic introduction to Flask demonstrating the popular
+[Model, Template, View](https://docs.djangoproject.com/en/2.0/faq/general/#django-appears-to-be-a-mvc-framework-but-you-call-the-controller-the-view-and-the-view-the-template-how-come-you-don-t-use-the-standard-names)
+pattern for web applications.
+These components will be handled by the SQLAlchemy, Jinja2, and Flask packages, respectively.
 
+If you're interested in learning more, Flask has [an excellent tutorial](http://flask.pocoo.org/docs/0.10/).
 
 1. ##### Today's deep dive: [Run Flask](http://flask.pocoo.org/)
 
