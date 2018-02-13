@@ -1,10 +1,18 @@
-PyClass meets every Monday from 7 to 9 PM (PST) in the 'Church' classroom.
+PyClass meets every Monday from 7 to 9 PM (PST) in the "Church" classroom.
 
 The course is free! If you wish to donate, please give to [Noisebridge](https://donate.noisebridge.net).
-- Recommended Donations: $15, $50, $200+
+- Recommended donations: $15, $50, $200+
 - Recommended monthly donations: $10, $20, $40, $80+ / month
 
-### Classes
+Contents:
+
+- [Curriculum](#curriculum)
+- [Course Description](#class-description-goals-and-ideal-student)
+- [New Student Reading](#new-student-reading)
+- [OS / Environment / Python Versions](#os--environment--versions)
+- [Mailing List](#mailing-list)
+
+### Curriculum
 We usually run through a cycle of six core classes (below) over six weeks, then four weeks of guest talks, followed by an off week.
 
 - [File Handling and JSON](course/file-handling-and-json)
@@ -13,9 +21,6 @@ We usually run through a cycle of six core classes (below) over six weeks, then 
 - [Algorithms](course/algorithms)
 - [Higher Order Functions](course/higher-order-functions)
 - [Flask](course/flask)
-
-### PSAs and Events
-TBD
 
 ### Course Description, Goals, and Ideal Student
 The course is designed with the following constraints in mind:
