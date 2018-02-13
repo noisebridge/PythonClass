@@ -4,10 +4,20 @@ The course is free! If you wish to donate, please give to [Noisebridge](https://
 - Recommended Donations: $15, $50, $200+
 - Recommended monthly donations: $10, $20, $40, $80+ / month
 
+### Classes
+We usually run through a cycle of six core classes (below) over six weeks, then four weeks of guest talks, followed by an off week.
+
+- [File Handling and JSON](course/file-handling-and-json)
+- [Strings](course/strings)
+- [sqlite3](course/sqlite3)
+- [Algorithms](course/algorithms)
+- [Higher Order Functions](course/higher-order-functions)
+- [Flask](course/flask)
+
 ### PSAs and Events
 TBD
 
-### Class Description, Goals, and Ideal Student
+### Course Description, Goals, and Ideal Student
 The course is designed with the following constraints in mind:
 - The barrier to entry is low, but the pace is fast.
 - All materials must be made [available on Github](https://github.com/PyClass/PyClassLessons).
