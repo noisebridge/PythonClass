@@ -1,11 +1,31 @@
-#### Introduction to Flask Microframework for Web Development
+## Introduction to Flask
 
-This is a basic introduction to Flask demonstrating the popular
-[Model, Template, View](https://docs.djangoproject.com/en/2.0/faq/general/#django-appears-to-be-a-mvc-framework-but-you-call-the-controller-the-view-and-the-view-the-template-how-come-you-don-t-use-the-standard-names)
-pattern for web applications.
-These components will be handled by the SQLAlchemy, Jinja2, and Flask packages, respectively.
+### What do we want to accomplish?
+You might be unfamiliar with what goes into creating a web application,
+so let's go over what we're trying to accomplish.
 
-If you're interested in learning more, Flask has [an excellent tutorial](http://flask.pocoo.org/docs/0.10/).
+We want users to be able to visit web pages created by our application,
+so we'll need some way to *route requests to content.*
+Flask, which has [an excellent tutorial](http://flask.pocoo.org/docs/0.10/),
+will provide this functionality.
+
+Maybe this content already exists,
+or maybe *the application has to generate it upon request.*
+To generate new content, we'd like to create template pages
+that our application can fill out for the user.
+Flask includes the [Jinja2](http://jinja.pocoo.org/)
+templating library by default for this purpose,
+but we could always choose a different one like
+[Mako](http://www.makotemplates.org/).
+
+Finally, we'd like to keep our data -
+which will be used to fill out our template documents -
+in a database.
+To avoid maintaining a lot of queries directly in SQL,
+we can use a library like [SQLAlchemy](https://www.sqlalchemy.org/)
+for [object relational mapping](https://en.wikipedia.org/wiki/Object-relational_mapping).
+That's a long phrase that just means we'd like to
+*call methods on Python objects instead of writing SQL.*
 
 1. ##### Today's deep dive: [Run Flask](http://flask.pocoo.org/)
 
@@ -120,4 +140,20 @@ If you're interested in learning more, Flask has [an excellent tutorial](http://
             1. Get this code integrated into our basic app!  
             2. Too long for today.
 
+### Summary
+We just implemented a standard web application using what Django calls
+the Model-Template-View (MTV) pattern.
+Django is designed around this concept,
+and makes a number of decisions about your application
+to make it easier to develop.
 
+As we saw, Flask required us to pick our own dependencies.
+This is nice when building lightweight applications,
+or when the MTV pattern isn't so relevant to your design.
+
+A good heuristic for deciding between Flask and Django might be,
+"Am I designing an application that users should be able to log in to?"
+If so, Django will help you create such an application quickly
+without having to reinvent the wheels of user data modeling,
+authentication, etc.
+If not, give Flask a spin!
