@@ -1,5 +1,7 @@
 # Python Class Django Mini-Course
 
+Slides are at http://slides.com/razzi/pyclass-django
+
 ## What we'll be building
 
 RetroSocial, a basic social network

@@ -4,7 +4,7 @@ The course is free! If you wish to donate, please give to [Noisebridge](https://
 - Recommended donations: $15, $50, $200+
 - Recommended monthly donations: $10, $20, $40, $80+ / month
 
-After class, we welcome your feedback! Submit the form [here](goo.gl/oMhxkv)
+After class, we welcome your feedback! Submit the form [here](http://goo.gl/oMhxkv)
 
 Contents:
 
