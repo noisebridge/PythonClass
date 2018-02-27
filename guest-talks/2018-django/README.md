@@ -1,66 +1,124 @@
-# Python Class Django Intensive
+# Python Class Django Mini-Course
 
-## Topics
-
-installing
-orm
-object stuff: save()
-add fk
-join
-aggregation
-forms
-url routing + views
-templating
-admin
-shell
-testing
-rest framework
-extensions
-migrations
-cache
-work queue
-debugging
-stacktrace emails
-static files
-deploy to heroku
-api
-
-## plan
-
-# Django rationale
-
-a taste of django
-
-# When to use django
-
-- easy to get off the ground
-- want out-of-the-box functionality
-  - defaults for email, error reporting, caching, database...
-- Relational database
-- python
-
-Not relational? use Flask, Sinatra, or Express
-
-Django: 2005
-
-Similar projects from other languages: Rails (2005), phoenix, laravel
-
-# What we'll be building
+## What we'll be building
 
 RetroSocial, a basic social network
 
 - signup / login / logout
 - posting
 - messaging
+- API
 
-Hint: if you want a more fleshed-out, open-source social network in django (yes, they exist), see
+## Week 1: Serving html
 
-- Vataxia https://github.com/buckyroberts/Vataxia
-- Bootcamp https://github.com/vitorfs/bootcamp
+installing
+startproject
+development server
+migrating the database
+createsuperuser
+django.contrib.auth
+admin
+apps and startapp
+views
+url routing
+templates
 
-# What we'll be using
+## Week 2: Modeling data and deploying django
 
-Python 3.6
-Django 2.0
-SQLite database
+models
+basic fields
+relational fields
+shell
+ORM
+forms
+migrations
 
+## Week 3: Real-time communications
+
+polling
+channels
+work queues
+
+## Week 4: APIs and static frontends
+
+collectstatic
+rest framework
+api
+static files on cdn
+
+# Other topics, as time allows
+
+testing
+extensions
+caching
+queues using redis
+debugging
+stacktrace emails
+project templates
+
+# Week 1 instructions
+
+## install django
+
+```sh
+pip install django
+```
+
+## startproject
+```sh
+django-admin startproject retrosocial
+cd retrosocial
+```
+## runserver
+```sh
+python manage.py runserver
+```
+## migrate
+
+```sh
+python manage.py migrate
+```
+## createsuperuser
+```sh
+python manage.py createsuperuser
+```
+## admin
+
+```sh
+python manage.py runserver
+open localhost:8000/admin
+```
+
+## startapp
+
+```
+python manage.py startapp social
+```
+
+## register app (settings.py)
+
+Edit retrosocial/retrosocial/settings.py
+
+## Add index view
+
+Edit retrosocial/users/views.py
+
+## edit urls
+
+Edit retrosocial/retrosocial/urls.py
+
+## create template
+
+Edit retrosocial/users/templates/users/index.html
+
+## Checkpoint: display user list on homepage
+
+![homepage with user list](https://imgur.com/qD5Huce)
+
+## delete database to fresh start
+
+If you want to clear your database and start over, you can db.sqlite3:
+
+```sh
+rm db.sqlite3
+```
