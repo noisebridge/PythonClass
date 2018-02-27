@@ -4,6 +4,8 @@ The course is free! If you wish to donate, please give to [Noisebridge](https://
 - Recommended donations: $15, $50, $200+
 - Recommended monthly donations: $10, $20, $40, $80+ / month
 
+After class, we welcome your feedback! Submit the form [here](goo.gl/oMhxkv)
+
 Contents:
 
 - [Curriculum](#curriculum)
@@ -37,7 +39,7 @@ Ideally, students starting the course can grasp the following code. Feel free to
 ```python
 letter_frequency_dict = {}
 word = "noisebridge"
- 
+
 for letter in word:
     times = letter_frequency_dict.get(letter, 0)
     times += 1
@@ -45,7 +47,7 @@ for letter in word:
 ```
 
 #### We use the [Socratic Method](http://www.criticalthinking.org/pages/socratic-teaching/606)
-A Socratic questioner should 
+A Socratic questioner should
 
 1. keep the discussion focused
 2. keep the discussion fact-based\*
