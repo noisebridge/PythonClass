@@ -12,6 +12,7 @@
 {% endfor %}
 
 <h2>Posts</h2>
+
 {% for post in posts %}
   <div>
     {{ post.user.username }}:
@@ -20,12 +21,14 @@
 {% endfor %}
 
 
-{% if user.is_authenticated %}
-  <h2>Make a post</h2>
+<h2>Make a post</h2>
 
+{% if user.is_authenticated %}
   <form method="post" action="/post">
     {% csrf_token %}
     {{ form }}
     <button type="submit">Post</button>
   </form>
+{% else %}
+  <p>You must be logged in to post.</p>
 {% endif %}

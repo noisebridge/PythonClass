@@ -196,22 +196,26 @@ LOGIN_REDIRECT_URL = '/'
 Edit retrosocial/users/templates/users/index.html.
 
 ```html
-{% if not user %}
-  <a href="/login">Login</a>
-{% else %}
+{% if user.is_authenticated %}
   <p>Logged in as {{ user.username }}.
   <a href="/logout">Logout</a></p>
+{% else %}
+  <a href="/login">Login</a>
 {% endif %}
 ```
 
+### Add logout view
+
 Edit retrosocial/retrosocial/urls.py.
+
+The `{'next_page': '/'}` makes it so that logging out redirects back to the home page.
 
 ```python
 from django.contrib.auth.views import login, logout
 
 urlpatterns = [
     ...
-    path('logout', logout)
+    path('logout', logout, {'next_page': '/'})
 ]
 ```
 
@@ -264,6 +268,10 @@ Edit retrosocial/users/models.py
 
 ```python
 from django import forms
+...
+
+class Post(models.Model):
+    ...
 
 
 class PostForm(forms.ModelForm):
@@ -296,11 +304,11 @@ class PostCreateView(CreateView):
         return HttpResponseRedirect('/')
 ```
 
-### Render the posts on the home page
+### Render the posts and post form on the home page
 
 Edit retrosocial/users/views.py
 
-```
+```python
 ...
 from users.models import Post, PostForm
 ...
@@ -319,12 +327,39 @@ def home(request):
     })
 ```
 
-### Checkpoint: Make a post
+Edit retrosocial/users/templates/users/index.html.
+
+```html
+...
+
+<h2>Posts</h2>
+{% for post in posts %}
+  <div>
+    {{ post.user.username }}:
+    {{ post.text }}
+  </div>
+{% endfor %}
+
+
+{% if user.is_authenticated %}
+  <h2>Make a post</h2>
+
+  <form method="post" action="/post">
+    {% csrf_token %}
+    {{ form }}
+    <button type="submit">Post</button>
+  </form>
+{% else %}
+  <p>You must be logged in to post.</p>
+{% endif %}
+```
+
+### Checkpoint: ability to log in and post
 
 ![homepage with posts and form](https://i.imgur.com/hO4QYA5.png)
 
 For more information on Django generic views, see https://docs.djangoproject.com/en/2.0/ref/class-based-views/generic-editing/.
 
-### Deploy to Heroku (as time allows)
+## Week 3
 
 https://devcenter.heroku.com/articles/deploying-python
