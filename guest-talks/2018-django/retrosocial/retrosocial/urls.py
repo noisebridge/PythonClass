@@ -23,7 +23,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 
     path('', views.home),
-    path('post', views.PostCreateView.as_view()),
 
     path('login', login),
     path('logout', logout, {'next_page': '/'})

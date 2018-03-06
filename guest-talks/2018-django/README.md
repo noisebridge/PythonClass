@@ -95,7 +95,7 @@ open localhost:8000/admin
 ### startapp
 
 ```
-python manage.py startapp social
+python manage.py startapp users
 ```
 
 ### register app (settings.py)
@@ -167,10 +167,11 @@ To let users get to /login, let's add a link to our index.html.
 
 Edit retrosocial/users/templates/users/index.html.
 
-Add the following html somewhere on the page.
+Add the following html at the top of the page.
 
 ```html
 <a href="/login">Login</a>
+...
 ```
 
 ### Redirect after login to home page
@@ -183,15 +184,15 @@ http://127.0.0.1:8000/accounts/profile/
 Page not found (404)
 ```
 
-Instead, let's redirect to the home page.
+Django thinks we're going to account profile after logging in, but let's redirect to the home page instead.
 
-Edit retrosocial/retrosocial/settings.py
+Edit retrosocial/retrosocial/settings.py.
 
 ```python
 LOGIN_REDIRECT_URL = '/'
 ```
 
-### Show logged in as user on home page
+### Show logged in user on home page
 
 Edit retrosocial/users/templates/users/index.html.
 
@@ -246,8 +247,8 @@ class Post(models.Model):
 ### Make Post migration
 
 ```sh
-python manage.py makemigrations
-python manage.py migrate
+$ python manage.py makemigrations
+$ python manage.py migrate
 ```
 
 ### Make a post in the shell
@@ -262,9 +263,43 @@ $ python manage.py shell
 <QuerySet [<Post: Post object (1)>]>
 ```
 
+### Render the posts on the home page
+
+Edit retrosocial/users/views.py.
+
+```python
+from users.models import Post
+...
+
+
+def home(request):
+    users = User.objects.all()
+    posts = Post.objects.all()
+
+    return render(request, 'users/index.html', {
+        'users': users,
+        'posts': posts
+    })
+```
+
+Edit retrosocial/users/templates/users/index.html.
+
+```html
+...
+
+<h2>Posts</h2>
+
+{% for post in posts %}
+  <div>
+    {{ post.user.username }}:
+    {{ post.text }}
+  </div>
+{% endfor %}
+```
+
 ### Make a form for Post
 
-Edit retrosocial/users/models.py
+Edit retrosocial/users/models.py.
 
 ```python
 from django import forms
@@ -280,33 +315,9 @@ class PostForm(forms.ModelForm):
         fields = ['text']
 ```
 
-### Make a PostCreateView
+### Render post form on the home page
 
-Edit retrosocial/users/views.py
-
-```python
-from django.http import HttpResponseRedirect
-from django.views.generic.edit import CreateView
-from users.models import Post, PostForm
-
-...
-
-class PostCreateView(CreateView):
-    model = Post
-    fields = ['text']
-
-    def form_valid(self, form):
-        post = form.save(commit=False)
-        # add the currently-logged-in user as the post user
-        post.user = self.request.user
-        post.save()
-
-        return HttpResponseRedirect('/')
-```
-
-### Render the posts and post form on the home page
-
-Edit retrosocial/users/views.py
+Edit retrosocial/users/views.py.
 
 ```python
 ...
@@ -332,19 +343,10 @@ Edit retrosocial/users/templates/users/index.html.
 ```html
 ...
 
-<h2>Posts</h2>
-{% for post in posts %}
-  <div>
-    {{ post.user.username }}:
-    {{ post.text }}
-  </div>
-{% endfor %}
-
+<h2>Make a post</h2>
 
 {% if user.is_authenticated %}
-  <h2>Make a post</h2>
-
-  <form method="post" action="/post">
+  <form method="post">
     {% csrf_token %}
     {{ form }}
     <button type="submit">Post</button>
@@ -354,12 +356,26 @@ Edit retrosocial/users/templates/users/index.html.
 {% endif %}
 ```
 
+### Allow POSTing data from html form
+
+Edit retrosocial/users/views.py.
+
+```python
+def home(request):
+    if request.method == 'POST':
+        post = PostForm(request.POST).save(commit=False)
+        post.user = request.user
+        post.save()
+
+    users = User.objects.all()
+    ...
+```
+
 ### Checkpoint: ability to log in and post
 
 ![homepage with posts and form](https://i.imgur.com/hO4QYA5.png)
 
-For more information on Django generic views, see https://docs.djangoproject.com/en/2.0/ref/class-based-views/generic-editing/.
+## Week 3: Deploying to Heroku
 
-## Week 3
+[IN PROGRESS]
 
-https://devcenter.heroku.com/articles/deploying-python

@@ -1,12 +1,15 @@
 from django.contrib.auth.models import User
-from django.http import HttpResponseRedirect
 from django.shortcuts import render
-from django.views.generic.edit import CreateView
 
 from users.models import Post, PostForm
 
 
 def home(request):
+    if request.method == 'POST':
+        post = PostForm(request.POST).save(commit=False)
+        post.user = request.user
+        post.save()
+
     users = User.objects.all()
     posts = Post.objects.all()
 
@@ -17,15 +20,3 @@ def home(request):
         'posts': posts,
         'form': post_form
     })
-
-
-class PostCreateView(CreateView):
-    model = Post
-    fields = ['text']
-
-    def form_valid(self, form):
-        post = form.save(commit=False)
-        post.user = self.request.user
-        post.save()
-
-        return HttpResponseRedirect('/')

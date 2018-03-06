@@ -24,7 +24,7 @@
 <h2>Make a post</h2>
 
 {% if user.is_authenticated %}
-  <form method="post" action="/post">
+  <form method="post">
     {% csrf_token %}
     {{ form }}
     <button type="submit">Post</button>

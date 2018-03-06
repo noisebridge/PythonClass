@@ -7,7 +7,6 @@ class Post(models.Model):
     text = models.TextField()
     user = models.ForeignKey(
         User,
-        blank=True,
         on_delete=models.CASCADE
     )
 
