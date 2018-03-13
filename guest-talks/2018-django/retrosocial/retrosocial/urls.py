@@ -22,8 +22,9 @@ from users import views
 urlpatterns = [
     path('admin/', admin.site.urls),
 
-    path('', views.home),
+    path('', views.home, name='home'),
 
+    path('signup', views.signup),
     path('login', login),
     path('logout', logout, {'next_page': '/'})
 ]
