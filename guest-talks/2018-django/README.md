@@ -25,7 +25,7 @@ RetroSocial, a basic social network
 - url routing
 - templates
 
-## Week 2: Modeling data and deploying django
+## Week 2: Modeling data
 
 - models
 - basic fields
@@ -35,28 +35,20 @@ RetroSocial, a basic social network
 - forms
 - migrations
 
-## Week 3: Real-time communications
+## Week 3: Deploying to Heroku
 
-- polling
-- channels
-- work queues
-
-## Week 4: APIs and static frontends
-
-- collectstatic
-- rest framework
-- api
-- static files on cdn
+## Week 4: Real-time communications with django-channels
 
 ## Other topics, as time allows
 
 - testing
 - extensions
 - caching
-- queues using redis
+- queues
 - debugging
 - stacktrace emails
 - project templates
+- static frontend
 
 # Week 1: Setup, apps, urls, views, templates
 
@@ -69,8 +61,16 @@ pip install django
 
 ### startproject
 ```sh
-django-admin startproject retrosocial
-cd retrosocial
+$ django-admin startproject retrosocial
+$ cd retrosocial
+```
+
+Now's a good time to set up version control:
+
+```sh
+$ git init
+$ git add .
+$ git commit -m "Django project template"
 ```
 ### runserver
 ```sh
@@ -511,4 +511,136 @@ See https://devcenter.heroku.com/articles/heroku-cli.
 $ brew install heroku
 ```
 
+### Gunicorn, a production-ready python server
+
+Install gunicorn, our production server
+
+```sh
+$ pip install gunicorn
+```
+
+Test running our app using gunicorn
+
+```sh
+gunicorn retrosocial.wsgi
+```
+
+Now we can add that to Procfile so that Heroku knows how to run our app:
+
+```
+web: gunicorn retrosocial.wsgi
+```
+
+And we can test out how heroku will run our application:
+
+```sh
+$ heroku local
+```
+
+### Specify requirements for Heroku
+
+Add the following to a new file, requirements.txt:
+
+```
+django
+django-heroku
+```
+
+This tells Heroku the Python packages we need. Heroku will install them for us.
+
+### Create the Heroku app
+
+```sh
+$ heroku create
+```
+### Settings tweaks for production
+
+There is a library [django-heroku](https://github.com/heroku/django-heroku) which will configure settings for us.
+
+```sh
+$ pip install django-heroku
+```
+
+Edit retrosocial/settings.py to import (at the top) and configure (at the bottom) django_heroku.
+
+```python
+import django_heroku
+
+...
+
+django_heroku.settings(locals())
+```
+
+`django_heroku` will override the database setting to use whatever database is at the `DATABASE_URL` environment variable.
+
+To use our local `master` database, we'll need to set `DATABASE_URL`:
+
+```sh
+$ export DATABASE_URL=postgres:///master
+```
+
+Make sure things are still working with:
+
+```sh
+heroku local
+```
+
+And open localhost:5000 (note the new port).
+
+### Push to production
+
+We start a deployment to heroku with `git push heroku master`.
+
+```sh
+$ git push heroku master
+Counting objects: 25, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (22/22), done.
+Writing objects: 100% (25/25), 5.08 KiB | 1.69 MiB/s, done.
+Total 25 (delta 1), reused 0 (delta 0)
+remote: Compressing source files... done.
+remote: Building source:
+remote:
+remote: -----> Python app detected
+remote: -----> Installing python-3.6.4
+...
+```
+
+### Open our application
+
+```
+$ heroku open
+```
+
+We'll see an error, since we don't have a database yet.
+
+```sh
+$ heroku logs
+```
+
+### Create a database and run migrations
+
+Heroku treats databases as an "add-on".
+
+Once we add the database, we'll need to apply migrations on that database.
+
+```sh
+$ heroku addons:create heroku-postgresql
+Creating heroku-postgresql on ⬢ stark-wave-50438... free
+Database has been created and is available
+...
+$ heroku run python manage.py migrate
+...
+```
+
+Now you should be able to `heroku open` to interact with your application on a URL anybody can access!
+
 For the full Heroku guide on deploying python, see https://devcenter.heroku.com/articles/deploying-python.
+
+### Week 4: Real-time communications with channels
+
+One feature we've come to expect from modern web applications is having new information load on the page instantly, without waiting for us to refresh.
+
+We can accomplish this in our own application with a websocket.
+
+[IN PROGRESS]
