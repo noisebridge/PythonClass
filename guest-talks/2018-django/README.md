@@ -58,7 +58,7 @@ RetroSocial, a basic social network
 - stacktrace emails
 - project templates
 
-# Week 1 instructions
+# Week 1: Setup, apps, urls, views, templates
 
 ### install django
 
@@ -126,7 +126,7 @@ If you want to clear your database and start over, you can remove db.sqlite3:
 rm db.sqlite3
 ```
 
-# Week 2 instructions
+# Week 2: Login, logout, models, forms
 
 ### Add login page to our app
 
@@ -375,7 +375,133 @@ def home(request):
 
 ![homepage with posts and form](https://i.imgur.com/hO4QYA5.png)
 
-## Week 3: Deploying to Heroku
+# Week 3: Signup, Deploying to Heroku
+## Create a signup form
 
-[IN PROGRESS]
+In order for arbitrary users to be able to sign up for our social network, we'll need a way for them to sign up.
 
+### Add signup url
+
+We'll have a /signup route which will give them a signup form.
+
+Edit retrosocial/urls.py:
+
+```python
+urlpatterns = [
+    ...
+    path('signup', views.signup)
+]
+```
+
+### Add signup view
+
+Here's the implementation of the signup view:
+
+```python
+def signup(request):
+    if request.method == 'POST':
+        form = UserCreationForm(request.POST)
+        if form.is_valid():
+            form.save()
+            username = form.cleaned_data.get('username')
+            raw_password = form.cleaned_data.get('password1')
+            user = authenticate(username=username, password=raw_password)
+            login(request, user)
+            return redirect('home')
+    else:
+        form = UserCreationForm()
+
+    return render(request, 'registration/signup.html', {'form': form})
+```
+
+And a barebones signup form, in retrosocial/users/templates/registration/login.html:
+
+```html
+<h2>Sign up</h2>
+<form method="post">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit">Sign up</button>
+</form>
+```
+
+Now we can navigate to localhost:8000/signup and see our form!
+
+One last thing: let's add a link from the home page to the signup form. Can you figure out how to do that? Hint: we added a login link before, in a very similar way.
+
+### Checkpoint: signup
+
+![signup form](https://i.imgur.com/95bUlVH.png)
+
+For more details on how to create a signup form, see https://simpleisbetterthancomplex.com/tutorial/2017/02/18/how-to-create-user-sign-up-view.html.
+
+## Deploying to Heroku
+### Switching to Postgres
+
+The first thing we need to do to make our app production-ready is to switch from sqlite3 to Postgres.
+
+Heroku runs multiple servers, each with their own file system, so sqlite won't work there.
+
+Postgres is feature-rich and well-supported!
+
+```sh
+$ brew install postgres
+```
+
+Python bindings for postgres:
+
+```sh
+$ pip install psycopg2-binary
+```
+
+Start Postgres and create a database we can use:
+
+```sh
+$ brew services start postgresql
+$ createdb master
+```
+
+You can confirm your database is running by connecting:
+
+```sh
+$ psql -d master
+psql (10.3)
+Type "help" for help.
+
+master=# \q
+```
+
+(use \q or control-D to exit)
+
+### Make our Django app use Postgres
+
+Edit retrosocial/settings.py.
+
+```python
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'master',
+    }
+}
+```
+
+Run your server, and you should get the familiar "unapplied migrations" warning.
+
+Migrate your database and create a superuser and you'll be back up to speed.
+
+### Sign up for heroku
+
+It's free to sign up! No credit card required.
+
+https://signup.heroku.com/
+
+### Installing the Heroku CLI
+
+See https://devcenter.heroku.com/articles/heroku-cli.
+
+```sh
+$ brew install heroku
+```
+
+For the full Heroku guide on deploying python, see https://devcenter.heroku.com/articles/deploying-python.
