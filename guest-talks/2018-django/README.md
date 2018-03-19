@@ -637,10 +637,75 @@ Now you should be able to `heroku open` to interact with your application on a U
 
 For the full Heroku guide on deploying python, see https://devcenter.heroku.com/articles/deploying-python.
 
-### Week 4: Real-time communications with channels
+## Week 4: Real-time communications with channels
 
 One feature we've come to expect from modern web applications is having new information load on the page instantly, without waiting for us to refresh.
 
 We can accomplish this in our own application with a websocket.
 
-[IN PROGRESS]
+### Install channels
+
+```sh
+$ pip install channels
+```
+
+Add to installed apps in retrosocial/settings.py
+
+```diff
+@@ -39,7 +39,8 @@ INSTALLED_APPS = [
+     'django.contrib.sessions',
+     'django.contrib.messages',
+     'django.contrib.staticfiles',
+-    'users.apps.UsersConfig'
++    'users.apps.UsersConfig',
++    'channels'
+ ]
+```
+
+Add asynchronous router to new file retrosocial/router.py
+
+```python
+from channels.routing import ProtocolTypeRouter
+
+application = ProtocolTypeRouter({})
+```
+
+Test our new asynchronous-ready project with `python3 manage.py runserver`:
+
+```sh
+$ python3 manage.py runserver
+Performing system checks...
+
+System check identified no issues (0 silenced).
+March 19, 2018 - 18:09:06
+Django version 2.0.3, using settings 'retrosocial.settings'
+Starting ASGI/Channels development server at http://127.0.0.1:8000/
+```
+
+### Server implementation of websocket
+
+We first create a class that represents a websocket client.
+
+#### Send the new post to all clients
+
+We can test our implementation with the python `websocket-client` library and its script `wsdump.py`
+
+```sh
+$ pip install websocket-client
+...
+$ wsdump.py localhost:8000/socket
+```
+### Client implementation of websocket
+
+We'll need to add some javascript to connect the websocket. For now, putting a `script` tag directly in index.html works just fine.
+
+Edit retrosocial/users/templates/users/index.html
+
+### Additional directions
+
+For a more-fleshed-out chat example of websockets, check out the [official channels tutorial](https://channels.readthedocs.io/en/latest/tutorial/index.html).
+
+Deploying websockets to production is non-trivial - in particular, although the development server supports basic http as well as long-running connections, in production we'd need to switch out gunicorn for [daphne](https://github.com/django/daphne/).
+
+The POST call could also be modified to send the post data over the websocket.
+

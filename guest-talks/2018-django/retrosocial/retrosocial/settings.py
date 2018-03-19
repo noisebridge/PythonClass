@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'users.apps.UsersConfig'
+    'users.apps.UsersConfig',
+    'channels'
 ]
 
 MIDDLEWARE = [
@@ -122,5 +123,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 LOGIN_REDIRECT_URL = '/'
+
+ASGI_APPLICATION = 'retrosocial.routing.application'
 
 django_heroku.settings(locals())
