@@ -670,6 +670,12 @@ from channels.routing import ProtocolTypeRouter
 application = ProtocolTypeRouter({})
 ```
 
+Add our protocol router to retrosocial/settings.py
+
+```python
+ASGI_APPLICATION = 'retrosocial.routing.application'
+```
+
 Test our new asynchronous-ready project with `python3 manage.py runserver`:
 
 ```sh
