@@ -686,20 +686,194 @@ Starting ASGI/Channels development server at http://127.0.0.1:8000/
 
 We first create a class that represents a websocket client.
 
+Edit retrosocial/users/consumers.py.
+
+```
+import json
+
+from channels.generic.websocket import AsyncWebsocketConsumer
+
+
+GROUP_NAME = 'default'
+
+
+class FeedConsumer(AsyncWebsocketConsumer):
+    async def connect(self):
+        await self.channel_layer.group_add(
+            group=GROUP_NAME,
+            channel=self.channel_name
+        )
+        await self.accept()
+
+    async def disconnect(self, close_code):
+        await self.channel_layer.group_discard(
+            GROUP_NAME,
+            channel=self.channel_name
+        )
+
+    async def update_feed(self, event):
+        await self.send(json.dumps(event))
+```
+
+Edit route `/socket` to this handler in retrosocial/users/routing.py.
+
+```python
+from django.urls import path
+
+from . import consumers
+
+websocket_urlpatterns = [
+    path('socket', consumers.FeedConsumer),
+]
+
+```
+
+Update `retrosocial/router.py` to connect websocket protocol connections to our `websocket_urlpatterns`.
+
+```python
+from channels.routing import ProtocolTypeRouter, URLRouter
+
+from users import routing
+
+
+application = ProtocolTypeRouter({
+    'websocket': URLRouter(
+        routing.websocket_urlpatterns
+    )
+})
+```
+
+### Creating our Redis channel
+
+Redis serves as a messaging control point which allows us to reach all of our clients, regardless of which server they are connected to, since we only have 1 redis.
+
+```sh
+$ pip install channels_redis
+```
+
+Edit `retrosocial/settings.py`:
+
+```
+CHANNEL_LAYERS = {
+    "default": {
+        "BACKEND": "channels_redis.core.RedisChannelLayer",
+        "CONFIG": {
+            "hosts": [("localhost", 6379)],
+        },
+    },
+}
+```
+
 #### Send the new post to all clients
 
-We can test our implementation with the python `websocket-client` library and its script `wsdump.py`
+Now in our view, we have to send an `update_feed` message to our group:
+
+```python
+from django.contrib.auth import authenticate, login
+from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.models import User
+from django.shortcuts import redirect, render
+
+import channels
+from asgiref.sync import async_to_sync
+
+from users.models import Post, PostForm
+
+from .consumers import GROUP_NAME
+
+
+channel_layer = channels.layers.get_channel_layer()
+
+
+def notify_new_post(username, text):
+    async_to_sync(channel_layer.group_send)(
+        GROUP_NAME,
+        {
+            'type': 'update_feed',
+            'text': text,
+            'username': username
+        }
+    )
+
+
+def home(request):
+    if request.method == 'POST':
+        post = PostForm(request.POST).save(commit=False)
+        post.user = request.user
+        post.save()
+
+        notify_new_post(request.user.username, post.text)
+        
+    ...
+```
+
+#### Debugging websockets
+
+We can test our implementation with the python `websocket-client` library and its script `wsdump.py`.
 
 ```sh
 $ pip install websocket-client
 ...
 $ wsdump.py localhost:8000/socket
 ```
+
+It's also useful to open the developer tools in your browser, find the websocket, and inspect its messages (or lack thereof).
+
 ### Client implementation of websocket
 
 We'll need to add some javascript to connect the websocket. For now, putting a `script` tag directly in index.html works just fine.
 
 Edit retrosocial/users/templates/users/index.html
+
+```javascript
+<script>
+  const ws = new WebSocket(`ws://${window.location.host}/socket`)
+  ws.onmessage = event => {
+    const data = JSON.parse(event.data)
+    const div = document.createElement('div')
+
+    div.innerText = `${data.username}: ${data.text}`
+
+    document.getElementById('posts').appendChild(div)
+  }
+</script>
+```
+ 
+Wrap the posts in a div, so that we can access it from JavaScript:
+
+```diff
+-{% for post in posts %}
+-  <div>
+-    {{ post.user.username }}:
+-    {{ post.text }}
+-  </div>
+-{% endfor %}
++<div id="posts">
++  {% for post in posts %}
++    <div>
++      {{ post.user.username }}:
++      {{ post.text }}
++    </div>
++  {% endfor %}
++</div>
+```
+
+#### Bonus: add autofocus attribute to new post form.
+
+Makes it feel like real-time chat, even though the page reloads for the sender :)
+
+Edit retrosocial/users/models.py
+
+```python
+class PostForm(forms.ModelForm):
+    def __init__(self, data=None):
+        super().__init__(data)
+        self.fields['text'].widget.attrs.update({'autofocus': 'true'})
+
+    ...
+```
+
+Generally I try not to do too much html configuration in Python, since server-side rendering has many limitations, but you can customize your form just by modifying the `PostForm` class.
 
 ### Additional directions
 

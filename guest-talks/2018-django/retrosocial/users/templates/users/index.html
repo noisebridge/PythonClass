@@ -1,3 +1,14 @@
+<script>
+  const ws = new WebSocket(`ws://${window.location.host}/socket`)
+  ws.onmessage = event => {
+    const data = JSON.parse(event.data)
+    const div = document.createElement('div')
+
+    div.innerText = `${data.username}: ${data.text}`
+
+    document.getElementById('posts').appendChild(div)
+  }
+</script>
 {% if user.is_authenticated %}
   <p>Logged in as {{ user.username }}.
   <a href="/logout">Logout</a></p>
@@ -13,12 +24,14 @@
 
 <h2>Posts</h2>
 
-{% for post in posts %}
-  <div>
-    {{ post.user.username }}:
-    {{ post.text }}
-  </div>
-{% endfor %}
+<div id="posts">
+  {% for post in posts %}
+    <div>
+      {{ post.user.username }}:
+      {{ post.text }}
+    </div>
+  {% endfor %}
+</div>
 
 
 <h2>Make a post</h2>

@@ -12,6 +12,10 @@ class Post(models.Model):
 
 
 class PostForm(forms.ModelForm):
+    def __init__(self, data=None):
+        super().__init__(data)
+        self.fields['text'].widget.attrs.update({'autofocus': 'true'})
+
     class Meta:
         model = Post
         fields = ['text']
