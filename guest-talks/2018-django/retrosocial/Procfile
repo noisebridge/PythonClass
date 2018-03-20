@@ -1,1 +1,1 @@
-web: gunicorn retrosocial.wsgi
+web: daphne retrosocial.asgi

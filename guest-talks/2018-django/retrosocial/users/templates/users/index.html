@@ -1,5 +1,8 @@
 <script>
-  const ws = new WebSocket(`ws://${window.location.host}/socket`)
+  const wsProtocol = window.location.protocol == "https:" ? "wss:" : "ws:"
+
+  const ws = new WebSocket(`${wsProtocol}//${window.location.host}/socket`)
+
   ws.onmessage = event => {
     const data = JSON.parse(event.data)
     const div = document.createElement('div')
@@ -9,6 +12,7 @@
     document.getElementById('posts').appendChild(div)
   }
 </script>
+
 {% if user.is_authenticated %}
   <p>Logged in as {{ user.username }}.
   <a href="/logout">Logout</a></p>
