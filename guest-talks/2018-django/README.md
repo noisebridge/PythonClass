@@ -875,11 +875,60 @@ class PostForm(forms.ModelForm):
 
 Generally I try not to do too much html configuration in Python, since server-side rendering has many limitations, but you can customize your form just by modifying the `PostForm` class.
 
+
+### Deploy asynchronous server to Heroku
+
+We'll swap out gunicorn for daphne, a production-ready asynchronous server.
+
+We'll need some new requirements:
+
+```sh
+$ cat requirements.txt
+django
+django-heroku
+channels-redis
+daphne
+```
+
+retrosocial/asgi.py will tell Heroku how to run our application:
+
+```python
+import os
+
+import django
+
+from channels.routing import get_default_application
+
+
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "retrosocial.settings")
+
+django.setup()
+
+
+application = get_default_application()
+```
+
+And we'll update the Procfile:
+
+```
+web: daphne retrosocial.asgi:application --port $PORT --bind 0.0.0.0 -v2
+```
+
+Test it with `heroku local`, then when you're ready to go, add redis to Heroku:
+
+```sh
+$ heroku addons:add heroku-redis
+```
+
+And push to production
+
+```sh
+git push heroku master
+```
+
 ### Additional directions
 
 For a more-fleshed-out chat example of websockets, check out the [official channels tutorial](https://channels.readthedocs.io/en/latest/tutorial/index.html).
-
-Deploying websockets to production is non-trivial - in particular, although the development server supports basic http as well as long-running connections, in production we'd need to switch out gunicorn for [daphne](https://github.com/django/daphne/).
 
 The POST call could also be modified to send the post data over the websocket.
 
