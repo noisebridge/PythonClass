@@ -694,7 +694,7 @@ We first create a class that represents a websocket client.
 
 Edit retrosocial/users/consumers.py.
 
-```
+```python
 import json
 
 from channels.generic.websocket import AsyncWebsocketConsumer
@@ -759,7 +759,7 @@ $ pip install channels_redis
 
 Edit `retrosocial/settings.py`:
 
-```
+```python
 CHANNEL_LAYERS = {
     "default": {
         "BACKEND": "channels_redis.core.RedisChannelLayer",
