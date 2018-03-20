@@ -938,3 +938,4 @@ For a more-fleshed-out chat example of websockets, check out the [official chann
 
 The POST call could also be modified to send the post data over the websocket.
 
+Another good resource for Django, Heroku, and channels is https://blog.heroku.com/in_deep_with_django_channels_the_future_of_real_time_apps_in_django.
