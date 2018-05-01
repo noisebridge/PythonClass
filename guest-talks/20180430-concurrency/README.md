@@ -160,6 +160,7 @@ For more on coroutines, see David Beazley's talk,
 [A Curious Course on Coroutines](http://www.dabeaz.com/coroutines/Coroutines.pdf).
 
 ## Threads
+See `q.py` for a quick crash course on threading, by example.
 
 ### Sharing State
 However, sharing state is often viewed as an antipattern when it is unnecessary.
