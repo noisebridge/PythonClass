@@ -17,12 +17,12 @@ Contents:
 ### Curriculum
 We usually run through a cycle of six core classes (below) over six weeks, then four weeks of guest talks, followed by an off week.
 
-- [File Handling and JSON](course/file-handling-and-json)
-- [Strings](course/strings)
-- [sqlite3](course/sqlite3)
-- [Algorithms](course/algorithms)
-- [Higher Order Functions](course/higher-order-functions)
-- [Flask](course/flask)
+- [JSON and File Handling](course/file-handling-and-json)
+- [String Methods and Usage](course/strings)
+- [The Sqlite3 Database Library](course/sqlite3)
+- [Writing an Algorithm](course/algorithms)
+- [Functional Programming in Python](course/higher-order-functions)
+- [Intro to Microservices with Flask](course/flask)
 
 ### Course Description, Goals, and Ideal Student
 The course is designed with the following constraints in mind:
