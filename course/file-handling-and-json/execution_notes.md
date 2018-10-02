@@ -4,3 +4,4 @@
 - Can write code, and can change font size on demand should be added to the preparation.
 - Too much uninterupted talking about what python types and collections are.  Should start by loading json, then play with the data while covering the information.
 - Visualizations for types might be useful for advanced classes.
+- A good overarching project might be "Convert logs to structured logs."
