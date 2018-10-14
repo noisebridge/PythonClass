@@ -99,3 +99,7 @@ Sign up for the [Noisebridge Python Mailing List](https://www.noisebridge.net/ma
 The mailing list uses GNU Mailman and pipermail.  To search archives you may find it helpful to download the archive `.tar.gz` (compressed) file and use regular expressions (`grep`) to search.
 
 The Python Class Google Group Closed on Tuesday, November 3rd, 2015.
+
+
+### Other Resources
+1. [Introductory Notebooks and Exercises](https://github.com/jerry-git/learn-python3)
