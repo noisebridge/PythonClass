@@ -7,7 +7,7 @@ What is a regular expression?
 Come to the Noisebridge Python class for answers to all these questions (And More!)
 
 
-# What this course contains
+# What does this course contain?
 The class covers indexing, slicing and other operations on strings and ordered collections.  It continues to formatting strings, and finally gestures towards regular expressions.  Along the way it also touches on immutability, objects and methods.
 
 
@@ -18,7 +18,7 @@ The class covers indexing, slicing and other operations on strings and ordered c
 * [itertools](https://docs.python.org/3.7/library/itertools.html) provides even more advanced manipulation of strings and collections.
 
 
-# Who this course is for
+# Who is this course for?
 This class is intended for beginners.
 Students with some experience with the material often enjoy covering it again and seeing a few new tricks.
 Students who have not used Python before may have trouble keeping up, and are encouraged to schedule some time with the instructor through the meetup page to get started.
