@@ -18,7 +18,7 @@ After class, we welcome your feedback! Submit the form
 
 Contents:
 
-- [Curriculum](#curriculum)
+- [Curriculum](#sample-curriculum)
 - [Course Description](#class-description-goals-and-ideal-student)
 - [New Student Reading](#new-student-reading)
 
@@ -140,3 +140,8 @@ personal experience and strong recommendations.
 As mentioned above, the course is taught from a shared Jupyter Hub instance. No
 installation is necessary and it should work on any computer that has a web
 browser.
+
+## Connecting
+
+Feel free to connect with us on the `#python` channel in [Noisebridge
+Discord](https://www.noisebridge.net/wiki/Discord)!
