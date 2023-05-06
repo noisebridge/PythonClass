@@ -34,10 +34,7 @@ The following are links to samples of the old curriculum but may not be
 completely representative of what will be taught in the new course.
 
 The old course was 6 weeks of lectures, followed by 4 guest lectures and a week
-off. We're still determining the best way to teach the new course, but it might
-be in the form of Lecture A being taught for two weeks, followed by Lecture B
-for two weeks. So six lectures over the course of 12 weeks (more leeway to miss
-a week).
+off. We're still determining the best way to teach the new course.
 
 - [JSON and File Handling](archive/course/file-handling-and-json)
 - [String Methods and Usage](archive/course/strings)
