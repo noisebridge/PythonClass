@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Radish</title>
+  </head>
+  <body>
+    <h1>Welcome to Radish!</h1>
+    <p>Would you like to <a href="/links/new">create a link</a>?</p>
+    <hr />
+    <ol>
+      {% for link in links %}
+      <li><a href="{{ link[0] }}">{{ link[1] }}</a></li>
+      {% endfor %}
+    </ol>
+  </body>
+</html>
