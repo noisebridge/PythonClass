@@ -6,6 +6,8 @@ name = "pypi"
 [packages]
 jupyter = "*"
 appnope = "*"
+google-api-python-client = "*"
+google-generativeai = "*"
 
 [dev-packages]
 
