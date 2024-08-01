@@ -1,7 +1,0 @@
-Look into collections.defaultdict object and what writable instance variable is. 
-
-Went over design decisions to make an extendible deck to use for card games. 
-
-Then went over same process to make a game of war. 
-
-Made decision to put Card class inside of StandardDeck class. 

@@ -1,4 +1,0 @@
-django
-django-heroku
-channels-redis
-daphne

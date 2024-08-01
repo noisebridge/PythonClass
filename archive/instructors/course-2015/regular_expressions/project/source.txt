@@ -1,7 +1,0 @@
-test@test.com@fail
-example@gmail.com
-derp*q?
-potato@cannon.org
-le*mo
-###e33@fake
-coconut water

@@ -1,4 +1,0 @@
-argparse==1.2.1
-pypandoc==0.8.6
-requests==2.5.1
-wsgiref==0.1.2

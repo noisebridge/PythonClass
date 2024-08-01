@@ -1,2 +1,0 @@
-
-### Curses: A Placeholder

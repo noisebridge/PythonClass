@@ -1,3 +1,0 @@
-class DataFrame():
-    @classmethod
-    def from_records(cls, l: List[dict]): ...

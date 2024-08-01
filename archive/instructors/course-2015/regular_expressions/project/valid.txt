@@ -1,1 +1,0 @@
-["test@test.com@fail", "example@gmail.com", "potato@cannon.org"]
