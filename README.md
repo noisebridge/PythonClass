@@ -22,10 +22,27 @@ Contents:
 - [Course Description](#class-description-goals-and-ideal-student)
 - [New Student Reading](#new-student-reading)
 
-### Sample Curriculum
+### Iterations
 
 The Noisebridge Python Class has existed at least as far back as 2015, with many
-different instructors and incarnations as far as I can tell.
+different instructors and iterations.
+
+From 2017 - 2018, the class seems to have been run by [Jared Garst](https://github.com/jgarst).
+(?).
+
+From 2023 - 2024, the class was run by [Travis Briggs](https://github.com/audiodude).
+
+If you have other information about the history of this class that you'd like to share,
+please make a PR here, reach out on the [Noisebridge wiki](https://www.noisebridge.net/wiki/PyClass),
+or reach out to @tmoney on the [Noisebridge Discord](https://www.noisebridge.net/wiki/Discord).
+
+Old versions of class materials are no longer kept in the main git repo. Instead, you can
+access pre-audiodude versions of the class (latest version by jgarst) with
+[this tag](https://github.com/noisebridge/PythonClass/tree/pre-audiodude) and pre-jgarst
+versions of the class (latest version in Noisebridge repo prior to jgarst fork) with
+[this tag](https://github.com/noisebridge/PythonClass/tree/pre-jgarst).
+
+### Sample Curriculum
 
 As of May 2023, the class is being redesigned/rebooted and a new curriculum is
 being designed. Travis B (audiodude/tmoney) is attempting to do this largely by
@@ -49,13 +66,13 @@ The course is designed with the following constraints in mind:
 
 - The barrier to entry is low, but the pace is fast.
 - All materials must be made [available on
-  Github](https://github.com/audiodude/PyClass).
+  Github](https://github.com/noisebridge/PythonClass).
 - Each lesson stands alone, so it's okay to miss a week!
 - The core, repeated modules are regularly updated.
 
 To best experience the course, spend a short time reviewing the materials
-beforehand. If you wish to know what's scheduled for this week, please join [the
-mailing list](#mailing-list) and send an email out to PyClass@googlegroups.com
+beforehand. If you wish to know what's scheduled for this week, please join the
+[Noisebridge Discord](https://www.noisebridge.net/wiki/Discord).
 
 #### Prerequisites
 
