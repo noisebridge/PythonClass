@@ -1,6 +1,0 @@
-id,name,url,created_at,upvotes,downvotes
-1,Google,https://google.com,2023-06-01 10:10:10,200,20
-2,Bing,https://bing.com,2023-06-10 11:11:11,180,5
-3,Hacker News,https://news.ycombinator.com,2023-06-12 12:12:12,400,25
-4,YouTube,https://youtube.com,2023-06-15 13:13:13,515,40
-5,Amazon,https://amazon.com,2023-06-20 14:14:14,70,5
