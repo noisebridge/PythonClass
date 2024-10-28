@@ -1,0 +1,9 @@
+{% extends "base.html" %} {% block body %}
+<h1>Sign up</h1>
+<form method="POST">
+  <div>Email: <input name="email" type="email" /></div>
+  <div>Password: <input name="password" type="password" /></div>
+  <div><input name="join_list" type="checkbox" /> Join our mailing list?</div>
+  <div><button type="submit">Sign up</button></div>
+</form>
+{% endblock %}
