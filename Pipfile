@@ -11,6 +11,7 @@ google-generativeai = "*"
 # From dependabot
 urllib3 = ">=2.2.2"
 certifi = ">=2024.07.04"
+requests = "*"
 
 [dev-packages]
 
