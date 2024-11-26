@@ -12,6 +12,7 @@ google-generativeai = "*"
 urllib3 = ">=2.2.2"
 certifi = ">=2024.07.04"
 requests = "*"
+tornado = ">=6.4.2"
 
 [dev-packages]
 
