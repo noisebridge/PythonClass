@@ -1,8 +1,8 @@
 The Noisebridge Python Class meets every Monday from 7 to 9 PM (PT) in the 2nd
 floor Electronics Room at Noisebridge in San Francisco.
 
-**As of August 2024 the class is currently on hiatus. See the
-[wiki page](https://www.noisebridge.net/wiki/PyClass) for more information.**
+Currently we are running Series 4 of the 2023 class. See
+[the Noisebridge wiki](https://www.noisebridge.net/index.php?title=PyClass) for more information
 
 The course is free! If you wish to donate, please give to
 [Noisebridge](https://donate.noisebridge.net).
