@@ -1,3 +1,5 @@
+# Download the sample data from Hacker News API used in the lesson.
+
 import csv
 
 import requests
